@@ -1,0 +1,163 @@
+
+ .body{
+  line-height: 1.5;
+   background-color: rgb(255, 255, 255);
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+   transform: translate(8%,0%);
+   
+ }
+
+nav.nav{
+  background-image:linear-gradient(to right,white,rgb(199, 216, 210));
+   width: 100%;
+   position:fixed; 
+   top: 40px;
+   left: 0px;
+   right: 0px;
+   /*z-index: 440;*/
+   text-align: right;
+   font-size: 14px;
+}
+ul.menu li{
+  display: inline;
+  padding: 10px;
+}  
+ul.menu li a{
+  margin: 0px 50px 0px 20px;
+  text-decoration: none;
+}
+
+li a{
+  color: rgba(253, 123, 30, 0.555);
+}
+.menu li a:hover{
+  color: rgb(255, 102, 0);
+}
+.menu li a:active{
+  background-color:rgb(140, 194, 176);
+}
+.menu li a:visited{
+ background-color: rgb(129, 143, 138);
+}
+
+section.header h1{
+  color: rgb(23, 110, 81);
+  text-align: justify;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 50px;
+}
+section.header h2{
+  width: 700px;
+  background: rgb(255, 255, 255);
+  color: rgb(120, 175, 157); 
+  word-spacing: px;
+}
+
+/* 
+section .main.boximage{
+  background-color: rgb(153, 168, 168);
+  border: 10px solid rgb(0, 0, 0);
+  position:fixed;
+  top: 50px; ;
+  left: 100px;
+  right: 50px; ;
+}*/
+
+.imgbackgrond{
+ background-color: rgba(253, 103, 2, 0.281);
+width: 60%;
+  height: 450px;
+  font-size: 20px;
+margin-right:27%;;
+margin-left:auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+ }
+ .imgbackgrond img{
+  width: 350px;
+  height: 333px;
+  border-radius: 24%;
+  position: fixed;
+  top: 520px;
+ }
+ .img1 img{
+  position: fixed;
+  left: 250px;
+  filter:brightness(0.);
+ }
+ .img2 img{
+  position: fixed;
+  left: 644px;
+ }
+ .img3 img{
+position: fixed;
+left: 1040px;
+ }
+.imgbackgrond a{
+width: 20%;
+font-size: 20px;
+color: rgb(15, 116, 82);
+font-family: Verdana, Geneva, Tahoma sans-serif;
+text-align: center;
+font-weight: 700;
+
+}
+.img1 a{
+position: fixed;
+top: 900px;
+left: 235px;
+}
+.img2 a{
+position: fixed;
+text-align: center;
+top: 900px;
+left: 635px;
+}
+.img3 a{
+position: fixed;
+text-align: center;
+top: 900px;
+left: 1030px;
+}
+
+
+
+.container{
+  width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto
+}
+
+.footer li{
+  list-style: none;
+  display: inline;
+}
+
+h6.footerh6{
+  color: rgb(23, 110, 81);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+div.allfooter li a{
+  display: inline;
+}
+
+/*.cleatfix{
+  clear: both;
+}
+........................................
+* BARAYE ICON YA AKS VASAT SAFEH *
+.img img{
+  width:30% ;
+  height:76%;
+  border-radius: 30%;
+  position:fixed;
+  top: 100px;
+  .......................................
