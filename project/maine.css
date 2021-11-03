@@ -1,7 +1,7 @@
 
  .body{
   line-height: 1.5;
-   background-color: rgb(255, 255, 234);
+   background-color: rgb(255, 255, 255);
    margin: 0%;
    padding: 0%;
    box-sizing: border-box;
@@ -10,8 +10,8 @@
  }
 
 nav.nav{
-  background-image:linear-gradient(to right,white,rgb(199, 216, 210));
-   width: 100%;
+  background-image:linear-gradient(to right,white,rgb(162, 197, 185));
+   width: 80%;
    position:fixed; 
    top: 40px;
    left: 0px;
@@ -43,13 +43,16 @@ li a{
 }
 
 section.header h1{
+  font-size: 45px;
   color: rgb(23, 110, 81);
   text-align: justify;
   background: rgb(255, 255, 255);
   width: 100%;
   height: 50px;
+  text-transform: uppercase;
 }
-section.header h2{
+section.header h3{
+  font-size: 25px;
   width: 700px;
   background: rgb(255, 255, 255);
   color: rgb(120, 175, 157); 
@@ -67,7 +70,7 @@ section .main.boximage{
 }*/
 
 .imgbackgrond{
- background-color: rgba(253, 103, 2, 0.281);
+ background-color: rgba(255, 255, 255, 0.281);
 width: 60%;
   height: 450px;
   font-size: 20px;
@@ -80,9 +83,9 @@ margin-left:auto;
  .imgbackgrond img{
   width: 350px;
   height: 333px;
-  border-radius: 24%;
+  border-radius: 30%;
   position: fixed;
-  top: 520px;
+  top: 493px;
  }
  .img1 img{
   position: fixed;
@@ -100,33 +103,64 @@ left: 1040px;
 .imgbackgrond a{
 width: 20%;
 font-size: 20px;
-color: rgb(15, 116, 82);
+color: rgb(42, 95, 77);
 font-family: Verdana, Geneva, Tahoma sans-serif;
 text-align: center;
-font-weight: 700;
-
+font-weight: 600;
+top:837px;
+/* max-width: 1140px */
 }
 .img1 a{
 position: fixed;
-top: 900px;
-left: 235px;
+left:  230px;
 }
 .img2 a{
 position: fixed;
 text-align: center;
-top: 900px;
 left: 635px;
 }
 .img3 a{
-position: fixed;
 text-align: center;
-top: 900px;
-left: 1030px;
+position: fixed;
+left: 1026px;
+}
+
+.wrapper img{
+  /* border: 10px solid rgb(231, 215, 181); */
+  /* border-radius: 0.5%;  */
+width: 330px;
+height: 400px;
+position: fixed;
+left: 1060px;
+top: 1011px;
+/* margin-left: 80px; */
+
+}
+pre.wrapper::after{
+  display: inline;
 }
 
 
 
-.container{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container{ 
   width: 100%;
 padding-right: 15px;
 padding-left: 15px;
