@@ -71,7 +71,7 @@ section .main.boximage{
 }*/
 
 .imgbackgrond{
- background-color: rgba(221, 44, 44, 0.281);
+ background-color: rgb(255, 255, 255);
 width: 60%;
   height: 450px;
   font-size: 20px;
@@ -166,7 +166,7 @@ width:20px;    p34b*/
 .wrapper h4{
   width: 700px;
   height:auto;
-  border: 2px solid rgb(39, 30, 30);
+  border: 2px solid rgb(255, 255, 255);
   position: fixed;
   top:  1092px;
   left:  245px;
