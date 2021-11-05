@@ -1,6 +1,6 @@
 
  .body{
-   border: 1px solid black;
+   border: 1px solid rgb(255, 255, 255);
    width: 70%;
    min-height: auto;
   line-height: 1.5;
@@ -85,7 +85,7 @@ section .main.boximage{
 
 .imgbackgrond{
  /* background-color: rgb(209, 143, 143); */
- border: 1px  solid rgb(155, 131, 223);
+ border: 1px  solid rgb(255, 255, 255);
 width: 90%;
   height: 450px;
 margin-right: auto;
@@ -167,7 +167,7 @@ width:20px;    p34b*/
 .wrapper1 h2{
   /* width: 700px;
   height:auto; */
-  border: 1px solid black;
+  border: 1px solid rgba(95,95,95,.5);
   position: fixed;
   top:  1060px;
   left:  63px;
@@ -179,7 +179,7 @@ width:20px;    p34b*/
 .wrapper1 h4{
   width: 700px;
   height:auto;
-  border: 2px solid rgb(134, 121, 121);
+  border: 2px solid #6460600e;
   position: fixed;
   top:  1140px;
   left:  84px;
@@ -208,7 +208,7 @@ box-shadow: 0 12px 40px 0 rgba(95,95,95,.5);
   text-align: left;
   width: 601px;
   height: 357px;
-  border: 1px solid black;
+  border: 1px solid #6460600e;
 white-space: pre-line;
 line-height: 1.90;
  font-size: 20px;
@@ -228,7 +228,7 @@ height: 0px;
  left: 181px; 
 }
 .footer{
-  border: 1px solid rgb(32, 95, 87);
+  border: 3px solid rgb(32, 95, 87);
   width: 70%;
   height: 490px;
   position: relative;
@@ -238,17 +238,18 @@ left: 179px;
 box-shadow: 0 22px 40px 0 rgba(212, 107, 8, 0.418);
 letter-spacing: 2px;
 word-spacing: 8px;
-
+text-align: center;
 }
 .footerhedear{
   font-style: bold;
   font-weight: 00;
   font-size: 25px;
   
+  
 }
 .footer1{
   display: block;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   width: 200px;
   height: 330px;
   position: fixed;
@@ -260,7 +261,7 @@ word-spacing: 8px;
 }
 .footer2{
   display: block;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
   width: 200px;
   height: 330px;
   position: fixed;
@@ -272,7 +273,7 @@ word-spacing: 8px;
 
 .footer3{
   display: block;
-  border: 1px solid rgb(2, 1, 1);
+  border: 1px solid rgb(255, 255, 255);
   width: 249px;
   height: 330px;
   position: fixed;
@@ -284,7 +285,7 @@ word-spacing: 8px;
 .icon{
   width: 270px;
 height: 40px;
-border: 1px solid black;
+border: 1px solid rgb(255, 255, 255);
 position: absolute;
 top: 2688px;
 left: 387px;
@@ -313,7 +314,7 @@ margin-left: 20px;
 .informationme{
   width: 339px;
 height: 40px;
-border: 1px solid black;
+border: 1px solid rgb(255, 255, 255);
 position: absolute;
 top: 2726px;
 left: 409px;
