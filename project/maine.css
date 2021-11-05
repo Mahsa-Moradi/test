@@ -1,6 +1,6 @@
 
  .body{
-   border: 1px solid rgb(255, 255, 255);
+   border: 1px solid rgba(255, 255, 255, 0.596);
    width: 70%;
    min-height: auto;
   line-height: 1.5;
@@ -10,17 +10,18 @@
    padding: 0%;
    box-sizing: border-box;
    transform: translate(0%,0%);
-    
-   
  }
+
+ /* logo********************************************** */
  .logo img{
    width: 61px;
    height: 65px;
    position: fixed;
    top: 11px;
-   left:-98px;
+   left:-209px;
  }
 
+/* menu********************************************** */
 nav.nav{
   background-image:linear-gradient(to right,white,rgb(162, 197, 185));
    position:fixed; 
@@ -30,11 +31,9 @@ nav.nav{
    height: 50px;
    text-align: right;
    font-size: 14px;
-/* width: 200%;  */
-/*z-index: 440;*/
 }
 ul.menu li{
-  display: inline;
+  display:inline-block;
   padding: 0px;
 }  
 ul.menu li a{
@@ -56,6 +55,45 @@ li a{
  background-color: rgb(129, 143, 138);
 }
 
+/* sub menu********************************************** */
+.has_sub_menu1 ul{
+position: relative;
+}
+.sub_menu1 li{
+display: block;
+position: absolute;
+}
+
+.sub_menu2 li{
+  display: block;
+  position: absolute;
+
+}
+
+.sub_menu3 li{
+  display: block;
+  position: absolute;
+} 
+
+.search input{
+width: 200px;
+height: 44px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  position: fixed;
+  top: 25px;
+  left: -110px;
+  border-color: rgba(230, 236, 236, 0.034);
+  border-right-color: rgba(240, 255, 240, 0.007);
+  border-bottom-color: rgba(240, 255, 240, 0.007);
+  border
+}
+.search input:active{
+  border-color: rgb(253, 253, 253);
+  border-collapse: collapse;
+  
+  }
+/* hedear********************************************** */
 section.header h1{
   font-size: 45px;
   color: rgb(23, 110, 81);
@@ -63,6 +101,8 @@ section.header h1{
   background: rgb(255, 255, 255);
   width: 100%;
   height: 50px;
+  position: fixed;
+  top: 137px;
   text-transform: uppercase;
 }
 section.header h3{
@@ -71,9 +111,10 @@ section.header h3{
   background: rgb(255, 255, 255);
   color: rgb(120, 175, 157); 
   word-spacing: px;
+  position: fixed;
+  top: 242px;
 }
 
-/* 
 section .main.boximage{
   background-color: rgb(153, 168, 168);
   border: 10px solid rgb(0, 0, 0);
@@ -81,17 +122,17 @@ section .main.boximage{
   top: 50px; ;
   left: 100px;
   right: 50px; ;
-}*/
+}
 
 .imgbackgrond{
- /* background-color: rgb(209, 143, 143); */
+  /* background-color: rgb(209, 143, 143); */
  border: 1px  solid rgb(255, 255, 255);
 width: 90%;
   height: 450px;
 margin-right: auto;
 margin-left:auto;
-  /* display: flex;
-  justify-content: center; */
+   display: flex;
+  justify-content: center; 
   position: relative; 
   } 
  .imgbackgrond img{
@@ -100,7 +141,6 @@ margin-left:auto;
   border-radius: 30%;
   position: absolute;
   top: 493px;
-  /* left: 200px; */
   box-shadow: 0 12px 40px 0 rgba(95,95,95,.5);
  }
  .img1 img{
@@ -149,6 +189,7 @@ left: 970px;
   left: 248px;
 top: 1011px;
 }
+/* titel********************************************** */
 .wrapper1 img{
 width: 363px;
 height: 422px;
@@ -165,8 +206,6 @@ width:20px;    p34b*/
 
 }
 .wrapper1 h2{
-  /* width: 700px;
-  height:auto; */
   border: 1px solid rgba(255, 255, 255, 0.5);
   position: fixed;
   top:  1060px;
@@ -218,7 +257,7 @@ line-height: 1.90;
   top:  1570px;
   left:  723px;
 }
-
+/* footer********************************************** */
 hr.hrfooter{
   color: rgb(37, 122, 101);
 width: 70%;
