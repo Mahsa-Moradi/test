@@ -86,14 +86,14 @@ height: 44px;
   position: fixed;
   top: 25px;
   left: -110px;
-  border-color: rgba(230, 236, 236, 0.034);
+  border-color: hsla(180, 21%, 78%, 0.035);
   border-right-color: rgba(240, 255, 240, 0.007);
-  border-bottom-color: rgba(240, 255, 240, 0.007);
-  border
+  border-left-color: rgba(255, 255, 255, 0.007);
 }
+/* search******************************************* */
 .search input:active{
   border-color: rgb(253, 253, 253);
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   
   }
 /* hedear********************************************** */
