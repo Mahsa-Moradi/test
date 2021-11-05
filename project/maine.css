@@ -35,9 +35,12 @@ nav.nav{
 ul.menu li{
   display:inline-block;
   padding: 0px;
+  /* margin-left: 5px;
+  position: fixed;
+  top:20px; */
 }  
 ul.menu li a{
-  margin: 0px 35px 0px 0px;
+  margin: 0px 58px 0px 0px;
   text-decoration: none;
 }
 
@@ -126,7 +129,7 @@ section .main.boximage{
 
 .imgbackgrond{
   /* background-color: rgb(209, 143, 143); */
- border: 1px  solid rgb(255, 255, 255);
+ /* border: 1px  solid rgba(194, 24, 24, 0.925); */
 width: 90%;
   height: 450px;
 margin-right: auto;
