@@ -221,20 +221,113 @@ line-height: 1.90;
 
 hr.hrfooter{
   color: rgb(37, 122, 101);
-width: 100%;
+width: 70%;
 height: 0px;
   position: fixed;
   top: 2200px;
-  
+ left: 181px; 
 }
-footer.footer{
-  border: 1px solid black;
-  width: 120%;
+.footer{
+  border: 1px solid rgb(32, 95, 87);
+  width: 70%;
+  height: 490px;
+  position: relative;
   position: fixed;
   top: 2290px; ;
-left: -134px;
+left: 179px;
 box-shadow: 0 22px 40px 0 rgba(212, 107, 8, 0.418);
+letter-spacing: 2px;
+word-spacing: 8px;
+
 }
+.footerhedear{
+  font-style: bold;
+  font-weight: 00;
+  font-size: 25px;
+  
+}
+.footer1{
+  display: block;
+  border: 1px solid black;
+  width: 200px;
+  height: 330px;
+  position: fixed;
+  top: 2296px; ;
+  left: 181px;
+  line-height: 60px;
+  font-size: 19px;
+
+}
+.footer2{
+  display: block;
+  border: 1px solid rgb(0, 0, 0);
+  width: 200px;
+  height: 330px;
+  position: fixed;
+  top: 2296px; ;
+  left: 460px;
+  line-height: 60px;
+  font-size: 19px;
+}
+
+.footer3{
+  display: block;
+  border: 1px solid rgb(2, 1, 1);
+  width: 249px;
+  height: 330px;
+  position: fixed;
+  top: 2296px; ;
+  left: 739px;
+  line-height: 60px;
+  font-size: 19px;
+}
+.icon{
+  width: 270px;
+height: 40px;
+border: 1px solid black;
+position: absolute;
+top: 2688px;
+left: 387px;
+display: inline-block;
+
+}
+.icon a img{
+  width: 30px;
+border-radius: 50%;
+margin-left: 20px;
+/* top: 269px; */
+}
+
+/* order: 4; جایگاه یک خط را عوض میکند */
+
+
+.logofooter img{
+  width: 104px;
+  height: 125px;
+  position: fixed;
+  top: 2654px;
+  left: 278px;
+
+}
+
+.informationme{
+  width: 339px;
+height: 40px;
+border: 1px solid black;
+position: absolute;
+top: 2726px;
+left: 409px;
+color: rgb(6, 31, 31);
+}
+
+
+
+
+
+
+
+
+
 /* .wrapper ::after, ::before {
   box-sizing: border-box;
 } */
