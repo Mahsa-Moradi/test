@@ -107,6 +107,7 @@ section.header h1{
   position: fixed;
   top: 137px;
   text-transform: uppercase;
+  /* letter-spacing: -10px; */
 }
 section.header h3{
   font-size: 25px;
