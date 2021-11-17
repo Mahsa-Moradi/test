@@ -1,0 +1,43 @@
+
+/* .nav{
+    min-height: 100px;
+} */
+.container-fluid{
+    width: 100%;
+}
+.container{
+    clear: both;
+margin-left: auto;
+margin-right: auto;
+max-width: 1200px;
+/* padding-left: 15px;
+padding-right: 15px; */
+}
+.row::after{
+    content: "";
+    clear: both;
+}
+ul.menu li{
+    display: inline-block;
+    font-style: none;
+    /* padding: 10px; */
+    margin: 20px;
+    line-height: 40px;
+    direction: rtl;
+    text-align: right;
+}
+.gray-color{
+    background-color: rgb(211, 202, 202);
+}
+.green-color{
+    background-color: gray;
+}
+.red-color{
+    background-color: red;
+}
+.blue-color{
+    background-color: blue;
+}
+.yellow-color{
+    background-color:yellow;
+}
