@@ -25,6 +25,9 @@ padding-right: 15px; */
     clear: both;
     display: table;
 }
+.icon{
+    
+}
 ul.menu li{
     display: inline;
     font-style: none;
