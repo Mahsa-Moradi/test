@@ -41,6 +41,13 @@ ul.menu li{
 }
 
 /* utiliti******************************************** */
+.p-0{
+    padding: 0px !important;
+}
+.m-0{
+    margin: 0px;
+}
+
 a{
     text-decoration: none;
 }
@@ -94,10 +101,11 @@ li,ol,ul{
 /* heder************************************************* */
 
 .img-respansive{
-    width: 1199px;
-    height: 400px; 
+    /* width: 1199px; */
+    /* height: 400px;  */
     margin-left: auto;
 margin-right: auto;
+padding: 0px;
 
 }
 .img-article{
@@ -124,7 +132,7 @@ padding: 5px;
 }
 
 
-.card-hedear h5{
+.card-header h5{
     border-bottom: 1px solid #eee;
     padding-top: 0px;
     font-size: 25px;
@@ -135,16 +143,20 @@ padding: 5px;
 }
 
 .card-body a{
-    font-size: 17px;
-}
+    font-size: 14px;
 
+}
+footer.card-body a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
 
 footer.card{
-    border: 0px;
-    ma
+    border: 10px;
+    margin-top: 60px;
 }
 
-footer.card-hedear{
+footer.card-header{
 color: #fff;
 }
 
