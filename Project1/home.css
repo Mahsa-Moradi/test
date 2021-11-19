@@ -20,6 +20,8 @@ body{
 /* menu************************************************ */
  .nav{
     min-height: 100px;
+    height: 200px;
+    padding: 200px;
 } 
 .container-fluid{
     width: 100%;
@@ -37,15 +39,15 @@ margin-right: auto;
     position: relative;
 }
 .icon-img{
-width: 67px;
+width: 55px;
 position: absolute;
-top: 47px;
+top: 0px;
 left: 319px;
 }
 ul.menu li{
     display: inline;
     font-style: none;
-    margin: 20px;
+    margin: 30px;
     line-height: 40px;
     /* list-style: none; */
 }
@@ -111,8 +113,13 @@ li,ol,ul{
 .yellow-color{
     background-color:yellow;
 }
-/* heder************************************************* */
-
+/* header************************************************* */
+.card{
+    /* height: 290px; */
+    border: 1px solid #efefef;
+    padding:px ;
+    font-size: 20px;
+}
 .img-respansive{
     width: 100%;
   height: auto;
@@ -124,9 +131,25 @@ padding: 0px; */
 
 }
 .img-article{
-    width: 198px;
+    width: 163px;
 height: 190px;
 }
+article.card{
+    padding: 2px;
+}
+.card-header h5{
+    border-bottom: 1px solid #eee;
+    padding-top: 0px;
+    font-size: 25px;
+}
+
+.card-body a{
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+
 .img-interview{
     display: inline-block;
 width: 250px;
@@ -139,28 +162,18 @@ padding: 5px;
 } */
 
 }
-.card{
-    /* height: 290px; */
-    border: 1px solid #efefef;
-    padding:px ;
-    font-size: 20px;
-}
 
 
-.card-header h5{
-    border-bottom: 1px solid #eee;
-    padding-top: 0px;
-    font-size: 25px;
-}
 
-.card{
-    font-size: px;
-}
 
-.card-body a{
-    font-size: 14px;
 
-}
+
+
+
+
+
+
+
 footer.card-body a{
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -182,7 +195,7 @@ color: #fff;
 
 
 
-/* grids********************************** */
+/* grids media quary********************************** */
 @media only screen and (max-width: 600px) {
     .col-xs-1 {
       width: 8.33%;
