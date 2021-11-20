@@ -6,6 +6,9 @@
     font-weight: 700;
     font-style: normal;
 }
+html{
+    font-size: 16px;
+}
 
 *,body{
     margin: 0;
@@ -15,3 +18,37 @@
 }
 body{
     direction: rtl;
+}
+/* rem****************************** */
+.p-1{
+    width: 100%;
+    background-color: crimson;
+    font-size: 2rem;
+}
+/* emm****************************** */
+.pp{
+    font-size: 20px;
+}
+.p-2{
+    width: 100%;
+    background-color: rgb(90, 20, 220);
+    font-size: 3em;
+}
+/* vh****************************** */
+.img-vh{
+    width: 100px;
+    /* height:100vh          100%screen*/
+     min-height: 100vh;      /* 100% allscreen and document */
+
+}
+
+/* .container{
+   width: 100px;
+    min-height: 100vh;
+  
+} */
+/* vw****************************** */
+img-vw{
+    min-width: 100vw;
+    height: 100vh;
+}
