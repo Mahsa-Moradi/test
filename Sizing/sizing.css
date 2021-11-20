@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Vazir-Medium;
+    src: url(../Project1/font/Vazir-Medium.eot) format("eot"),
+      url(../Project1/font/Vazir-Medium.woff) format("woff"),
+      url(../Project1/font/Vazir-Medium.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Vazir-Medium;
+}
+body{
+    direction: rtl;
