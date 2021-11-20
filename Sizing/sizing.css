@@ -6,6 +6,12 @@
     font-weight: 700;
     font-style: normal;
 }
+******************************************
+
+  .material-icons.md-light.md-inactive { color: rgba(148, 28, 28, 0.3); }
+
+*****************************************
+
 html{
     font-size: 16px;
 }
@@ -19,6 +25,9 @@ html{
 body{
     direction: rtl;
 }
+/* icon*******************************/
+.material-icons.md-48 { font-size: 48px; }
+
 /* rem****************************** */
 .p-1{
     width: 100%;
@@ -35,12 +44,12 @@ body{
     font-size: 3em;
 }
 /* vh****************************** */
-.img-vh{
+ .img-vh{
     width: 100px;
     /* height:100vh          100%screen*/
      min-height: 100vh;      /* 100% allscreen and document */
 
-}
+} 
 
 /* .container{
    width: 100px;
@@ -48,7 +57,7 @@ body{
   
 } */
 /* vw****************************** */
-img-vw{
+ img-vw{
     min-width: 100vw;
     height: 100vh;
-}
+} 
