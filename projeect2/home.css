@@ -1,6 +1,8 @@
-*,body{
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-    font-family: ;
+@font-face {
+    font-family: vazir-Medium;
+    src: url(../font1/Vazir-Medium.eot) format("eot"),
+    src: url(../font1/Vazir-Medium.woff2) format("woff2"),
+    src: url(../font1/Vazir-Medium.woff) format("woff2");
+    font-weight: 700;
+    font-style: normal;
 }
