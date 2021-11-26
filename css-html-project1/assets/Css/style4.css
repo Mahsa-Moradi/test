@@ -6,3 +6,8 @@
     font-weight: 700;
     font-style: normal;
 }
+
+.container-fluid-custom{
+    background-color: rgb(224, 180, 180);
+    color: white;
+}
