@@ -62,6 +62,7 @@ ol {
 .container-fluid {
   width: 100%;
 }
+
 .container {
   clear: both;
   content: "";
@@ -74,11 +75,63 @@ ol {
   clear: both;
   display: table;
 }
+
 [class^="col-"] {
   float: right;
   padding-left: 15px;
   padding-right: 15px;
 }
+/* STYLE.CSS    ******************************** */
+.container-fluid-custom{
+  background-color: rgb(110, 110, 110);
+  color: white;
+  height: 38px;
+}
+
+.container-fluid-custom .contact {
+  font-size: 15px; 
+}
+
+  .container-fluid-custom .contact i{
+    color: rgb(230, 178, 144);
+   margin-right: -23px;
+   /* font-size: 20px; */
+   vertical-align: -9px;
+   margin-left: 40px;
+  
+  }
+
+  .container-fluid-custom .contact span{
+    color: white;
+    vertical-align: -1px;
+    padding-left: 6px; 
+  }
+
+  .container-fluid-custom .social-media{
+    direction: ltr; 
+  }
+  .container-fluid-custom .social-media i{
+   padding: 5px;
+  }
+  .container-fluid-custom .social-media a i:hover{
+    
+    background-color: rgb(0, 255, 179);
+    border-radius: 5px;
+  }
+  
+  /* .social-media  i.instagram :hover{
+    color: rgb(205, 58, 0);
+  }
+  i.telegram :hover{
+    color: rgb(16, 136, 216);
+  }
+  i.facebook :hover{
+    color: rgb(7, 42, 156);
+  } */
+
+
+
+
 /* Respansive********************** */
 @media only screen and (max-witdh: 600px) {
   .col-xs-1 {
