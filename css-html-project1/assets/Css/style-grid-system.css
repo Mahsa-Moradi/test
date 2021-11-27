@@ -81,60 +81,121 @@ ol {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* STYLE.CSS    ******************************** */
-.container-fluid-custom{
+/* STYLE.CSS    ******************************************* */
+
+/* start contact section *******************************/
+.container-fluid-custom {
   background-color: rgb(110, 110, 110);
   color: white;
   height: 38px;
 }
 
 .container-fluid-custom .contact {
-  font-size: 15px; 
+  font-size: 15px;
 }
 
-  .container-fluid-custom .contact i{
-    color: rgb(230, 178, 144);
-   margin-right: -23px;
-   /* font-size: 20px; */
-   vertical-align: -9px;
-   margin-left: 40px;
-  
-  }
+.container-fluid-custom .contact i {
+  color: rgb(230, 178, 144);
+  margin-right: -23px;
+  /* font-size: 20px; */
+  vertical-align: -9px;
+  margin-left: 40px;
+}
 
-  .container-fluid-custom .contact span{
-    color: white;
-    vertical-align: -1px;
-    padding-left: 6px; 
-  }
+.container-fluid-custom .contact span {
+  color: white;
+  vertical-align: -1px;
+  padding-left: 6px;
+}
 
-  .container-fluid-custom .social-media{
-    direction: ltr; 
+.container-fluid-custom .social-media {
+  direction: ltr;
+}
+.container-fluid-custom .social-media i {
+  padding: 5px;
+}
+.container-fluid-custom .social-media a i:hover {
+  background-color: rgb(0, 255, 179);
+  border-radius: 5px;
+}
+/* end contact section *******************************/
+
+/* start navbar section*******************************/
+.active{
+    border-bottom: 1px solid rgb(194, 97, 62);
+   
+}
+nav.icon-decor{
+  width: 150px;
+  height: 50px;
+}
+
+.nav{
+  background-color: rgba(228, 228, 228, 0.63);
+  overflow: hidden;
+}
+
+.nav a{
+  float: right;
+  color:rgb(61, 67, 73);
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 18px;
+}
+.nav a:hover{
+border-bottom: 1px solid rgb(194, 97, 62);
+}
+.icon{
+  display: none;
+}
+@media screen and (max-width:600px){
+  .nav a:not(:first-child)/*تمام تگ های aبه جز اولی  */
+  {
+    display: none;
   }
-  .container-fluid-custom .social-media i{
-   padding: 5px;
+  .nav a.icon{
+    display: block;
+    float: left;
   }
-  .container-fluid-custom .social-media a i:hover{
-    
-    background-color: rgb(0, 255, 179);
-    border-radius: 5px;
+  .nav.responsive{
+    position: relative;
   }
-  
-  /* .social-media  i.instagram :hover{
-    color: rgb(205, 58, 0);
+  .nav.responsive a.icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+
   }
-  i.telegram :hover{
-    color: rgb(16, 136, 216);
+  .nav.responsive a{
+    float: none;
+    display: block;
+    text-align: right;
   }
-  i.facebook :hover{
-    color: rgb(7, 42, 156);
-  } */
+}
+/* end navbar section*******************************/
 
 
 
 
-/* Respansive********************** */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Respansive***************************************** */
+
+
+
+
 @media only screen and (max-width: 600px) {
-  .xs-hidden{
+  .xs-hidden {
     display: none;
   }
   .col-xs-1 {
