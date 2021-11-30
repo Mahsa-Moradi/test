@@ -82,7 +82,6 @@ ol {
   padding-right: 15px;
 }
 /* STYLE.CSS    ******************************************* */
-
 /* start contact section *******************************/
 .container-fluid-custom {
   background-color: rgb(110, 110, 110);
@@ -119,10 +118,9 @@ ol {
   border-radius: 5px;
 }
 /* end contact section *******************************/
-
 /* start navbar section*******************************/
 .active {
-  border-bottom: 1px solid rgb(194, 97, 62);
+  border-bottom: 3px solid rgb(194, 97, 62);
 }
 nav.icon-decor {
   width: 150px;
@@ -140,9 +138,10 @@ nav.icon-decor {
   text-align: center;
   padding: 14px 16px;
   font-size: 18px;
+  text-decoration: none;
 }
 .nav a:hover {
-  border-bottom: 1px solid rgb(194, 97, 62);
+  border-bottom: 3px solid rgb(194, 97, 62);
 }
 .icon {
   display: none;
