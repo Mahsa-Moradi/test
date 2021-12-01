@@ -1,36 +1,36 @@
 /* start contact section *******************************/
 .container-fluid-custom {
-    background-color: rgb(110, 110, 110);
-    color: white;
-    height: 38px;
-  }
-  
-  .container-fluid-custom .contact {
-    font-size: 15px;
-  }
-  
-  .container-fluid-custom .contact i {
-    color: rgb(230, 178, 144);
-    margin-right: -23px;
-    /* font-size: 20px; */
-    vertical-align: -9px;
-    margin-left: 40px;
-  }
-  
-  .container-fluid-custom .contact span {
-    color: white;
-    vertical-align: -1px;
-    padding-left: 6px;
-  }
-  
-  .container-fluid-custom .social-media {
-    direction: ltr;
-  }
-  .container-fluid-custom .social-media i {
-    padding: 5px;
-  }
-  .container-fluid-custom .social-media a i:hover {
-    background-color: rgb(0, 255, 179);
-    border-radius: 5px;
-  }
-  /* end contact section *******************************/
+  background-color: rgb(110, 110, 110);
+  color: white;
+  height: 58px;
+}
+
+.container-fluid-custom .contact {
+  font-size: 15px;
+}
+
+.container-fluid-custom .contact i {
+  color: rgb(230, 178, 144);
+  margin-right: -23px;
+  /* font-size: 20px; */
+  vertical-align: -19px;
+  margin-left: 40px;
+}
+
+.container-fluid-custom .contact span {
+  color: white;
+  vertical-align: -1px;
+  padding-left: 7px;
+}
+
+.container-fluid-custom .social-media {
+  direction: ltr;
+}
+.container-fluid-custom .social-media i {
+  padding-left: 15px;
+}
+.container-fluid-custom .social-media a i:hover {
+  background-color: rgb(0, 255, 179);
+  border-radius: 5px;
+}
+/* end contact section */
