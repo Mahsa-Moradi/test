@@ -12,6 +12,9 @@ a {
   list-style: none;
   /* decoration:none; */
 }
+figure{
+  position: relative;
+}
 li,
 ul,
 ol {
@@ -43,7 +46,7 @@ ol {
 }
 .p-0 {
   padding: 0 !important;
-  background-color: rgb(0, 255, 179);
+  /* background-color: rgba(75, 219, 171, 0.158); */
 }
 .m-0 {
   margin: 0px;
@@ -117,7 +120,7 @@ ol {
   background-color: rgb(0, 255, 179);
   border-radius: 5px;
 }
-/* end contact section *******************************/
+/* end contact section */
 /* start navbar section*******************************/
 .active {
   border-bottom: 3px solid rgb(194, 97, 62);
@@ -174,7 +177,23 @@ nav.icon-decor {
     text-align: right;
   }
 }
-/* end navbar section*******************************/
+/* end navbar section*/
+
+ /* start header section********************************  */
+
+ .img-header{
+height: 84vh;
+
+ }
+
+
+
+
+
+ /* end header section */
+
+
+
 
 /* Respansive***************************************** */
 
