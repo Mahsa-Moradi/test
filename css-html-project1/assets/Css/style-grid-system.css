@@ -55,7 +55,9 @@ ol {
   width: 100%;
   height: auto;
 }
-
+.absolute{
+ position: absolute; 
+}
 .round-corner {
   border-radius: 5px;
 }
@@ -182,13 +184,43 @@ nav.icon-decor {
  /* start header section********************************  */
 
  .img-header{
-height: 84vh;
+   height: 10px;
+min-height: 86vh;
 
  }
+.overlay{
+  width: 100%;
+  background-color: rgba(5, 4, 4, 0.418);
+  min-height: 86vh ;
+ 
+}
 
-
-
-
+.header-title{
+  color: white;
+  margin:260px ;
+  max-width: 500px;
+}
+.header-title a{
+  background-color:  rgba(252, 91, 33, 0.548);
+  padding: 5px 15px;
+  border-radius: 3px;
+  color: white;
+  margin-top: 20px;
+  float: left;
+  margin-left: 260px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 1200px){
+.header-title{
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  color: black;
+  background-color: yellow;
+  padding: 20px;
+}
+}
 
  /* end header section */
 
