@@ -78,11 +78,12 @@ figure {
 }
 .container-fluid {
   width: 100%;
+  position: relative;
 }
 .container {
   clear: both;
   content: "";
-  max-width: 1200px;
+  max-width: 1850px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -97,6 +98,62 @@ figure {
   padding-right: 15px;
 }
 /* Style********************* */
+/* contact********************************************* */
+.black-color-contact{
+    height: 100px;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid rgba(236, 50, 50, 0.938);
+}
+.logo{
+    width: 198px;
+    height: 68px;
+    float: left;
+    position: absolute;
+    bottom: 16px;
+}
+
+.input-search{
+    background-color: rgba(77, 77, 77, 0.76);
+    color: red;
+    width: 260px;
+    height: 50px;
+    /* float: right; */
+    position: absolute;
+    right: 217px;
+    bottom: 24px;
+    border: 0px;
+    padding: 20px; 
+}
+.search-icon {
+    background-color: rgba(77, 77, 77, 0.301);
+    /* display: inline; */
+    color: white;
+    width: 50px;
+    height: 50px;
+    /* float: right; */
+    padding: 18px;
+    position: absolute;
+    right: 215px;
+    bottom: 24px;
+    border-left: 1px solid rgba(77, 77, 77, 0.76);
+}
+
+.icon-contact{
+    /* position: relative; */
+     float:right;
+}
+.icon-user{
+    position: absolute;
+    bottom:40px;
+    right: 106px;
+    color: white;
+   
+
+}
+
+
+
 
 /* Responsive****************************************** */
 @media (min-width: 480px) {
