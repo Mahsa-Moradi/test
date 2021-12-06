@@ -12,7 +12,7 @@ a {
   list-style: none;
   /* decoration:none; */
 }
-figure{
+figure {
   position: relative;
 }
 li,
@@ -37,12 +37,17 @@ ol {
 .gray-color {
   background-color: gray;
 }
-
+.m-50 {
+  margin: 50px;
+}
 .mb-20 {
   margin-bottom: 20px;
 }
 .mt-20 {
   margin-top: 20px;
+}
+.mt-40 {
+  margin-top: 40px;
 }
 .p-0 {
   padding: 0 !important;
@@ -51,12 +56,19 @@ ol {
 .m-0 {
   margin: 0px;
 }
+.text-center{
+  text-align: center;
+}
 .img-respansive {
   width: 100%;
   height: auto;
+   display: block;/* چون در زمان هاور از تصویر نزنه بیرون*/
 }
-.absolute{
- position: absolute; 
+.relative{
+  position: relative;
+}
+.absolute {
+  position: absolute;
 }
 .round-corner {
   border-radius: 5px;
@@ -148,7 +160,6 @@ nav.icon-decor {
   padding: 14px 16px;
   font-size: 18px;
   text-decoration: none;
-  
 }
 .nav a:hover {
   border-bottom: 3px solid rgb(194, 97, 62);
@@ -157,12 +168,11 @@ nav.icon-decor {
   display: none;
 }
 @media only screen and (max-width: 600px) {
-    .nav a:not(:first-child)/* تمام تگ های aبه جز اولی*/ {   
-    display:none;
-
-}
+  .nav a:not(:first-child)/* تمام تگ های aبه جز اولی*/ {
+    display: none;
+  }
   .nav a.icon {
-    display:block;
+    display: block;
     float: left;
   }
   .nav.responsive {
@@ -181,27 +191,25 @@ nav.icon-decor {
 }
 /* end navbar section*/
 
- /* start header section********************************  */
+/* start header section********************************  */
 
- .img-header{
-   height: 10px;
-min-height: 86vh;
-
- }
-.overlay{
+.img-header {
+  height: 10px;
+  min-height: 86vh;
+}
+.overlay {
   width: 100%;
   background-color: rgba(5, 4, 4, 0.418);
-  min-height: 86vh ;
- 
+  min-height: 86vh; /*چون نمیتونه نسبت عرض رو به ارتفاع تشخیص بده پس باید min-heigh بزاریم*/
 }
 
-.header-title{
+.header-title {
   color: white;
-  margin:260px ;
+  margin: 260px;
   max-width: 500px;
 }
-.header-title a{
-  background-color:  rgba(252, 91, 33, 0.548);
+.header-title a {
+  background-color: rgba(252, 91, 33, 0.548);
   padding: 5px 15px;
   border-radius: 3px;
   color: white;
@@ -211,22 +219,138 @@ min-height: 86vh;
   text-decoration: none;
   letter-spacing: 1px;
 }
-@media only screen and (max-width: 1200px){
-.header-title{
-  width: 100%;
-  margin: 0;
+@media only screen and (max-width: 1200px) {
+  .header-title {
+    width: 100%;
+    margin: 0; /*چون میزنه بیرون متن , باید مارجین 0بدیم */
+    color: rgb(253, 253, 253);
+    background-color: rgba(121, 121, 121, 0.459);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .header-title a {
+    margin-left: 220px;
+  }
+  .overlay,.img-header {
+    /* min-height: 100%; */
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-title h1 {
+    font-size: 20px;
+  }
+  .header-title h2 {
+    font-size: 16px;
+  }
+  .header-title a {
+    font-size: 10px;
+    margin-left: 290px;
+    letter-spacing: 0px;
+    padding: 4px 9px;
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
+    transform: translate(-50%, -90%);
+  }
+}
+/* end header section */
+/* start cours section *********************************/
+.course-wrapper{
+  background: url(../img/background-1747783_1280.jpg);
+}
+.section-titele span{
+display: inline-block;
+color: rgb(0, 0, 0);
+background-attachment: fixed;
+
+}
+.section-titele span::before{
+content: "";
+width: 40px;
+height: 3px;
+background-color: orange;
+position: absolute;
+top:7px ;
+right: -47px;
+}
+.section-titele span::after{
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: orange;
   position: absolute;
-  color: black;
-  background-color: yellow;
-  padding: 20px;
+  top:7px ;
+  right: 89px;
+  
+  }
+  .card{
+    box-shadow: 1px 1px 1px 1px rgb(209, 209, 209);
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+  }
+  .card-body{
+    margin: 10px;
+  }
+.card-body img{
+width: 40px;
+height:40px ;
+font-weight: 900;
+vertical-align: 12px ;
+filter:brightness(0);
+margin-right:5px;
+margin-top:5px;
+
 }
+.card-header .card-overlay{
+  background-color: rgba(0, 0, 0, 0.267);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s  ease-in;
+}
+.card:hover .card-overlay{
+  opacity: 1;
+}
+.card-header .card-overlay p{
+  color: #ffffff;
+top:50% ;
+left: 50%;
+transform: translate(-50%,-50%);
+font-weight: 900;
+font-size: 20px;
 }
 
- /* end header section */
+.card-body .course-title{
+top: 5px;
+ right: 60px;
+ margin-bottom:100px ;
+}
+
+.card-body .course-title a{
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  
+}
+
+.card-body .course-title p{
+  font-size: 14px;
+  color: rgb(138, 138, 136);
+}
 
 
 
 
+
+/* end cours section */
 /* Respansive***************************************** */
 
 @media only screen and (max-width: 600px) {
