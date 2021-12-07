@@ -50,6 +50,12 @@ ol {
 .mt-40 {
   margin-top: 40px;
 }
+.mt-80 {
+  margin-top: 80px;
+}
+.mt-220 {
+  margin-top: 220px;
+}
 .p-0 {
   padding: 0 !important;
   /* background-color: rgba(75, 219, 171, 0.158); */
@@ -236,10 +242,10 @@ nav.icon-decor {
   .header-title a {
     margin-left: 220px;
   }
-  .overlay,
+  /* .overlay,
   .img-header {
-    /* min-height: 100%; */
-  }
+    min-height: 100%;
+  } */
 }
 
 @media only screen and (max-width: 500px) {
@@ -364,13 +370,14 @@ nav.icon-decor {
   background-color: orange;
   position: absolute;
   top: 7px;
-  right: 55px;
+  right: 92px;
 }
 .about-us-left-aside {
   background-color: #f8f8f8d5;
-  min-height: 300px;
+  /* min-height: 300px; */
   padding: 20px;
   margin-top: 162px;
+  /* width: 200px */
 }
 .about-us-left-aside h4 {
   border-bottom: 1px solid rgb(224, 224, 224);
@@ -400,11 +407,18 @@ nav.icon-decor {
 .about-us-left-aside a:hover{
   border-radius:0 10px 0 10px;
 }
+.img-about-us{
+width: 100%;
+height: 90%;
+}
 @media screen and(max-width:992px) {
 .about-us-right-aside{
   display: none;
 }
 }
+/* .about-us-right-aside{
+  background-color: palegreen;
+} */
 
 /* end about us */
 
@@ -417,13 +431,15 @@ nav.icon-decor {
 }
 .teacher-intro{
   background-color: rgba(255, 255, 255, 0.877);
-  top: 95%;
+  /* top: 95%; */
   left: 50%;
   width: 80%;
   transform: translate(-50%,-50%);
   height: 300px;
   box-shadow: 1px 1px 11px #e4e4e4;
   border-radius: 5px 0 5px 0;
+  /* transform: translate(-50%,-50%); */
+  text-align: center;
 
 }
 .teacher-intro h3 {
@@ -431,7 +447,7 @@ nav.icon-decor {
   width: 80%;
   background-color: rgba(255, 166, 0, 0.158);
  text-align: center;
-  color: rgb(41, 41, 41)34, 37, 37);
+  color: rgb(41, 41, 41);
 margin: 110px 58px 0px 0px;
 }
 .h3-teacher{
@@ -464,48 +480,51 @@ color: rgb(36, 9, 0);
 .a-teacher:hover{
   background-color: rgba(255, 166, 0, 0.5);
 }
-@media screen and(min-width: 992px) {
+@media screen and(max-width:600px){
+  .teacher-intro{
+    background-color: rgba(255, 255, 255, 0.877);
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    height: 0px;
+    box-shadow: 1px 1px 11px #e4e4e4;
+    border-radius: 5px 0 5px 0;
+    transform: translate(-50%,-50%);
+  
+  }
+}
+@media screen and(min-width: 991px) {
  .img-teacher{
 
-   /* margin-left: auto;
-   margin-right: auto; */
+   margin-left: auto;
+   margin-right: auto;
  } 
  .teacher-intro h3 {
+   font-size: 16px;
   height: 90px;
  left: 0%;
 margin: 110px 58px 0px 0px;
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* end teacher section */
+/* start static section************************************************** */
+.static-section-wrapper{
+  background-color: rgb(240, 188, 93);
+  height: 300px;
+}
+
+.bb{
+  background-color: palegreen;
+}
+.static-section-wrapper img{
+  text-align: center;
+}
+.img-static{
+  width: 60px;
+  height: 70px;
+}
 
 
 
@@ -514,12 +533,7 @@ margin: 110px 58px 0px 0px;
 
 
 
-
-
-
-
-
-
+/* start static section */
 
 
 
