@@ -429,23 +429,80 @@ nav.icon-decor {
 .teacher-intro h3 {
   height: 40%;
   width: 80%;
-  background-color: rgba(247, 81, 20, 0.089);
+  background-color: rgba(255, 166, 0, 0.158);
  text-align: center;
   color: rgb(41, 41, 41)34, 37, 37);
 margin: 110px 58px 0px 0px;
 }
 .h3-teacher{
-  padding-top: 8%;
-  /* margin: 50%; */
+  padding-top: 5%;
+  /* display: block; */
+  /* margin-bottom: 50px; */
 }
 .teacher-intro span a{
-background-color: rgba(255, 106, 52, 0.219);
+background-color: rgba(255, 166, 0, 0.212);
 text-align: center;
 border-radius: 5px;
 padding: 10px;
 color: rgb(36, 9, 0);
 
 }
+
+.a-teacher{
+  border: 2px solid rgba(255, 166, 0, 0.678);
+  padding: 5px 1px;
+ /* margin:250px; */
+  /* display:block; */
+  text-align: center;
+  width: 70px;
+  font-size: 17px;
+  border-radius: 7px 7px 1px 1px ;
+  transition: 0.5s ease-in;
+  top:65% ;
+  left: 45%;
+}
+.a-teacher:hover{
+  background-color: rgba(255, 166, 0, 0.5);
+}
+@media screen and(min-width: 992px) {
+ .img-teacher{
+
+   /* margin-left: auto;
+   margin-right: auto; */
+ } 
+ .teacher-intro h3 {
+  height: 90px;
+ left: 0%;
+margin: 110px 58px 0px 0px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* end teacher section */
