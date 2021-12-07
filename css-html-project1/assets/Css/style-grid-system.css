@@ -56,15 +56,15 @@ ol {
 .m-0 {
   margin: 0px;
 }
-.text-center{
+.text-center {
   text-align: center;
 }
 .img-respansive {
   width: 100%;
   height: auto;
-   display: block;/* چون در زمان هاور از تصویر نزنه بیرون*/
+  display: block; /* چون در زمان هاور از تصویر نزنه بیرون*/
 }
-.relative{
+.relative {
   position: relative;
 }
 .absolute {
@@ -236,7 +236,8 @@ nav.icon-decor {
   .header-title a {
     margin-left: 220px;
   }
-  .overlay,.img-header {
+  .overlay,
+  .img-header {
     /* min-height: 100%; */
   }
 }
@@ -261,96 +262,213 @@ nav.icon-decor {
 }
 /* end header section */
 /* start cours section *********************************/
-.course-wrapper{
+.course-wrapper {
   background: url(../img/background-1747783_1280.jpg);
 }
-.section-titele span{
-display: inline-block;
-color: rgb(0, 0, 0);
-background-attachment: fixed;
-
+.section-titele span {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  background-attachment: fixed;
 }
-.section-titele span::before{
-content: "";
-width: 40px;
-height: 3px;
-background-color: orange;
-position: absolute;
-top:7px ;
-right: -47px;
-}
-.section-titele span::after{
+.section-titele span::before {
   content: "";
   width: 40px;
   height: 3px;
   background-color: orange;
   position: absolute;
-  top:7px ;
-  right: 89px;
-  
-  }
-  .card{
-    box-shadow: 1px 1px 1px 1px rgb(209, 209, 209);
-    cursor: pointer;
-    background-color: rgb(255, 255, 255);
-  }
-  .card-body{
-    margin: 10px;
-  }
-.card-body img{
-width: 40px;
-height:40px ;
-font-weight: 900;
-vertical-align: 12px ;
-filter:brightness(0);
-margin-right:5px;
-margin-top:5px;
-
+  top: 7px;
+  right: -47px;
 }
-.card-header .card-overlay{
+.section-titele span::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: orange;
+  position: absolute;
+  top: 7px;
+  right: 89px;
+}
+.card {
+  box-shadow: 1px 1px 1px 1px rgb(209, 209, 209);
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+.card-body {
+  margin: 10px;
+}
+.card-body img {
+  width: 40px;
+  height: 40px;
+  font-weight: 900;
+  vertical-align: 12px;
+  filter: brightness(0);
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.card-header .card-overlay {
   background-color: rgba(0, 0, 0, 0.267);
   width: 100%;
   height: 100%;
   top: 0;
   right: 0;
   opacity: 0;
-  transition: 0.5s  ease-in;
+  transition: 0.5s ease-in;
 }
-.card:hover .card-overlay{
+.card:hover .card-overlay {
   opacity: 1;
 }
-.card-header .card-overlay p{
+.card-header .card-overlay p {
   color: #ffffff;
-top:50% ;
-left: 50%;
-transform: translate(-50%,-50%);
-font-weight: 900;
-font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-size: 20px;
 }
 
-.card-body .course-title{
-top: 5px;
- right: 60px;
- margin-bottom:100px ;
+.card-body .course-title {
+  top: 5px;
+  right: 60px;
+  margin-bottom: 100px;
 }
 
-.card-body .course-title a{
+.card-body .course-title a {
   font-size: 16px;
   text-decoration: none;
   font-weight: 600;
-  
 }
 
-.card-body .course-title p{
+.card-body .course-title p {
   font-size: 14px;
   color: rgb(138, 138, 136);
 }
-
-
-
-
-
 /* end cours section */
+/* start  about us******************************* */
+.section-titele span {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  background-attachment: fixed;
+}
+.section-titele span::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: orange;
+  position: absolute;
+  top: 7px;
+  right: -53px;
+}
+.section-titele span::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: orange;
+  position: absolute;
+  top: 7px;
+  right: 55px;
+}
+.about-us-left-aside {
+  background-color: #f8f8f8d5;
+  min-height: 300px;
+  padding: 20px;
+  margin-top: 162px;
+}
+.about-us-left-aside h4 {
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding-bottom: 18px;
+  font-size: 20px;
+  color: rgb(58, 57, 57);
+}
+.about-us-left-aside p {
+  padding: 20px;
+  line-height: 32px;
+  font-size: 17px;
+  color: rgb(85, 84, 84);
+}
+
+.about-us-left-aside a {
+  text-decoration: none;
+  background-color: rgba(252, 91, 33, 0.897);
+  padding: 5px 15px;
+  border-radius: 3px;
+  color: white;
+  margin-top: 0px;
+  float: left;
+  margin-left: 30px;
+  letter-spacing: 1px;
+  font-size: 14px; 
+  transition: 0.5s ease-in ;
+}
+.about-us-left-aside a:hover{
+  border-radius:0 10px 0 10px;
+}
+@media screen and(max-width:992px) {
+.about-us-right-aside{
+  display: none;
+}
+}
+
+/* end about us */
+
+/* start teacher section******************************* */
+
+.teacher-section-wrapper{
+  background-image: url(../img/background-1747783_1280.jpg) ;
+  /* height: 300px; */
+  opacity: 85%;
+}
+.teacher-intro{
+  background-color: rgba(255, 255, 255, 0.877);
+  top: 95%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%,-50%);
+  height: 300px;
+  box-shadow: 1px 1px 11px #e4e4e4;
+  border-radius: 5px 0 5px 0;
+
+}
+.teacher-intro h3 {
+  height: 40%;
+  width: 80%;
+  background-color: rgba(247, 81, 20, 0.089);
+ text-align: center;
+  color: rgb(41, 41, 41)34, 37, 37);
+margin: 110px 58px 0px 0px;
+}
+.h3-teacher{
+  padding-top: 8%;
+  /* margin: 50%; */
+}
+.teacher-intro span a{
+background-color: rgba(255, 106, 52, 0.219);
+text-decoration:none;
+text-align: center;
+border-radius: 5px;
+padding: 10px;
+color: rgb(36, 9, 0);
+
+}
+
+
+/* end teacher section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Respansive***************************************** */
 
 @media only screen and (max-width: 600px) {
