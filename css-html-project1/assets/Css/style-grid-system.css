@@ -10,6 +10,7 @@ body {
 }
 a {
   list-style: none;
+  text-decoration: none;
   /* decoration:none; */
 }
 figure {
@@ -216,7 +217,6 @@ nav.icon-decor {
   margin-top: 20px;
   float: left;
   margin-left: 260px;
-  text-decoration: none;
   letter-spacing: 1px;
 }
 @media only screen and (max-width: 1200px) {
@@ -334,7 +334,6 @@ nav.icon-decor {
 
 .card-body .course-title a {
   font-size: 16px;
-  text-decoration: none;
   font-weight: 600;
 }
 
@@ -387,7 +386,6 @@ nav.icon-decor {
 }
 
 .about-us-left-aside a {
-  text-decoration: none;
   background-color: rgba(252, 91, 33, 0.897);
   padding: 5px 15px;
   border-radius: 3px;
@@ -442,7 +440,6 @@ margin: 110px 58px 0px 0px;
 }
 .teacher-intro span a{
 background-color: rgba(255, 106, 52, 0.219);
-text-decoration:none;
 text-align: center;
 border-radius: 5px;
 padding: 10px;
