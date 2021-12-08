@@ -518,7 +518,7 @@ margin: 110px 58px 0px 0px;
 /* start static section************************************************** */
 .static-section-wrapper{
   background-color: rgb(240, 188, 93);
-  height: 250px;
+  height: auto;
 }
 
 
@@ -591,8 +591,12 @@ font-size: 19px;
 .card-body .post-date div:last-child{
   background-color: rgb(161, 161, 161);
 }
-.topic-wrapper .card-footer{
+/* .topic-wrapper .card-footer{
 text-align: center;
+} */
+.topic-wrapper .card-footer ul{
+  text-align: center;
+  border-top: 1px solid #f9f6f6;
 }
 .topic-wrapper .card-footer ul li{
   display: inline-block;
