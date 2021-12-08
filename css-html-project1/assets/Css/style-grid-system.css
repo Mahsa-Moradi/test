@@ -428,6 +428,12 @@ height: 90%;
   background-image: url(../img/background-1747783_1280.jpg) ;
   /* height: 300px; */
   opacity: 85%;
+  /* filter: blur(2px); */
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+.imgg-teacher{
+  filter: blur(0.2px);
 }
 .teacher-intro{
   background-color: rgba(255, 255, 255, 0.877);
@@ -512,19 +518,47 @@ margin: 110px 58px 0px 0px;
 /* start static section************************************************** */
 .static-section-wrapper{
   background-color: rgb(240, 188, 93);
-  height: 300px;
+  height: 250px;
 }
 
-.bb{
-  background-color: palegreen;
-}
+
 .static-section-wrapper img{
-  text-align: center;
+  /* text-align: center; */
+  margin-top: 20px;
+}
+.static-section-wrapper .count{
+color: white;
+font-size: 25px;
+margin: 25px;
+}
+.static-section-wrapper .count-title{
+  margin-top: 20px;
+  font-size: 20px;
 }
 .img-static{
   width: 60px;
   height: 70px;
 }
+/* end static section */
+/* start topic section******************************* */
+
+.topic-section-wrapper{
+  background-image: url(../img/salad-2068217_1920.jpg);
+  height: 900px;
+  /* opacity: 89%; agar bekhaim bayad der photoshop bahash kar konim*/
+  /* filter: blur(4px); */
+  background-position:center ;
+}
+.topic-section-wrapper .card-header {
+  overflow: hidden;
+}
+.topic-wrapper .card-header img{
+  transition: .5s ease;
+}
+.topic-wrapper:hover img{
+  transform: scale(1.2) rotate(10deg);
+  
+}
 
 
 
@@ -533,10 +567,12 @@ margin: 110px 58px 0px 0px;
 
 
 
-/* start static section */
 
 
 
+
+
+/* end topic section */
 /* Respansive***************************************** */
 
 @media only screen and (max-width: 600px) {
