@@ -543,7 +543,7 @@ margin: 25px;
 /* start topic section******************************* */
 
 .topic-section-wrapper{
-  background-image: url(../img/salad-2068217_1920.jpg);
+  background-image: url(../img/background-5574027_1280.png);
   height: 900px;
   /* opacity: 89%; agar bekhaim bayad der photoshop bahash kar konim*/
   /* filter: blur(4px); */
@@ -559,6 +559,62 @@ margin: 25px;
   transform: scale(1.2) rotate(10deg);
   
 }
+.topic-wrapper .card{
+  box-shadow: 1px 5px 15px 2px rgba(68, 103, 242, 0.13)!important;
+}
+.topic-wrapper .card-body{
+  margin: 42px 50px 32px 10px;
+}
+.topic-wrapper .card-body a{
+font-size: 20px;
+padding: 5px;
+}
+.topic-wrapper .card-body p{
+  margin-top: 15px;
+  font-size: 16px;
+  color: #8a8a8a;
+  line-height: 22px;
+}
+
+.card-body .post-date{
+font-size: 19px;
+  top: -70px;
+  right: -30px;
+  text-align: center;
+  color: #efefef;
+  width: 38px;
+  
+}
+.card-body .post-date div:first-child{
+  background-color: rgb(255, 153, 0);
+}
+.card-body .post-date div:last-child{
+  background-color: rgb(161, 161, 161);
+}
+.topic-wrapper .card-footer{
+text-align: center;
+}
+.topic-wrapper .card-footer ul li{
+  display: inline-block;
+
+}
+.topic-wrapper .card-footer ul li i, .topic-wrapper .card-footer ul li  span{
+  color: #d4d3d3;
+   font-size: 16px;
+margin: 0px 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
