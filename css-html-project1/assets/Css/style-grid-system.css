@@ -604,8 +604,34 @@ nav.icon-decor {
   margin: 11px 6px;
   
 }
-
-
+/* start fag section******************************* */
+.faq-section-wrapper span {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  background-attachment: fixed;
+}
+.faq-section-wrapper span::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: orange;
+  position: absolute;
+  top: 7px;
+  right: -53px;
+}
+.faq-section-wrapper span::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: orange;
+  position: absolute;
+  top: 7px;
+  right: 82px;
+}
+.faq-section-wrapper{
+  background-image: url();
+  min-height: 500px;
+}
 
 
 
