@@ -609,6 +609,7 @@ nav.icon-decor {
   display: inline-block;
   color: rgb(0, 0, 0);
   background-attachment: fixed;
+  /* margin-top: 20px; */
 }
 .faq-section-wrapper span::before {
   content: "";
@@ -628,18 +629,36 @@ nav.icon-decor {
   top: 7px;
   right: 82px;
 }
-.faq-section-wrapper{
-  background-image: url();
+.faq-section-bg{
+  background-image: url(../img/transparent-1655599_1920.png);
   min-height: 500px;
 }
 
+.faq-section-wrapper .faq-right-side {
+  box-shadow: 1px 5px 15px 2px rgba(68, 103, 242, 0.116);
+  height: auto;
+  background-color: white; 
+  padding: 40px;
+}
 
+.faq-section-wrapper .faq-right-side h6{
+  font-size: 16px;
+ 
+}
 
+.faq-section-wrapper .faq-right-side h6 i{
+  font-size: 24px;
+  margin-left: 16px;
+  vertical-align: -px;
+  color: orange;
+  
+}
 
-
-
-
-
+.faq-section-wrapper .faq-right-side p{
+  font-size: 14px;
+  color: #ababab;
+  margin: 10px 47px 0px 0px;
+}
 
 
 
