@@ -713,8 +713,9 @@ padding: 2px 0 0 0;
 }
 /* zamanike input man checked bod kenar input belafaseleh badesh dastor {} ra reayat kon *//*AKARDIV MENU*/
 .faq-section-wrapper .faq-left-side input:checked ~.tab-content{
-  height: 50px;
+  height: 70px;
   padding: 10px;
+  overflow-y: scroll;
 }
 
 .faq-section-wrapper .faq-left-side input:checked + .tab-label::after{
@@ -725,30 +726,14 @@ padding: 2px 0 0 0;
   height: 50px;
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* end topic section */
+/* start footer**************************************** */
+footer-section-wrapper{
+  
+}
+
+
+/* end footer */
 /* Respansive***************************************** */
 
 @media only screen and (max-width: 600px) {
