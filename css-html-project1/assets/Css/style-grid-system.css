@@ -748,12 +748,22 @@ padding: 2px 0 0 0;
   color: rgb(253, 124, 38);
    font-size: 38px;
   transform: rotate(-18deg);
+  padding-left: 20px;
 }
 .footer-section-wrapper .desc p{
   font-size: 16px;
   /* margin-top: 10px; */
   padding-top: 10px;
   color: #c2c2c2;
+}
+.footer-section-wrapper .desc a {
+  color: white;
+  font-size: 15px;
+  /* margin-left: 20px; */
+  /* padding-left: 20px; */
+}
+.footer-section-wrapper .desc i{
+  padding-left: 20px;
 }
 /* end footer */
 /* Respansive***************************************** */
