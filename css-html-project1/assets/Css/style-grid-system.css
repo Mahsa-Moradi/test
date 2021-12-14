@@ -728,11 +728,33 @@ padding: 2px 0 0 0;
 }
 /* end topic section */
 /* start footer**************************************** */
-footer-section-wrapper{
-  
+.footer-section-wrapper{
+  background-color: rgb(78, 74, 74);
+  min-height: 500px;
 }
 
-
+.footer-section-wrapper .copy-right{
+  color: white;
+  text-align: center;
+  border: 1px dashed orangered;
+  padding: 10px 0px;
+ 
+}
+.footer-section-wrapper .desc{
+  color: rgb(255, 255, 255);
+ padding: 14px;
+}
+.footer-section-wrapper .desc a i{
+  color: rgb(253, 124, 38);
+   font-size: 38px;
+  transform: rotate(-18deg);
+}
+.footer-section-wrapper .desc p{
+  font-size: 16px;
+  /* margin-top: 10px; */
+  padding-top: 10px;
+  color: #c2c2c2;
+}
 /* end footer */
 /* Respansive***************************************** */
 
