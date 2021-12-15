@@ -692,7 +692,7 @@ background-color: rgb(243, 167, 26);
 }
 
 .faq-section-wrapper .faq-left-side .tab-label::after{
-  content: '\276f';/* hegza ICON felesh*/
+  content: "\276f";/* hegza ICON felesh*/
   /* width: 16px;
   height: 16px; */
   text-align: center;
@@ -734,7 +734,7 @@ padding: 2px 0 0 0;
 }
 
 .footer-section-wrapper .copy-right{
-  color: white;
+  color: #d8d5d5a6;
   text-align: center;
   border: 1px dashed orangered;
   padding: 10px 0px;
@@ -766,7 +766,7 @@ padding: 2px 0 0 0;
   border-bottom: 1px solid rgba(189, 194, 219, 0.589);
   
 }
-.footer-section-wrapper .service{
+.footer-section-wrapper .service {
   color: #c2c2c2;
   padding:2px 14px ;
 }
@@ -779,16 +779,28 @@ padding: 2px 0 0 0;
   font-size: 16px;
   padding-top: 0px;
 }
-.footer-section-wrapper .service ul li{
+.footer-section-wrapper .service ul li {
   /* line-height: 20px; */
   font-size: 16px;
 margin-bottom: 12px;
-/* padding-right: 10px; */
-/* margin-right: 50px; */
+transition: .8s ease-in-out;
+display: inline-block;
 }
-
-
-
+.footer-section-wrapper .service ul li a{
+  color: #c2c2c2;
+}
+.footer-section-wrapper .service ul li :hover{
+  color: rgb(243, 224, 55);
+  padding: 10px;
+  margin-bottom:10px ;
+  transition: .5s ease-in-out;
+}
+.footer-section-wrapper .service ul li a::before{
+  content: "\276f";
+  /* margin: 10px; */
+  vertical-align: -1px;
+  padding-left: 5px ;
+}
 
 
 
