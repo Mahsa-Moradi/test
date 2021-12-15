@@ -118,7 +118,7 @@ ol {
 }
 
 .container-fluid-custom .contact i {
-  color: rgb(230, 178, 144);
+  color: rgb(247, 157, 53);
   margin-right: -23px;
   /* font-size: 20px; */
   vertical-align: -19px;
@@ -138,13 +138,17 @@ ol {
   padding-left: 15px;
 }
 .container-fluid-custom .social-media a i:hover {
-  background-color: rgb(0, 255, 179);
+  background-color: rgba(71, 71, 69, 0.733);
   border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  padding:10px ;
 }
 /* end contact section */
 /* start navbar section*******************************/
 .active {
-  border-bottom: 3px solid rgb(194, 97, 62);
+  border-bottom: 3px solid rgb(247, 157, 53);
+  ;
 }
 nav.icon-decor {
   width: 150px;
@@ -152,7 +156,7 @@ nav.icon-decor {
 }
 
 .nav {
-  background-color: rgba(255, 255, 255, 0.63);
+  background-color: rgba(255, 255, 255, 0.616);
   /* overflow: hidden; */
   /* display:inline; */
   box-shadow: 1px 2px 1px #efefef;
@@ -169,7 +173,7 @@ nav.icon-decor {
   text-decoration: none;
 }
 .nav a:hover {
-  border-bottom: 3px solid rgb(194, 97, 62);
+  border-bottom: 3px solid rgb(247, 157, 53);
 }
 .icon {
   display: none;
@@ -216,7 +220,7 @@ nav.icon-decor {
   max-width: 500px;
 }
 .header-title a {
-  background-color: rgba(252, 91, 33, 0.548);
+  background-color: rgb(247, 140, 19);
   padding: 5px 15px;
   border-radius: 3px;
   color: white;
@@ -393,7 +397,7 @@ nav.icon-decor {
 }
 
 .about-us-left-aside a {
-  background-color: rgba(252, 91, 33, 0.897);
+  background-color: rgb(247, 157, 53);
   padding: 5px 15px;
   border-radius: 3px;
   color: white;
@@ -729,7 +733,7 @@ padding: 2px 0 0 0;
 /* end topic section */
 /* start footer**************************************** */
 .footer-section-wrapper{
-  background-color: rgb(78, 74, 74);
+  background-color: rgb(110, 110, 110);
   min-height: 500px;
 }
 
@@ -759,53 +763,52 @@ padding: 2px 0 0 0;
   line-height: 25px;
 }
 .footer-section-wrapper .desc a {
-  color: white;
+  color: rgb(233, 233, 233);
   font-size: 16px;
   display: block;
   padding-bottom: 3px;
   border-bottom: 1px solid rgba(189, 194, 219, 0.589);
   
 }
-.footer-section-wrapper .service {
+.footer-section-wrapper .service, .contact-us {
   color: #c2c2c2;
   padding:2px 14px ;
 }
-.footer-section-wrapper .service h6{
+.footer-section-wrapper .service h6, .contact-us h6{
   font-size: 16px;
   padding-bottom: 11px;
   border-bottom: 1px solid rgba(189, 194, 219, 0.589);
+  color: rgb(233, 233, 233);
 }
-.footer-section-wrapper .service ul {
+/* .footer-section-wrapper .service ul {
   font-size: 16px;
   padding-top: 0px;
-}
-.footer-section-wrapper .service ul li {
+} */
+.footer-section-wrapper .service ul li, .contact-us ul li {
   /* line-height: 20px; */
   font-size: 16px;
 margin-bottom: 12px;
 transition: .8s ease-in-out;
 display: inline-block;
 }
-.footer-section-wrapper .service ul li a{
+.footer-section-wrapper .service ul li a, .contact-us ul li a{
   color: #c2c2c2;
 }
-.footer-section-wrapper .service ul li :hover{
+.footer-section-wrapper .service ul li :hover, .contact-us ul li a:hover{
   color: rgb(243, 224, 55);
   padding: 10px;
   margin-bottom:10px ;
   transition: .5s ease-in-out;
 }
-.footer-section-wrapper .service ul li a::before{
+.footer-section-wrapper .service ul li a::before, .contact-us li a::before{
   content: "\276f";
   /* margin: 10px; */
   vertical-align: -1px;
   padding-left: 5px ;
 }
-
-
-
-
-
+.footer-section-wrapper .contact-us ul{
+  display: inline-block ;
+}
 
 
 
