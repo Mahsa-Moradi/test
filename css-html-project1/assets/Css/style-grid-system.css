@@ -800,7 +800,7 @@ display: inline-block;
   padding: 6px;
 }
 .footer-section-wrapper .service ul li :hover, .contact-us ul li a:hover{
-  color: rgb(243, 224, 55);
+  color: rgb(255, 169, 8);
   padding: 10px;
   /* margin-bottom:10px ; */
   transition: .5s ease-in-out;
@@ -816,10 +816,32 @@ display: inline-block;
 }
 
 
-
-
-
-
+.form-footer{
+  position: relative;
+  margin-top: 30px;
+}
+.text-footer{
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  border: none;
+  height: 30px;
+  background-color: rgb(248, 241, 228);
+}
+.submit-footer{
+  position: absolute;
+  top: 0px;
+  left: 42px;
+  color: rgb(73, 77, 77);
+  background-color: rgb(255, 169, 8);
+  border: none;
+  height: 30px;
+}
+.submit-footer:hover{
+  color: rgb(255, 169, 8);
+  font-size: 15px;
+  top: 0px;
+}
 
 
 
