@@ -147,8 +147,8 @@ ol {
 /* end contact section */
 /* start navbar section*******************************/
 .active {
-  border-bottom: 3px solid rgb(247, 157, 53);
-  ;
+  border-bottom: 4px solid rgb(247, 157, 53);
+
 }
 nav.icon-decor {
   width: 150px;
@@ -156,14 +156,22 @@ nav.icon-decor {
 }
 
 .nav {
-  background-color: rgba(255, 255, 255, 0.616);
+  background-color: rgb(255, 255, 255);
   /* overflow: hidden; */
   /* display:inline; */
-  box-shadow: 1px 2px 1px #efefef;
+  box-shadow: 1px 2px 1px #dddddd;
   position: sticky;
   top: 20px;
+  /* margin: 20px; */
 }
-
+.nav .icon-decor{
+  color:rgb(248, 159, 56) ;
+  font-size: 30px;/* width: 50px;
+  height: 60px; */
+}
+.nav .icon-decor:hover {
+  border-bottom: 4px solid rgb(255, 255, 255);
+}
 .nav a {
   float: right;
   color: rgb(61, 67, 73);
@@ -173,7 +181,7 @@ nav.icon-decor {
   text-decoration: none;
 }
 .nav a:hover {
-  border-bottom: 3px solid rgb(247, 157, 53);
+  border-bottom: 4px solid rgb(247, 157, 53);
 }
 .icon {
   display: none;
@@ -207,6 +215,7 @@ nav.icon-decor {
 .img-header {
   height: 10px;
   min-height: 86vh;
+margin: -13px;
 }
 .overlay {
   width: 100%;
@@ -215,7 +224,7 @@ nav.icon-decor {
 }
 
 .header-title {
-  color: white;
+  color: rgb(236, 233, 233);
   margin: 260px;
   max-width: 500px;
 }
@@ -302,6 +311,7 @@ nav.icon-decor {
   box-shadow: 1px 1px 1px 1px rgb(209, 209, 209);
   cursor: pointer;
   background-color: rgb(255, 255, 255);
+  border-radius: 9px;
 }
 .card-body {
   margin: 10px;
