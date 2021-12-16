@@ -766,12 +766,12 @@ nav.icon-decor {
   border-bottom: 1px solid rgba(189, 194, 219, 0.589);
 }
 .footer-section-wrapper .service,
-.contact-us {
+.contact-us, .social {
   color: #c2c2c2;
   padding: 2px 14px;
 }
 .footer-section-wrapper .service h6,
-.contact-us h6 {
+.contact-us h6 ,.social h6 {
   font-size: 16px;
   padding-bottom: 11px;
   border-bottom: 1px solid rgba(189, 194, 219, 0.589);
@@ -782,12 +782,13 @@ nav.icon-decor {
   padding-top: 0px;
 } */
 .footer-section-wrapper .service ul li,
-.contact-us ul li {
+.contact-us ul li, .social ul li {
   /* line-height: 20px; */
   font-size: 16px;
   margin-bottom: 12px;
   transition: 0.8s ease-in-out;
   display: inline-block;
+  
 }
 .footer-section-wrapper .service ul li a,
 .contact-us ul li a {
@@ -810,6 +811,7 @@ nav.icon-decor {
 .footer-section-wrapper .contact-us ul {
   text-align: center;
 }
+
 
 .footer-section-wrapper .form-footer {
   margin-top: 30px;
@@ -851,6 +853,36 @@ nav.icon-decor {
   border: none;
   cursor: pointer;
 }
+.footer-section-wrapper .social ul li i{
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  transition: 0.8s ease-in-out;
+  /* display: inline-block; */
+  
+}
+.footer-section-wrapper  .social ul li:hover {
+  color: rgb(255, 169, 8);
+  padding-right: 10px;
+  /* margin-bottom:10px ; */
+  transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer-section-wrapper .copy-right {
   color: #d8d5d5a6;
