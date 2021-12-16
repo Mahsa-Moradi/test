@@ -383,14 +383,20 @@ nav.icon-decor {
   background-color: orange;
   position: absolute;
   top: 7px;
-  right: 92px;
+  right: 72px;
 }
+.img-about-us {
+  width: 38%;
+  height:auto;
+}
+
 .about-us-left-aside {
-  background-color: #f8f8f8d5;
-  /* min-height: 300px; */
+  float: left;
+  background-color: #e6e6e6d5;
+  min-height: 300px;
   padding: 20px;
   margin-top: 162px;
-  /* width: 200px */
+  width: 200px
 }
 .about-us-left-aside h4 {
   border-bottom: 1px solid rgb(224, 224, 224);
@@ -403,6 +409,7 @@ nav.icon-decor {
   line-height: 32px;
   font-size: 17px;
   color: rgb(85, 84, 84);
+  text-align: right;
 }
 
 .about-us-left-aside a {
@@ -421,10 +428,18 @@ nav.icon-decor {
   border-radius: 0 10px 0 10px;
 }
 .img-about-us {
-  width: 100%;
-  height: 90%;
+  width: 38%;
+  height:auto;
 }
-@media screen and(max-width:992px) {
+.about-us-right-aside{
+  background-color: turquoise;
+}
+@media screen and(max-width:600px) {
+  .about-us-right-aside {
+    display: none;
+  }
+}
+@media screen and(min-width:600px) {
   .about-us-right-aside {
     display: none;
   }
@@ -552,7 +567,7 @@ nav.icon-decor {
 
 .topic-section-wrapper {
   background-image: url(../img/flowers-5587267_1920.png);
-  height: 900px;
+  height: auto;
   /* opacity: 89%; agar bekhaim bayad der photoshop bahash kar konim*/
   /* filter: blur(4px); */
   background-position: center;
@@ -859,7 +874,7 @@ nav.icon-decor {
   padding-left: 10px;
   transition: 0.8s ease-in-out;
   /* display: inline-block; */
-  
+  vertical-align: -3px;
 }
 .footer-section-wrapper  .social ul li:hover {
   color: rgb(255, 169, 8);
@@ -867,8 +882,20 @@ nav.icon-decor {
   /* margin-bottom:10px ; */
   transition: 0.5s ease-in-out;
 }
-
-
+@media screen and (max-width: 600px){
+  .footer-section-wrapper  .social{
+    margin: 40px 0px;
+  }
+}
+@media screen and (min-width: 600px){
+  .footer-section-wrapper  .social{
+    margin: 40px 0px;
+  }
+  .footer-section-wrapper  .social ul li{
+    font-size: 14px;
+  padding: 10px;
+  }
+}
 
 
 
