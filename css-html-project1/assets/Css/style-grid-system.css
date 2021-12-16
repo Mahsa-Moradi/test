@@ -385,9 +385,8 @@ nav.icon-decor {
   top: 7px;
   right: 72px;
 }
-.img-about-us {
-  width: 38%;
-  height:auto;
+.about-us-right-aside{
+  background-color: white;
 }
 
 .about-us-left-aside {
