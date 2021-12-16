@@ -747,13 +747,7 @@ padding: 2px 0 0 0;
   min-height: 500px;
 }
 
-.footer-section-wrapper .copy-right{
-  color: #d8d5d5a6;
-  text-align: center;
-  border: 1px dashed orangered;
-  padding: 10px 0px;
- 
-}
+
 .footer-section-wrapper .desc{
   color: rgb(255, 255, 255);
  padding-top: 27px;
@@ -803,26 +797,57 @@ display: inline-block;
 }
 .footer-section-wrapper .service ul li a, .contact-us ul li a{
   color: #c2c2c2;
+  padding: 6px;
 }
 .footer-section-wrapper .service ul li :hover, .contact-us ul li a:hover{
   color: rgb(243, 224, 55);
   padding: 10px;
-  margin-bottom:10px ;
+  /* margin-bottom:10px ; */
   transition: .5s ease-in-out;
 }
-.footer-section-wrapper .service ul li a::before, .contact-us li a::before{
+.footer-section-wrapper .service ul li a::before{
   content: "\276f";
   /* margin: 10px; */
   vertical-align: -1px;
   padding-left: 5px ;
 }
 .footer-section-wrapper .contact-us ul{
-  display: inline-block ;
+ text-align: center ;
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-section-wrapper .copy-right{
+  color: #d8d5d5a6;
+  text-align: center;
+  border: 1px dashed rgb(255, 145, 0);
+  padding: 10px 0px;
+ 
+}
 /* end footer */
 
 
