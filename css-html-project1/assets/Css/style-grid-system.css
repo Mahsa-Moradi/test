@@ -142,13 +142,12 @@ ol {
   border-radius: 5px;
   width: 30px;
   height: 30px;
-  padding:10px ;
+  padding: 10px;
 }
 /* end contact section */
 /* start navbar section*******************************/
 .active {
   border-bottom: 4px solid rgb(247, 157, 53);
-
 }
 nav.icon-decor {
   width: 150px;
@@ -164,9 +163,9 @@ nav.icon-decor {
   top: 20px;
   /* margin: 20px; */
 }
-.nav .icon-decor{
-  color:rgb(248, 159, 56) ;
-  font-size: 30px;/* width: 50px;
+.nav .icon-decor {
+  color: rgb(248, 159, 56);
+  font-size: 30px; /* width: 50px;
   height: 60px; */
 }
 .nav .icon-decor:hover {
@@ -215,7 +214,7 @@ nav.icon-decor {
 .img-header {
   height: 10px;
   min-height: 86vh;
-margin: -13px;
+  margin: -13px;
 }
 .overlay {
   width: 100%;
@@ -605,18 +604,17 @@ margin: -13px;
   color: rgb(139, 139, 139);
   line-height: 30px;
 }
-.topic-wrapper .card-footer ul{
-   border-top: 1px solid rgba(170, 170, 170, 0.116);
-   text-align: center ;
+.topic-wrapper .card-footer ul {
+  border-top: 1px solid rgba(170, 170, 170, 0.116);
+  text-align: center;
 }
 .topic-wrapper .card-footer ul li {
   display: inline-block;
- 
 }
-.topic-wrapper .card-footer ul li i ,.topic-wrapper .card-footer ul li span {
+.topic-wrapper .card-footer ul li i,
+.topic-wrapper .card-footer ul li span {
   color: rgb(193, 194, 194);
   margin: 11px 6px;
-  
 }
 /* start fag section******************************* */
 .faq-section-wrapper span {
@@ -643,7 +641,7 @@ margin: -13px;
   top: 7px;
   right: 82px;
 }
-.faq-section-bg{
+.faq-section-bg {
   background-image: url(../img/transparent-1655599_1920.png);
   min-height: 500px;
 }
@@ -651,72 +649,67 @@ margin: -13px;
 .faq-section-wrapper .faq-right-side {
   box-shadow: 10px 15px 15px 2px rgb(233, 233, 235);
   /* height: auto; */
-  background-color: white; 
+  background-color: white;
   padding: 40px;
   margin-top: 26px;
   /* border-radius: 4px; */
 }
 
-.faq-section-wrapper .faq-right-side h6{
+.faq-section-wrapper .faq-right-side h6 {
   font-size: 16px;
- 
 }
 
-.faq-section-wrapper .faq-right-side h6 i{
+.faq-section-wrapper .faq-right-side h6 i {
   font-size: 24px;
   margin-left: 16px;
   vertical-align: -5px;
   color: orange;
-  
 }
 
-.faq-section-wrapper .faq-right-side p{
+.faq-section-wrapper .faq-right-side p {
   font-size: 14px;
   color: #ababab;
   margin: 10px 47px 0px 0px;
 }
 .faq-section-wrapper .faq-left-side {
   margin-top: 26px;
-
 }
-.faq-section-wrapper .faq-left-side .tabs{
+.faq-section-wrapper .faq-left-side .tabs {
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0px 1px 15px 2px rgba(145, 143, 143, 0.596) !important;
-background-color: rgb(243, 167, 26);
-/*display: inline;*/
+  background-color: rgb(243, 167, 26);
+  /*display: inline;*/
 }
-.faq-section-wrapper .faq-left-side .tab{
+.faq-section-wrapper .faq-left-side .tab {
   color: rgb(255, 255, 255);
   overflow: hidden;
 }
-.faq-section-wrapper .faq-left-side .tab-label{
+.faq-section-wrapper .faq-left-side .tab-label {
   padding: 11.5px;
-  background-color:rgb(255, 169, 8);
+  background-color: rgb(255, 169, 8);
   width: 100%;
   cursor: pointer;
- display: block;  /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
- font-size: 18px;
- transition: 0.5s ease;
+  display: block; /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+  font-size: 18px;
+  transition: 0.5s ease;
 }
 
-.faq-section-wrapper .faq-left-side .tab-label:hover{
+.faq-section-wrapper .faq-left-side .tab-label:hover {
   background-color: rgb(236, 130, 9);
-  
 }
 
-.faq-section-wrapper .faq-left-side .tab-label::after{
-  content: "\276f";/* hegza ICON felesh*/
+.faq-section-wrapper .faq-left-side .tab-label::after {
+  content: "\276f"; /* hegza ICON felesh*/
   /* width: 16px;
   height: 16px; */
   text-align: center;
-transition: 0.4s ease-in;
-/* background-color: black; */
-float: left;
-padding: 2px 0 0 0;
-
+  transition: 0.4s ease-in;
+  /* background-color: black; */
+  float: left;
+  padding: 2px 0 0 0;
 }
-.faq-section-wrapper .faq-left-side .tab-content{
+.faq-section-wrapper .faq-left-side .tab-content {
   height: 0;
   background-color: rgba(207, 103, 18, 0.055);
   transition: 0.5s ease;
@@ -725,41 +718,40 @@ padding: 2px 0 0 0;
   background-color: #ffffff;
   color: rgb(105, 105, 105);
 }
-/* zamanike input man checked bod kenar input belafaseleh badesh dastor {} ra reayat kon *//*AKARDIV MENU*/
-.faq-section-wrapper .faq-left-side input:checked ~.tab-content{
+/* zamanike input man checked bod kenar input belafaseleh badesh dastor {} ra reayat kon */ /*AKARDIV MENU*/
+.faq-section-wrapper .faq-left-side input:checked ~ .tab-content {
   height: 70px;
   padding: 10px;
   overflow-y: scroll;
 }
 
-.faq-section-wrapper .faq-left-side input:checked + .tab-label::after{
+.faq-section-wrapper .faq-left-side input:checked + .tab-label::after {
   transform: rotate(-90deg);
 }
 /* hazf input */
-.faq-section-wrapper .faq-left-side input{
+.faq-section-wrapper .faq-left-side input {
   height: 50px;
   display: none;
 }
 /* end topic section */
 /* start footer**************************************** */
-.footer-section-wrapper{
+.footer-section-wrapper {
   background-color: rgb(110, 110, 110);
   min-height: 500px;
 }
 
-
-.footer-section-wrapper .desc{
+.footer-section-wrapper .desc {
   color: rgb(255, 255, 255);
- padding-top: 27px;
+  padding-top: 27px;
 }
-.footer-section-wrapper .desc a i{
+.footer-section-wrapper .desc a i {
   color: rgb(253, 124, 38);
-   font-size: 38px;
+  font-size: 38px;
   transform: rotate(-18deg);
   padding-left: 20px;
   vertical-align: -5px;
 }
-.footer-section-wrapper .desc p{
+.footer-section-wrapper .desc p {
   font-size: 16px;
   /* margin-top: 10px; */
   padding-top: 20px;
@@ -772,13 +764,14 @@ padding: 2px 0 0 0;
   display: block;
   padding-bottom: 3px;
   border-bottom: 1px solid rgba(189, 194, 219, 0.589);
-  
 }
-.footer-section-wrapper .service, .contact-us {
+.footer-section-wrapper .service,
+.contact-us {
   color: #c2c2c2;
-  padding:2px 14px ;
+  padding: 2px 14px;
 }
-.footer-section-wrapper .service h6, .contact-us h6{
+.footer-section-wrapper .service h6,
+.contact-us h6 {
   font-size: 16px;
   padding-bottom: 11px;
   border-bottom: 1px solid rgba(189, 194, 219, 0.589);
@@ -788,38 +781,40 @@ padding: 2px 0 0 0;
   font-size: 16px;
   padding-top: 0px;
 } */
-.footer-section-wrapper .service ul li, .contact-us ul li {
+.footer-section-wrapper .service ul li,
+.contact-us ul li {
   /* line-height: 20px; */
   font-size: 16px;
-margin-bottom: 12px;
-transition: .8s ease-in-out;
-display: inline-block;
+  margin-bottom: 12px;
+  transition: 0.8s ease-in-out;
+  display: inline-block;
 }
-.footer-section-wrapper .service ul li a, .contact-us ul li a{
+.footer-section-wrapper .service ul li a,
+.contact-us ul li a {
   color: #c2c2c2;
   padding: 6px;
 }
-.footer-section-wrapper .service ul li :hover, .contact-us ul li a:hover{
+.footer-section-wrapper .service ul li :hover,
+.contact-us ul li a:hover {
   color: rgb(255, 169, 8);
   padding: 10px;
   /* margin-bottom:10px ; */
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.footer-section-wrapper .service ul li a::before{
+.footer-section-wrapper .service ul li a::before {
   content: "\276f";
   /* margin: 10px; */
   vertical-align: -1px;
-  padding-left: 5px ;
+  padding-left: 5px;
 }
-.footer-section-wrapper .contact-us ul{
- text-align: center ;
+.footer-section-wrapper .contact-us ul {
+  text-align: center;
 }
 
-
-.footer-section-wrapper .form-footer{
+.footer-section-wrapper .form-footer {
   margin-top: 30px;
 }
-.footer-section-wrapper form input[type=text]{
+.footer-section-wrapper form input[type="text"] {
   position: absolute;
   top: 0px;
   right: 30px;
@@ -835,11 +830,11 @@ display: inline-block;
   height: 30px;
   background-color: rgb(248, 241, 228);
 } */
-.footer-section-wrapper .text-footer:hover{
+.footer-section-wrapper .text-footer:hover {
   border: none;
 }
 
-.footer-section-wrapper .submit-footer{
+.footer-section-wrapper .submit-footer {
   top: 0px;
   left: 44px;
   color: rgb(73, 77, 77);
@@ -848,79 +843,22 @@ display: inline-block;
   height: 30px;
   outline: none;
 }
-.footer-section-wrapper .submit-footer:hover{
+.footer-section-wrapper .submit-footer:hover {
   color: rgb(255, 169, 8);
   font-size: 15px;
   top: 0px;
   color: white;
   border: none;
+  cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer-section-wrapper .copy-right{
+.footer-section-wrapper .copy-right {
   color: #d8d5d5a6;
   text-align: center;
   border: 1px dashed rgb(255, 145, 0);
   padding: 10px 0px;
- 
 }
 /* end footer */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Respansive***************************************** */
 
