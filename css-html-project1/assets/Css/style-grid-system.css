@@ -816,31 +816,44 @@ display: inline-block;
 }
 
 
-.form-footer{
-  position: relative;
+.footer-section-wrapper .form-footer{
   margin-top: 30px;
 }
-.text-footer{
+.footer-section-wrapper form input[type=text]{
   position: absolute;
   top: 0px;
   right: 30px;
   border: none;
   height: 30px;
   background-color: rgb(248, 241, 228);
+  outline: none;
 }
-.submit-footer{
-  position: absolute;
+/* .footer-section-wrapper .text-footer{
   top: 0px;
-  left: 42px;
+  right: 30px;
+  border: none;
+  height: 30px;
+  background-color: rgb(248, 241, 228);
+} */
+.footer-section-wrapper .text-footer:hover{
+  border: none;
+}
+
+.footer-section-wrapper .submit-footer{
+  top: 0px;
+  left: 44px;
   color: rgb(73, 77, 77);
   background-color: rgb(255, 169, 8);
   border: none;
   height: 30px;
+  outline: none;
 }
-.submit-footer:hover{
+.footer-section-wrapper .submit-footer:hover{
   color: rgb(255, 169, 8);
   font-size: 15px;
   top: 0px;
+  color: white;
+  border: none;
 }
 
 
