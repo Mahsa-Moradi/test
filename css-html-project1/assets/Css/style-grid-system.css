@@ -145,7 +145,7 @@ ol {
   padding: 10px;
 }
 /* end contact section */
-/* start navbar section*******************************/
+/* start navbar section************************/
 .active {
   border-bottom: 4px solid rgb(247, 157, 53);
 }
@@ -571,7 +571,7 @@ nav.icon-decor {
    /* border-radius: 5px; */
    /* padding: 10px; */
    color: rgb(36, 9, 0);
-   
+
   }
 }
 @media screen and(min-width: 991px) {
@@ -1134,6 +1134,9 @@ nav.icon-decor {
 }
 
 @media only screen and (min-width: 768px) {
+  .md-visible{
+    display: inline-block;
+  }
   .md-hidden {
     display: none;
   }
