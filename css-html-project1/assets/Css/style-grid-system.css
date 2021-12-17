@@ -385,8 +385,9 @@ nav.icon-decor {
   top: 7px;
   right: 72px;
 }
-.about-us-right-aside{
-  background-color: white;
+.img-about-us {
+  width: 38%;
+  height:auto;
 }
 
 .about-us-left-aside {
@@ -431,11 +432,15 @@ nav.icon-decor {
   height:auto;
 }
 .about-us-right-aside{
-  background-color: turquoise;
+  background-color: rgb(252, 252, 252);
 }
 @media screen and(max-width:600px) {
   .about-us-right-aside {
     display: none;
+    
+  }
+  .about-us-left-aside{
+    margin: 0px;
   }
 }
 @media screen and(min-width:600px) {
@@ -523,6 +528,51 @@ nav.icon-decor {
     border-radius: 5px 0 5px 0;
     transform: translate(-50%, -50%);
   }
+  .teacher-intro h3 {
+    height: 40%;
+    width: 80%;
+    background-color: rgba(255, 166, 0, 0.158);
+    text-align: center;
+    color: rgb(41, 41, 41);
+    margin: 110px 58px 0px 0px;
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 600px){
+  /* .teacher-intro {
+   display: none; 
+}*/
+.teacher-intro {
+  background-color: rgba(255, 255, 255, 0.877);
+  /* top: 95%; */
+  left: 50%;
+  width: 80%;
+  height: 250px;
+  transform: translate(-50%, -50%);
+  
+  box-shadow: 1px 1px 11px #e4e4e4;
+  border-radius: 5px 0 5px 0;
+  /* transform: translate(-50%,-50%); */
+  text-align: center;
+}
+  .teacher-intro h3 {
+   /* display: none; */
+   /* height: 40%;
+   width: 80%; */
+   text-align: center;
+   /* background-position:right; */
+   color: rgb(41, 41, 41);
+   margin: 80px 28px 0px 0px;
+  }
+  .teacher-intro span a {
+   /* display: none; */
+   background-color: rgba(255, 255, 255, 0.212);
+   text-align: center;
+   /* border-radius: 5px; */
+   /* padding: 10px; */
+   color: rgb(36, 9, 0);
+   
+  }
 }
 @media screen and(min-width: 991px) {
   .img-teacher {
@@ -536,6 +586,7 @@ nav.icon-decor {
     margin: 110px 58px 0px 0px;
   }
 }
+
 
 /* end teacher section */
 /* start static section************************************************** */
