@@ -3,7 +3,16 @@
 // })
 
 $(function(){
-    $('.test').hide();
+    $('.test').show();
 });
 
 
+$(function(){
+$('.m span').hide();
+});
+
+$(document).ready(function(){
+$(".click").mouseEnter(function(){
+$(".click").hide();
+});
+});
