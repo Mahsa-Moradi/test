@@ -86,3 +86,22 @@ $(document).ready(function () {
     ); // zaman ejra
   });
 });
+// *********************
+$(document).ready(function () {
+    $(".d1").click(function () {
+      var x = $(".testd1");
+      x.animate( { 
+        //   width:'200px',height:'100px'    
+          //   ham zaman width va height etefagh miofte
+       }); 
+       x.animate( { 
+        width:'200px'},5000);
+
+       x.animate( { 
+            height:'200px'});
+            //  AVAL width 
+            // BAD height etefagh miofte
+            x.animate( { 
+                top:'-200px'});
+    });
+  });
