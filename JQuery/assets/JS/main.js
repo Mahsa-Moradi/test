@@ -70,16 +70,19 @@ $(document).ready(function () {
 // Animation*********************
 $(document).ready(function () {
   $(".b1").click(function () {
-    
-    $(".testb1").animate({
-    width:"150px",
-    // height:"300px" ,
-    height:"toggle" ,
-    bottom:"100px" , 
-    left:"100px" , 
-    opacity:"0.5", 
-    borderRadius:"80px" 
-    },5000);
+    $(".testb1").animate(
+      {
+        width: "+=150px", // arze ghabli + 150
+        // width:"150px",
+        // width:"toggle",
+        height:"300px" ,
+        // height: "toggle",
+        // bottom:"100px" ,
+        // left:"10px" ,
+        opacity: "0.5",
+        borderRadius: "80px",
+      },
+      5000
+    ); // zaman ejra
   });
 });
-
