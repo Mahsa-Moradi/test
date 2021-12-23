@@ -75,7 +75,7 @@ $(document).ready(function () {
         width: "+=150px", // arze ghabli + 150
         // width:"150px",
         // width:"toggle",
-        height:"300px" ,
+        height: "300px",
         // height: "toggle",
         // bottom:"100px" ,
         // left:"10px" ,
@@ -88,52 +88,66 @@ $(document).ready(function () {
 });
 // *********************
 $(document).ready(function () {
-    $(".d1").click(function () {
-      var x = $(".testd1");
-      x.animate( { 
-        //   width:'200px',height:'100px'    
-          //   ham zaman width va height etefagh miofte
-       }); 
-       x.animate( { 
-        width:'200px'},5000);
+  $(".d1").click(function () {
+    var x = $(".testd1");
+    x.animate({
+      //   width:'200px',height:'100px'
+      //   ham zaman width va height etefagh miofte
+    });
+    x.animate(
+      {
+        width: "200px",
+      },
+      5000
+    );
 
-       x.animate( { 
-            height:'200px'});
-            //  AVAL width 
-            // BAD height etefagh miofte
-            x.animate( { 
-                top:'-200px'});
+    x.animate({
+      height: "200px",
+    });
+    //  AVAL width
+    // BAD height etefagh miofte
+    x.animate({
+      top: "-200px",
     });
   });
+});
 //   get_set    ******************************
 $(document).ready(function () {
-    $("span.g1").click(function () {
-      // alert("mytext is :" + $(".getg1").text()); // neshan dadan matn
-     
-      // alert("mytext is :" + $(".getg1").html());// neshan dadan "tag haye html"
+  $("span.g1").click(function () {
+    // alert("mytext is :" + $(".getg1").text()); // neshan dadan matn
+    // alert("mytext is :" + $(".getg1").html());// neshan dadan "tag haye html"
     //   alert("value is :"+$(".inputg1").val());
     //   console.log("value is :"+$(".inputg1").val());
     // console.log("attribute is :" + $(".inputg1").attr('type'));
-
-    });
   });
+});
 //   ****************
 $(document).ready(function () {
-    $("span.g2").click(function () {
+  $("span.g2").click(function () {
     //   $(".getg2").text('goodbye');
     // $(".getg2").html('<i>goodbye</i>');
     // $(".getg2").html('<b>goodbye</b> test');
     // $(".inputg2").val('SARA');
     // $(".inputg2").attr('type','password');
     $(".inputg2").attr({
-        'type':'password',
-         'class':'inputsg2'
-    });
+      type: "password",
+      class: "inputsg2",
     });
   });
-  //   add-remove  *****************************
-  $(document).ready(function () {
-    $(".add-remove").click(function () {
-        $('ul').append('<li>text text</li>')
-        });
-      });
+});
+// add(append,prepend,after,befor)*****
+$(document).ready(function () {
+  $(".add-remove").click(function () {
+    $("ul").append("<li>afterrrr text</li>");
+  });
+  $(".add-remove1").click(function () {
+    $("ul").prepend("<p>befoooor text</p>");
+  });
+  $(".add-remove2").click(function () {
+    $("ul").before("<p>befor text</p>");
+  });
+  $(".add-remove3").click(function () {
+    $("ul").after("<p>after text</p>");
+  });
+});
+// remove(append,prepend,after,befor)*****
