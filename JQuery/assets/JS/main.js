@@ -167,3 +167,11 @@ $(".add-remove4").click(function () {
     // ! Chon class ="add-remove4" valed nadaran mishe remove kard
 });
 });
+// *********************************
+$(document).ready(function () {
+    $(".btn-1").click(function () {
+
+
+
+    });
+});
