@@ -111,8 +111,18 @@ $(document).ready(function () {
       // alert("mytext is :" + $(".getg1").text()); // neshan dadan matn
      
       // alert("mytext is :" + $(".getg1").html());// neshan dadan "tag haye html"
-      alert("value is :"+$(".input").val());
-    //   console.log("value is :"+$(".input").val());
+    //   alert("value is :"+$(".inputg1").val());
+    //   console.log("value is :"+$(".inputg1").val());
+    // console.log("attribute is :" + $(".inputg1").attr('type'));
+
     });
   });
-  
+//   *******************************************
+$(document).ready(function () {
+    $("span.g2").click(function () {
+    //   $(".getg2").text('goodbye');
+    // $(".getg2").html('<i>goodbye</i>');
+    $(".getg2").html('<b>goodbye</b> test');
+    
+    });
+  });
