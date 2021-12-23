@@ -149,5 +149,21 @@ $(document).ready(function () {
   $(".add-remove3").click(function () {
     $("ul").after("<p>after text</p>");
   });
-});
+
 // remove(append,prepend,after,befor)*****
+
+$(".add-remove4").click(function () {
+    $("ul.r-e").remove();
+  });
+  $(".add-remove5").click(function () {
+    $("ul.r-e").empty("<p>after text</p>");
+  });
+  $(".add-remove6").click(function () {
+    $("ul.r-e").remove(".f-li");
+    // ! Chon valed daran nemishe remove kard
+  });
+  $(".add-remove6").click(function () {
+    $("span").remove(".add-remove4 ,.add-remove5");
+    // ! Chon class ="add-remove4" valed nadaran mishe remove kard
+});
+});
