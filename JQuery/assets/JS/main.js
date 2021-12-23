@@ -122,7 +122,12 @@ $(document).ready(function () {
     $("span.g2").click(function () {
     //   $(".getg2").text('goodbye');
     // $(".getg2").html('<i>goodbye</i>');
-    $(".getg2").html('<b>goodbye</b> test');
-    
+    // $(".getg2").html('<b>goodbye</b> test');
+    // $(".inputg2").val('SARA');
+    // $(".inputg2").attr('type','password');
+    $(".inputg2").attr({
+        'type':'password',
+         'class':'inputsg2'
+    });
     });
   });
