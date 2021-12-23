@@ -117,7 +117,7 @@ $(document).ready(function () {
 
     });
   });
-//   *******************************************
+//   ****************
 $(document).ready(function () {
     $("span.g2").click(function () {
     //   $(".getg2").text('goodbye');
@@ -131,3 +131,9 @@ $(document).ready(function () {
     });
     });
   });
+  //   add-remove  *****************************
+  $(document).ready(function () {
+    $(".add-remove").click(function () {
+        $('ul').append('<li>text text</li>')
+        });
+      });
