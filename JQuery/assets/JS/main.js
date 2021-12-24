@@ -150,9 +150,9 @@ $(document).ready(function () {
     $("ul").after("<p>after text</p>");
   });
 
-// remove(append,prepend,after,befor)*****
+  // remove(append,prepend,after,befor)*****
 
-$(".add-remove4").click(function () {
+  $(".add-remove4").click(function () {
     $("ul.r-e").remove();
   });
   $(".add-remove5").click(function () {
@@ -165,13 +165,21 @@ $(".add-remove4").click(function () {
   $(".add-remove6").click(function () {
     $("span").remove(".add-remove4 ,.add-remove5");
     // ! Chon class ="add-remove4" valed nadaran mishe remove kard
-});
+  });
 });
 // *********************************
 $(document).ready(function () {
-    $(".btn-1").click(function () {
+  $(".btn-1").click(function () {
+      $('div').addClass('add-class');
+  });
 
-
-
-    });
+  $(".btn-2").click(function () {
+    $('div').removeClass('add-class');
+});
+$(".btn-3").click(function () {
+    $('div').toggleClass('add-class secound-class');
+});
+$(".btn-4").click(function () {
+    $('div.add-style').css('color','red');
+});
 });
