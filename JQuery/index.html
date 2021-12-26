@@ -229,8 +229,20 @@ text-decoration:none;
     border: 2px solid black;
     margin: 10px;
 }
+ /* traversing*************  */
+.ancestors *{
+    display: none;
+    border: 2px solid black;
+    color: burlywood;
+    padding: 5px;
+    margin: 15px;
+    font-size: 16px;
 
+}
 
+div{
+      width:550px
+  }
 
 
 
@@ -355,11 +367,27 @@ text-decoration:none;
   <p class="e-outer-height"></p>
 
 <!-- traversing************* -->
+<div>
+    .......................................................................................................................................
+  </div>
+  <br><br><br><br><br>
+ 
+<div class="ancestors">
+    <div> ansectors mama and papa
+    <ul>opa and oma
+        <li> papa and mama
+            <span class="kinderen"> kinderen</span>
+        </li>
+    </ul>
+</div>
 
+<div>
+    <p>father and mother
+        <span></span>
+    </p>
+</div>
 
-
-
-
+</div>
 
 
 
