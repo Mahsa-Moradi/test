@@ -232,12 +232,12 @@ text-decoration:none;
  /* traversing*************  */
 .ancestors *{
     display: block;
-    border: 2px solid black;
+    border: 2px solid rgb(197, 182, 182);
     color: burlywood;
     padding: 5px;
     margin: 15px;
     font-size: 16px;
-    background-color: rgb(229, 233, 220);
+    /* background-color: rgb(229, 233, 220); */
 
 }
 
@@ -245,16 +245,43 @@ div{
       width:550px
   }
 
+  .ftitle{
+      border: none;
+      text-align: center;
+  }
 
+.black{
+    background-color: black;
+}
+.yellow{
+    background-color: yellow;
+}
 
+.green{
+    background-color: green;
+}
 
+/* ********* */
+.descendants *{
+    display: block;
+    border: 2px solid rgb(197, 182, 182);
+    color: rgb(238, 226, 117);
+    padding: 5px;
+    margin: 15px;
+    font-size: 16px;
+    /* background-color: rgb(229, 233, 220); */
 
+}
 
-
-
-
-
-
+/* ******* */
+.sibling *{
+    display: block;
+    border: 1px dashed gray;
+    color: blue;
+    font-size: 18px;
+    padding: 9px;
+    margin: 4px;
+}
 
 
 
@@ -373,7 +400,9 @@ div{
   </div>
   <br><br><br><br><br>
  
-<div class="ancestors">
+<div class="ancestors ">
+    <!-- black -->
+    <p class="ftitle">kinderen</p>
     <div> ancestors mama and papa
     <ul>opa and oma
         <li> papa and mama
@@ -381,27 +410,57 @@ div{
         </li>
     </ul>
 </div>
-
+</div>
+<div class="ancestors ">
+    <p class="ftitle">kinderens...</p>
 <div>grand fother and mother
     <p>father and mother
-        <span>child</span>
+        <span class="kinderens">child</span>
     </p>
 </div>
-<div>grand fother and mother
-    <p>father and mother
-        <span>child</span>
-    </p>
-</div>
+
 </div>
 
+<!-- ***** -->
+<div class="ancestors ">
+    <p class="ftitle">PARENTS...</p>
+<div>ancestors fother and mother
+    <ul>grand fother and mother
+        <li>father and mother
+        <span class="kinderens">child</span>
+    </li>
+    </ul>
+</div>
+
+</div>
+
+<div>
+    .......................................................................................................................................
+  </div>
+  <br><br><br><br><br>
 
 
+  <div class="descendants ">
+<div>ancestors fother and mother
+    <ul>grand fother and mother
+        <li>father and mother
+        <span class="h1">child</span>
+        <p >PARENTS...</p>
+    </li>
+    </ul>
+</div>
 
+</div>
 
-
-
-
-
+<!-- ***** -->
+<section class="sibling">section 
+<p>child1</p>
+<div>child2</div>
+<a href="">child3</a>
+<h3>child4</h3>
+<p class="h2">child5</p>
+<div class="h3">child2</div>
+</section>
 
 
 
