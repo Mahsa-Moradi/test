@@ -205,8 +205,55 @@ $(document).ready(function () {
     $("p.e-outer-height").text(e7);
   });
 });
-//  traversing*************
+//  traversing******************
 $(document).ready(function(){
     $('span.kinderen').parent().css({
-        'background-color':'blue', 'color':'#fff' });
-})
+        backgroundColor: "red", 
+        color:"white"});
+});
+// $(document).ready(function(){
+//     $('span.kinderens').parents().css({
+//         // backgroundColor: "blue", 
+//         color:"blue"});
+// });
+// ******entekhab KODAM valed
+$(document).ready(function(){
+    $('span.kinderens').parents('ul').css({  
+        color:"GREEN",
+    border:"7px solid black"});
+});
+// $(document).ready(function(){
+//     $('span.kinderens').parents('ul').fadeOut();
+// });// mahv mishavad
+// descendants******************
+// $(document).ready(function(){
+// $('li').children('.h1').css({
+// "color": "orange"
+// });
+// });
+$(document).ready(function(){
+    $('ul').find('.h1').css({
+    "color": "orange"
+    });
+    });
+// *******
+$(document).ready(function(){
+// $('h3').siblings().css({
+// 'color' : 'red'
+// });
+// $('p.h2').siblings().css({
+//     'color' : 'red'
+//     });
+// $('p.h2').siblings('div.h3').css({
+//     'color' : 'red'
+//     });
+    // $('h3').next().css({
+    //     'color' : 'red'
+    //     });
+        // $('p').next('div').css({
+        //     'color' : 'red'
+        //     });
+        $('p').nextAll().css({
+            'color' : 'red'
+            });
+});
