@@ -170,16 +170,23 @@ $(document).ready(function () {
 // *********************************
 $(document).ready(function () {
   $(".btn-1").click(function () {
-      $('div').addClass('add-class');
+      $('div.amuzesh').addClass('add-class secound-class');
   });
 
   $(".btn-2").click(function () {
-    $('div').removeClass('add-class');
+    $('div.amuzesh').removeClass('add-class');
 });
 $(".btn-3").click(function () {
-    $('div').toggleClass('add-class secound-class');
+    $('div.amuzesh').toggleClass('add-class secound-class');
 });
 $(".btn-4").click(function () {
-    $('div.add-style').css('color','red');
+    // $('div.add-style').css('color','red');
+    $('div.add-style').css({
+"color":"red",
+"font-size":"25px",
+"background-color": "yellow"
+
+
+});
 });
 });
