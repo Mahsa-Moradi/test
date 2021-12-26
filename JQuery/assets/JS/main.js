@@ -280,3 +280,27 @@ $(document).ready(function () {
     color: "red",
   });
 });
+// filter in the traversing************************
+$(document).ready(function() {
+   $('div.h5').first().fadeOut();
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // $(document).ready(function(){
+
+    // }); 
