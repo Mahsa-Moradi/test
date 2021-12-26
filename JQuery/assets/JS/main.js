@@ -206,21 +206,23 @@ $(document).ready(function () {
   });
 });
 //  traversing******************
-$(document).ready(function(){
-    $('span.kinderen').parent().css({
-        backgroundColor: "red", 
-        color:"white"});
+$(document).ready(function () {
+  $("span.kinderen").parent().css({
+    backgroundColor: "red",
+    color: "white",
+  });
 });
 // $(document).ready(function(){
 //     $('span.kinderens').parents().css({
-//         // backgroundColor: "blue", 
+//         // backgroundColor: "blue",
 //         color:"blue"});
 // });
 // ******entekhab KODAM valed
-$(document).ready(function(){
-    $('span.kinderens').parents('ul').css({  
-        color:"GREEN",
-    border:"7px solid black"});
+$(document).ready(function () {
+  $("span.kinderens").parents("ul").css({
+    color: "GREEN",
+    border: "7px solid black",
+  });
 });
 // $(document).ready(function(){
 //     $('span.kinderens').parents('ul').fadeOut();
@@ -231,29 +233,51 @@ $(document).ready(function(){
 // "color": "orange"
 // });
 // });
-$(document).ready(function(){
-    $('ul').find('.h1').css({
-    "color": "orange"
-    });
-    });
-// *******
-$(document).ready(function(){
-// $('h3').siblings().css({
-// 'color' : 'red'
-// });
-// $('p.h2').siblings().css({
-//     'color' : 'red'
-//     });
-// $('p.h2').siblings('div.h3').css({
-//     'color' : 'red'
-//     });
-    // $('h3').next().css({
-    //     'color' : 'red'
-    //     });
-        // $('p').next('div').css({
-        //     'color' : 'red'
-        //     });
-        $('p').nextAll().css({
-            'color' : 'red'
-            });
+$(document).ready(function () {
+  $("ul").find(".h1").css({
+    color: "orange",
+  });
 });
+// *******
+$(document).ready(function () {
+  // $('h3').siblings().css({
+  // 'color' : 'red'
+  // });
+  // $('p.h2').siblings().css({
+  //     'color' : 'red'
+  //     });
+  // $('p.h2').siblings('div.h3').css({
+  //     'color' : 'red'
+  //     });
+  // $('h3').next().css({
+  //     'color' : 'red'
+  //     });
+  // $('p').next('div').css({
+  //     'color' : 'red'
+  //     });
+  // $('p').nextAll().css({
+  //     'color' : 'red'
+  //     });
+  // $('a').nextAll('h3 , div').css({
+  //     'color' : 'red'
+  //     });
+  // $('a').prevAll().css({
+  //     'color' : 'red'
+  //     });
+//   $("a").prevAll('p').css({
+//     color: "red",
+//   });
+
+});
+
+$(document).ready(function (){
+    // $("div").nextUntil('p.h2').css({
+    //         color: "red",
+    //       });
+    // $("div.h0").nextUntil('div').css({
+    //     color: "red",
+    //   });
+    $("div.h0").prevUntil('div').css({
+        color: "red",
+      });  
+        });
