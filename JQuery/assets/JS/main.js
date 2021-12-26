@@ -206,3 +206,7 @@ $(document).ready(function () {
   });
 });
 //  traversing*************
+$(document).ready(function(){
+    $('span.kinderen').parent().css({
+        'background-color':'blue', 'color':'#fff' });
+})
