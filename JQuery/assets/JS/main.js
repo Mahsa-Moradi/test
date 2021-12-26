@@ -282,7 +282,13 @@ $(document).ready(function () {
 });
 // filter in the traversing************************
 $(document).ready(function() {
-   $('div.h5').first().fadeOut();
+//    $('div.h5').first().fadeOut();
+// $('div.h5').first().css({
+//     'color':'red'
+// });
+$('div').last().css({
+    'color':'red'
+});
     });
 
 
