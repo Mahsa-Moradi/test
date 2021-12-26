@@ -264,20 +264,19 @@ $(document).ready(function () {
   // $('a').prevAll().css({
   //     'color' : 'red'
   //     });
-//   $("a").prevAll('p').css({
-//     color: "red",
-//   });
-
+  //   $("a").prevAll('p').css({
+  //     color: "red",
+  //   });
 });
 
-$(document).ready(function (){
-    // $("div").nextUntil('p.h2').css({
-    //         color: "red",
-    //       });
-    // $("div.h0").nextUntil('div').css({
-    //     color: "red",
-    //   });
-    $("div.h0").prevUntil('div').css({
-        color: "red",
-      });  
-        });
+$(document).ready(function () {
+  // $("div").nextUntil('p.h2').css({
+  //         color: "red",
+  //       });
+  // $("div.h0").nextUntil('div').css({
+  //     color: "red",
+  //   });
+  $("div.h0").prevUntil("div").css({
+    color: "red",
+  });
+});
