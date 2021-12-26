@@ -170,23 +170,38 @@ $(document).ready(function () {
 // *********************************
 $(document).ready(function () {
   $(".btn-1").click(function () {
-      $('div.amuzesh').addClass('add-class secound-class');
+    $("div.amuzesh").addClass("add-class secound-class");
   });
 
   $(".btn-2").click(function () {
-    $('div.amuzesh').removeClass('add-class');
-});
-$(".btn-3").click(function () {
-    $('div.amuzesh').toggleClass('add-class secound-class');
-});
-$(".btn-4").click(function () {
+    $("div.amuzesh").removeClass("add-class");
+  });
+  $(".btn-3").click(function () {
+    $("div.amuzesh").toggleClass("add-class secound-class");
+  });
+  $(".btn-4").click(function () {
     // $('div.add-style').css('color','red');
-    $('div.add-style').css({
-"color":"red",
-"font-size":"25px",
-"background-color": "yellow"
-
-
+    $("div.add-style").css({
+      color: "red",
+      "font-size": "25px",
+      "background-color": "yellow",
+    });
+  });
 });
-});
+// *************************
+$(document).ready(function () {
+  $(".e1").click(function () {
+    var e2 = $(".e2").width();
+    var e3 = $(".e2").height();
+    var e4 = $(".e2").innerWidth();
+    var e5 = $(".e2").innerHeight();
+    var e6 = $(".e2").outerWidth();
+    var e7 = $(".e2").outerHeight();
+    $("p.e-width").text(e2);
+    $("p.e-height").text(e3);
+    $("p.e-inner-width").text(e4);
+    $("p.e-inner-height").text(e5);
+    $("p.e-outer-width").text(e6);
+    $("p.outer-height").text(e7);
+  });
 });
