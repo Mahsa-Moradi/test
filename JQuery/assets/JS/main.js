@@ -202,6 +202,7 @@ $(document).ready(function () {
     $("p.e-inner-width").text(e4);
     $("p.e-inner-height").text(e5);
     $("p.e-outer-width").text(e6);
-    $("p.outer-height").text(e7);
+    $("p.e-outer-height").text(e7);
   });
 });
+//  traversing*************
