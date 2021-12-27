@@ -281,17 +281,21 @@ $(document).ready(function () {
   });
 });
 // filter in the traversing************************
-$(document).ready(function() {
-//    $('div.h5').first().fadeOut();
-// $('div.h5').first().css({
+// $(document).ready(function() {
+// //    $('div.h5').first().fadeOut();
+// // $('div.h5').first().css({
+// //     'color':'red'
+// // });
+// $('div').last().css({
 //     'color':'red'
 // });
-$('div').last().css({
-    'color':'red'
-});
+//     });
+
+$(document).ready(function() {
+    $('div.h5').eq(2).css({
+        color:'red'
     });
-
-
+        });
 
 
 
