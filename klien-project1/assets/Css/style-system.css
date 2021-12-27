@@ -6,7 +6,7 @@ body {
   font-family: vazir-Medium;
 }
 body {
-  direction: rtl;
+  direction: ltr;
 }
 a {
   list-style: none;
@@ -104,4 +104,8 @@ ol {
   float: right;
   padding-left: 15px;
   padding-right: 15px;
+}
+/* accordion menu************************ */
+.accordion{
+
 }
