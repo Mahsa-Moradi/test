@@ -108,7 +108,7 @@ ol {
 /* accordion menu************************ */
 ul.accordion{
   background-color: rgb(190, 35, 35);
-  /* border: 1px solid rgb(156, 156, 156); */
+  border: 1px solid rgb(151, 145, 145);
 
 }
 ul.accordion div{
@@ -122,9 +122,10 @@ ul.accordion li{
   background-color: rgb(255, 255, 255);
   color: white;
   font-size: 18px;
-  /* padding: 10px; */
-  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  border-bottom: 1px solid rgba(228, 225, 225, 0.486);
 }
 ul.accordion ul{
   display: none;
+  padding: 10px;
 }
