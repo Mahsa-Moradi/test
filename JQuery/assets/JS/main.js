@@ -292,7 +292,13 @@ $(document).ready(function () {
 //     });
 
 $(document).ready(function() {
-    $('div.h5').eq(2).css({
+    // $('div.h5').eq(2).css({
+    //     color:'red'
+    // });
+    // $('div').filter('div.h6').find('p.h8').css({
+    //     color:'red'
+    // });
+    $('div').not('div.h6').find('p.h9 ').css({
         color:'red'
     });
         });
