@@ -106,6 +106,24 @@ ol {
   padding-right: 15px;
 }
 /* accordion menu************************ */
-.accordion{
+ul.accordion{
+  background-color: rgb(190, 35, 35);
+  border: 1px solid rgb(156, 156, 156);
 
+}
+ul.accordion div{
+  background-color: rgba(64, 179, 224, 0.452);
+  color: white;
+  /* text-align: center; */
+  font-size: 18px;
+  padding: 10px;
+}
+ul.accordion li{
+  background-color: rgb(255, 255, 255);
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+ul.accordion ul{
+  display: none;
 }
