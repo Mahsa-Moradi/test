@@ -42,3 +42,4 @@ $(".scroll-to-top").click(function (e) {
     1000
   );
 });
+// MODAL**********************
