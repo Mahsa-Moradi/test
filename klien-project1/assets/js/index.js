@@ -57,8 +57,9 @@ $(".modal-link").click(function(e){
 $(".close").click(function(e){
     e.preventDefault();
 
-    $(".bg-modal").fadeOut(function(){
-        $(".modal").fadeOut();
+    $(".modal").fadeOut(function(){
+        $(".bg-modal").fadeOut();
+        // ye takhiri dare.agar har amali aval anjam besheh BAYAD aval benevisim.[mesle jabejaii (modal) VA (bg-modal)]
     });
     });
 });
