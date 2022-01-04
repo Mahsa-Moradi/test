@@ -203,8 +203,8 @@ body {
   width: 600px;
   min-height: 310px;
   background-color: white;
-  position: fixed;
-  top: 50%;
+  position:relative; /* fixed */
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 1px 1px 10px orange;
@@ -252,56 +252,53 @@ border: 1px solid rgba(172, 95, 67, 0.288);
   color: rgb(0, 102, 255);
   padding: 0px 10px 0px 0px;
 }
-****************
-.container1 {
-  width: 600px;
-  min-height: 280px;
-  background-color: white;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 1px 1px 10px orange;
-}
-.container1 h6{
+
+/* hidden and visaible passwor(eyes)**** */
+.cours-title{
+  margin-top: 100px;
   text-align: center;
-  /* align-content: center; */
-  font-size: 19px;
-  border-bottom: 1px solid orange;
-  padding-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  color: blue;
+  display: fixed;
+
 }
-.container1 form input{
-  width: 100%;
-  height: 35px;
-  border: 1px solid #efefef;
-  padding: 0px 20px;
-  margin:20px 0px;
-  box-shadow:15px 10px solid rgb(9, 255, 0);
-  color: rgb(0, 0, 0);
-  font-size: 14px;
+.container1 {
+  max-width: 600px;
+  min-height: 40px;
+  background-color: white;
+  /* position:relative; 
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  box-shadow: 0px 0px 6px orange;
+  /* display: fixed; */
+  margin:100px auto;
+  padding: 15px;
 }
-.container1 form input:focus{
-  outline-color: rgb(95, 133, 214);
+.input-group1 input{
+  display: flex;
+   margin-bottom: 10px ;
+   width: 100%;
+   height: 40px;
+   border: 1px solid  #efefef;
+ outline: 0; 
+ padding: 0 10px;
+ 
 }
-.container1 form label{
-  font-size: 19px;
-  margin: 13px;
-  display: block;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.container1 form button{
-  color: black;
-  font-size: 14px;
-  padding: 8px;
-  display: block;
-  margin:0px;
-  /* margin-right:5px; */
-background-color: 
-white;
-border: 1px solid rgba(172, 95, 67, 0.288);
-}
-.container1 form button i{
-  /* vertical-align: 0px; */
-  margin-left:5px;
-  /* contain: " "; */
+.input-group1 .btn{
+  background-color: rgb(93, 139, 93);
+  color: white;
+ padding: 5px 10px ;
+margin-top: 20px;
+  font-size: 18px;
   
 }
+/* .input-group1 .btn ::value{
+  text-align: center;
+} */
