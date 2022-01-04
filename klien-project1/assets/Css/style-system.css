@@ -201,7 +201,7 @@ body {
 /* FORM********************** */
 .container {
   width: 600px;
-  min-height: 280px;
+  min-height: 310px;
   background-color: white;
   position: fixed;
   top: 50%;
