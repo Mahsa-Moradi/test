@@ -276,6 +276,9 @@ border: 1px solid rgba(172, 95, 67, 0.288);
   margin:100px auto;
   padding: 15px;
 }
+.input-group1{
+  position: relative;
+}
 .input-group1 input{
   display: flex;
    margin-bottom: 10px ;
@@ -299,6 +302,25 @@ margin-top: 20px;
   font-size: 18px;
   
 }
-/* .input-group1 .btn ::value{
+.input-group1 .btn ::value{
+  position: absolute;
+  left: 50%;
   text-align: center;
+}
+.input-group1 i.fa-eye{
+  position: absolute;
+  left: 530px;
+  bottom: 10px;
+  color: rgb(175, 174, 174);
+cursor: pointer;
+}
+.input-group1 i.fa-eye:hover{
+  transition: coloe 2s ease;
+  color: rgb(15, 94, 197);
+}
+/* .input-group1 i.fa-eye-slash{
+  position: absolute;
+  left: 530px;
+  bottom: 10px;
+
 } */
