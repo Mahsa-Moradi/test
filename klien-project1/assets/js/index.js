@@ -79,3 +79,14 @@ $(document).ready(function () {
 });
 
 // hidden and visaible passwor(eyes)********
+$(document).ready(function(){
+$(".fa-eye").click(function(){
+if($(".pass").attr("type")==="password"){
+    $(".pass").attr("type","text");
+}else{
+
+}
+
+});
+
+});
