@@ -46,8 +46,19 @@ $(".scroll-to-top").click(function (e) {
 $(document).ready(function(){
 $(".modal-link").click(function(e){
 e.preventDefault();
-$(".bg-modal").fadeIn();
-$(".modal").fadeIn();
+$(".bg-modal").fadeIn(function(){$(".modal").fadeIn();
+//    yekam delay dare
+// $(".modal").fadeIn();
 });
+});
+$(".modal-link").click(function(e){
+    e.preventDefault();
+});
+$(".close").click(function(e){
+    e.preventDefault();
 
+    $(".bg-modal").fadeOut(function(){
+        $(".modal").fadeOut();
+    });
+    });
 });
