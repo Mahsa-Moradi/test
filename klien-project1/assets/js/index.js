@@ -43,23 +43,25 @@ $(".scroll-to-top").click(function (e) {
   );
 });
 // MODAL**********************
-$(document).ready(function(){
-$(".modal-link").click(function(e){
-e.preventDefault();
-$(".bg-modal").fadeIn(function(){$(".modal").fadeIn();
-//    yekam delay dare
-// $(".modal").fadeIn();
-});
-});
-$(".modal-link").click(function(e){
+$(document).ready(function () {
+  $(".modal-link").click(function (e) {
     e.preventDefault();
-});
-$(".close").click(function(e){
+    $(".bg-modal").fadeIn(function () {
+      $(".modal").fadeIn();
+      //    yekam delay dare
+      // $(".modal").fadeIn();
+    });
+  });
+  $(".modal-link").click(function (e) {
+    e.preventDefault();
+  });
+  $(".close , .bg-modal").click(function (e) {
     e.preventDefault();
 
-    $(".modal").fadeOut(function(){
-        $(".bg-modal").fadeOut();
-        // ye takhiri dare.agar har amali aval anjam besheh BAYAD aval benevisim.[mesle jabejaii (modal) VA (bg-modal)]
+    $(".modal").fadeOut(function () {
+      $(".bg-modal").fadeOut();
+      // ye takhiri dare.agar har amali aval anjam besheh BAYAD aval benevisim.[mesle jabejaii (modal) VA (bg-modal)]
     });
-    });
+  });
 });
+// FORM**********************
