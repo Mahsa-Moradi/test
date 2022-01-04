@@ -165,7 +165,7 @@ body {
   padding: 10px;
   font-size: 16px;
   position: fixed;
-  top: 50%;
+  top: 29%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
@@ -209,3 +209,11 @@ body {
   transform: translate(-50%, -50%);
   box-shadow: 1px 1px 10px orange;
 }
+.container h6{
+  text-align: center;
+  /* align-content: center; */
+  font-size: 16px;
+  border-bottom: 1px solid orange;
+  padding-bottom: 30px;
+}
+.container forn input
