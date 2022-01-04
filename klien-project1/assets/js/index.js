@@ -43,3 +43,11 @@ $(".scroll-to-top").click(function (e) {
   );
 });
 // MODAL**********************
+$(document).ready(function(){
+$(".modal-link").click(function(e){
+e.preventDefault();
+$(".bg-modal").fadeIn();
+$(".modal").fadeIn();
+});
+
+});
