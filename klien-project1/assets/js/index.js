@@ -72,7 +72,10 @@ $(document).ready(function () {
     // .input-group :khodesh ro ijad bokon
     // #add: ye onsor digei ro ijad kon
   });
-});
+
 //  TIPS1: "append va prepend"= az Daron ezafeh mishavand 
 //  "befor va after": az Biron ezafeh mishavand
 //  TIPS2: chikar konim ke 1 ya 2 ya 3 ta INPUT ezafeh shavad?  bayad vabastegi Anasor ro bardarim YANI begim "#add" be jaye ".input-group" .
+});
+
+// hidden and visaible passwor(eyes)********
