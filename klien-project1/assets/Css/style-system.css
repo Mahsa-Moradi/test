@@ -201,7 +201,7 @@ body {
 /* FORM********************** */
 .container {
   width: 600px;
-  height: 300px;
+  min-height: 280px;
   background-color: white;
   position: fixed;
   top: 50%;
@@ -212,8 +212,41 @@ body {
 .container h6{
   text-align: center;
   /* align-content: center; */
-  font-size: 16px;
+  font-size: 19px;
   border-bottom: 1px solid orange;
   padding-bottom: 30px;
 }
-.container forn input
+.container form input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #efefef;
+  padding: 0px 20px;
+  margin:20px 0px;
+  box-shadow:15px 10px solid rgb(9, 255, 0);
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+.container form input:focus{
+  outline-color: rgb(95, 133, 214);
+}
+.container form label{
+  font-size: 19px;
+  margin: 13px;
+  display: block;
+}
+.container form button{
+  color: black;
+  font-size: 14px;
+  padding: 8px;
+  display: block;
+  margin:0px;
+  /* margin-right:5px; */
+background-color: 
+white;
+border: 1px solid rgba(172, 95, 67, 0.288);
+}
+.container form button i{
+  /* vertical-align: 0px; */
+  margin-left:5px;
+  contain: " ";
+}
