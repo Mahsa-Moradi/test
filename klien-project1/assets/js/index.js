@@ -65,3 +65,9 @@ $(document).ready(function () {
   });
 });
 // FORM**********************
+$(document).ready(function(){
+    $("#add").click(function(e){
+        e.preventDefult();
+$(".input-group").append();
+    });
+});
