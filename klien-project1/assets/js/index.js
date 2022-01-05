@@ -68,25 +68,27 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#add").click(function (e) {
     e.preventDefault();
-    $("#add").before("<div class='input-group'><label for='input' >Geschidenis</label><input type='text' id='input'  placeholder='Add Informatie...'/></div>");
+    $("#add").before(
+      "<div class='input-group'><label for='input' >Geschidenis</label><input type='text' id='input'  placeholder='Add Informatie...'/></div>"
+    );
     // .input-group :khodesh ro ijad bokon
     // #add: ye onsor digei ro ijad kon
   });
 
-//  TIPS1: "append va prepend"= az Daron ezafeh mishavand 
-//  "befor va after": az Biron ezafeh mishavand
-//  TIPS2: chikar konim ke 1 ya 2 ya 3 ta INPUT ezafeh shavad?  bayad vabastegi Anasor ro bardarim YANI begim "#add" be jaye ".input-group" .
+  //  TIPS1: "append va prepend"= az Daron ezafeh mishavand
+  //  "befor va after": az Biron ezafeh mishavand
+  //  TIPS2: chikar konim ke 1 ya 2 ya 3 ta INPUT ezafeh shavad?  bayad vabastegi Anasor ro bardarim YANI begim "#add" be jaye ".input-group" .
 });
 
 // hidden and visaible passwor(eyes)********
-$(document).ready(function(){
-$(".fa-eye").click(function(){
-if($(".pass").attr("type")==="password"){
-    $(".pass").attr("type","text");
-}else{
-
-}
-
-});
-
-});
+$(document).ready(function () {
+  $("#show-pass").click(function () {
+    if($(".pass").attr("type") === "password") {
+      $(".pass").attr("type", "text");
+      $("#show-pass").removeClass("fa-eye-slash").addClass("fa-eye");
+    } else {
+      $(".pass").attr("type", "password");
+      $("#show-pass").removeClass("fa-eye").addClass("fa-eye-slash");
+    }
+  })
+})
