@@ -125,7 +125,7 @@ ol {
 }
 .container div .a{
   margin-top: 15px;
-  display: block;
+  display: inline-block;
 }
 .container div .a1{
   /* margin-top: 10px; */
