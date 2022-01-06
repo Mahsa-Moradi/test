@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/style-system.css" />
+    <link rel="stylesheet" href="./Css/zoomy.css" />
+    <title>zoomy jq</title>
+  </head>
+  <body>
+    <!-- **Zoomy plagin** -->
+    <div id="myGallery">
+      <a href="https://www.jqueryscript.net/gallery/">Gallery</a>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../zoomy JQ/js/zoomy.js"></script>
+    <script>
+      $(document).ready(function(){
+// $("#myGallery").zoomy(urls);
+//       });
+// *****
+// $('#myGallery').zoomy(urls, {
+
+// width: 600,
+
+// height: 450
+// });
+// *****
+$('#myGallery').zoomy(urls, {
+width: 700,
+height: 550,
+thumbLeft:true,
+// thumbRight:true
+
+});
+
+});
+
+      var urls = [
+        "./img/a-book-g0d811b9e0_1920.jpg",
+
+        "./img/attractive-gf6b54e1a6_640.jpg",
+
+        "./img/boys-g1ddfa4c93_1920.jpg",
+      ];
+      //**  var... bayad bad az  $(document)... bashad YA ghabl az  $("#myGallery")  **
+    </script>
+  </body>
+</html>
