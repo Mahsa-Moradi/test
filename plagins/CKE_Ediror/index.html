@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/style-system.css" />
+    <link rel="stylesheet" href="./Css/zoomy.css" />
+    <title>zoomy jq</title>
+  </head>
+  <body>
+    <!-- **CKE_Editor plagin** -->
+    <div id="editor">This is some sample content.</div>
+
+
+
+
+
+
+   <!-- ** Chon be JQ niaz nadarim PAS library JQ ra Hazf mikonim** -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/31.1.0/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor
+              .create( document.querySelector( '#editor' ) )
+              .then( editor => {
+                      console.log( editor );
+              } )
+              .catch( error => {
+                      console.error( error );
+              } );
+</script>
+  </body>
+</html>
