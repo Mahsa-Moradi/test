@@ -5,18 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Css/style-system.css" />
+    <link rel="stylesheet" href="./Css/style.css">
     
-    <title>zoomy jq</title>
+    <title>Timer</title>
   </head>
   <body>
-    <!-- **Zoomy plagin** -->
-    
-
+    <!-- ** Timer plagin ** -->
+    <div data-Date='2020/12/24 23:59:59' data-endText="Offer ended">
+      (days) p_days, (hours) p_hours, and (minutes) p_minutes left!
+    </div>
+    <div data-Date='2020/12/24 23:59:59'>
+      <h2 class="text-center">Special Offer</h2>
+      <div class="running">
+        <timer>
+          <span class="days"></span>:<span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span>
+        </timer>
+        <div class="labels"><span>Days</span><span>Hours</span><span>Minutes</span><span>Seconds</span></div>
+        <div class="text">Offer Ended</div>
+        <button>Buy Now!</button>
+      </div>
+      <div class="ended">
+        <div class="text">Offer is ended</div>
+        <button>Suscribe for next event!</button>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+    <script src="./js/jquery.flipper-responsive.js"></script>
     
     </script>
   </body>
