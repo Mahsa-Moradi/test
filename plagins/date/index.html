@@ -36,10 +36,15 @@
    
     <script type="text/javascript">
       $(document).ready(function() {
-        $(".example1").pDatepicker();
+        $(".example1").pDatepicker({
+         
+          format: 'YYYY/MM/DD', 
+        });
       });
-      // **************************
       </script>
+
+      <!-- ************************** -->
+      
       <script>
       var to, from;
 to = $(".range-to-example").persianDatepicker({
