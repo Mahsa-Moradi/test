@@ -105,4 +105,19 @@ ol {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* ****** slick slider ****** */
+/* ****** date plagin ****** */
+.container{
+margin: 0 auto;
+width: 200px;
+height: 200px;
+justify-items: center;
+align-items: center;
+/* align-content: center; */
+background-color: gray;
+display: flex;
+/* OR */
+  /* position: fixed;
+  left: 50%;
+  top: 20%; */
+
+}
