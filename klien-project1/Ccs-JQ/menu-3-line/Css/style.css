@@ -76,7 +76,7 @@ background-color: rgb(91, 214, 230);cursor: pointer;
     height: 100%;
     background-color: rgb(147, 204, 226);
     left: 0;
-    /* bottom: -99%; */
+    bottom: -99%;
 }
 .wrapper .over-lay ul{
     width: 100%;
@@ -112,14 +112,63 @@ overflow: hidden;
     bottom: -10px;
     height: 5px;
     background-color: blueviolet;
-    
+     background-color: rgb(23, 132, 204);
+     /* 'transform' yaniii: az safhe bere va nabasheh VA be aromi biad bala  */
+     transform: translate(-101%);
     }
-.wrapper .over-lay ul li a:hover{
+
+.wrapper .over-lay ul li a:hover::after{
+    animation: border-anim .5s ease normal;
+    transform: translate(0%);
     /* padding: 10px; */
+    
     /* text-decoration: underline; */
     /* border-bottom: 1.5px solid rgba(41, 109, 236, 0.726); */
     color:rgb(5, 9, 253) ;
     /* font-size: 20px; */
-    font-weight: bolder;
-    
+    /* font-weight: bolder; */
+   
     }
+    @keyframes border-anim {
+        0%{
+            transform: translate(-100%);
+        }
+   
+    100%{
+        transform: translate(0%);
+    } 
+}
+.anim{
+    left: 0;
+    bottom: 0;
+    width: 25% ;
+    /* !important */
+    transition: all .5s ease;
+    animation: menu_anime 1.5s ease-out forwards;
+}
+@keyframes menu_anime{
+
+    0%{
+        /* transform: translate(-100%);
+     */
+     left: 0;
+     width: 100%;
+     bottom: -99%;
+    }
+    33%{
+        /* transform: translate(-100%); */
+        left: -99%;
+        width: 100%;
+        bottom: -99%;
+    }
+
+    66%{
+        /* transform: translate(-100%); */
+
+    }
+
+
+100%{
+    transform: translate(0%);
+} 
+}
