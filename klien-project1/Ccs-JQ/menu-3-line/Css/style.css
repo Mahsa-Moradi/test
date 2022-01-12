@@ -6,6 +6,7 @@
 }
 body{
     position: relative;
+    direction: rtl;
 }
 .wrapper{
     width: 100%;
@@ -81,7 +82,7 @@ cursor: pointer;
 }
 .wrapper .over-lay ul{
     width: 100%;
-    direction: rtl;
+    /* direction: rtl; */
     text-align: center;
     margin-top: 320px;
     padding-left: 0;
@@ -132,11 +133,11 @@ overflow: hidden;
         transform:translateX(-100%);
     } 
 }
-/* !important */
+/*  */
 .anim{
     left: 0;
     bottom: 0;
-    width: 25%  ;
+    width: 25% !important ;
     transition: all .5s ease;
     animation: menu_anim 1.5s ease-out forwards;
 }
@@ -153,7 +154,7 @@ overflow: hidden;
     33%{
         /* transform: translate(-100%); */
         /* right: -99%; */
-        left: -99%;
+        left: 99%;
         bottom: -99%;
         width: 100%;
         
