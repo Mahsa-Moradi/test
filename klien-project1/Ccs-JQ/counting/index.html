@@ -18,10 +18,24 @@
 
    <div class="container">
      <div class="wrapper">
-       <i></i>
+       <i class="fas fa-users"></i>
+       <!-- data-count="150" YANI: be in adad bere30m -->
       <div class="conuter" data-count="150">0</div>
       
       </div>
+      <div class="wrapper">
+        <i class="fas fa-newspaper"></i>
+        <!-- data-count="150" YANI: be in adad bere30m -->
+       <div class="conuter" data-count="85">0</div>
+       
+       </div>
+       <div class="wrapper">
+        <i class="fas fa-clock"></i>
+
+        <!-- data-count="150" YANI: be in adad bere30m -->
+       <div class="conuter" data-count="2200">0</div>
+       
+       </div>
    </div>
 
   
@@ -32,6 +46,30 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
-    
+    <script>
+      $(document).ready(function(){
+        $('.conuter').each(function(){
+          var $this = $(this);
+          // var countTo = $('.conuter').attr('data-count');
+          var countTo = $this.attr('data-count');
+          // console.log(countTo)
+          $({countNum:$this.text()}).animate({
+            countNum:countTo,
+          },
+          {
+duration:1800,
+easing:'linear',
+step:function(){
+  $this.text(Math.floor(this.countNum));
+},
+compelete:function(){
+  $this.text(this.countNum)
+}
+})
+          
+        });
+        });
+  
+    </script>
   </body>
 </html>
