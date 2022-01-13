@@ -20,11 +20,13 @@
     <!-- ** Circle-load ** -->
    
 
-  <p class="course-title">project</p>
+  <div style="text-align: center;">
+    <p class="course-title">project</p>
+
  <div class="circle-loader ">
    <div class="checkmarkt draw">
-   </div> </div>
-   <p><buttom class="btn">Please Click!</buttom></p>
+   </div> </div></div>
+   <p style="text-align: center;"><buttom class="btn">Please Click!</buttom></p>
 
  
 
@@ -37,7 +39,7 @@
       $(document).ready(function(){
 $('.btn').click(function(){
   $('.circle-loader').toggleClass('load-complate');
-  $('.checkmarkt')toggle();
+  $('.checkmarkt').toggle();
 });
       });
     </script>

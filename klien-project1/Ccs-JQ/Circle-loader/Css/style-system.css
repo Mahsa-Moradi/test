@@ -123,10 +123,7 @@ body{
   font-weight: bold;
   font-size: 34px; 
   color: rgba(0, 0, 0, 0.918);
-position: absolute;
-top: 20%;
-left: 50%;
-transform: translate(-0%, -50%);  
+
 }
 .circle-loader{
   
