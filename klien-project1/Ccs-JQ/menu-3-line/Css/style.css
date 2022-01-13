@@ -133,11 +133,11 @@ overflow: hidden;
         transform:translateX(-100%);
     } 
 }
-/*  */
+/* !important */
 .anim{
     left: 0;
     bottom: 0;
-    width: 25% !important ;
+    width: 25%  ;
     transition: all .5s ease;
     animation: menu_anim 1.5s ease-out forwards;
 }
@@ -147,15 +147,16 @@ overflow: hidden;
         /* transform: translate(-100%);
      */
      left: 0;
-     bottom: -99%;
+     bottom: -9%;
      width: 100%;
+     
      
     }
     33%{
         /* transform: translate(-100%); */
         /* right: -99%; */
-        left: 99%;
-        bottom: -99%;
+        /* left:100%; */
+        bottom: -99.5%;
         width: 100%;
         
     }
@@ -163,8 +164,8 @@ overflow: hidden;
     66%{
         /* transform: translate(-100%); */
         /* right: -99%; */
-        left: 99%;
-        bottom: 0%;
+        /* left: 100%; */
+        bottom: -99.5%;
         width: 100%;
         
     }

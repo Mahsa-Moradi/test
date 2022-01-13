@@ -106,4 +106,46 @@ ol {
   padding-right: 15px;
 }
 /* ****** slick slider ****** */
- 
+.anim{
+  left: 0;
+  bottom: 0;
+  width: 25%  ;
+  transition: all .5s ease;
+  animation: menu_anim 1.5s ease-out forwards;
+}
+@keyframes menu_anim{
+
+  0%{
+      /* transform: translate(-100%);
+   */
+   left: 0;
+   bottom: -99%;
+   width: 100%;
+   
+  }
+  33%{
+      /* transform: translate(-100%); */
+      /* right: -99%; */
+      left: 99.5%;
+      bottom: -99%;
+      width: 100%;
+      
+  }
+
+  66%{
+      /* transform: translate(-100%); */
+      /* right: -99%; */
+      left: 99.5%;
+      bottom: 0%;
+      width: 100%;
+      
+  }
+
+
+100%{
+  /* transform: translate(0%); */
+  left: 0%;
+  bottom: 0%;
+  width: 25%;
+} 
+}
