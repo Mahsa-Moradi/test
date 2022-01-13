@@ -146,7 +146,7 @@ animation: loader-spin 5.2s infinite linear;
 }
 .checkmarkt::after{
 content: '';
-opacity: 1;
+opacity: 0;
 height: 120px;
 width: 50px;
 border-right: 3px solid #5cb85c;
@@ -177,8 +177,12 @@ animation: checkmarkt 800ms ease;
     width: 50px;
   }
 }
-/* load-complate YANI vaghti in tag faal shod har animation roye DAYEREH hasr ro stop kon Va rangesh ro barabar ba TIK bokon */
+/* load-complate YANI vaghti in tag faal shod har animation roye DAYEREH hasr ro stop kon Va rangesh ro barabar ba TIK bokon (jaigozin rang ABI)*/
 .load-complate{
   animation: none;
   border-color: #5cb85c;
+  transition: border-color 500ms ease-out;
+}
+.checkmarkt{
+  display: none;
 }
