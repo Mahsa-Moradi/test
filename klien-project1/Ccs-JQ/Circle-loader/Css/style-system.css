@@ -106,13 +106,79 @@ ol {
   padding-right: 15px;
 }
 /* ****** slick slider ****** */
-.wrapper .course-title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 39px;
-  color: rgba(67, 67, 255, 0.918);
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0px;
+}
+body{
+  background-color: #d8e0e5;
+  font-size: 24px;
+  min-height: 100%;
+}
+.course-title{
   font-weight:bold;
   padding: 100px;
   background-color: rgb(240, 251, 255);
+  font-weight: bold;
+  font-size: 34px; 
+  color: rgba(0, 0, 0, 0.918);
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-0%, -50%);  
+}
+.circle-loader{
+  
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left-color: #1e90ff;
+  border-radius: 50%;
+margin: 40px;
+animation: loader-spin 5.2s infinite linear; 
+}
+@keyframes loader-spin {
+  0%{transform: rotate(0);}
+  100%{transform: rotate(360deg);}
+}
+.checkmarkt::after{
+content: '';
+opacity: 1;
+height: 120px;
+width: 50px;
+border-right: 3px solid #5cb85c;
+border-top: 3px solid #5cb85c; 
+position: absolute;
+transform: rotate(220deg) scaleX(-1);
+transform-origin: left top;
+top: 119px;
+left: 76px;
+animation: checkmarkt 800ms ease;
+
+}
+@keyframes checkmarkt {
+  0%{
+    opacity: 1;
+    /* height=0 Chon mikham hichi neshun nadam */
+    height: 0;
+    width: 0px;
+  }
+  30%{
+    opacity: 1;
+    height: 0;
+    width: 20px;
+  }
+  100%{
+    opacity: 1;
+    height: 120;
+    width: 50px;
+  }
+}
+/* load-complate YANI vaghti in tag faal shod har animation roye DAYEREH hasr ro stop kon Va rangesh ro barabar ba TIK bokon */
+.load-complate{
+  animation: none;
+  border-color: #5cb85c;
 }
