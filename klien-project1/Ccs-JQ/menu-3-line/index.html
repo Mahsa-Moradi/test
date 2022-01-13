@@ -26,7 +26,7 @@
   </div>
 
 <!-- over-lat page come on the screan -->
-<div class="over-lay anim">
+<div class="over-lay ">
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">Courses</a></li>
@@ -45,8 +45,9 @@
     ></script>
     <script>
       $('document').ready(function(){
-$(span .menu).click(function(){
-$(span .menu).addClass('.anim')
+$('.menu').click(function(){
+  $('.over-lay').toggleClass('anim');
+
 });
       });
     </script>
