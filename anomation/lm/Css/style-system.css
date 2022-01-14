@@ -217,5 +217,5 @@ a[class*="link"]:hover{
   transition-timing-function:step-end ;
 }
 .link6{
-  transition-timing-function:c ;
+  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ;
 }
