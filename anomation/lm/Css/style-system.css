@@ -161,3 +161,17 @@ ol {
   transform-style: preserve-3d;
   transform: rotateX(60deg);
 }
+.test1{
+  width: 180px;
+  height: 190px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(112, 103, 77);
+}
+.test1 ,.test2{
+  margin: 80px;
+  width: 180px;
+  height: 190px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(44, 107, 109);
+  transform: rotateY(180deg); 
+}
