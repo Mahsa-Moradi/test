@@ -184,19 +184,38 @@ ol {
   /* transition: 5s ease;  */
 }
 /* <!-- *transition* --> */
-.link{
+a[class*="link"]{
 
   background-color: rgb(197, 143, 61);
-  margin: 100px;
+  margin: 1px ;
   padding: 5px 10px;
   color: black;
   /* transition-property:   background-color; */
   transition-property: background-color,padding;
   /*transition-property:all; */
-  transition-duration: 2s;
+  transition-duration: 1s;
+  /* transition-delay: 5s; */
 }
-.link:hover{
+a[class*="link"]:hover{
   background-color:green ;
   padding: 5px 30px;
   color: white;
+}
+.link{
+  transition-timing-function:linear ;
+}
+.link2{
+  transition-timing-function:ease ;
+}
+.link3{
+  transition-timing-function:ease-in ;
+}
+.link4{
+  transition-timing-function:ease-out ;
+}
+.link5{
+  transition-timing-function:step-end ;
+}
+.link6{
+  transition-timing-function:c ;
 }
