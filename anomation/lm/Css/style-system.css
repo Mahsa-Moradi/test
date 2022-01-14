@@ -185,11 +185,16 @@ ol {
 }
 /* <!-- *transition* --> */
 .link{
+
   background-color: rgb(197, 143, 61);
   margin: 100px;
   padding: 5px 10px;
   color: black;
+  /* transition-property:   background-color; */
+  transition-property:all;
+  transition-duration: 3s;
 }
 .link:hover{
   background-color:green ;
+  padding: 5px 30px;
 }
