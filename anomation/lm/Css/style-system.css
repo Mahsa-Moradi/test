@@ -162,7 +162,7 @@ ol {
   transform: rotateX(60deg);
 }
 .test1{
- backface-visibility: hidden;
+ backface-visibility: visible;
 }
 .test2{
   backface-visibility:visible;
