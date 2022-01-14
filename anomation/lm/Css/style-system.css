@@ -142,3 +142,14 @@ ol {
   transform:rotate(-5deg);
   transform-origin: 10% 50%;
 }
+.prespective{
+  margin: 80px;
+  width: 180px;
+  height: 190px;
+  color: black;
+  background-color: rgb(248, 158, 158);
+  /* position: relative; */
+  
+  /* "position: relative" kar nemikoneh chon "perspective" roye onsere daruni kar mikoneh  */
+  perspective: 200px;
+}
