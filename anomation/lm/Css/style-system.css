@@ -148,8 +148,16 @@ ol {
   height: 190px;
   color: black;
   background-color: rgb(248, 158, 158);
-  /* position: relative; */
-  
+  /**position: relative;**/
   /* "position: relative" kar nemikoneh chon "perspective" roye onsere daruni kar mikoneh  */
   perspective: 200px;
+}
+.test{
+  position: absolute;
+  width: 80px;
+  height: 90px;
+  color: black;
+  background-color: rgb(255, 251, 1);
+  transform-style: preserve-3d;
+  transform: rotateX(60deg);
 }
