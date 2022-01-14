@@ -107,16 +107,17 @@ ol {
 }
 /* ****** Animation ****** */
 .transform{
-margin-top: 380px;
-  width: 200px;
-  height: 150px;
+margin-top: 80px;
+  width: 80px;
+  height: 90px;
+  color: black;
   background-color: red;
   /* transform:translate(10%,40%) rotate(45deg); */
-  transform:translate(0%,200%);
+  /* transform:translate(_50PX,_200PX); */
   /* transform: rotate(40deg); */
-  transform: scale(2,2);
+  /* transform: scale(2,2); */
+  /* transform: skewX(80deg); */
+  transform:matrix(1,.6,.2,1,20,30);
 }
 .transform:hover{
-  transform: scale(2,3);
-
-}
+  transform: scale(2,3);}
