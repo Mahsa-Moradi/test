@@ -106,10 +106,19 @@ ol {
   padding-right: 15px;
 }
 /* ****** Animation ****** */
-.transform{
-margin-top: 80px;
-  width: 80px;
-  height: 90px;
+.transform span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin: 20px 50px; */
+  /* padding: 30px 22px; */
+  color: blanchedalmond;
+}
+.transform {
+  margin-top: 80px;
+  width: 180px;
+  height: 190px;
   color: black;
   background-color: red;
   /* transform:translate(10%,40%) rotate(45deg); */
@@ -117,7 +126,19 @@ margin-top: 80px;
   /* transform: rotate(40deg); */
   /* transform: scale(2,2); */
   /* transform: skewX(80deg); */
-  transform:matrix(1,.6,.2,1,20,30);
+  /* transform: matrix(1, 0.6, 0.2, 1, 20, 30); */
 }
-.transform:hover{
-  transform: scale(2,3);}
+.transform:hover {
+  transform: scale(2, 1.5);
+  padding: 30px;
+}
+
+.transform-1 {
+  margin-top: 80px;
+  width: 180px;
+  height: 190px;
+  color: black;
+  background-color: rgb(77, 117, 51);
+  transform:rotate(-5deg);
+  transform-origin: 10% 50%;
+}
