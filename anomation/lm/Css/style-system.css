@@ -162,16 +162,22 @@ ol {
   transform: rotateX(60deg);
 }
 .test1{
-  width: 180px;
-  height: 190px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(112, 103, 77);
+ backface-visibility: hidden;
 }
+.test2{
+  backface-visibility:visible;
+  transition: 5s ease; 
+
+ }
+ .test2:hover{
+  backface-visibility:hidden;
+ }
 .test1 ,.test2{
   margin: 80px;
   width: 180px;
   height: 190px;
   color: rgb(255, 255, 255);
   background-color: rgb(44, 107, 109);
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
+  /* transition: 5s ease;  */
 }
