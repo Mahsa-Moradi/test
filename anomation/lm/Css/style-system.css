@@ -191,10 +191,12 @@ ol {
   padding: 5px 10px;
   color: black;
   /* transition-property:   background-color; */
-  transition-property:all;
-  transition-duration: 3s;
+  transition-property: background-color,padding;
+  /*transition-property:all; */
+  transition-duration: 2s;
 }
 .link:hover{
   background-color:green ;
   padding: 5px 30px;
+  color: white;
 }
