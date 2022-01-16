@@ -305,30 +305,33 @@ animation-delay: 2s;
   position: relative;
 }
 @keyframes changcolor-2{
-  0%{
-    background-color: chartreuse;
+  0% {
+    /* background-color: chartreuse; */
    top: 0;
-   left: 0;
+   right: 0;
 
   }
-  25%{
-    background-color: rgb(255, 0, 0);
+  25% {
+    /* background-color: rgb(255, 0, 0); */
     top: 0;
   right: 200;
 
   }
-  50%{background-color: rgb(0, 183, 255);
+  50% {
+    /* background-color: rgb(0, 183, 255); */
     top: 200;
     right: 200;
 
   }
-  75%{background-color: rgb(0, 0, 0);
+  75% {
+    /* background-color: rgb(0, 0, 0); */
     top: 200;
-    left: 200;
+    right: 200;
 
   }
-  100%{background-color: rgb(255, 0, 191);
+  100% {
+    /* background-color: rgb(255, 0, 191); */
     top: 0;
-    left: 200;
+    right:0;
 } 
 }
