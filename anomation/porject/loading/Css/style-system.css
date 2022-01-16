@@ -116,9 +116,33 @@ ol {
   background-color: yellow;
   overflow: hidden;
   /* ease : vaghfeh mindazeh */
-  animation: loading 3s ease infinite;
+  animation: loading 3s linear infinite;
 }
 @keyframes loading {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/* ************ */
+.loading-1{
+  width: 80px;
+  height: 80px;
+  /* border: 10px dotted #2cc245da; */
+  border-left: 2px solid rgba(148, 21, 148, 0.842);;
+  border-radius: 50%;
+  margin: 200px;
+  background-color: rgb(245, 245, 215);
+  overflow: hidden;
+  /* ease : vaghfeh mindazeh */
+  animation: loading-1 3s linear infinite;
+}
+@keyframes loading-1 {
   0%{
     transform: rotate(0deg);
   }
