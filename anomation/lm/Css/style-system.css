@@ -236,7 +236,13 @@ a[class*="link"]:hover{
   color: rgb(255, 255, 255);
   background-color: rgb(255, 24, 139);
   animation-name: changcolor;
-  animation-duration: 10s;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  /* animation-fill-mode:forwards ; */
+  /* animation-fill-mode:both ;  */
+  /* animation-fill-mode:backwards ; */
+
+
   /* transition: anime 1s ease; */
 }
 @keyframes changcolor{
