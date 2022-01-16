@@ -241,7 +241,10 @@ a[class*="link"]:hover{
   /* animation-fill-mode:forwards ; */
   /* animation-fill-mode:both ;  */
   /* animation-fill-mode:backwards ; */
-
+animation-play-state:running ;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+animation-delay: 2s;
 
   /* transition: anime 1s ease; */
 }
@@ -256,4 +259,36 @@ a[class*="link"]:hover{
   /* 0%{}
   100%{} */
   
+}
+.anime-1{
+  width: 180px;
+  height: 190px;
+  color: rgb(255, 255, 255);
+  background-color: chartreuse;
+  animation-name: changcolor-1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes changcolor-1{
+  0%{
+    background-color: chartreuse;
+    width: 180px;
+
+  }
+  25%{
+    background-color: rgb(255, 0, 0);
+    width: 200px;
+
+  }
+  50%{background-color: rgb(0, 183, 255);
+    width: 220px;
+
+  }
+  75%{background-color: rgb(0, 0, 0);
+    width: 240px;
+
+  }
+  100%{background-color: rgb(255, 0, 191);
+    width: 260px;
+} 
 }
