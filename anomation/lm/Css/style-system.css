@@ -235,10 +235,19 @@ a[class*="link"]:hover{
   height: 190px;
   color: rgb(255, 255, 255);
   background-color: rgb(255, 24, 139);
-  transition: anime 1s ease;
+  animation-name: changcolor;
+  animation-duration: 10s;
+  /* transition: anime 1s ease; */
 }
-@keyframes anime{
-  0%{}
-  100%{}
+@keyframes changcolor{
+  from{background-color:rgb(255, 24, 139);
+    width: 180px;
+  }
+  to{
+    background-color: rgb(0, 162, 255);
+    width: 300px;
+  }
+  /* 0%{}
+  100%{} */
   
 }
