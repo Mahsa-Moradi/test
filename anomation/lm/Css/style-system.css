@@ -299,10 +299,11 @@ animation-delay: 2s;
   text-align: center;
   color: rgb(255, 255, 255);
   background-color: rgb(13, 233, 86);
-  animation-name: changcolor-2;
+  /* animation-name: changcolor-2;
   animation-duration: 10s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
   position: relative;
+  animation:changcolor-2 10s infinite;
 }
 @keyframes changcolor-2{
   0% {
@@ -312,26 +313,56 @@ animation-delay: 2s;
 
   }
   25% {
-    /* background-color: rgb(255, 0, 0); */
-    top: 0;
-  right: 200;
+    background-color: rgb(255, 0, 0);
+    top: 0px;
+  right: 200px;
 
   }
   50% {
-    /* background-color: rgb(0, 183, 255); */
-    top: 200;
-    right: 200;
+    background-color: rgb(0, 183, 255);
+    top: 200px;
+    right: 200px;
 
   }
   75% {
-    /* background-color: rgb(0, 0, 0); */
-    top: 200;
-    right: 200;
+    background-color: rgb(0, 0, 0);
+    top: 200px;
+    right: 0px;
 
   }
   100% {
-    /* background-color: rgb(255, 0, 191); */
-    top: 0;
-    right:0;
+    background-color: rgb(255, 0, 191);
+    top: 0px;
+    right:0px;
 } 
 }
+/* ********************* */
+.polling_message {
+  color: white;
+  float: left;
+  margin-right: 2%;
+}
+
+.view_port {
+  background-color: black;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cylon_eye {
+  background-color: red;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, .9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+          animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
