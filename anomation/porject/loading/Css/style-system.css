@@ -110,6 +110,7 @@ ol {
   width: 380px;
   height: 280px;
 /* background-color: turquoise; */
+perspective: 800px;
 
 }
 .flip-card-inner{
