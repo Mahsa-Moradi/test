@@ -125,10 +125,10 @@ ol {
   bottom: -25px;
   left: 0px;
   right: 0px;
-  z-index: 99;
+ 
   /*direction: ltr; nabayad dashteh bashim YAdar "body" bezarim */
   background-repeat: repeat-x;
-animation: road 9s linear infinite;
+animation: road 20s linear infinite;
 
 }
 @keyframes road {
@@ -138,4 +138,23 @@ animation: road 9s linear infinite;
   100%{
     transform: translateX(-4000px);
   }
+}
+.building{
+  background-image: url(../img/paris-3465434_1280.png);
+  width:1500% ;
+  height:600px ;
+  position: absolute;
+  bottom: 150px;
+  z-index: 99;
+  background-repeat: repeat-x;
+animation: road 20s linear infinite;
+}
+.car{
+  background-image: url(../img/automobile-1299695_1280.png);
+  width:200px ;
+  height:600px ;
+  position: absolute;
+  /* bottom: 100px; */
+  /* left: 100px; */
+  z-index: 99; 
 }
