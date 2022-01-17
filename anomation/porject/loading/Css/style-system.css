@@ -116,17 +116,24 @@ ol {
   overflow: hidden;
 }
 .road{
-  background-image: radial-gradient(to top,green,red,black);
-  width:500% ;
+  background-image:url(../img/gym-1992998_1280\ \(7\).png);
+  width:1500% ;
   height:200px ;
   background-color: gray;
   display: block;
   position: absolute;
-  bottom: 0px;
+  bottom: -25px;
   left: 0px;
   right: 0px;
   z-index: 99;
-transform: rotateX(50deg);
-transform-style: preserve-3d;
+animation: road 9s linear infinite;
 
+}
+@keyframes road {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-4000px);
+  }
 }
