@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
   font-family: vazir-Medium;
 }
-body {
+/* body { */
   direction: ltr;
 }
 a {
@@ -107,7 +107,7 @@ ol {
 }
 /* *************** Animation ************* */
 .main-bg{
-  background-image:url(../img/thunderstorm-3441687_1920.jpg) ;
+  background-image: url(../img/clouds-2085111_1920.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -126,6 +126,8 @@ ol {
   left: 0px;
   right: 0px;
   z-index: 99;
+  /*direction: ltr; nabayad dashteh bashim YAdar "body" bezarim */
+  background-repeat: repeat-x;
 animation: road 9s linear infinite;
 
 }
