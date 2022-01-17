@@ -116,10 +116,17 @@ ol {
   overflow: hidden;
 }
 .road{
+  background-image: radial-gradient(to top,green,red,black);
   width:500% ;
   height:200px ;
   background-color: gray;
+  display: block;
   position: absolute;
-  top:
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 99;
+transform: rotateX(50deg);
+transform-style: preserve-3d;
 
 }
