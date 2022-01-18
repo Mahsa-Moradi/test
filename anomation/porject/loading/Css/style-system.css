@@ -228,7 +228,7 @@ animation: building 45s linear infinite;
   z-index: 199;
 }
 .move{
-  animation: move-car 16s linear infinite;
+  animation: move-car 6s linear infinite;
   position: absolute;
   bottom: 15px;
   z-index: 150;
@@ -239,6 +239,6 @@ animation: building 45s linear infinite;
     transform: translateX(0);
   }
   100%{
-    transform: translateX(4000px);
+    transform: translateX(2000px);
   }
 }
