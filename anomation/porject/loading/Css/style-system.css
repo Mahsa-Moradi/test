@@ -201,15 +201,15 @@ animation: building 45s linear infinite;
 
   position: absolute;
   bottom: -171px;
-  left: 96px;
+  left: 337px;
   right: 271px;
   width:102px ;
   height:102px ;
 }
 .tire .tire-2{
   position: absolute;
-  bottom: -172px;
-  left: -182px;
+  bottom: -169px;
+  left: 62px;
   right: 271px;
   width:102px ;
   height:102px ;
@@ -226,4 +226,19 @@ animation: building 45s linear infinite;
   width:88px ;
   height:119px ;
   z-index: 199;
+}
+.move{
+  animation: move-car 16s linear infinite;
+  position: absolute;
+  bottom: 15px;
+  z-index: 150;
+}
+
+@keyframes  move-car {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(4000px);
+  }
 }
