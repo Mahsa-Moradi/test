@@ -126,7 +126,7 @@ ol {
   left: 0px;
   right: 0px;
  
-  /*direction: ltr; nabayad dashteh bashim YAdar "body" bezarim */
+  /*direction: ltr; nabayad dashteh bashim YA dar "body" bezarim */
   background-repeat: repeat-x;
 animation: road 10s linear infinite;
 
@@ -160,14 +160,53 @@ animation: building 45s linear infinite;
   }
 }
 .car{
-  background-image: url(../img/automobile-1299695_1280.png);
-  width:2000px ;
-  height:600px ;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 0px;
   right: 0px;
   z-index: 99;
-  background-repeat:no-repeat;
+
   /* animation: ; */
+}
+.car img{
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;
+  width:500px ;
+  height:200px ;
+  animation: shake 1s linear infinite ;
+}
+@keyframes shake {
+  0%{transform: translateY(-1px);}
+  15%{transform: translateY(0px);}
+  25%{transform: translateY(0.5px);}
+  50%{transform: translateY(1px);}
+  75%{transform: translateY(1.5px);}
+  100%{transform: translateY(2px);}
+  
+}
+.tire img{
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  right: 271px;
+  width:88px ;
+  height:119px ;
+  z-index: 199;
+  transform: rotateX(360deg);
+  animation:tire 5s linear infinite;
+}
+@keyframes tire {
+  0%{transform: rotateY(-360deg);}
+  /* 100%{transform: rotateX(360deg);} */
+}
+.tire1 img{
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  right: -284px;
+  width:88px ;
+  height:119px ;
+  z-index: 199;
 }
