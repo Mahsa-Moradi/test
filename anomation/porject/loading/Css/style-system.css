@@ -161,13 +161,13 @@ animation: building 45s linear infinite;
 }
 .car{
   background-image: url(../img/automobile-1299695_1280.png);
-  width:200px ;
+  width:2000px ;
   height:600px ;
   position: absolute;
-  bottom: 150px;
+  bottom: 10px;
   left: 0px;
   right: 0px;
   z-index: 99;
-  z-index: 99; 
+  background-repeat:no-repeat;
   /* animation: ; */
 }
