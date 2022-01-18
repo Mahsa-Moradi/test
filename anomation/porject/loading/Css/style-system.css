@@ -186,22 +186,39 @@ animation: building 45s linear infinite;
   100%{transform: translateY(2px);}
   
 }
-.tire img{
+.tire{
+  left: 50%;
   position: absolute;
-  bottom: 15px;
-  left: 0px;
+  transform: translate(-50%);
+  bottom: 200px;
+  z-index: 100;
+}
+.tire img{
+  width:70px ;
+  animation: tire 5s linear infinite;
+}
+.tire .tire-1 {
+
+  position: absolute;
+  bottom: -171px;
+  left: 96px;
   right: 271px;
-  width:88px ;
-  height:119px ;
+  width:102px ;
+  height:102px ;
+}
+.tire .tire-2{
+  position: absolute;
+  bottom: -172px;
+  left: -182px;
+  right: 271px;
+  width:102px ;
+  height:102px ;
   z-index: 199;
-  transform: rotateX(360deg);
-  animation:tire 5s linear infinite;
 }
 @keyframes tire {
-  0%{transform: rotateY(-360deg);}
-  /* 100%{transform: rotateX(360deg);} */
+  100%{transform: rotate(360deg);}
 }
-.tire1 img{
+.tire-2 img{
   position: absolute;
   bottom: 15px;
   left: 0px;
