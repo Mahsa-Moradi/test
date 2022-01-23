@@ -144,6 +144,10 @@ ul.accordion ul {
   /* flex-direction:column; */
   /* *SOTONI va az aghar be aval* */
   /* flex-direction:column-reverse; */
+  /* *dar halateh Defoult* */
+  /* flex-direction: row; */
+  /* *ENGAR direction rtl shodeh* */
+  flex-direction: row-reverse;
 
 }
 .container div{
