@@ -38,6 +38,9 @@ ol {
 .gray-color {
   background-color: gray;
 }
+.l-gray-color {
+  background-color: rgb(163, 179, 176);
+}
 .m-50 {
   margin: 50px;
 }
@@ -148,3 +151,17 @@ ul.accordion ul {
   padding: 10px;
   line-height: 90px;
 }
+.container1{
+  width: 100%;
+float: right;
+}
+.container1 div{
+  float: right;
+  background-color: rgb(207, 162, 119);
+  width: 50px;
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+  padding: 10px;
+  line-height: 40px;
+ }
