@@ -139,7 +139,7 @@ ul.accordion ul {
   /* *Beshkane VA be line bad bereh* */
   /* flex-wrap: wrap; */
   /* *Beshkane VA be line bad bereh VA barax "flex-wrap: wrap;"* */
-  flex-wrap: wrap-reverse;
+  /* flex-wrap: wrap-reverse; */
   /* *SOTONI va az aval be aghar* */
   /* flex-direction:column; */
   /* *SOTONI va az aghar be aval* */
@@ -147,8 +147,10 @@ ul.accordion ul {
   /* *dar halateh Defoult* */
   /* flex-direction: row; */
   /* *ENGAR direction rtl shodeh* */
-  flex-direction: row-reverse;
-
+  /* flex-direction: row-reverse; */
+  /* *"flex-flow" KHOLASEH shode flex-wrap VA flex-directionast* */
+flex-flow: wrap row;
+justify-content:flex-start;
 }
 .container div{
   background-color: rgb(221, 109, 201);
