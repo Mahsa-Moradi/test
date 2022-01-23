@@ -151,7 +151,9 @@ ul.accordion ul {
   /* *"flex-flow" KHOLASEH shode flex-wrap VA flex-directionast* */
 flex-flow: wrap row;
 /* justify-content:flex-start; */
-justify-content: space-around;
+/* justify-content: space-around; */
+/* justify-content:space-between; */
+justify-content:space-evenly;
 }
 .container div{
   background-color: rgb(221, 109, 201);
