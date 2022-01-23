@@ -140,20 +140,25 @@ ul.accordion ul {
   /* flex-wrap: wrap; */
   /* *Beshkane VA be line bad bereh VA barax "flex-wrap: wrap;"* */
   flex-wrap: wrap-reverse;
+  /* *SOTONI va az aval be aghar* */
+  /* flex-direction:column; */
+  /* *SOTONI va az aghar be aval* */
+  /* flex-direction:column-reverse; */
 
 }
 .container div{
   background-color: rgb(221, 109, 201);
-  width: 100px;
+  width: 50px;
   text-align: center;
   margin: 10px;
   font-size: 20px;
   padding: 10px;
-  line-height: 90px;
+  line-height: 40px;
 }
 .container1{
   width: 100%;
 float: right;
+/* *agar display=flex basheh RAHATrae ast* */
 }
 .container1 div{
   float: right;
