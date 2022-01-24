@@ -206,14 +206,15 @@ float: right;
   border: 3px solid rgb(5, 30, 255);
   width: 200px;
   height: 150px;
+  background-color: rgb(173, 237, 100);
+  /* margin: 20px auto; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
   .container3 div{
-    border: 10px solid blue;
+    background-color: rgb(247, 242, 1);
   width: 50px;
   height: 50px;
-  background-color: cornflowerblue;
-  margin: 20px auto;
-  /* display: flex; */
-  /* justify-content: space-around; */
-  /* align-items: center; */
+  
  }
