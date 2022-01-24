@@ -177,6 +177,7 @@ header img{
 .container{ 
   display: flex;
   max-width: 1200px;
+  max-height: auto;
   margin: 50px auto;
  
 }
@@ -192,10 +193,17 @@ header img{
   background-color: rgb(245, 245, 245);
 justify-content: space-around;
 }
+
 .container main > div{
-  /* width: 48.5%; */
+  /* **MOHEM =flex: 50%/width: 50%;
+** */
+  flex: 50%;
+  width: 50%;
+  /* width: 48.5%;
   flex-basis: 400px;
-  margin: 0 15px;
+  margin: 0 15px; */
+  padding: 0 15px;
+  margin-bottom: 15px;
 }
 /* **** */
 aside > div {
@@ -218,4 +226,9 @@ footer{
   align-content: center;
   background-color: rgb(231, 231, 231);
   
+}
+@media screen and(max-with:978px) {
+  .container{
+    -ms-flex-direction: column;
+  }
 }
