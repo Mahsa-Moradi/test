@@ -132,51 +132,22 @@ ul.accordion ul {
   padding: 10px;
 }
 /* scroll to top********************** */
-.container {
+nav{
+  background-color: rgb(219, 219, 219);
+}
+nav ul{
   display: flex;
-  margin-bottom: 30px;
-  justify-content: space-around;
-}
-.container div {
-  background-color: rgb(221, 109, 201);
-  width: 50px;
-  text-align: center;
-  margin: 10px;
-  font-size: 20px;
-  padding: 10px;
-  line-height: 40px;
-}
-.container3 {
-  display: flex;
-  margin-bottom: 30px;
-  justify-content:space-around;
-  margin-top: 30px;
-  min-height: 300px;
-}
-.container3 div {
-  width: 60px;
-  margin: 10px;
-  text-align: center;
-  background-color: rgb(243, 73, 130);
-  line-height: 60px;
-  font-size: 26px;
-  color: #efef;
+  align-items: center;
+  height: 50px;
  
+
+
 }
-.container2 {
-  display: flex;
-  margin-bottom: 30px;
-  justify-content:space-around;
-  margin-top: 30px;
-  min-height: 300px;
+nav ul li{
+ margin-left: 20px;
+ font-size: 16px;
 }
-.container2 div {
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  background-color: rgb(95, 241, 103);
-  line-height: 60px;
-  font-size: 26px;
-  color: #efef;
- 
+header img{
+  
 }
+
