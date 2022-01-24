@@ -184,10 +184,36 @@ float: right;
  /* ************** */
  .container2{
    border: 1px solid blue;
-   width: 100px;
+   width: 300px;
    height: 100px;
-   /* margin-left: auto;
+   margin-left: auto;
    margin-right: auto;
-   margin-top: 20px; */
-   margin: 20px auto;
+   margin-top: 20px;
+   margin: 20px auto; 
+   position: relative; 
+ }
+ .container2 div{
+   width: 50px;
+   height: 40px;
+   position: absolute;
+   top: 50%;
+  left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgb(241, 0, 0);
+  
+ }
+ .container3{
+  border: 3px solid rgb(5, 30, 255);
+  width: 200px;
+  height: 150px;
+}
+  .container3 div{
+    border: 10px solid blue;
+  width: 50px;
+  height: 50px;
+  background-color: cornflowerblue;
+  margin: 20px auto;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
  }
