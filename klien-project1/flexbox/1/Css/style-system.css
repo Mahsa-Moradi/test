@@ -193,7 +193,9 @@ header img{
 justify-content: space-around;
 }
 .container main > div{
-  width: 42.5%;
+  /* width: 48.5%; */
+  flex-basis: 400px;
+  margin: 0 15px;
 }
 
 
