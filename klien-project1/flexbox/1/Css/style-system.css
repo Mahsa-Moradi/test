@@ -163,3 +163,20 @@ ul.accordion ul {
   color: #efef;
  
 }
+.container2 {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content:space-around;
+  margin-top: 30px;
+  min-height: 300px;
+}
+.container2 div {
+  width: 60px;
+  margin: 10px;
+  text-align: center;
+  background-color: rgb(95, 241, 103);
+  line-height: 60px;
+  font-size: 26px;
+  color: #efef;
+ 
+}
