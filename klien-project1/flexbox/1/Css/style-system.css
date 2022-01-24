@@ -207,7 +207,7 @@ float: right;
   width: 200px;
   height: 150px;
   background-color: rgb(173, 237, 100);
-  /* margin: 20px auto; */
+  margin: 20px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
