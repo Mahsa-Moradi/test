@@ -187,10 +187,13 @@ header img{
 
 }
 .container main{
-  flex: 75%;
-  background-color: aqua;
-}
-.container main div{
   display: flex;
+  flex: 75%;
+  background-color: rgb(245, 245, 245);
+justify-content: space-around;
 }
+.container main > div{
+  width: 42.5%;
+}
+
 
