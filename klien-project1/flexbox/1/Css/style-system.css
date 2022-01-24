@@ -72,7 +72,7 @@ ol {
 .img-respansive {
   width: 100%;
   height: auto;
-  display: block; /* چون در زمان هاور از تصویر نزنه بیرون*/
+  display: block; چون در زمان هاور از تصویر نزنه بیرون
 }
 .relative {
   position: relative;
@@ -189,5 +189,8 @@ header img{
 .container main{
   flex: 75%;
   background-color: aqua;
+}
+.container main div{
+  display: flex;
 }
 
