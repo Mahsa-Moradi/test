@@ -215,6 +215,6 @@ float: right;
   .container3 div{
     background-color: rgb(247, 242, 1);
   width: 50px;
-  height: 50px;
+  /* height: 50px; */height: 50px;
   
  }
