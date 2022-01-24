@@ -154,6 +154,8 @@ flex-flow: wrap row;
 /* justify-content: space-around; */
 /* justify-content:space-between; */
 justify-content:space-evenly;
+align-items: center;
+height: 150px;
 }
 .container div{
   background-color: rgb(221, 109, 201);
