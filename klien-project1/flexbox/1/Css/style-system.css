@@ -39,7 +39,7 @@ ol {
   background-color: gray;
 }
 .l-gray-color {
-  background-color: rgb(163, 179, 176);
+  background-color: rgb(167, 150, 187);
 }
 .m-50 {
   margin: 50px;
@@ -147,7 +147,23 @@ nav ul li{
  margin-left: 20px;
  font-size: 16px;
 }
+header{
+  display: flex;
+  max-height: 500px;
+  position: relative;
+}
+header h1{
+  color: rgba(240, 248, 255, 0.808);
+  background-color: rgba(240, 248, 255, 0.178);
+  height: 80px;
+  position: absolute;
+  align-self: center;
+  padding: 20px;
+}
 header img{
+  width: 100%;
   
+  
+
 }
 
