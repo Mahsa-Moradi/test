@@ -20,14 +20,17 @@
   padding: 10px;
    
    display: grid;/*grid-template-columns:10% 10% 10%; */
-  grid-template-columns: auto auto auto auto auto auto ;
-  grid-column-gap: 10px;
+   /* **agar 20 ta Auto bezarim YANI 20 ta COLUMN
+   agar heme ro Auto bezarim YANI be meghdar yeksan with va height begiran** */
+  grid-template-columns: 40% auto auto 100px auto auto ;
+grid-column-gap: 10px;
   
 }
 .container > div{
+  width: 70px;
   padding: 25px 0px;
   /* margin: 10px;  */
-  font-size: 26px;
+  font-size: 28px;
   background-color: rgb(235, 172, 54);
   
 }
