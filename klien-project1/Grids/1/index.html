@@ -46,6 +46,34 @@ grid-template-rows: 100px 250px;
   background-color: rgb(235, 172, 54);
   
 }
+.container1{
+display: grid;
+padding: 10px;
+grid-gap: 10px;
+grid-template-columns: auto auto auto auto auto;
+/* grid-template-rows: auto auto auto; */
+
+}
+.container1 > div{
+  /* width: 50px;
+  height: 70px; */
+  background-color: blueviolet;
+  font-size: 28px;
+  text-align: center;
+  padding: 25px 0px;
+  margin: 0px;
+
+}
+.child1{
+  /* *vaghti 5 ta column darim "YANI 6 ta line ye  gap" darim* */
+  /* /"grid-column-start" VA
+  "grid-column-end" YANI==gap YAline*/
+  /* **YANI az gap 1 ta gap 3 = child1 */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* **grid-column-end:1 / 3 ***/
+
+}
     </style>
   </head>
   <body>
@@ -70,7 +98,12 @@ grid-template-rows: 100px 250px;
   <div class="child5">5</div>
   <div class="child6">6</div>
   <div class="child7">7</div>
-  <div class="child8">8</div> 
+  <div class="child8">8</div>
+  <div class="child9">9</div>
+  <div class="child10">10</div>
+  <div class="child11">11</div>
+  <div class="child12">12</div>
+  <div class="child13">13</div> 
 </div>
 <hr>
 <div class="container2 yellow-color">
