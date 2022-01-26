@@ -20,17 +20,23 @@
   /* padding: 10px; */
    
    display: grid;/*grid-template-columns:10% 10% 10%; */
-   /* **agar 20 ta Auto bezarim YANI 20 ta COLUMN
+   /* ******agar 20 ta Auto bezarim YANI 20 ta COLUMN
    agar heme ro Auto bezarim YANI be meghdar yeksan with va height begiran** */
    /* grid-template-columns: auto auto auto auto auto auto ; */
   /* grid-template-columns: 40% auto auto 100px auto auto ; */
    grid-template-columns: 10% 20% auto  ; 
   /***mzsle margin amal mikoneh***/
-grid-column-gap: 10px;
-/* *************************/
+/* grid-column-gap: 10px; */
+/* rows********************/
 grid-template-rows: 100px 250px;
-grid-row-gap: 10px ;
-  
+/* grid-row-gap: 10px ; */
+/* *************************/
+/* *Kholase shodeh
+"grid-column-gap" VA
+"grid-row-gap" * */
+  grid-gap: 50px 90px;
+  /* 1:column/height
+  2:row/with */
 }
 .container > div{
   width: 70px;
