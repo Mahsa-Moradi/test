@@ -17,13 +17,19 @@
     <style>
       .container{
   /* display: flex; */
-  padding: 10px;
+  /* padding: 10px; */
    
    display: grid;/*grid-template-columns:10% 10% 10%; */
    /* **agar 20 ta Auto bezarim YANI 20 ta COLUMN
    agar heme ro Auto bezarim YANI be meghdar yeksan with va height begiran** */
-  grid-template-columns: 40% auto auto 100px auto auto ;
+   /* grid-template-columns: auto auto auto auto auto auto ; */
+  /* grid-template-columns: 40% auto auto 100px auto auto ; */
+   grid-template-columns: 10% 20% auto  ; 
+  /***mzsle margin amal mikoneh***/
 grid-column-gap: 10px;
+/* *************************/
+grid-template-rows: 100px 250px;
+grid-row-gap: 10px ;
   
 }
 .container > div{
@@ -45,8 +51,9 @@ grid-column-gap: 10px;
    <div>4</div>
    <div>5</div>
    <div>6</div>
-    <!--<div>7</div>
-   <div>8</div>  -->
+    <div>7</div>
+   <div>8</div> 
+   <div>9</div> 
 </div>
 <hr>
 <div class="container1 l-gray-color">
