@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>klien-project-grids</title>
+    <link rel="stylesheet" href="Css/style-system.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+   
+   
+   
+    <script
+      src="https://kit.fontawesome.com/8ed1c24f2f.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+     
+.container{
+display: grid;
+padding: 10px;
+grid-gap: 10px;
+/* grid-template-columns: auto 30px auto 40% auto; */
+/* fr(fraction)
+1fr=auto
+2fr=2barabar */
+grid-template-columns: 1fr 1fr 1fr;
+/* "grid-template-columns:
+( 1fr 1fr 1fr" = repeat(3,1fr)  */
+grid-template-rows: auto auto auto;
+
+}
+.container > div{
+  background-color: blueviolet;
+  font-size: 28px;
+  text-align: center;
+  padding: 25px 0px;
+  margin: 0px;
+
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- *project-grids* -->
+    
+<div class="container l-gray-color">
+  <div class="child1">1</div>
+  <div class="child2">2</div>
+  <div class="child3">3</div>
+  <div class="child4">4</div>
+  <div class="child5">5</div>
+  <div class="child6">6</div>
+  <div class="child7">7</div>
+  <div class="child8">8</div>
+  <div class="child9">9</div>
+  <div class="child10">10</div>
+  <div class="child11">11</div>
+  <div class="child12">12</div>
+  <div class="child13">13</div> 
+  <div class="child14">14</div> 
+  <div class="child15">15</div> 
+  
+</div>
+<hr>
+  <div class="blue"></div>
+</div>
+<script src="jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/owl.carousel.min.js.js"></script>
+  </body>
+</html>
