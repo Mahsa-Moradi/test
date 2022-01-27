@@ -17,10 +17,12 @@
 display: grid;
 padding: 10px;
 grid-gap: 5px;
-grid-template-areas: " menu  menu menu menu menu menu menu menu menu menu menu menu";
+grid-template-areas: ' menu  menu menu menu menu menu menu menu menu menu menu menu'
+'slider slider slider slider slider slider slider slider slider topic topic topic'
+;
 }
 .container2 > div{
-  background-color: rgb(255, 131, 59);
+  /* background-color: rgb(255, 131, 59); */
   margin: 0px;
   font-size: 28px;
   text-align: center;
@@ -28,7 +30,16 @@ grid-template-areas: " menu  menu menu menu menu menu menu menu menu menu menu m
  
 }
 .child16{
+  background-color: rgb(250, 133, 0);
 grid-area:menu ;
+}
+.child17{
+  background-color: rgb(76, 221, 197);
+  grid-area:slider ;
+}
+.child18{
+  background-color: rgb(154, 221, 76);
+  grid-area:topic ;
 }
 
     </style>
@@ -39,8 +50,8 @@ grid-area:menu ;
 <!-- ***grid-menu-lay-out*** -->
 <div class="container2 yellow-color">
   <div class="child16">Menu</div>
-  <div class="child17">17</div>
-  <div class="child18">18</div>
+  <div class="child17">Slider imag</div>
+  <div class="child18">NEW TOPIC</div>
   <div class="child19">19</div>
   <div class="child20">20</div>
   <div class="child21">21</div>
