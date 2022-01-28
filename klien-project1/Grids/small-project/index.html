@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>klien-project-gridsMenu</title>
+    <title>klien-project-gridsGallery</title>
     <link rel="stylesheet" href="Css/style-system.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
    
@@ -15,30 +15,53 @@
       crossorigin="anonymous"
     ></script>
     <style>
+      .direction{
+        direction: rtl;
+      }
       .black{
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.699);
       }
     .responsive{
       width: 100%;
       height: auto;
+      
       display: block;
     } 
 .container{
 display: grid;
-padding: 10px;
-grid-gap: 10px;
+/* padding: 10px; */
+grid-gap: 5px;
 grid-template-columns: repeat(4,1fr);
 grid-template-rows: repeat(6,1fr);
 
 }
-.container > div{
-  background-color: rgb(0, 0, 0);
+.container div{ background-color: rgb(255, 255, 255);
   overflow: hidden;
+}
+.container div img{
   transition: .5s ease;
 }
-.container > div:hover{
-transform:  scale(1.1);
+.container div img:hover{
+transform: rotate(5deg) scale(1.4);
 }
+.c1{
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.c7{
+  grid-column: 2/4;
+  grid-row: 3/5;
+}
+.c13{
+  grid-column: 3/span 2;
+  grid-row: 5/span 2;
+}
+.c17{
+  grid-column: 1/3;
+  grid-row: 7/9;
+}
+
+
 .c21{
   grid-column: 1/3;
   grid-row: 9/11;
@@ -47,37 +70,40 @@ transform:  scale(1.1);
   grid-column: 3/5;
   grid-row: 9/11;
 }
+@media screen and (maxwith) {
+  
+}
 
     </style>
   </head>
-  <body class="black">
+  <body class="black direction">
     <!-- *project-grids* -->
     
 <div class="container ">
-  <div class="c1"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c2"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
-  <div class="c3"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c4"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
-  <div class="c5"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c6"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
-  <div class="c7"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c8"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
-  <div class="c9"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c10"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
-  <div class="c11"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c12"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
-  <div class="c13"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c14"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
-  <div class="c15"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c16"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
-  <div class="c17"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c18"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
-  <div class="c19"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c20"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
-  <div class="c21"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c22"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
-  <div class="c23"><img class="responsive" src="../small-project/img/salad-1672505_1280.jpg" alt=""></div>
-  <div class="c24"><img class="responsive" src="../small-project/img/pumpkin-1768857_640.jpg" alt=""></div>
+  <div class="c1"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c2"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
+  <div class="c3"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c4"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
+  <div class="c5"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c6"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
+  <div class="c7"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c8"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
+  <div class="c9"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c10"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
+  <div class="c11"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c12"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
+  <div class="c13"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c14"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
+  <div class="c15"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c16"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
+  <div class="c17"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c18"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
+  <div class="c19"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c20"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
+  <div class="c21"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c22"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
+  <div class="c23"><img class="responsive" src="../small-project/img/orange-832278_640.jpg" alt=""></div>
+  <div class="c24"><img class="responsive" src="../small-project/img/vector-4699584_640.png" alt=""></div>
 
  
   
