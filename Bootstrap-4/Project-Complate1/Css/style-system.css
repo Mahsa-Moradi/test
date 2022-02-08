@@ -1,7 +1,18 @@
+@import '-top-nav.css';
+éfont-face{
+  font-family: Vazier-Medium;
+  scr:url(../Fonts/Vazir-Medium.eot) format('eot'),
+  url(../Fonts/Vazir-Medium.woff) format('woff'),
+  url(../Fonts/Vazir-Medium.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+
+}
+
 *,
 body {
-  margin-left: auto;
-  margin-right: auto;
+  margin:0;
+  padding: 0;
   box-sizing: border-box;
   font-family: vazir-Medium;
 }
