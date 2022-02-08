@@ -20,6 +20,17 @@ padding: 10px;
 .shop-card{
     background-color: transparent;
 }
+.shop-card i{
+    vertical-align: -2px;
+}
 .shop-card span{
     font-size: 16px;
+}
+.custom-dropdown-toggle::after{
+vertical-align: 2px;
+margin-left: 3px;
+}
+.basket a img{
+    width: 200px;
+
 }
