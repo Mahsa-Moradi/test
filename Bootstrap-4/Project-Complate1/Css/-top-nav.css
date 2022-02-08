@@ -2,3 +2,10 @@
     background-color: #232f3e;
     color: #fff;
 }
+.custom-top-nav{
+    font-size: 15px;
+}
+.custom-top-nav a{
+padding: 10px;
+}
+
