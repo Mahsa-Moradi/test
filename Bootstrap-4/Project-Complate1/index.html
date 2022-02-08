@@ -19,9 +19,14 @@
       rel="stylesheet"
       type="text/css"
     />
-     <!-- *align-items-start* -->
+     <!-- *Bootstrapv-link* -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <link 
+    rel="stylesheet"
+    href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
+    integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe"
+    crossorigin="anonymous" />
+
 
 <!-- *Css/style* -->
     <link rel="stylesheet" href="./Css/style-system.css" />
@@ -33,22 +38,59 @@
     </style>
   </head>
   <body dir="rtl">
+    <!-- **************** TOP PAGE ***************** -->
 <div class="container-fluid bg-top-nav">
   <div class="row">
     <div class="container">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-sm-12 col-md-6 float-right ">
-          <p class="text-white ">Free Shipping</p>
+      <div class="row ">
+        <div class="col-sm-12 col-md-6 d-flex align-items-center  ">
+          <p class="text-white float-right">Free Shipping</p>
         </div>
 
           <div class="col-sm-12 col-md-6">
-            <nav class="nav custom-top-nav ">
-              <a class="nav-link text-white border-left border-right" href="#">Active</a>
-              <a class="nav-link text-white border-left" href="#">Link</a>
-              <a class="nav-link text-white border-left" href="#">Link</a>
-              <a class="nav-link text-white " href="#">Disabled</a>
+            <nav class="nav custom-top-nav d-flex align-items-center float-right">
+              <a class="nav-link text-white border-left " href="#">Address</a>
+              <a class="nav-link text-white border-left" href="#">Phone: 0425258575</a>
+              <a class="nav-link text-white border-left" href="#">Shop</a>
+              <a class="nav-link text-white border-left " href="#">About Us</a>
             </nav>
         </div>
+      </div>
+    </div>
+    <!-- ***************** TOP PAGE Dropdown ***************** -->
+    <div class="container my-4">
+      <div class="row">
+        <div class="coi-sm-12 col-md-2">Logo</div>
+        <div class="coi-sm-12 col-md-8">
+          <div class="input-group ">
+          <div class="input-group-prepend">
+            <button class="btn btn-secondary dropdown-toggle custom-btn-font-size" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Mobile</a>
+              <a class="dropdown-item" href="#">Computer</a>
+              <a class="dropdown-item" href="#">Make Up</a>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+
+          <div class="input-group-append">
+            <button class="btn btn-danger custom-btn-font-size" type="button">Search</button>
+        </div>
+        </div>
+        <div class="coi-sm-12 col-md-2">
+        </div>
+        
+      </div>
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle border-0 shop-card" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cart-arrow-down"></i>
+         <span class="mr-2">Card</span> 
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </div>
     </div>
@@ -64,15 +106,25 @@
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>
+   <!-- jQuery and JS bundle w/ Popper.js -->
+   <script
+   src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js"
+   integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK"
+   crossorigin="anonymous"></script>
     <!-- **Jquery** -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
-   
-    </script>
+<script>
+  $('#myDropdown').on('show.bs.dropdown', function () {
+  // do something…
+})
+</script>
+   <script>
+   $('.dropdown-toggle').dropdown('toggle')
+   </script>
+    
   </body>
 </html>

@@ -1,11 +1,25 @@
 .bg-top-nav{
-    background-color: #232f3e;
+    background-color: #374a61;
     color: #fff;
 }
-.custom-top-nav{
+.custom-top-nav,.bg-top-nav p{
     font-size: 15px;
 }
 .custom-top-nav a{
 padding: 10px;
 }
-
+.custom-top-nav .border-left {
+    border-color: #8b5959!important;
+}
+.btn-font-size{
+    font-size: 14px;
+  }
+.custom-btn-font-size{
+    font-size: 14px;
+  }
+.shop-card{
+    background-color: transparent;
+}
+.shop-card span{
+    font-size: 16px;
+}
