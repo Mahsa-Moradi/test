@@ -30,7 +30,16 @@ padding: 10px;
 vertical-align: 2px;
 margin-left: 3px;
 }
+.basket{
+    width: 300px !important;
+}
+.basket a{
+    font-size: 14px;
+}
 .basket a img{
-    width: 200px;
-
+    width: 64px;
+height: 64px;
+}
+.custom-dropdown-item:hover{
+background-color: rgb(210, 229, 255);
 }
