@@ -24,6 +24,9 @@ a {
   text-decoration: none;
   /* decoration:none; */
 }
+p{
+  margin: 0;
+}
 figure {
   position: relative;
 }
