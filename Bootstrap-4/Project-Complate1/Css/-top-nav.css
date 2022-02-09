@@ -43,3 +43,7 @@ height: 64px;
 .custom-dropdown-item:hover{
 background-color: rgb(210, 229, 255);
 }
+/* *********navbar********* */
+.custom-navbar-nav{
+font-size: 15px;
+}
