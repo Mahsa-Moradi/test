@@ -44,6 +44,9 @@ height: 64px;
 background-color: rgb(210, 229, 255);
 }
 /* *********navbar********* */
+.custom-navbar ,.custom-navbar-nav ,.nav-item{
+position: unset;
+}
 .custom-navbar-nav{
 font-size: 15px;
 }
