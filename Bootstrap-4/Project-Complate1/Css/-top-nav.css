@@ -50,3 +50,10 @@ position: unset;
 .custom-navbar-nav{
 font-size: 15px;
 }
+.custom-navbar-nav .nav-item .dropdown-menu{
+    color: white;
+    background-color:#dc3545 ;
+    border-radius: 0;
+border: none;
+    top: 67px;
+}
