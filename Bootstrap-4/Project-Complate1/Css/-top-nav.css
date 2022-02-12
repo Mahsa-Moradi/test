@@ -77,3 +77,12 @@ bottom: 0;
     color: rgb(245, 202, 200)!important;
 
 }
+/* **** */
+.custom-navbar-toggler{
+  color: #fff; 
+  border: unset; 
+}
+.input-top-nav-search::-webkit-input-placeholder{
+    font-size: 13px;
+    color: rgba(245, 229, 229, 0.596);
+}
