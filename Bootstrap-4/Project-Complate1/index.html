@@ -303,7 +303,7 @@
             <img class="d-block w-100" src="./img/girl-2581913_1920.jpg" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
               <h5>Hello customer</h5>
-              <p>Welcome</p>
+              <p class="bg-warning p-2" >Welcome</p>
             </div>
           </div>
 
@@ -311,7 +311,7 @@
             <img class="d-block w-100" src="./img/woman-3040029_1920.jpg" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
               <h5>Hello customer</h5>
-              <p>Welcome</p>
+              <p class="bg-warning p-2">Welcome</p>
             </div>
           </div>
 
@@ -319,7 +319,7 @@
             <img class="d-block w-100" src="./img/ecommerce-2140604_1920.jpg" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
               <h5>Hello customer</h5>
-              <p>Welcome</p>
+              <p class="bg-warning p-2">Welcome</p>
             </div>
           </div>
 
@@ -372,9 +372,18 @@
   // do something…
 })
 </script>
+
    <script>
    $('.dropdown-toggle').dropdown('toggle')
    </script>
-    
+    <script>
+      $('.carousel').carousel()
+      $('.carousel').carousel({
+  interval: 2000
+})
+$('#myCarousel').on('slide.bs.carousel', function () {
+  // do something…
+})
+    </script>
   </body>
 </html>
