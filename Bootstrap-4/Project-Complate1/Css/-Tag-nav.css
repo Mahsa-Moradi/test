@@ -53,3 +53,16 @@ padding-left: 10px;
     margin-top: 20px;
     color: rgb(49, 66, 216);
 }
+.offer-details .count-down-timer p{
+    padding-right: 10px;
+}
+.offer-details .count-down-timer span{
+    background-color: rgb(233, 233, 233);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 20px 8px 0px 0;
+    text-align: center;
+    direction: rtl;
+}
+
