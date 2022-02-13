@@ -1,5 +1,5 @@
 
-var countDownDate = new Date('October 5 , 2022 15:37:25').getTime();
+var countDownDate = new Date('May 5 , 2022 15:37:25').getTime();
 
 var X = setInterval(function(){
     var now = new Date() .getTime();
@@ -12,7 +12,7 @@ var  hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 var  mintutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var  seconds = Math.floor((distance % (1000 * 60 )) / 1000);
 
-Document.getElenentById('demo').innerHTML = '<span id = "day">'+ day + '</span>' + '<span id = "hours">'+ hours + '</span>'  +  '<span id = "mintutes">'+ mintutes + '</span>' + '<span id = "mintutes">'+ seconds + '</span>'; 
+Document.getElenentById('demo').innerHTML = '<span id = "day">'+ day + '</span>' + '<span id = "hours">'+ hours + '</span>'  +  '<span id = "mintutes">'+ mintutes + '</span>' + '<span id = "seconds">'+ seconds + '</span>'; 
 
 
 if (distance < 0) {
