@@ -1,0 +1,41 @@
+
+.img-respansive-ads {
+    width: 100%;
+    /* height: 200px; */
+    /* height: auto; */
+    height: fit-content;/* 1 way */
+
+    display: block; /* چون در زمان هاور از تصویر نزنه بیرون*/
+  }
+/* 2 way */
+  .col-12-custom {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 18.20%;
+    max-width: 100%;
+}
+.mr-20-custom{
+    margin-left: 100px;
+}
+.wrapper-ads img{
+    height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .col-12-custom {
+        /* height: 449px;
+        width: 640px;
+    } */
+    flex: 0 0 101.2%;
+    max-width: 100%;
+    
+  } 
+  .col-sm-12-custom div img{
+   display: flex;
+    justify-content:center;
+    align-items: center;   
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    float: none!important;
+  }
+ }
