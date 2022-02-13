@@ -54,7 +54,7 @@ font-size: 15px;
 }
 .custom-navbar-nav .nav-item .dropdown-menu{
     color: white;
-    background-color:#dc3545 ;
+    background-color:#232c44 ;
     border-radius: 0;
 border: none;
     top: 67px;
@@ -94,3 +94,21 @@ bottom: 0;
 .bg-c-dropdown-card a:hover{
     background-color: rgba(6, 40, 90, 0.048);
 } 
+/* nav */
+.custom-mx-navbar{
+    margin-right: 1050px;
+}
+.img-respansive {
+    width: 100%;
+    height: auto;
+    display: block; /* چون در زمان هاور از تصویر نزنه بیرون*/
+  }
+
+  /* .......... */
+  .justify-content-between-custom{
+      display: flex;
+      justify-content:space-around;
+  }
+  .custom-justify-content-start{
+    justify-content:flex-start  
+  }
