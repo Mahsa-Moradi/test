@@ -86,3 +86,11 @@ bottom: 0;
     font-size: 13px;
     color: rgba(245, 229, 229, 0.596);
 }
+
+
+.bg-c-dropdown-card{
+    background-color: rgba(197, 197, 224, 0.075);
+}
+.bg-c-dropdown-card a:hover{
+    background-color: rgba(6, 40, 90, 0.048);
+} 
