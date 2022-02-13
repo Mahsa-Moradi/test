@@ -137,13 +137,14 @@ ol {
   max-width: 1340px;}
 
   .custom-slider-col-md-6{
-    flex:0 0 43%;
+    flex:0 0 53%;
   }
   .custom-slider1-col-md-3{
-    flex:0 0 18.5%;
+    flex:0 0 21%;
   }
   .custom-slider2{
-    flex: 0 0 14%;
+    flex: 0 0 16%;
+
   }
 
 
