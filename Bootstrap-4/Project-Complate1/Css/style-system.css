@@ -139,7 +139,7 @@ ol {
   .custom-slider-col-md-6{
     flex:0 0 43%;
   }
-  .custom-slider-col-md-3{
+  .custom-slider1-col-md-3{
     flex:0 0 18.5%;
   }
   .custom-slider2{
@@ -157,9 +157,9 @@ ol {
   }
 }
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
   .custom-slider2 {
     flex: 0 0 50%;
     width: 50%;
   }
-}
+} */
