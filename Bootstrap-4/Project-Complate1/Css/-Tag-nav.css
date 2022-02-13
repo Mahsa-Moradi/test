@@ -1,8 +1,24 @@
 .custom-nav-tabs,
 .nav-link {
     border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 15px;
+    color:rgb(54, 54, 54);
 }
-/* .active,
+ 
+.custom-nav-tabs,
+.nav-link .active,
 .nav-tabs,
 .nav-item.show,
-.nav-link */
+.nav-link{
+   color: rgb(235, 3, 3);
+   background-color: transparent;
+   border-color: transparent;
+}
+.custom-nav-tabs,
+.nav-link .hover,
+.custom-nav-tabs,
+.nav-item.focus{
+  border-color:rgb(199, 202, 32) ;  
+}
