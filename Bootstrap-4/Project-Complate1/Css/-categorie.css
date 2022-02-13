@@ -1,0 +1,9 @@
+.img-respansive-cards {
+    width: 50px;
+    height: 90px;
+    display: block; /* چون در زمان هاور از تصویر نزنه بیرون*/
+  }
+
+div .cat-desc img{
+width: 100%;
+}

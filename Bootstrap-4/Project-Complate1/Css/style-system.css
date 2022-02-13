@@ -2,6 +2,7 @@
 @import "-slider.css";
 @import '-shipping.css';
 @import '-ads.css';
+@import '-categorie.css';
 éfont-face {
   font-family: Vazier-Medium;
   scr: url(../Fonts/Vazir-Medium.eot) format("eot"),
