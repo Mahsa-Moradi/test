@@ -3,6 +3,10 @@
 @import '-shipping.css';
 @import '-ads.css';
 @import '-categorie.css';
+@import '-Tag-nav.css';
+
+
+
 éfont-face {
   font-family: Vazier-Medium;
   scr: url(../Fonts/Vazir-Medium.eot) format("eot"),
