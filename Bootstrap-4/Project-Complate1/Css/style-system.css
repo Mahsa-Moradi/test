@@ -1,18 +1,17 @@
-@import '-top-nav.css';
-@import '-slider.css';
-éfont-face{
+@import "-top-nav.css";
+@import "-slider.css";
+éfont-face {
   font-family: Vazier-Medium;
-  scr:url(../Fonts/Vazir-Medium.eot) format('eot'),
-  url(../Fonts/Vazir-Medium.woff) format('woff'),
-  url(../Fonts/Vazir-Medium.woff2) format('woff2');
+  scr: url(../Fonts/Vazir-Medium.eot) format("eot"),
+    url(../Fonts/Vazir-Medium.woff) format("woff"),
+    url(../Fonts/Vazir-Medium.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
-
 }
 
 *,
 body {
-  margin:0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: vazir-Medium;
@@ -25,7 +24,7 @@ a {
   text-decoration: none;
   /* decoration:none; */
 }
-p{
+p {
   margin: 0;
 }
 figure {
@@ -103,6 +102,7 @@ ol {
 }
 
 .container {
+  max-width: 1340px;
   clear: both;
   content: "";
   max-width: 1200px;
@@ -121,17 +121,45 @@ ol {
   padding-right: 15px;
 }
 
-
-
 @media (min-width: 576px) {
   .mt-csm-3 {
-   margin-top: 1rem ;
+    margin-top: 1rem;
   }
 }
 @media (min-width: 768px) {
   .mt-cmd-0 {
-    margin-top: 0rem ;
-   }
+    margin-top: 0rem;
+  }
 }
 
-/* ****** ****** */
+/* ******SLIDER ****** */
+.container {
+  max-width: 1340px;}
+
+  .custom-slider-col-md-6{
+    flex:0 0 43%;
+  }
+  .custom-slider-col-md-3{
+    flex:0 0 18.5%;
+  }
+  .custom-slider2{
+    flex: 0 0 14%;
+  }
+
+
+@media (min-width: 1200px) {
+  .contaiver,
+  .contaiver-sm,
+  .contaiver-md,
+  .contaiver-lg,
+  .contaivexl {
+    max-width: 1340px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .custom-slider2 {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}
