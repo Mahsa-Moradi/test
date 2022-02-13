@@ -30,6 +30,7 @@
       crossorigin="anonymous"
     />
     <!-- ........... -->
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script
@@ -37,7 +38,7 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
-
+    
     <!-- *Css/style* -->
     <link rel="stylesheet" href="./Css/style-system.css" />
     <link rel="stylesheet" href="./Css/style.css" />
@@ -956,9 +957,9 @@
                 <div class="row d-flex">
                   <!-- ............ -->
                   <div
-                    class="col-sm-12 col-md-6 bg-white d-flex justify-content-between tag-nav-custom"
+                    class="col-sm-12 col-md-6 bg-white d-flex justify-content-between"
                   >
-                    <div class="">
+                    <div class="tag-nav-custom">
                       <img
                         class="img-fluid"
                         src="./img/lamps-575857_640.png"
@@ -966,19 +967,25 @@
                       />
                     </div>
 
-                    <div>
-                      <a href="">lamps, model 2020</a>
-                      <div class="">
-                        <i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i>
+                    <div class="p-4 offer-details">
+                     <p class="text-right"> <a  class="text-decoration-none " href=""
+                        >lamps, model 2020</a></p>
+                    
+                      <div class="offer-raiting text-right">
+                       <img src="./img/star_77949.png" alt="">
+                      <img src="./img/star_77949.png" alt="">
+                      <img src="./img/star_77949.png" alt="">
+                      <img src="./img/star_77949.png" alt="">
+                      <img src="./img/star_77949.png" alt="">
                       </div>
-                      <div class="offer-price">250£   <s>100£</s></div>
-                      <div class="count-down-timer">
-                        Laastje tijd voor korting
+                      <br>
+              
+                      <div class="offer-price text-right"> 100£<s>250£</s></div>
+                      <div class="count-down-timer korting">
+                        <p class=" text-right">Laastje tijd voor korting</p>
+                        <div id="demo"></div>
                       </div>
+                      
                     </div>
                   </div>
                   <!-- ............ -->
@@ -1031,5 +1038,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></> -->
     <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="./js/index.js"></script>
   </body>
 </html>

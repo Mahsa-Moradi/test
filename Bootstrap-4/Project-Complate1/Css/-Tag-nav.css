@@ -24,14 +24,32 @@
 }
 /* .............. */
 .tag-nav-custom img{
+    margin-top: 30px;
     width: 100px;
     height: 150px;
 }
-.tag-nav-custom div a{
-    margin-top: 20px;
-    color: rgb(49, 49, 49);
-    background-color: rgb(229, 229, 248);
-}
+
 /* .flex-custom-column{
     flex-direction: column ;
 } */
+.offer-details a{
+color: rgb(226, 64, 43);
+font-size: 16px;
+ margin-top: 20px;
+}
+.offer-details .offer-raiting img{
+    color: blueviolet;
+    width: 10px;
+    height: 10px;
+}
+.offer-details .offer-price {
+    color: rgb(7, 202, 33);
+}
+.offer-details .offer-price s{
+color: rgb(252, 9, 9);
+padding-left: 10px;
+}
+.offer-details .korting p {
+    margin-top: 20px;
+    color: rgb(49, 66, 216);
+}

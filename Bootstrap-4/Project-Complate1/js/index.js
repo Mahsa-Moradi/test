@@ -1,7 +1,5 @@
-$('.tt').tooltip('show');
-$('.po').popover('show');
-$('.tot').toast('show');
-var countDownDate = new Date('Jan 5 , 2021 15:37:25').getTime();
+
+var countDownDate = new Date('October 5 , 2022 15:37:25').getTime();
 
 var X = setInterval(function(){
     var now = new Date() .getTime();
@@ -23,3 +21,11 @@ if (distance < 0) {
 }
 
 } , 1000 );
+
+
+
+
+// ........................
+$('.tt').tooltip('show');
+$('.po').popover('show');
+$('.tot').toast('show');
