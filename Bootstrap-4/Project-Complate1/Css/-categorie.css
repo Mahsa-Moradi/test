@@ -1,3 +1,6 @@
+.bg-cads-custom{
+    background-color: rgba(45, 45, 80, 0.075);
+}
 .img-respansive-cards {
     width: 50px;
     height: 90px;
@@ -7,3 +10,4 @@
 div .cat-desc img{
 width: 100%;
 }
+
