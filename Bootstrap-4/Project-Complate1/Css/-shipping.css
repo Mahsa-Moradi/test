@@ -9,3 +9,21 @@
 .shipping-wrapper p{
     font-size: 13px;
 }
+@media (min-width: 576px)  {
+    .shipping-wrapper{
+      margin-top: 10px;  
+    }
+    .shipping-wrapper p{
+       
+        display: block;
+      margin-right: 20px;
+      background-color: rgba(255, 240, 240, 0.795);
+      height: 20px;
+      
+    }
+    .shipping-wrapper i{
+        display: block;
+      margin-left: 10px;
+          
+    }
+  }
