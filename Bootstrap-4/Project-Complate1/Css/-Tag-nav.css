@@ -4,7 +4,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-size: 15px;
-    color:rgb(54, 54, 54);
+    color:rgb(39, 35, 236);
 }
  
 .custom-nav-tabs,
@@ -12,7 +12,7 @@
 .nav-tabs,
 .nav-item.show,
 .nav-link{
-   color: rgb(235, 3, 3);
+   color: rgb(48, 48, 48);
    background-color: transparent;
    border-color: transparent;
 }
@@ -22,3 +22,16 @@
 .nav-item.focus{
   border-color:rgb(199, 202, 32) ;  
 }
+/* .............. */
+.tag-nav-custom img{
+    width: 100px;
+    height: 150px;
+}
+.tag-nav-custom div a{
+    margin-top: 20px;
+    color: rgb(49, 49, 49);
+    background-color: rgb(229, 229, 248);
+}
+/* .flex-custom-column{
+    flex-direction: column ;
+} */
