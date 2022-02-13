@@ -1,5 +1,6 @@
 @import "-top-nav.css";
 @import "-slider.css";
+@import '-shipping.css';
 éfont-face {
   font-family: Vazier-Medium;
   scr: url(../Fonts/Vazir-Medium.eot) format("eot"),
