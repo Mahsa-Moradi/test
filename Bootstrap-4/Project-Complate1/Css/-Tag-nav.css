@@ -37,6 +37,10 @@ color: rgb(78, 78, 78);
 font-size: 16px;
  /* margin-top: 20px; */
 }
+.offer-details p{
+    margin-bottom: -17px;
+}
+
 .offer-details .offer-raiting img{
     color: blueviolet;
     width: 10px;
@@ -44,6 +48,7 @@ font-size: 16px;
 }
 .offer-details .offer-price {
     color: rgb(7, 202, 33);
+    margin-bottom: -13px;
 }
 .offer-details .offer-price s{
 color: rgb(252, 9, 9);

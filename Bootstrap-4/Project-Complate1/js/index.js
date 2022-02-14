@@ -17,6 +17,7 @@ document.getElementById("demo").innerHTML = '<span id = "day">'+ days + '</span>
 // distance = time count-down < 0 va -0  "Finish" namayesh bedeh.
 if (distance < 0) {
     clearInterval(x);
+    // خالی باشه تا عدد منفی نخوره
     document.getElementById("demo").innerHTML = "";
     document.getElementById("offer-expire-text").innerHTML = "Finish";
     document.getElementById("offer-blur").style.filter = "blur(2px)";
