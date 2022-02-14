@@ -1,5 +1,5 @@
 
-var countDownDate = new Date('May 5 , 2022 15:37:25').getTime();
+var countDownDate = new Date('february 14 , 2022 01:23:11').getTime();
 
 var X = setInterval(function(){
     var now = new Date().getTime();
@@ -14,10 +14,12 @@ var  seconds = Math.floor((distance % (1000 * 60 )) / 1000);
 
 document.getElementById("demo").innerHTML = '<span id = "day">'+ days + '</span>' + '<span id = "hours">'+ hours + '</span>'  +  '<span id = "minutes">'+ minutes + '</span>' + '<span id = "seconds">'+ seconds + '</span>'; 
 
-
+// distance = time count-down < 0 va -0  "Finish" namayesh bedeh.
 if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = Finish
+    document.getElementById("demo").innerHTML = "";
+    document.getElementById("offer-expire-text").innerHTML = "Finish";
+    document.getElementById("offer-blur").style.filter = "blur(2px)";
 }
 
 } , 1000);

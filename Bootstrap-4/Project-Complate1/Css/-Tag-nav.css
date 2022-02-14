@@ -65,4 +65,7 @@ padding-left: 10px;
     text-align: center;
     direction: rtl;
 }
+#offer-expire-text{
+    z-index: 1;
+}
 
