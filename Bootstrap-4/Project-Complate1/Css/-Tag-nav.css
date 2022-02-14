@@ -26,7 +26,7 @@
 .tag-nav-custom img{
     margin-top: 30px;
     width: 100px;
-    height: 150px;
+    height: 160px;
 }
 
 /* .flex-custom-column{
@@ -35,7 +35,7 @@
 .offer-details a{
 color: rgb(78, 78, 78);
 font-size: 16px;
- margin-top: 20px;
+ /* margin-top: 20px; */
 }
 .offer-details .offer-raiting img{
     color: blueviolet;
