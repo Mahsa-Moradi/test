@@ -73,7 +73,16 @@
   border-radius: 100%;
   font-size: 14px;
 }
-#offer-expire-text {
+.offer-details .count-down-timer #demo #day ,.offer-details .count-down-timer #demo #hours ,.offer-details .count-down-timer #demo #minutes ,.offer-details .count-down-timer #demo #seconds{
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+/* .......expire...... */
+.offer-expire-text {
+  
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -82,7 +91,7 @@
   align-items: center;
   font-size: 18px;
 }
-.offer-expire-text-innner {
+.offer-expire-text .offer-expire-text-inner {
   font-size: 17px;
   padding: 10px;
 }
