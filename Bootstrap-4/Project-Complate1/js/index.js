@@ -1,5 +1,5 @@
 
-var countDownDate = new Date('february 14 , 2022 01:23:11').getTime();
+var countDownDate = new Date('february 14 , 2023 14:09:11').getTime();
 
 var X = setInterval(function(){
     var now = new Date().getTime();
@@ -19,7 +19,8 @@ if (distance < 0) {
     clearInterval(x);
     // خالی باشه تا عدد منفی نخوره
     document.getElementById("demo").innerHTML = "";
-    document.getElementById("offer-expire-text").innerHTML = "Finish";
+    document.getElementById("after-expire").setAttribute("id"," offer-expire-text") 
+    document.getElementById("offer-expire-text-innner").innerHTML = "Finish";
     document.getElementById("offer-blur").style.filter = "blur(2px)";
 }
 

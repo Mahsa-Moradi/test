@@ -1,76 +1,119 @@
 .custom-nav-tabs,
 .nav-link {
-    border: none;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    font-size: 15px;
-    color:rgb(39, 35, 236);
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 15px;
+  color: rgb(39, 35, 236);
 }
- 
+
 .custom-nav-tabs,
 .nav-link .active,
 .nav-tabs,
 .nav-item.show,
-.nav-link{
-   color: rgb(48, 48, 48);
-   background-color: transparent;
-   border-color: transparent;
+.nav-link {
+  color: rgb(48, 48, 48);
+  background-color: transparent;
+  border-color: transparent;
 }
 .custom-nav-tabs,
 .nav-link .hover,
 .custom-nav-tabs,
-.nav-item.focus{
-  border-color:rgb(199, 202, 32) ;  
+.nav-item.focus {
+  border-color: rgb(199, 202, 32);
 }
 /* .............. */
-.tag-nav-custom img{
-    margin-top: 30px;
-    width: 100px;
-    height: 160px;
+.tag-nav-custom img {
+  margin-top: 30px;
+  width: 100px;
+  height: 160px;
 }
 
 /* .flex-custom-column{
     flex-direction: column ;
 } */
-.offer-details a{
-color: rgb(78, 78, 78);
-font-size: 16px;
- /* margin-top: 20px; */
+.offer-details a {
+  color: rgb(78, 78, 78);
+  font-size: 16px;
+  /* margin-top: 20px; */
 }
-.offer-details p{
-    margin-bottom: -17px;
+.offer-details p {
+  margin-bottom: -17px;
 }
 
-.offer-details .offer-raiting img{
-    color: blueviolet;
-    width: 10px;
-    height: 10px;
+.offer-details .offer-raiting img {
+  color: blueviolet;
+  width: 10px;
+  height: 10px;
 }
 .offer-details .offer-price {
-    color: rgb(7, 202, 33);
-    margin-bottom: -13px;
+  color: rgb(7, 202, 33);
+  margin-bottom: -13px;
 }
-.offer-details .offer-price s{
-color: rgb(252, 9, 9);
-padding-left: 10px;
+.offer-details .offer-price s {
+  color: rgb(252, 9, 9);
+  padding-left: 10px;
 }
 .offer-details .korting p {
-    margin-top: 20px;
-    color: rgb(49, 66, 216);
+  margin-top: 20px;
+  color: rgb(49, 66, 216);
 }
-.offer-details .count-down-timer p{
-    padding-right: 10px;
+.offer-details .count-down-timer p {
+  padding-right: 10px;
 }
-.offer-details .count-down-timer span{
-    background-color: rgb(233, 233, 233);
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 20px 8px 0px 0;
-    text-align: center;
-    direction: rtl;
+.offer-details .count-down-timer span {
+  background-color: rgb(233, 233, 233);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 20px 8px 0px 0;
+  text-align: center;
+  direction: rtl;
+  border-radius: 100%;
+  font-size: 14px;
 }
-#offer-expire-text{
-    z-index: 1;
+#offer-expire-text {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.offer-expire-text-innner {
+  font-size: 17px;
+  padding: 10px;
+}
+#day ,#hours,#minutes,#seconds{
+  position: relative;
+}
+#demo #day::after {
+  content: "Day";
+  position: absolute;
+  top: 35px;
+  left: 1px;
+  font-size: 10px;
+}
+#demo #hours::after {
+  content: "Hours";
+  position: absolute;
+  top: 35px;
+  left: -2px;
+  font-size: 10px;
+}
+#demo #minutes::after {
+  content: "Minutes";
+  position: absolute;
+  top: 35px;
+  left: -3px;
+  font-size: 10px;
 }
 
+#demo #seconds::after {
+  content: "Seconds";
+  position: absolute;
+  top: 35px;
+  left: 2px;
+  font-size: 10px;
+}
