@@ -56,17 +56,18 @@
 }
 .offer-details .korting p {
   margin-top: 20px;
+  
   color: rgb(49, 66, 216);
 }
 .offer-details .count-down-timer p {
   padding-right: 10px;
 }
-.offer-details .count-down-timer span {
+.offer-details .count-down-timer #demo span {
   background-color: rgb(233, 233, 233);
   display: inline-block;
   width: 25px;
   height: 25px;
-  margin: 20px 8px 0px 0;
+  margin: 28px 20px 0px 0;
   text-align: center;
   direction: rtl;
   border-radius: 100%;
@@ -114,6 +115,6 @@
   content: "Seconds";
   position: absolute;
   top: 35px;
-  left: 2px;
+  left: -3px;
   font-size: 10px;
 }
