@@ -135,9 +135,15 @@
         display: block;
     }
 }
-@media screen and (max-width:460) {
+@media screen and (min-width:991px), (max-width:1348px) {
+    .o{
+        width: 100px;
+        height: 160px;
+    }
+}
+/* @media screen and (max-width:460) {
     .l{
-        
+      margin-left: ;  
     }
     
-}
+} */
