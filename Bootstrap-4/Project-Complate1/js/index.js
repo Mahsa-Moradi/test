@@ -57,7 +57,23 @@ var X = setInterval(function () {
   }
 }, 1000);
 
+// owl.carousel.......................
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+items:4 , 
+loop : true ,
+margine: 10 , 
+autoplay: false,
+autoplayTimeout:5000, 
+autoplayHoverPause:true,
+
+
+
+    });
+
+  });
 // ........................
 $(".tt").tooltip("show");
 $(".po").popover("show");
 $(".tot").toast("show");
+
