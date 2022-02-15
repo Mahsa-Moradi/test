@@ -131,7 +131,23 @@ ol {
   font-size: 18px;
   border-radius: 3px;
   border: 1px solid black;
-  box-shadow: 0 3px 6px rgb(48, 80, 45)
+  box-shadow: 0 3px 6px rgb(48, 80, 45);
+  animation: move-up 1s ;
+  /* 
+  transition: all 1s ease; */
+}
+@keyframes move-up {
+from{
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+  /* 0%{
+transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(100%);
+  } */
 }
 .inputs{
   position: relative;
