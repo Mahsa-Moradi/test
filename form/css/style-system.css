@@ -148,3 +148,10 @@ button{
   padding: 6px 20px;
   background-color:rgb(79, 174, 252) ;
 }
+/* ................. */
+input[type=email]:valid{
+  background-color: rgb(75, 241, 75);
+}
+input[type=tel]:invalid{
+  background-color: rgb(248, 90, 90);
+}
