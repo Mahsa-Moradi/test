@@ -13,6 +13,12 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <!-- <link
+    rel="stylesheet"
+    href="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  /> -->
      <!-- *vazir-font* -->
     <link
       href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css"
@@ -21,7 +27,7 @@
     />
     <link rel="stylesheet" href="../Carousel/bootstrap-grid.css">
     <link rel="stylesheet" href="../Carousel/bootstrap-reboot.rtl.css">
-     <!-- *align-items-start* -->
+     <!-- *align-items-start* --> ف
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -29,6 +35,7 @@
     <link rel="stylesheet" href="./Css/style-system.css" />
     <link rel="stylesheet" href="./Css/style.css" />
     <!-- <link rel="stylesheet" href="../1/Css/bootstrap-reboot.css"> -->
+    
     <title>Form </title>
     <style>
     </style> 
@@ -41,14 +48,25 @@
 
   <form action="" autocomplete="off">
     <input type="tel" placeholder="+32..." pattern="^(\+32|4)?9\d{9}$">
+
 <!--  minlength="3" =  pattern="[A_Za-z]{3}  YA  pattern="[A_Za-z]{3,9} " -->
 <input type="text"  placeholder="Name..."  pattern="[A_Z,a-z,0-9,@,$]{3,9}">
 <input type="text" placeholder="Last Name...">
-<input type="email" placeholder="Email..." required>
+
+<div class="input-group">
+  <input type="email" placeholder="Email..." required>
+  <i class="fa-solid fa-check-double"  id="true"></i>
+  <i class="fa-solid fa-xmark" id="false"></i>
+</div>
+
 <input type="text" placeholder="Username..."  pattern="[A_Za-z\$,@.]{8,10}">
+
 <input type="password" placeholder="Password" minlength="10" maxlength="15">
+
 <input type="url" placeholder="Input URL..." >
+
 <input type="date" placeholder="Date..." min="2022-01-14" max="2022-02-14">
+
 <input type="range" placeholder="Range..." min="1$" max="100$">
 
 
@@ -87,6 +105,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8ed1c24f2f.js" crossorigin="anonymous"></script>
     <script>
 
     </script>

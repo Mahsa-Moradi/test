@@ -149,9 +149,38 @@ button{
   background-color:rgb(79, 174, 252) ;
 }
 /* ................. */
-input[type=email]:valid{
+
+
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+.input-group i{
+  position:absolute;
+  right: 0;
+  color: black;
+  width: 10px;
+  height: 10px;
+  display: none;
+  /* transition:display .5s ease; */
+  opacity: 0;
+}
+/* ......... */
+
+input[type=email]:valid ~ i#true {
+/* display: block; */
+opacity: 1;
+}
+/* input[type=email]:valid{
   background-color: rgb(75, 241, 75);
-}
-input[type=tel]:invalid{
+} */
+
+/* ........ */
+input[type=email]:invalid ~ i#false {
+  /* display: block; */
+  opacity: 1;
+  }
+  /* input[type=tel]:invalid{
   background-color: rgb(248, 90, 90);
-}
+} */
