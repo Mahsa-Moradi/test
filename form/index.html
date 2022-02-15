@@ -40,13 +40,13 @@
 <div class="container">
   <form action="" autocomplete="off">
 
-<input type="text"  placeholder="Name..." required>
+<input type="text"  placeholder="Name..." required pattern="">
 <input type="text" placeholder="Last Name...">
 <input type="email" placeholder="Email..." required>
 <input type="password" placeholder="Password" minlength="10" maxlength="15">
 <input type="url" placeholder="Input URL..." required>
-<input type="date" placeholder="Date..." max="2022-02-14">
-
+<input type="date" placeholder="Date..." min="2022-01-14" max="2022-02-14">
+<input type="range" placeholder="Range..." min="1$" max="100$">
 
 
 <button>Register</button>
