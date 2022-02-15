@@ -1,0 +1,16 @@
+.p-title{
+ /* border-top: 1px solid black; */
+/* margin-top: 50px; */
+}
+.p-title , .p-price{
+    font-size: 16px;
+    text-align: center;
+   
+}
+.carousel-img-custom{
+    /* margin-bottom: 2px; */
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+/* .owl-carousel:hover{ */
+width: 500px;
+}

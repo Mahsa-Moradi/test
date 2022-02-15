@@ -60,13 +60,14 @@ var X = setInterval(function () {
 // owl.carousel.......................
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-items:4 , 
+
+items: 4 , 
 loop : true ,
 margine: 10 , 
-autoplay: false,
-autoplayTimeout:5000, 
-autoplayHoverPause:true,
-
+autoplay: false ,
+autoplayTimeout: 5000 , 
+autoplayHoverPause: true ,
+ 
 
 
     });
