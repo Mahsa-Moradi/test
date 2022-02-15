@@ -124,7 +124,7 @@ ol {
 }
 .container{
   max-width: 688px;
-  height: 500px;
+  height: 350px;
   padding: 20px;
   margin: auto;
   /* background-color: rgb(48, 80, 45); */
@@ -173,4 +173,16 @@ div .half {
   /* right: 0; */
   line-height: 60px;
   transition: all .75s ease;
+}
+.inputs button{
+  padding: 2px;
+  width: 100px;
+  height: 30px;
+  border: 0;
+  background-color: rgb(169, 196, 175);
+  box-shadow: 1px 1px 5px black  ;
+  transition: box-shadow 2s ease;
+  cursor: pointer;
+outline: 0;
+
 }
