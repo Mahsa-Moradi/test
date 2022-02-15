@@ -38,11 +38,13 @@
 <!-- * * Form * * -->
 <p class="project-title">Hello World</p>
 <div class="container">
-  <form action="">
+  <form action="" autocomplete="off">
 
-<input type="text" placeholder="Name">
-<input type="text" placeholder="Last Name">
-<input type="text" placeholder="Password">
+<input type="text"  placeholder="Name..." required>
+<input type="text" placeholder="Last Name...">
+<input type="email" placeholder="Email..." required>
+<input type="password" placeholder="Password" minlength="10">
+<input type="url" placeholder="Input URL..." required>
 <button>Register</button>
 
 
