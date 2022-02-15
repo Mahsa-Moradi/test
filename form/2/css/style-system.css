@@ -120,23 +120,25 @@ ol {
   font-size: 25px;
   padding: 100px;
   font-weight: bold;
-  color: rgb(46, 46, 46);
+  color: rgb(36, 36, 36);
 }
 .container{
   max-width: 688px;
+  height: 500px;
   padding: 20px;
   margin: auto;
-  background-color: aqua;
+  /* background-color: rgb(48, 80, 45); */
   font-size: 18px;
   border-radius: 3px;
   border: 1px solid black;
-  box-shadow: 0 3px 6px rgba(0,0,0, 0.5)
+  box-shadow: 0 3px 6px rgb(48, 80, 45)
 }
 .inputs{
   position: relative;
   float: left;
   width:100% ;
   padding: 10px 0 10px 10px;
+ color: rgb(83, 83, 83);
 }
 .inputs input{
   width: 100%;
@@ -152,18 +154,23 @@ ol {
 div .half {
   width: 50%;
 }
+.inputs input:placeholder-shown+label{
+  color: rgb(169, 196, 175);
+  top: 14px;
+  /* bottom: -114px; */
+  right: 0px;
+
+}
+
+/* .inputs input+label */
 .inputs input:focus+label{
+  color: rgb(169, 196, 175);
+
   position: absolute;
   top: -10px;
   /* bottom:104px ; */
   left: 0px;
   /* right: 0; */
   line-height: 60px;
-
-}
-.inputs input:placeholder-shown+label{
-  color: #999;
-  bottom: -4px;
-  right: 0;
-
+  transition: all .75s ease;
 }
