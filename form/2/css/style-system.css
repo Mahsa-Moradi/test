@@ -152,6 +152,15 @@ ol {
 div .half {
   width: 50%;
 }
+.inputs input:focus+label{
+  position: absolute;
+  top: -10px;
+  /* bottom:104px ; */
+  left: 0px;
+  /* right: 0; */
+  line-height: 60px;
+
+}
 .inputs input:placeholder-shown+label{
   color: #999;
   bottom: -4px;
