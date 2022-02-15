@@ -166,7 +166,7 @@ button{
   /* transition:display .5s ease; */
   opacity: 0;
 }
-/* ......... */
+/* valid......... */
 
 input[type=email]:valid ~ i#true {
 /* display: block; */
@@ -176,7 +176,7 @@ opacity: 1;
   background-color: rgb(75, 241, 75);
 } */
 
-/* ........ */
+/* invalid........ */
 input[type=email]:invalid ~ i#false {
   /* display: block; */
   opacity: 1;

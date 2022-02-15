@@ -49,7 +49,7 @@
   <form action="" autocomplete="off">
     <input type="tel" placeholder="+32..." pattern="^(\+32|4)?9\d{9}$">
 
-<!--  minlength="3" =  pattern="[A_Za-z]{3}  YA  pattern="[A_Za-z]{3,9} " -->
+<!--  minlength="3" =  pattern="[A_Za-z]{3}  YA  pattern="[A_Za-z]{3,9} VA pattern="[A_Za-z\$,@.]{8,10}"" -->
 <input type="text"  placeholder="Name..."  pattern="[A_Z,a-z,0-9,@,$]{3,9}">
 <input type="text" placeholder="Last Name...">
 
@@ -58,9 +58,9 @@
   <i class="fa-solid fa-check-double"  id="true"></i>
   <i class="fa-solid fa-xmark" id="false"></i>
 </div>
-
-<input type="text" placeholder="Username..."  pattern="[A_Za-z\$,@.]{8,10}">
-
+<!-- Username -->
+<input type="text" placeholder="Username..."  pattern="[A_Za-z]{8,10}" oninvalid="this.setCustomValidity('لطفا از حروف بزرگ و کوچیک استفاده کنید')">
+<!--  -->
 <input type="password" placeholder="Password" minlength="10" maxlength="15">
 
 <input type="url" placeholder="Input URL..." >
