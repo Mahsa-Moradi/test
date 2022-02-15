@@ -105,221 +105,46 @@ ol {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* accordion menu************************ */
-ul.accordion {
-  background-color: rgb(190, 35, 35);
-  /* border: 1px solid rgb(151, 145, 145); */
+/* Form************************ */
+.body-color{
+  background-color: rgba(240, 240, 240, 0.582);
 }
-ul.accordion div {
-  background-color: rgba(64, 179, 224, 0.452);
-  color: white;
-  /* text-align: center; */
-  font-size: 18px;
-  padding: 10px;
+.project-title{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  word-spacing: 12px;
 }
-ul.accordion li {
+.container{
+  max-width: 780px;
   background-color: rgb(255, 255, 255);
-  color: white;
-  font-size: 18px;
-  padding: 10px;
-  border-bottom: 1px solid rgba(228, 225, 225, 0.486);
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  border-radius: 5px;
+ 
 }
-ul.accordion ul {
-  display: none;
-  padding: 10px;
-}
-/* scroll to top********************** */
-body {
-  background-image: url(../img/transparent-1655599_1920.png);
-  width: outo;
-  height: 2000px;
-}
-.scroll-to-top {
-  position: fixed;
-  left: 410px;
-  bottom: -60px;
-  background-color: black;
-  border-radius: 35px;
-  transition: all 0.5s linear;
-  width: 50px;
-  height: 50px;
-  display: block;
-}
-.scroll-to-top i {
-  position: relative;
-  color: rgb(240, 217, 12);
-  padding: 17px 19px;
-  transition: all 0s linear;
-}
-.scroll-to-top:hover {
-  background-color: rgb(221, 118, 14);
-}
-.scroll-to-top i:hover {
-  top: -2px;
-}
-/* MODAL********************** */
-.modal-link {
-  width: 100px;
-  height: 50px;
-  background-color: #efefef;
-  padding: 10px;
-  font-size: 16px;
-  position: fixed;
-  top: 29%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  box-shadow: 1px 1px 10px 1px rgb(153, 153, 153);
+.container form{
+  display: flex;
+ align-items: center;
   justify-content: center;
-  /* text-align: center;NEMISHEH */
-  align-items: center;
-  display: flex;
+  flex-direction: column;
 }
-.modal {
-  display: none;
-  width: 400px;
-  height: 300px;
-  text-align: center;
-  box-shadow: 1px 1px 10px 1px rgb(153, 153, 153);
-  background-color: rgb(255, 255, 255);
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-}
-.bg-modal {
-  background-color: rgb(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100%;
-  height: 100vh;
-  display: none;
-}
-/* FORM********************** */
-.container {
-  width: 600px;
-  min-height: 310px;
-  background-color: white;
-  position: relative; /* fixed */
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 1px 1px 10px orange;
-}
-.container h6 {
-  text-align: center;
-  /* align-content: center; */
-  font-size: 19px;
-  border-bottom: 1px solid orange;
-  padding-bottom: 30px;
-}
-.container form input {
-  width: 100%;
-  height: 35px;
-  border: 1px solid #efefef;
-  padding: 0px 20px;
-  margin: 20px 0px;
-  box-shadow: 15px 10px solid rgb(9, 255, 0);
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-}
-.container form input:focus {
-  outline-color: rgb(95, 133, 214);
-}
-.container form label {
-  font-size: 19px;
-  margin: 13px;
-  display: block;
-}
-.container form button {
-  color: black;
-  font-size: 14px;
-  padding: 8px;
-  display: block;
-  margin: 0px;
-  /* margin-right:5px; */
-  background-color: white;
-  border: 1px solid rgba(172, 95, 67, 0.288);
-}
-.container form button i {
-  /* vertical-align: 0px; */
-  margin-left: 5px;
-  contain: " ";
-  color: rgb(0, 102, 255);
-  padding: 0px 10px 0px 0px;
-}
-
-/* hidden and visaible passwor(eyes)**** */
-.cours-title {
-  margin-top: 100px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  color: blue;
-  display: fixed;
-}
-.container1 {
-  max-width: 600px;
-  min-height: 40px;
-  background-color: white;
-  /* position:relative; 
-  top: 7%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  box-shadow: 0px 0px 6px orange;
-  /* display: fixed; */
-  margin: 100px auto;
-  padding: 15px;
-}
-.input-group1 {
-  position: relative;
-}
-.input-group1 input {
-  display: flex;
-  margin-bottom: 10px;
+input{
+  margin-bottom: 25px;
   width: 100%;
   height: 40px;
-  border: 1px solid #efefef;
-  outline: 0;
-  padding: 0 10px;
-}
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-.input-group1 .btn {
-  background-color: rgb(93, 139, 93);
-  color: white;
-  padding: 5px 10px;
-  margin-top: 20px;
-  font-size: 18px;
-  transition: background-color 1s ease;
-}
-/* .input-group1 .btn ::value {
-  position: absolute;
-  left: 50%;
-  text-align: center;
-} */
-.input-group1 i#show-pass {
-  position: absolute;
-  left: 530px;
-  bottom: 10px;
-  color: rgb(175, 174, 174);
-  cursor: pointer;
-  transition: coloe 1s ease;
-}
-.input-group1 i#show-pass:hover {
-  transition: coloe .5s ease;
-  color: rgb(15, 94, 197);
-}
-/* .input-group1 i.fa-eye{
-  position: absolute;
-  left: 530px;
-  bottom: 10px;
+border: 1px solid rgb(209, 209, 209);
+padding-right: 10px;
+border-radius: 2px;
+/* outline:0; */
 
-} */
- /* owl slider *******************  */
+}
+
+button{
+  color: white;
+  border: 0;
+  padding: 6px 20px;
+  background-color:rgb(79, 174, 252) ;
+}
