@@ -254,6 +254,15 @@ right:155px;
   position: absolute;
   bottom: -50px;
   left: 0;
+  outline: 0;
+  background-color: #9fbba837;
+  border: 1px solid green;
+  box-shadow: 1px 1px 2px gray;
+}
+.right-side form  input[type=submit]:hover{
+ background-color:#e4ebe4 ;
+ border: .5px solid green;
+ outline: 0;
 }
 
 
