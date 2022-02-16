@@ -137,24 +137,6 @@ ol {
   max-width: 50%;
   position: relative;
 }
-
-/* .social-login{
-position: absolute;
-width: 100%;
-text-align: center;
-} */
-.link-social img{
-  width: 30px;
-  height: 30px;
-  border-radius: 30%;
-  border: 2px solid rgb(221, 221, 221);
-  margin:-18px 10px;
-  text-align: center;
-  padding: 5px;
-  transition:hover 10s ease;
-  
-  
-  }
 .social-login::before{
   content:"";
   width: 100%;
@@ -164,11 +146,38 @@ text-align: center;
   left: 0;
   top: 0px;
   }
-  .social-login:hover{
-transform: scale(1.1,1.1);
-background-color: aqua;
+/* .social-login{
+position: absolute;
+width: 100%;
+text-align: center;
+} */
+.link-social  img{
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  border: 2px solid rgb(221, 221, 221);
+  margin:-18px 10px;
+  text-align: center;
+  padding: 5px;
+  transition:hover 10s ease;
+  }
+  .social-login a:nth-child(1) img{
+    color: rgb(54, 54, 253);
+  }
+  .social-login a:nth-child(1) img:hover{
+    border-radius: 50%;
+    transform: scale(1.2);
 
-   }
+  }
+
+  .social-login a:nth-child(2) img{
+    color: #fc0303;
+    
+      }
+      .social-login a:nth-child(2) img:hover{
+        border-radius: 50%;
+      transform: scale(1.2);
+      }
 
 
 /* ................. */
