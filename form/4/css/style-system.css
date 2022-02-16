@@ -8,7 +8,7 @@ body {
   margin: 0%;
 }
 body {
-  direction: ltr;
+  direction: rtl;
 }
 a {
   list-style: none;
@@ -134,4 +134,20 @@ ol {
   padding: 60px 0 40px 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0,.1) , 0 1px 2px rgba(0, 0, 0,.2);
   transition:all .3s ease ;
+}
+.container .card:first-child{
+  background-color: #fafafa;
+  height: 90px;
+  border-radius: 5px 5px 0 0;
+  margin: 0px 10px;
+  padding: 0;
+}
+.container .card .tittle{
+
+ position: relative;
+ z-index: 1;
+ border-right: 5px solid #ed2553; 
+ margin: 0 0 35px;
+ padding: 10px 50px 10px 0;
+ color: #ed2553;
 }
