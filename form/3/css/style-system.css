@@ -248,6 +248,9 @@ position: absolute;
 top: -9px;
 right:155px;
 }
+.right-side form .input-group input[type=checkbox]:hover{
+  cursor: pointer;
+}
 
 .right-side form  input[type=submit]{
   width: 100%;
@@ -263,6 +266,7 @@ right:155px;
  background-color:#e4ebe4 ;
  border: .5px solid green;
  outline: 0;
+ cursor: pointer;
 }
 
 
