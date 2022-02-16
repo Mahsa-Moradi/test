@@ -74,7 +74,7 @@ ol {
 .img-respansive {
   width: 100%;
   height: auto;
-  display: block; /* چون در زمان هاور از تصویر نزنه بیرون*/
+  display: inline-block; /* چون در زمان هاور از تصویر نزنه بیرون*/
 }
 .relative {
   position: relative;
@@ -125,4 +125,22 @@ ol {
 .link-social img{
 width: 20px;
 height: 20px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid #efefef;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.158);
+}
+.right-side{
+  display: flex;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.left-side{
+  display: flex;
+  flex-basis: 50%;
+  max-width: 50%;
 }
