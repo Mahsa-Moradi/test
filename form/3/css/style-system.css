@@ -234,10 +234,27 @@ width: 100%;
   100%{
     margin-right: 620%;  }
 }
+.right-side form .input-group .Remember{
+  position: absolute;
+  left: 25px;
+  top: 1px;
+}
 
 
 
+.right-side form .input-group input[type=checkbox]{
+height: 15px;
+position: absolute;
+top: -9px;
+right:155px;
+}
 
+.right-side form  input[type=submit]{
+  width: 100%;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
 
 
 
