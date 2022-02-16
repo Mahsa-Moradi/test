@@ -127,6 +127,7 @@ ol {
   display: flex;
   justify-content: space-between;
   max-width: 700px;
+  height:350px;
   margin: auto;
   border: 1px solid #efefef;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.158);
@@ -209,6 +210,29 @@ color: rgb(34, 83, 50);
   margin:10px 0 18px 0;
   padding-left: 5px;
   border-width: 0 0 1px 0;
+}
+.right-side form .input-group span:after{
+  content: "";
+  position: absolute;
+  bottom: 17px;
+  right: 0;
+  background-color: #1cf36b;
+  width: 0;
+  height: 1px;
+  transition: width 1s ease;
+
+}
+.right-side form .input-group input:focus ~ span:after{
+width: 100%;
+}
+@keyframes m {
+  0%{
+    margin-right: -20%;
+  }
+  50%{
+    margin-right: -50%;  }
+  100%{
+    margin-right: 620%;  }
 }
 
 
