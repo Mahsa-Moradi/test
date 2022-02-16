@@ -122,17 +122,7 @@ ol {
   font-weight: bold;
   color: rgb(36, 36, 36);
 }
-.link-social img{
-width: 25px;
-height: 25px;
-border-radius: 30%;
-border: 2px solid rgb(221, 221, 221);
-margin:-18px 10px;
-text-align: center;
-padding: 2px;
 
-
-}
 .container{
   display: flex;
   justify-content: space-between;
@@ -147,16 +137,24 @@ padding: 2px;
   max-width: 50%;
   position: relative;
 }
-.left-side{
-  display: flex;
-  flex-basis: 50%;
-  max-width: 50%;
-}
+
 /* .social-login{
 position: absolute;
 width: 100%;
 text-align: center;
 } */
+.link-social img{
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  border: 2px solid rgb(221, 221, 221);
+  margin:-18px 10px;
+  text-align: center;
+  padding: 5px;
+  transition:hover 10s ease;
+  
+  
+  }
 .social-login::before{
   content:"";
   width: 100%;
@@ -166,10 +164,16 @@ text-align: center;
   left: 0;
   top: 0px;
   }
-  .social-login a{
+  .social-login:hover{
+transform: scale(1.1,1.1);
+background-color: aqua;
 
    }
 
-   
 
- 
+/* ................. */
+ .left-side{
+  display: flex;
+  flex-basis: 50%;
+  max-width: 50%;
+}
