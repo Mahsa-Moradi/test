@@ -208,3 +208,20 @@ ol {
 .container .card .input-container input:focus~.bar::after {
   width: 50%;
 }
+/* button */
+.container .card .button-container{
+  text-align: center;
+  margin: 0 60px;
+}
+.container .card .button-container button{
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  width: 250px;
+  border: 2px solid #e3e3e3;
+  padding: 20px 0;
+  font-size: 24px;
+  transition: all 1s ease;
+}
