@@ -277,5 +277,7 @@ text-align: center;
        color: rgb(255, 255, 255);
        font-size: 58px;
        line-height: 152px;
+       text-align: center;
+       cursor: pointer;
 
      }
