@@ -3,3 +3,7 @@ const gulp= require('gulp');
 // gulp.src - Point to files to use
 // gulp.dest (dist folder)- -Points to folder to output
 // gulp.watch  -Watch file and folders for changes   /(file haye Src  ke hey taghir mikoneh ro NAGAH mikoneh)/
+// print Msg
+gulp.task('msg',function(){
+return console.log('This is my first task');
+});
