@@ -4,6 +4,10 @@ const gulp= require('gulp');
 // gulp.dest (dist folder)- -Points to folder to output
 // gulp.watch  -Watch file and folders for changes   /(file haye Src  ke hey taghir mikoneh ro NAGAH mikoneh)/
 // print Msg
-gulp.task('msg',function(){
+gulp.task('msg',async function(){
 return console.log('This is my first task');
 });
+gulp.task('copthtml',async function(){
+    gulp.src('src/*.html');
+    .pipe(gulp.desk('disk'))
+    });
