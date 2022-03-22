@@ -17,15 +17,16 @@
   </head>
   <body class="body-custom" dir="rtl">
    <p class="project-title"> Short-Project</p>
-<div id="circle-menu" class="circle-menu">
+
+<div id="circle-menu" class="circle-menu ">
 <a href="" class="menu-btn">
   <i class="fa fa-plus"></i>
 </a>
 <nav class="items-wrapper">
-  <a href="" class="fa fa-home menu-item"></a>
-  <a href="" class="fa fa-user menu-item"></a>
-  <a href="" class="fa fa-chart-pie menu-item"></a>
-  <a href="" class="fa fa-cog menu-item"></a>
+  <a href="#" class="fa fa-home menu-item"></a>
+  <a href="#" class="fa fa-user menu-item"></a>
+  <a href="#" class="fa fa-chart-pie menu-item"></a>
+  <a href="#" class="fa fa-cog menu-item"></a>
 
 </nav>
 </div>
@@ -42,5 +43,12 @@
     ></script>
     <script src="./js/index.js"></script>
     <script src="./js/owl.carousel.min.js.js"></script>
+    <script>
+      $(document).ready(function(){
+  $(".menu-btn").click(function(){
+    $('#circle-menu').toggleClass("active");
+  });
+});
+    </script>
   </body>
 </html>

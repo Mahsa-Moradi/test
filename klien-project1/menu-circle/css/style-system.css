@@ -135,7 +135,7 @@ body{
   width: 3.5em;
   height: 3.5em;
   border-radius: 50%;
-  background: red;
+  background: rgb(221, 6, 6);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) ;
   color: white;
   cursor: pointer;
@@ -155,6 +155,52 @@ body{
   transition: transform .2s ;
   
 }
-.circle-menu .menu-btn:hover i {
+.active .menu-btn i {
  transform: rotate(-45deg); 
 }
+.circle-menu::after{
+content: "";
+display: block;
+width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  background-color: rgb(228, 19, 19);
+  position: absolute;
+  top: 0;
+  /* right: 4px; */
+  transition: all .3s ease;
+  z-index: -2;
+}
+.active::after{
+  transform: scale3d(5.5,5.5,1);
+  transition: cubic-bezier(.68,1.5,.25,1);
+}
+.circle-menu .items-wrapper .menu-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  top: .2em;
+  right: .2em;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+background-color: rgba(0, 0, 0, .1);
+transition: transform .3s ease,background-color .2s ease;
+}
+.circle-menu .items-wrapper .menu-item:hover{
+  background-color: rgba(0, 0, 0, .3);
+}
+.active .items-wrapper .menu-item:nth-child(1){
+transform: translate3d(1em,-7em, 0);
+}
+.active .items-wrapper .menu-item:nth-child(2){
+  transform: translate3d(-3.5em,-6.3em,0);
+  }
+  .active .items-wrapper .menu-item:nth-child(3){
+    transform: translate3d(-6.5em,-3.2em, 0);
+    }
+    .active .items-wrapper .menu-item:nth-child(4){
+      transform: translate3d(-7em,1em, 0);
+      }
