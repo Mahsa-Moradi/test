@@ -37,8 +37,8 @@
       <div class="toast toast-blue">
         <div class="toast-icon"></div>
         <div class="toast-contant">
-          <p class="toast-type">sucsses</p>
-          <p class="toast-type">sucsses for register</p>
+          <p class="toast-type">Information</p>
+          <p class="toast-type">click on the username and password</p>
         </div>
 
         <div class="toast-close">
@@ -49,8 +49,8 @@
       <div class="toast toast-yellow">
         <div class="toast-icon"></div>
         <div class="toast-contant">
-          <p class="toast-type">sucsses</p>
-          <p class="toast-type">sucsses for register</p>
+          <p class="toast-type">error</p>
+          <p class="toast-type">maak you information</p>
         </div>
 
         <div class="toast-close">
@@ -66,7 +66,14 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      ppp;
+     $(document).ready(function(){
+        $(".toast-close").click(function(){
+var parent = $(this).parent(".toast");
+parent.fadeOut('slow',function(){
+    $(this).remove();
+});
+        }) 
+     })
     </script>
   </body>
 </html>
