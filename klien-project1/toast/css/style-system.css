@@ -170,7 +170,7 @@ body {
 .toast-contant {
   padding: 10px 0px;
 }
-.toast-type {
+.toast-type{
   margin-bottom: 8px;
   color: #3e3e3e;
   font-weight: 700;
@@ -178,7 +178,7 @@ body {
 }
 .toast-massage {
   color: #8787;
-  font-size: 14px;
+  font-size: 15px;
 }
 .toast-close {
   position: absolute;
