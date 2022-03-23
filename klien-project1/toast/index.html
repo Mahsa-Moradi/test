@@ -21,7 +21,7 @@
     <p class="project-title">Short-Project</p>
 
     <div class="container">
-        <!-- 1 toast-->
+      <!-- 1 toast-->
       <div class="toast toast-green">
         <div class="toast-icon"></div>
         <div class="toast-contant">
@@ -66,14 +66,15 @@
       crossorigin="anonymous"
     ></script>
     <script>
-     $(document).ready(function(){
-        $(".toast-close").click(function(){
-var parent = $(this).parent(".toast");
-parent.fadeOut('slow',function(){
-    $(this).remove();
-});
-        }) 
-     })
+      $(document).ready(function () {
+        $(".toast-close").click(function () {
+          var parent = $(this).parent(".toast");
+          parent.fadeOut("slow", function () {
+            $(this).remove();
+          });
+        });
+        $('.toast').delay(3000).fadeOut();
+      });
     </script>
   </body>
 </html>
