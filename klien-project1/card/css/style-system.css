@@ -127,31 +127,95 @@ body {
   font-weight: bold;
   color: rgb(36, 36, 36);
 }
-.blog-card{
+.blog-card {
+  width: 500px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   margin: 16px auto;
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   line-height: 1.4;
-  border-radius: 5px ;
+  border-radius: 5px;
   z-index: 0;
   overflow: hidden;
 }
-.blog-card a{
+.blog-card a {
   color: #fff;
 }
-.blog-card a:hover{
+.blog-card a:hover {
   color: #5ad67d;
 }
-.blog-card .meta{
+.blog-card .meta {
   position: relative;
   height: 200px;
 }
-.blog-card .meta .photo{
-  background-image: url(../../../img/bread-g3560254bf_640.jpg);
+.blog-card .photo img {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 100%;
+  height: 300px;
+}
+.blog-card .meta .photo {
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+}
+.blog-card:hover .photo {
+  transform: scale(2) rotate(3deg);
+}
+
+.blog-card .meta .details {
+  position: absolute;
+  top: 100px;
+  bottom: 0px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 100%;
+  height: 300px;
+  font-size: 19px;
+  /* z-index: 2; */
+}
+.blog-card .meta .details ul li {
+  display: inline-block;
+}
+.blog-card .meta .details .author,
+.blog-card .meta .details .date,
+.blog-card .meta .details .tags {
+  margin: 10px ;
+  font-size: 15px;
+  width: 225px;
+}
+.blog-card .meta .details .author li i spam{
+  padding-left: 50px;
+  margin-left: 100px;
+}
+.blog-card .meta .details .author i,
+.blog-card .meta .details .date i,
+.blog-card .meta .details .tags a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.blog-card .description{
+  position: absolute;
+  top: 80px;
+  padding: 18px;
+  position: relative;
+  z-index: 1;
+}
+.blog-card .description h1{
+  line-height: 2;
+  font-size: 23px;
+}
+.blog-card .description h2{
+  line-height: 2;
+  font-size: 16px;
+  color: #e2e2e2;
 }
