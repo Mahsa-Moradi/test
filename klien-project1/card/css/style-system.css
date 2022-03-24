@@ -129,7 +129,7 @@ body {
 }
 .blog-card {
   width: 500px;
-  height: 500px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   margin: 16px auto;
@@ -193,10 +193,6 @@ body {
   font-size: 15px;
   width: 225px;
 }
-.blog-card .meta .details .author li i spam{
-  padding-left: 50px;
-  margin-left: 100px;
-}
 .blog-card .meta .details .author i,
 .blog-card .meta .details .date i,
 .blog-card .meta .details .tags a {
@@ -204,11 +200,12 @@ body {
   margin-right: 10px;
 }
 .blog-card .description{
-  position: absolute;
-  top: 80px;
+  /* position: absolute; */
+  top: 90px;
   padding: 18px;
   position: relative;
   z-index: 1;
+  background-color: #fff;
 }
 .blog-card .description h1{
   line-height: 2;
@@ -218,4 +215,35 @@ body {
   line-height: 2;
   font-size: 16px;
   color: #e2e2e2;
+  margin: 1px 0px;
 }
+.blog-card .description p{
+  margin-top: 15px;
+}
+.blog-card .description .read-more{
+ position: absolute;
+ bottom: 0;
+ left: 0; 
+}
+.blog-card .description .read-more{
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+ }
+ .blog-card .description .read-more a{
+   display: block;
+   color: #d3fade;
+   padding: 6px 28px;
+   background-color: rgba(52, 120, 221, 0.616);
+   margin-bottom: -40px;
+   margin-left: 15px;
+ }
+ .blog-card .description p:first-of-type::before{
+   content: "";
+   position: absolute;
+   background-color: #5ad67d;
+   height: 4px;
+   width: 35px;
+   top: 100px;
+   border-radius: 20%;
+ }
