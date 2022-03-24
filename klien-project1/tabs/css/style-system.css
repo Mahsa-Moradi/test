@@ -172,7 +172,13 @@ body {
   border: 2px solid #efefef;
   border-top: 0;
   padding: 10px 30px 40px;
-  transform: rotateX(-20deg);
+  transform: rotateX(-10deg);
   transition: opacity 0.3s, transform 1s;
+  transform-origin: top center;
   opacity: 0;
+}
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),#tab-nav-4:checked ~ .tabs > div:nth-of-type(4) {
+  transform: rotateX(0);
+  opacity: 1;
+  z-index: 1;
 }
