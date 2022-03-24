@@ -251,10 +251,22 @@ body {
   .blog-card{
        flex-direction: row;
 max-width: 700px;
-height: 200px;
+height: 300px;
   }
   .blog-card  .meta{
     height: auto;
-    flex-basis: 50%;
+    flex-basis: 40%;
   }
+  .blog-card .description{
+    flex-basis: 20%;
+    transition: .5s ease;
+    position: absolute;
+    top: 244px;
+   left: 200px;
+   height: 300px;
+    
+  }
+
+
+
  }
