@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="Css/style-system.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/8ed1c24f2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body-custom" dir="ltr">
+    <p class="project-title">Short-Project</p>
+
+    <div class="image-gallery">
+      <img src="./img/code-2558220_1280.jpg" alt="" />
+    </div>
+    <ul class="thumbnails">
+      <!-- 1 -->
+      <li>
+        <a href="./img/craniosacral-7012994_1920.jpg"
+          ><img class="width-img" src="./img/craniosacral-7012994_1920.jpg" alt=""
+        /></a>
+      </li>
+      <!-- 2 -->
+      <li>
+        <a href="./img/ecommerce-2140604_1920.jpg"
+          ><img class="width-img" src="./img/ecommerce-2140604_1920.jpg" alt=""
+        /></a>
+      </li>
+      <!-- 3 -->
+      <li>
+        <a href="./img/girl-2581913_1920.jpg"
+          ><img class="width-img" src="./img/girl-2581913_1920.jpg" alt=""
+        /></a>
+      </li>
+      <!-- 4 -->
+      <li>
+        <a href="./img/laptop-1839876_1920.jpg"
+          ><img class="width-img" src="./img/laptop-1839876_1920.jpg" alt=""
+        /></a>
+      </li>
+      <!-- 5 -->
+      <li>
+        <a href="./img/telework-6795505_1920.jpg"
+          ><img class="width-img" src="./img/telework-6795505_1920.jpg" alt=""
+        /></a>
+      </li>
+      <!--... -->
+    </ul>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function(){
+$("thumbnails a").click(function(e){
+  e.preventDefault();
+  $(".image-gallery img").attr("src",$(this).attr('href'));
+})
+      });
+    </script>
+  </body>
+</html>
