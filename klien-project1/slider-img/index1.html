@@ -26,33 +26,41 @@
     <ul class="thumbnails">
       <!-- 1 -->
       <li>
-        <a href="./img/craniosacral-7012994_1920.jpg"
-          ><img class="width-img" src="./img/craniosacral-7012994_1920.jpg" alt=""
-        /></a>
+        <a href="./img/craniosacral-7012994_1920.jpg">
+          <img
+            class="width-img"
+            src="./img/craniosacral-7012994_1920.jpg"
+            alt=""
+          />
+        </a>
       </li>
       <!-- 2 -->
       <li>
-        <a href="./img/ecommerce-2140604_1920.jpg"
-          ><img class="width-img" src="./img/ecommerce-2140604_1920.jpg" alt=""
-        /></a>
+        <a href="./img/ecommerce-2140604_1920.jpg">
+          <img
+            class="width-img"
+            src="./img/ecommerce-2140604_1920.jpg"
+            alt=""
+          />
+        </a>
       </li>
       <!-- 3 -->
       <li>
-        <a href="./img/girl-2581913_1920.jpg"
-          ><img class="width-img" src="./img/girl-2581913_1920.jpg" alt=""
-        /></a>
+        <a href="./img/girl-2581913_1920.jpg">
+          <img class="width-img" src="./img/girl-2581913_1920.jpg" alt="" />
+        </a>
       </li>
       <!-- 4 -->
       <li>
-        <a href="./img/laptop-1839876_1920.jpg"
-          ><img class="width-img" src="./img/laptop-1839876_1920.jpg" alt=""
-        /></a>
+        <a href="./img/laptop-1839876_1920.jpg">
+          <img class="width-img" src="./img/laptop-1839876_1920.jpg" alt="" />
+        </a>
       </li>
       <!-- 5 -->
       <li>
-        <a href="./img/telework-6795505_1920.jpg"
-          ><img class="width-img" src="./img/telework-6795505_1920.jpg" alt=""
-        /></a>
+        <a href="./img/telework-6795505_1920.jpg">
+          <img class="width-img" src="./img/telework-6795505_1920.jpg" alt="" />
+        </a>
       </li>
       <!--... -->
     </ul>
@@ -62,11 +70,11 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $(document).ready(function(){
-$("thumbnails a").click(function(e){
-  e.preventDefault();
-  $(".image-gallery img").attr("src",$(this).attr('href'));
-})
+      $(document).ready(function () {
+        $(".thumbnails a").click(function (e) {
+          e.preventDefault();
+          $(".image-gallery img").attr("src", $(this).attr("href"));
+        });
       });
     </script>
   </body>
