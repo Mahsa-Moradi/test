@@ -1,0 +1,10 @@
+$x:gold;
+$color:rgb(248, 4, 4);
+p{
+    color: $color;
+}
+a{
+    color: rgb(35, 219, 252);
+    color:$color !global;
+    
+}
