@@ -1,3 +1,4 @@
+$nav-bg:#efefef;
 nav.nav-bar{
     background-color: rgb(243, 187, 113);
     width: 100%;
@@ -13,8 +14,13 @@ nav.nav-bar{
                 font: {
                     size: 18px;
                 weight:900px;
+                      }
+
+               &:hover{
+                    color: #f3bb71;
+                      }
+
             } 
-            }
         }
-    }
+    } 
 }
