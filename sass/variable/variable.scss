@@ -1,10 +1,13 @@
 $x:gold;
-$color:rgb(248, 4, 4);
+$color:rgb(248, 4, 4)!global;
 p{
+    font-size: 25px;
     color: $color;
 }
 a{
-    color: rgb(35, 219, 252);
-    color:$color !global;
-    
+    font-size: 25px;
+    $color:rgb(81, 255, 0)!global;  
+}
+div{
+   color:$color ; 
 }
