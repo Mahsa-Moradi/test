@@ -1,3 +1,36 @@
 @mixin btn{
-    
+    font : {
+        size:16px ;
+        weight:500;
+    }
+       display: inline-block;
+       color:#fff;
+       background-color:#ccc; 
+       padding: 6px 15px;
+       border-radius: 3px;
+       border:1px solid #ccc;
+       text-align: center;
+       .btn-success{
+        background-color: green;
+    }
+    .btn-warning{
+        background-color: rgb(228, 177, 10);
+    }
+    .btn-danger{
+        background-color: red;
+    }
+    .btn-dark{
+        background-color: black;
+    }
+    .btn-light{
+        background-color: rgb(238, 238, 238);
+        color: black;
+    }
+    .btn-info{
+        background-color: blue;
+    }
+    .btn-iu{
+
+        background-color: pink;
+    }
 }
