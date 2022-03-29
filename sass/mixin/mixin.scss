@@ -14,12 +14,15 @@
         background-color: green;
     }
     .btn-warning{
+        @include btn;
         background-color: rgb(228, 177, 10);
     }
     .btn-danger{
+        @include btn;
         background-color: red;
     }
     .btn-dark{
+        @include btn;
         background-color: black;
     }
     .btn-light{
@@ -27,10 +30,11 @@
         color: black;
     }
     .btn-info{
+        @include btn;
         background-color: blue;
     }
     .btn-iu{
-
-        background-color: pink;
+        @include btn;
+        background-color: rgb(223, 104, 124);
     }
 }
