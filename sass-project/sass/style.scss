@@ -1,49 +1,63 @@
 // (........... step 1 ..........)
 // variable(متغییر ها)
 // font variable
-$font-path  :'../assets/font';
-$font-family: 'vazir-Medium';
+$font-path: "../assets/font";
+$font-family: "vazir-Medium";
 $font-weight: 700;
-$font-style: 'normal';
-// mixin 
-@mixin flex($flex:flex,$position-x:center,$position-y:center) {
-    display: $flex;
-    justify-content: $position-x;
-    align-items: $position-y;
-    
+$font-style: "normal";
+$default-font-size: 16px;
+// mixin
+@mixin flex($flex: flex, $position-x: center, $position-y: center) {
+  display: $flex;
+  justify-content: $position-x;
+  align-items: $position-y;
 }
 @font-face {
-    font-family: vazir-Medium;
-    src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
+  font-family: vazir-Medium;
+  src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
     url(#{$font-path}/Vazir-Medium.woff2) format("woff2"),
-   url(#{$font-path}/Vazir-Medium.woff) format("woff");
-    font-weight: 700;
-    font-style: normal;
+    url(#{$font-path}/Vazir-Medium.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
-*{
-    font-family: $font-family;
-    direction: rtl;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: $font-family;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: $font-family;
+body {
+  font-family: $font-family;
 }
-ul,ol,li{
-    list-style: none;
+ul,
+ol,
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 // ............. public style
-.container{
-    max-width: 1170px;
-    margin: auto;
-    position: relative;
+.container {
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
 }
-.row{
-   @include flex();
-   
+.row {
+  // @include flex(flex,flex-start,end);
+  @include flex(flex, center, null);
+}
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+// menu style  ************
+#nav{
+    .navbar{
+        font-size: $default-font-size +2px;
+
+    }
 }

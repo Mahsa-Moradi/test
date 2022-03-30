@@ -16,7 +16,9 @@ body {
   font-family: "vazir-Medium";
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -31,9 +33,16 @@ a {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#nav .navbar {
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
