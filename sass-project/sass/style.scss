@@ -12,6 +12,15 @@ $default-font-size: 16px;
   justify-content: $position-x;
   align-items: $position-y;
 }
+@mixin margin-padding($top, $right, $bottom , $left, $margin:true ){
+    @if $margin {
+margin: $top $right $bottom $left;
+    }
+@else{
+    padding: $top $right $bottom $left;
+}
+
+}
 @font-face {
   font-family: vazir-Medium;
   src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
@@ -52,12 +61,21 @@ a {
 .img-fluid {
   display: block;
   width: 100%;
-  height: auto;
+  height: 0;
 }
 // menu style  ************
-#nav{
-    .navbar{
-        font-size: $default-font-size +2px;
-
+#nav {
+  .navbar {
+    background-color: #ccc;
+    font-size: $default-font-size + 2px;
+    height: 60px;
+    @include flex(flex, space-between, null);
+    ul {
+      li {
+          display: inline-block;
+          line-height: 60px;
+          @include margin-padding(0, 0 , 0 , 18px);
+      }
     }
+  }
 }

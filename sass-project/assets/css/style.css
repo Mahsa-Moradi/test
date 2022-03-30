@@ -40,9 +40,18 @@ a {
 .img-fluid {
   display: block;
   width: 100%;
-  height: auto;
+  height: 0;
 }
 
 #nav .navbar {
+  background-color: #ccc;
   font-size: 18px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+#nav .navbar ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 0 0 18px;
 }/*# sourceMappingURL=style.css.map */
