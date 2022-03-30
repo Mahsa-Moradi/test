@@ -20,3 +20,19 @@ $font-style: 'normal';
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: $font-family;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+// ............. public style
+.container{
+    max-width: 1170px;
+    margin: auto;
+    
+}
