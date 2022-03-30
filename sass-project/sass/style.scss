@@ -12,14 +12,12 @@ $default-font-size: 16px;
   justify-content: $position-x;
   align-items: $position-y;
 }
-@mixin margin-padding($top, $right, $bottom , $left, $margin:true ){
-    @if $margin {
-margin: $top $right $bottom $left;
-    }
-@else{
+@mixin margin-padding($top, $right, $bottom, $left, $margin: true) {
+  @if $margin {
+    margin: $top $right $bottom $left;
+  } @else {
     padding: $top $right $bottom $left;
-}
-
+  }
 }
 @font-face {
   font-family: vazir-Medium;
@@ -72,9 +70,37 @@ a {
     @include flex(flex, space-between, null);
     ul {
       li {
-          display: inline-block;
-          line-height: 60px;
-          @include margin-padding(0, 0 , 0 , 18px);
+        display: inline-block;
+        line-height: 60px;
+        @include margin-padding(0, 0, 0, 18px);
+        position: relative;
+        
+        &::after {
+          content: "";
+          position: absolute;
+          //   top: 0;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          width: 0px;
+          height: 2px;
+          background-color: rgb(54, 114, 228);
+          transition: width 0.5s ease;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+        a {
+          color: #000;
+           transition: color 0.5s ease;
+        //   &:hover {
+        //     color: rgb(235, 10, 10);
+          }
+        }
+        &:hover a{
+            color: red;
+        }
+
       }
     }
   }

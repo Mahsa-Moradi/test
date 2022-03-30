@@ -54,4 +54,26 @@ a {
   display: inline-block;
   line-height: 60px;
   margin: 0 0 0 18px;
+  position: relative;
+}
+#nav .navbar ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: #3672e4;
+  transition: width 0.5s ease;
+}
+#nav .navbar ul li:hover::after {
+  width: 100%;
+}
+#nav .navbar ul li a {
+  color: #000;
+}
+#nav .navbar ul:hover a {
+  transition: color 2.5s ease;
+  color: red;
 }/*# sourceMappingURL=style.css.map */
