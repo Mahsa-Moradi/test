@@ -136,7 +136,10 @@ a {
     @include flex(flex, space-between, flex-start);
     .right {
       position: relative;
-      @include section-creator(flex, 67%, 67%)
+      @include section-creator(flex, 60%, 60%);
+    }
+    .left{
+        @include section-creator(flex, 30%, 30%);
     }
   }
 }
