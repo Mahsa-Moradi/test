@@ -1,0 +1,13 @@
+@font-face {
+  font-family: vazir-Medium;
+  src: url(../assets/font/Vazir-Medium.eot) format("eot"), url(../assets/font/Vazir-Medium.woff2) format("woff2"), url(../assets/font/Vazir-Medium.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "vazir-Medium";
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */

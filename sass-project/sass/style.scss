@@ -1,0 +1,22 @@
+// (........... step 1 ..........)
+// variable(متغییر ها)
+// font variable
+$font-path  :'../assets/font';
+$font-family: 'vazir-Medium';
+$font-weight: 700;
+$font-style: 'normal';
+@font-face {
+    font-family: vazir-Medium;
+    src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
+    url(#{$font-path}/Vazir-Medium.woff2) format("woff2"),
+   url(#{$font-path}/Vazir-Medium.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    font-family: $font-family;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
