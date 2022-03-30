@@ -137,19 +137,78 @@ a {
     .right {
       position: relative;
       @include section-creator(flex, 57%, 57%);
+      // gear-1 .....
       .gear-1 {
         position: absolute;
         top: 0;
         right: 20px;
-        font-size: $default-font-size +24px;
+        font-size: $default-font-size + 24px;
         color: rgb(107, 107, 107);
         animation: gear-1 13s infinite linear;
       }
       @keyframes gear-1 {
-        100%{
-          transform: rotate(360deg)
+        100% {
+          transform: rotate(360deg);
         }
-        
+      }
+      // gear-2 .....
+      .gear-2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: $default-font-size + 4px;
+        color: rgb(78, 78, 78);
+        animation: gear-2 13s infinite linear;
+      }
+      @keyframes gear-2 {
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+      // sq-1 .....
+      .sq-1 {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+        border: 4px solid #efefef;
+        animation: sq-1 15s infinite linear;
+      }
+      @keyframes sq-1 {
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+      // sq-2 .....
+      .sq-2 {
+        position: absolute;
+        bottom: -20px;
+        left: 50px;
+        width: 40px;
+        height: 40px;
+        border: 4px solid #569e86;
+        animation: sq-2 40s infinite linear;
+      }
+      @keyframes sq-2 {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      // sq-3 .....
+      .sq-3 {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 30px;
+        height: 30px;
+        border: 4px solid #569e8670;
+        animation: sq-3 20s infinite linear;
+      }
+      @keyframes sq-3 {
+        100% {
+          transform: rotate(360deg);
+        }
       }
     }
 
