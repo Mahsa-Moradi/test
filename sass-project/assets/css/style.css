@@ -106,6 +106,25 @@ a {
   flex-basis: 57%;
   max-width: 57%;
 }
+#header header .right .gear-1 {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 40px;
+  color: #6b6b6b;
+  -webkit-animation: gear-1 13s infinite linear;
+          animation: gear-1 13s infinite linear;
+}
+@-webkit-keyframes gear-1 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes gear-1 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #header header .left {
   padding: 17% 0 0 0;
   display: flex;

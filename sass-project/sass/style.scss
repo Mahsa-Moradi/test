@@ -137,9 +137,24 @@ a {
     .right {
       position: relative;
       @include section-creator(flex, 57%, 57%);
+      .gear-1 {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: $default-font-size +24px;
+        color: rgb(107, 107, 107);
+        animation: gear-1 13s infinite linear;
+      }
+      @keyframes gear-1 {
+        100%{
+          transform: rotate(360deg)
+        }
+        
+      }
     }
+
+    // ....................
     .left {
-      
       @include margin-padding(17%, 0, 0, 0, false);
       @include section-creator(flex, 29%, 29%);
       h1 {
