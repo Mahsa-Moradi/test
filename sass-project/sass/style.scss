@@ -239,11 +239,17 @@ a {
   // }
   .row {
     .course {
+      @include border-radius(0, 0, 5px,5px );
       @include section-divider(flex, 30%, 30%);
+      @include margin-padding(0,16px , 0,16px ,true );
       background-color: #ffffff;
       position: relative;
       border-bottom: 40px solid rgb(13, 241, 154);
-      @include border-radius(0, 0, 5px,5px );
+      cursor: pointer;
+      .status{
+        position: absolute;
+        font-size: $default-font-size -4px;
+      }
     }
   }
 }

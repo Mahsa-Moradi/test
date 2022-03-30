@@ -217,11 +217,17 @@ a {
 }
 
 #course .row .course {
+  border-radius: 0 0 5px 5px;
   display: flex;
   flex-basis: 30%;
   max-width: 30%;
+  margin: 0 16px 0 16px;
   background-color: #ffffff;
   position: relative;
   border-bottom: 40px solid #0df19a;
-  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+}
+#course .row .course .status {
+  position: absolute;
+  font-size: 16px -4px;
 }/*# sourceMappingURL=style.css.map */
