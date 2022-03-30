@@ -128,7 +128,7 @@ a {
     }
   }
 }
-// header style  ************
+// header style  **********
 #header {
   header {
     width: 100%;
@@ -219,10 +219,12 @@ a {
       h1 {
         font-size: $default-font-size + 18px;
         @include margin-padding(0, 0, 30px, 0, true);
+       
       }
       p{
-        display: block;
+       
       }
     }
   }
 }
+// start cours ************
