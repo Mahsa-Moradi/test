@@ -27,4 +27,13 @@ a {
 .container {
   max-width: 1170px;
   margin: auto;
+  position: relative;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

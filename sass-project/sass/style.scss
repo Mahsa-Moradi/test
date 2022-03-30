@@ -5,6 +5,13 @@ $font-path  :'../assets/font';
 $font-family: 'vazir-Medium';
 $font-weight: 700;
 $font-style: 'normal';
+// mixin 
+@mixin flex($flex:flex,$position-x:center,$position-y:center) {
+    display: $flex;
+    justify-content: $position-x;
+    align-items: $position-y;
+    
+}
 @font-face {
     font-family: vazir-Medium;
     src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
@@ -34,5 +41,9 @@ a{
 .container{
     max-width: 1170px;
     margin: auto;
-    
+    position: relative;
+}
+.row{
+   @include flex();
+   
 }
