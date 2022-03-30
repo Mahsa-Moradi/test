@@ -28,6 +28,15 @@ $social-icons-color-hover: #413d3d;
   flex-basis: $flex-basis;
   max-width: $max-width;
 }
+@mixin border-radius($top, $right, $bottom, $left) {
+  border-top: $top;
+  border-right: $right;
+  border-bottom: $bottom;
+  border-left: $left;
+}
+@mixin border-radius($top-left, $top-right, $bottom-right, $bottom-left) {
+  border-radius: $top-left $top-right $bottom-right $bottom-left;
+}
 @font-face {
   font-family: vazir-Medium;
   src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
@@ -230,7 +239,11 @@ a {
   // }
   .row {
     .course {
-      @include section-divider(flex, 30%, 30%)
+      @include section-divider(flex, 30%, 30%);
+      background-color: #ffffff;
+      position: relative;
+      border-bottom: 40px solid rgb(13, 241, 154);
+      @include border-radius(0, 0, 5px,5px );
     }
   }
 }
