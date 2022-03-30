@@ -55,6 +55,7 @@ a {
   line-height: 60px;
   margin: 0 0 0 18px;
   position: relative;
+  cursor: pointer;
 }
 #nav .navbar ul li::after {
   content: "";
@@ -71,9 +72,13 @@ a {
   width: 100%;
 }
 #nav .navbar ul li a {
-  color: #000;
+  color: #2e2e2e;
+  transition: color 0.5s ease;
 }
-#nav .navbar ul:hover a {
-  transition: color 2.5s ease;
-  color: red;
+#nav .navbar ul li a:hover {
+  color: #3a72e3;
+}
+#nav .navbar .social-icons {
+  direction: ltr;
+  padding: 21px 0 0 0;
 }/*# sourceMappingURL=style.css.map */
