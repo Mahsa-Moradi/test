@@ -23,7 +23,7 @@ $social-icons-color-hover: #413d3d;
     padding: $top $right $bottom $left;
   }
 }
-@mixin section-creator($flex: flex, $flex-basis:null,$max-width:null) {
+@mixin section-creator($flex: flex, $flex-basis: null, $max-width: null) {
   display: $flex;
   flex-basis: $flex-basis;
   max-width: $max-width;
@@ -138,12 +138,14 @@ a {
       position: relative;
       @include section-creator(flex, 57%, 57%);
     }
-    .left{
-        @include section-creator(flex, 29%, 29%);
-        h1{
-            font-size: $default-font-size +18px;
-            @include margin-padding(0, 0, 30px, 0,true );
-        }
+    .left {
+      
+      @include margin-padding(17%, 0, 0, 0, false);
+      @include section-creator(flex, 29%, 29%);
+      h1 {
+        font-size: $default-font-size + 18px;
+        @include margin-padding(0, 0, 30px, 0, true);
+      }
     }
   }
 }

@@ -107,6 +107,7 @@ a {
   max-width: 57%;
 }
 #header header .left {
+  padding: 17% 0 0 0;
   display: flex;
   flex-basis: 29%;
   max-width: 29%;
