@@ -23,7 +23,7 @@ $social-icons-color-hover: #413d3d;
     padding: $top $right $bottom $left;
   }
 }
-@mixin section-creator($flex: flex, $flex-basis: null, $max-width: null) {
+@mixin section-divider($flex: flex, $flex-basis: null, $max-width: null) {
   display: $flex;
   flex-basis: $flex-basis;
   max-width: $max-width;
@@ -64,6 +64,7 @@ a {
 .row {
   // @include flex(flex,flex-start,end);
   @include flex(flex, center, null);
+  width: 100%;
 }
 .img-fluid {
   display: block;
@@ -136,7 +137,7 @@ a {
     @include flex(flex, space-between, flex-start);
     .right {
       position: relative;
-      @include section-creator(flex, 57%, 57%);
+      @include section-divider(flex, 57%, 57%);
       // gear-1 .....
       .gear-1 {
         position: absolute;
@@ -215,16 +216,21 @@ a {
     // ....................
     .left {
       @include margin-padding(17%, 0, 0, 0, false);
-      @include section-creator(flex, 29%, 29%);
+      @include section-divider(flex, 29%, 29%);
       h1 {
         font-size: $default-font-size + 18px;
         @include margin-padding(0, 0, 30px, 0, true);
-       
-      }
-      p{
-       
       }
     }
   }
 }
-// start cours ************
+// cours style ************
+#course {
+  // .pipe {
+  // }
+  .row {
+    .course {
+      @include section-divider(flex, 30%, 30%)
+    }
+  }
+}
