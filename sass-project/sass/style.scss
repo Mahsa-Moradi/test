@@ -23,6 +23,11 @@ $social-icons-color-hover: #413d3d;
     padding: $top $right $bottom $left;
   }
 }
+@mixin section-creator($flex: flex, $flex-basis: $max-width) {
+  display: $flex;
+  flex-basis: $flex-basis;
+  max-width: $max-width;
+}
 @font-face {
   font-family: vazir-Medium;
   src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
@@ -63,7 +68,7 @@ a {
 .img-fluid {
   display: block;
   width: 100%;
-  height: 0;
+  height: auto;
 }
 // menu style  ************
 #nav {
@@ -72,7 +77,7 @@ a {
     font-size: $default-font-size + 2px;
     height: 60px;
     @include flex(flex, space-between, null);
-    @include margin-padding(24px,0 ,24px , 0,true );
+    @include margin-padding(24px, 0, 24px, 0, true);
     ul {
       li {
         display: inline-block;
@@ -116,12 +121,24 @@ a {
         &:hover {
           color: $social-icons-color-hover;
         }
-        i{
-            @include margin-padding(0px,10px ,0px ,10px ,false )
+        i {
+          @include margin-padding(0px, 10px, 0px, 10px, false);
         }
       }
     }
   }
 }
 // header style  ************
-
+#header {
+  header {
+    width: 100%;
+    @include margin-padding(100px, 0, 0, 0, true);
+    @include flex(flex, space-between, flex-start);
+    .right {
+      display: flex;
+      flex-basis: 67%;
+      max-width: 67%;
+      position: relative;
+    }
+  }
+}

@@ -40,7 +40,7 @@ a {
 .img-fluid {
   display: block;
   width: 100%;
-  height: 0;
+  height: auto;
 }
 
 #nav .navbar {
@@ -91,4 +91,18 @@ a {
 }
 #nav .navbar .social-icons a i {
   padding: 0px 10px 0px 10px;
+}
+
+#header header {
+  width: 100%;
+  margin: 100px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#header header .right {
+  display: flex;
+  flex-basis: 67%;
+  max-width: 67%;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
