@@ -44,7 +44,6 @@ a {
 }
 
 #nav .navbar {
-  background-color: #ccc;
   font-size: 18px;
   height: 60px;
   display: flex;
@@ -81,4 +80,14 @@ a {
 #nav .navbar .social-icons {
   direction: ltr;
   padding: 21px 0 0 0;
+}
+#nav .navbar .social-icons a {
+  color: #545858;
+  transition: color 1.5 ease;
+}
+#nav .navbar .social-icons a:hover {
+  color: #413d3d;
+}
+#nav .navbar .social-icons a i {
+  padding: 0px 10px 0px 10px;
 }/*# sourceMappingURL=style.css.map */

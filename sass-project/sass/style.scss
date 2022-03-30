@@ -6,8 +6,10 @@ $font-family: "vazir-Medium";
 $font-weight: 700;
 $font-style: "normal";
 $default-font-size: 16px;
-$nav-link:rgb(46,46,46);
-$nav-link-hover:rgb(58, 114, 227);
+$nav-link: rgb(46, 46, 46);
+$nav-link-hover: rgb(58, 114, 227);
+$social-icons-color: #545858;
+$social-icons-color-hover: #413d3d;
 // mixin
 @mixin flex($flex: flex, $position-x: center, $position-y: center) {
   display: $flex;
@@ -66,7 +68,7 @@ a {
 // menu style  ************
 #nav {
   .navbar {
-    background-color: #ccc;
+    // background-color: #ccc;
     font-size: $default-font-size + 2px;
     height: 60px;
     @include flex(flex, space-between, null);
@@ -91,7 +93,6 @@ a {
         }
         &:hover::after {
           width: 100%;
-        
         }
         a {
           color: $nav-link;
@@ -105,11 +106,19 @@ a {
       }
     }
     .social-icons {
-        direction: ltr;
-        @include margin-padding(21px, 0,0 ,0 , false)
-    }
-    a{
+      direction: ltr;
+      @include margin-padding(21px, 0, 0, 0, false);
 
+      a {
+        color: $social-icons-color;
+        transition: color 1.5 ease;
+        &:hover {
+          color: $social-icons-color-hover;
+        }
+        i{
+            @include margin-padding(0px,10px ,0px ,10px ,false )
+        }
+      }
     }
   }
 }
