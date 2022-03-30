@@ -23,7 +23,7 @@ $social-icons-color-hover: #413d3d;
     padding: $top $right $bottom $left;
   }
 }
-@mixin section-creator($flex: flex, $flex-basis: $max-width) {
+@mixin section-creator($flex: flex, $flex-basis,$max-width) {
   display: $flex;
   flex-basis: $flex-basis;
   max-width: $max-width;
@@ -135,10 +135,8 @@ a {
     @include margin-padding(100px, 0, 0, 0, true);
     @include flex(flex, space-between, flex-start);
     .right {
-      display: flex;
-      flex-basis: 67%;
-      max-width: 67%;
       position: relative;
+      @include section-creator(flex, 67%, 67%)
     }
   }
 }

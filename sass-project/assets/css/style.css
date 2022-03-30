@@ -101,8 +101,8 @@ a {
   align-items: flex-start;
 }
 #header header .right {
+  position: relative;
   display: flex;
   flex-basis: 67%;
   max-width: 67%;
-  position: relative;
 }/*# sourceMappingURL=style.css.map */
