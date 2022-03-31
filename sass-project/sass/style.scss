@@ -241,6 +241,8 @@ a {
   // }
   .row {
     .course {
+      display: flex;
+      flex-direction: column;
       @include border-radius(0, 0, 5px,5px );
       @include section-divider(flex, 30%, 30%);
       @include margin-padding(0,16px , 0,16px ,true );
