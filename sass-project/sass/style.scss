@@ -249,6 +249,33 @@ a {
       .status{
         position: absolute;
         font-size: $default-font-size -4px;
+        left: 10px;
+        top: 10px;
+        background-color: rgba(159, 206, 228, 0.966);
+        color: #fff;
+        @include margin-padding(2px, 6px, 2px, 6px, false);
+        @include border-radius(2px, 2px, 2px, 2px)
+      }
+      .teacher{
+        position: absolute;
+        top: -34px;
+        right: 9px;
+        width: 104px;
+        z-index: -1;
+        // @include border-radius(, , , );
+
+      }
+      .teacher-name{
+        position: absolute;
+        top: -30px;
+        right: 9px;
+        font-size: $default-font-size -3px;
+        z-index: -2;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        
+
       }
     }
   }

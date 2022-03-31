@@ -230,4 +230,27 @@ a {
 #course .row .course .status {
   position: absolute;
   font-size: 16px -4px;
+  left: 10px;
+  top: 10px;
+  background-color: rgba(159, 206, 228, 0.966);
+  color: #fff;
+  padding: 2px 6px 2px 6px;
+  border-radius: 2px 2px 2px 2px;
+}
+#course .row .course .teacher {
+  position: absolute;
+  top: -34px;
+  right: 9px;
+  width: 104px;
+  z-index: -1;
+}
+#course .row .course .teacher-name {
+  position: absolute;
+  top: -30px;
+  right: 9px;
+  font-size: 16px -3px;
+  z-index: -2;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
 }/*# sourceMappingURL=style.css.map */
