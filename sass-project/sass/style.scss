@@ -28,7 +28,7 @@ $social-icons-color-hover: #413d3d;
   flex-basis: $flex-basis;
   max-width: $max-width;
 }
-@mixin border-radius($top, $right, $bottom, $left) {
+@mixin border($top, $right, $bottom, $left) {
   border-top: $top;
   border-right: $right;
   border-bottom: $bottom;
@@ -224,6 +224,8 @@ a {
 
     // ....................
     .left {
+      display: flex;
+      flex-direction: column;
       @include margin-padding(17%, 0, 0, 0, false);
       @include section-divider(flex, 29%, 29%);
       h1 {
@@ -274,9 +276,22 @@ a {
         width: 0;
         overflow: hidden;
         white-space: nowrap;
-        
+
 
       }
+    }
+    a{
+      @include margin-padding(10px, 10px, 10px, 10PX,true );
+      font-size:$default-font-size;
+      color: #313131;
+    }
+    .meta{
+      display: flex;
+
+      font-size: $default-font-size -2px;
+      @include margin-padding(0, 10px, 0, 10px, true);
+      @include margin-padding(16px, 0px, 12px, 0px, false);
+      @include border(1px solid #efefef, 0, 0, 0);
     }
   }
 }
