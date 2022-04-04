@@ -294,6 +294,12 @@ a {
       @include margin-padding(0, 10px, 0, 10px, true);
       @include margin-padding(16px, 0px, 12px, 0px, false);
       @include border(1px solid #efefef, 0, 0, 0);
+      border-top: 1px solid #efefef;
+      span:nth-child(1){
+i{
+  color: #45a1ff;
+}
+      }
     }
   }
 }

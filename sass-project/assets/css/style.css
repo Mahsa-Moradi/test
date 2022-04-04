@@ -272,4 +272,8 @@ a {
   border-right: 0;
   border-bottom: 0;
   border-left: 0;
+  border-top: 1px solid #efefef;
+}
+#course .row .meta span:nth-child(1) i {
+  color: #45a1ff;
 }/*# sourceMappingURL=style.css.map */
