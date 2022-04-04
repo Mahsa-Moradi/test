@@ -358,6 +358,28 @@ a {
   color: #757272;
 }
 
+#topic {
+  position: relative;
+}
+#topic::after, #topic::before {
+  content: "";
+  background-color: rgba(140, 124, 229, 0.5);
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: 150px;
+  left: -498px;
+  transform: skewX(10deg);
+  border-radius: 0 20px 50px 0;
+}
+#topic::after {
+  position: absolute;
+  bottom: 60px;
+  left: -400px;
+  transform: skewX(10deg);
+  background-color: rgba(140, 124, 229, 0.295);
+  border-radius: 0 20px 50px 0;
+}
 #topic .topic-titel {
   font-size: 26px;
   margin: 0 0 30px 0;
@@ -380,26 +402,15 @@ a {
 }
 #topic .topic .card:hover .topic-img::after {
   opacity: 0.6;
-  transform: s 1s ease;
 }
-@-webkit-keyframes s {
-  100% {
-    transform: rotateX(-36);
-  }
-}
-@keyframes s {
-  100% {
-    transform: rotateX(-36);
-  }
-}
-#topic .topic .card .topic-img {
+#topic .topic .topic-img {
   display: flex;
   flex-basis: 30%;
   max-width: 30%;
   overflow: hidden;
   position: relative;
 }
-#topic .topic .card .topic-img::after {
+#topic .topic .topic-img::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -412,7 +423,7 @@ a {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-#topic .topic .card .topic-detail {
+#topic .topic .topic-detail {
   position: relative;
   display: flex;
   flex-basis: 70%;
@@ -420,7 +431,7 @@ a {
   flex-direction: column;
   padding: 22px 32px 22px 22px;
 }
-#topic .topic .card .topic-detail::after {
+#topic .topic .topic-detail::after {
   content: "";
   width: 37px;
   height: 118%;
@@ -430,19 +441,22 @@ a {
   right: -20px;
   transform: rotate(5deg);
 }
-#topic .topic .card .topic-detail a {
+#topic .topic .topic-detail:hover {
+  transform: translateX(-13px);
+}
+#topic .topic .topic-detail a {
   font-size: 18px;
 }
-#topic .topic .card .topic-detail .meta {
+#topic .topic .topic-detail .meta {
   font-size: 21px;
   margin-top: 15px;
   color: #ccc;
 }
-#topic .topic .card .topic-detail .meta span {
+#topic .topic .topic-detail .meta span {
   margin-left: 16px;
   margin: 0 0 0 15px;
 }
-#topic .topic .card .topic-detail p {
+#topic .topic .topic-detail p {
   font-size: 16px -2px;
   margin: 20px 0 0 0;
   line-height: 20px;
