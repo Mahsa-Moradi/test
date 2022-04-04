@@ -48,6 +48,10 @@ a {
   margin-top: 250px;
 }
 
+.direction-ltr {
+  direction: ltr;
+}
+
 #nav .navbar {
   font-size: 18px;
   height: 60px;
@@ -358,7 +362,7 @@ a {
   font-size: 26px;
   margin: 0 0 30px 0;
   border-right: 5px solid #569e86;
-  padding: 0 10px 0 o;
+  padding: 10px 20px 0 0;
 }
 #topic .topic {
   display: flex;
@@ -371,6 +375,7 @@ a {
   max-width: 49%;
   border: 1px solid #efefef;
   border-radius: 3px 3px 3px 3px;
+  overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #topic .topic .card:hover .topic-img::after {
@@ -380,6 +385,7 @@ a {
   display: flex;
   flex-basis: 30%;
   max-width: 30%;
+  overflow: hidden;
   position: relative;
 }
 #topic .topic .card .topic-img::after {
@@ -418,4 +424,15 @@ a {
 }
 #topic .topic .card .topic-detail .meta {
   font-size: 21px;
+  margin-top: 15px;
+  color: #ccc;
+}
+#topic .topic .card .topic-detail .meta span {
+  margin-left: 16px;
+  margin: 0 0 0 15px;
+}
+#topic .topic .card .topic-detail p {
+  font-size: 16px -2px;
+  margin: 20px 0 0 0;
+  line-height: 20px;
 }/*# sourceMappingURL=style.css.map */

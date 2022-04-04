@@ -83,6 +83,9 @@ a {
 .mt-250 {
   margin-top: 250px;
 }
+.direction-ltr{
+  direction: ltr;
+}
 // menu style  ************
 #nav {
   .navbar {
@@ -376,23 +379,24 @@ a {
     // margin-bottom: 30px;
     @include margin-padding(0, 0, 30px, 0, true);
     border-right: 5px solid #569e86;
-    @include margin-padding(0, 10px, 0, o, false);
+    @include margin-padding(10px, 20px, 0, 0, false);
   }
   .topic {
     @include flex(flex, space-between, null);
     @include margin-padding(0, 0, 20px, 0, true);
     .card {
+      // direction: ltr !important;
       @include section-divider(flex, 49%, 49%);
       border: 1px solid #efefef;
       @include border-radius(3px, 3px, 3px, 3px);
-      // overflow: hidden;
+      overflow: hidden;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       &:hover .topic-img::after {
         opacity: 0.6;
       }
       .topic-img {
         @include section-divider(flex, 30%, 30%);
-        // overflow: hidden;
+        overflow: hidden;
         position: relative;
         &::after {
           content: "";
@@ -428,6 +432,17 @@ a {
         }
         .meta{
           font-size: $default-font-size + 5px;
+          margin-top: 15px;
+          color: #ccc;
+          span{
+            margin-left: 16px;
+            @include margin-padding(0, 0, 0, 15px, true);
+          }
+        }
+        p{
+          font-size: $default-font-size -2px;
+          @include margin-padding(20px, 0, 0, 0, true);
+          line-height: 20px;
         }
       }
     }
