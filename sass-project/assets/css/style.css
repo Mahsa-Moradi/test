@@ -44,6 +44,10 @@ a {
   height: auto;
 }
 
+.mt-250 {
+  margin-top: 250px;
+}
+
 #nav .navbar {
   font-size: 18px;
   height: 60px;
@@ -218,6 +222,18 @@ a {
   margin: 0 0 30px 0;
 }
 
+#course {
+  position: relative;
+}
+#course .pipe {
+  position: absolute;
+  width: 1726px;
+  height: 370px;
+  background: rgba(140, 124, 229, 0.137);
+  top: 83px;
+  left: -366px;
+  border-radius: 0 250px 250px 0;
+}
 #course .row .course {
   display: flex;
   flex-direction: column;
@@ -225,10 +241,10 @@ a {
   display: flex;
   flex-basis: 30%;
   max-width: 30%;
-  margin: 0 16px 0 16px;
+  margin: 0px 16px 0 16px;
   background-color: #ffffff;
   position: relative;
-  border-bottom: 40px solid #0df19a;
+  border-bottom: 10px solid #0df19a;
   cursor: pointer;
   transition: 0.5s ease;
 }
@@ -239,8 +255,11 @@ a {
   top: -54px;
 }
 #course .row .course:hover .teacher-name {
+  display: inline-block;
   width: 200px;
-  right: 60px;
+  right: 100px;
+  top: -25px;
+  transition: right 1.5s ease;
 }
 #course .row .course .status {
   position: absolute;
@@ -254,19 +273,20 @@ a {
 }
 #course .row .course .teacher {
   position: absolute;
-  top: -34px;
-  right: 9px;
+  top: -16px;
+  right: -30px;
   width: 104px;
   z-index: -1;
   transition: top 1s ease;
 }
 #course .row .course .teacher-name {
   position: absolute;
-  top: -30px;
-  right: 9px;
+  top: 0px;
+  right: 0px;
   font-size: 16px -3px;
   z-index: -2;
   width: 0;
+  overflow: hidden;
   white-space: nowrap;
   transition: all 1s ease;
 }
@@ -274,6 +294,10 @@ a {
   margin: 10px 10px 10px 10PX;
   font-size: 16px;
   color: #313131;
+  padding: 80px 0 0 0;
+}
+#course .row .img-height {
+  height: 255px !important;
 }
 #course .row .meta {
   display: flex;
