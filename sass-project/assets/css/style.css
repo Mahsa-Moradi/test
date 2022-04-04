@@ -396,9 +396,26 @@ a {
   transition: opacity 0.5s ease;
 }
 #topic .topic .card .topic-detail {
+  position: relative;
   display: flex;
   flex-basis: 70%;
   max-width: 70%;
   flex-direction: column;
-  padding: 22px 22px 22px 22px;
+  padding: 22px 32px 22px 22px;
+}
+#topic .topic .card .topic-detail::after {
+  content: "";
+  width: 37px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  right: -27px;
+  transform: rotate(5deg);
+}
+#topic .topic .card .topic-detail a {
+  font-size: 18px;
+}
+#topic .topic .card .topic-detail .meta {
+  font-size: 21px;
 }/*# sourceMappingURL=style.css.map */
