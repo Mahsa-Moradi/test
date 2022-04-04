@@ -318,10 +318,10 @@ top: -54px;
       @include margin-padding(80px,0 ,0 ,0 , false);
      
     }
-    .img-height{
-      height: 255px !important;
-      // border:3px solid #45a1ff;
-    }
+    // .img-height{
+    //   height: 255px !important;
+    //   border:3px solid #45a1ff;
+    // }
     .meta{
       display: flex;
 
@@ -345,4 +345,8 @@ text-shadow: 0 0 2px rgba(0, 0, 0, .4 );
       }
     }
   }
+}
+// path style ************
+#path{
+
 }
