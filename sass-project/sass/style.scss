@@ -374,27 +374,27 @@ a {
 }
 // topic style ************
 #topic {
-position: relative;
-  &::after,&::before{
+  position: relative;
+  &::after,
+  &::before {
     content: "";
     background-color: rgba(140, 124, 229, 0.5);
-    
+
     width: 250px;
     height: 250px;
     position: absolute;
     bottom: 150px;
     left: -498px;
     transform: skewX(10deg);
-@include border-radius(0, 20px  , 50px, 0);
-
+    @include border-radius(0, 20px, 50px, 0);
   }
-  &::after{
+  &::after {
     position: absolute;
     bottom: 60px;
     left: -400px;
     transform: skewX(10deg);
     background-color: rgba(140, 124, 229, 0.295);
-@include border-radius(0, 20px  , 50px, 0);
+    @include border-radius(0, 20px, 50px, 0);
   }
   .topic-titel {
     font-size: $default-font-size + 10px;
@@ -415,7 +415,6 @@ position: relative;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       &:hover .topic-img::after {
         opacity: 0.6;
-      
       }
     }
     .topic-img {
@@ -435,7 +434,6 @@ position: relative;
         opacity: 0;
         transition: opacity 0.5s ease;
       }
-      
     }
     .topic-detail {
       position: relative;
@@ -452,7 +450,7 @@ position: relative;
         right: -20px;
         transform: rotate(5deg);
       }
-      &:hover{
+      &:hover {
         transform: translateX(-13px);
       }
       a {
@@ -476,41 +474,35 @@ position: relative;
   }
 }
 // footer style ************
-#footer{
-  @include margin-padding(80px, 0px, 0, 0, false);
-  background-color: #ecf3df;
-.footer {
-  .side-1{ 
-    @include section-divider(flex, 30%, 30%);
-    @include flex(flex, center, flex-start);
-    flex-direction: column;
-    h5{
-      color: #fff;
-      @include margin-padding(0, 0, 32px, 0, true);
-    }
-    ul{
-      font-size: $default-font-size - 1px;
-      @include margin-padding(0, 0,40px , 0, true);
-      li{
-        @include margin-padding(0, 0, 18px, 0, true);
-        color: #cacaca;
-        i{
-          @include margin-padding(50px0, 0, 40px, 0, true);
+#footer {
+  background-color: #37b537;
+  @include margin-padding(80px, 0px, 0px, 0, false);
+  .footer {
+    .side-1 {
+      @include section-divider(flex, 30%, 30%);
+      @include flex(flex, center, flex-start);
+      flex-direction: column;
+      h5 {
+        color: #fff;
+        @include margin-padding(0, 0, 32px, 0, true);
+      }
+      ul {
+        font-size: $default-font-size - 1px;
+        @include margin-padding(0, 0, 40px, 0, true);
+        li {
+          @include margin-padding(0, 0, 18px, 0, true);
+          color: #cacaca;
+          i {
+            @include margin-padding(0, 0, 0, 12px, true);
+          }
         }
       }
     }
+    si
+  }
 }
-}
-
 // side-1
-
-
-
 
 // side-2
 
-
-
-
-
-// side-3 
+// side-3
