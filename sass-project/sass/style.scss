@@ -250,6 +250,18 @@ a {
       position: relative;
       border-bottom: 40px solid rgb(13, 241, 154);
       cursor: pointer;
+      transition: .5s ease;
+      &:hover{
+box-shadow:  0 0 13px 0 rgba(95, 95, 95, .5 );
+
+      }
+      &:hover .teacher{
+top: -54px;
+      }
+      &:hover .teacher-name{
+        width: 200px;
+        right: 60px;
+              }
       .status{
         position: absolute;
         font-size: $default-font-size -4px;
@@ -267,6 +279,7 @@ a {
         width: 104px;
         z-index: -1;
         // @include border-radius(, , , );
+        transition: top 1s ease;
 
       }
       .teacher-name{
@@ -276,9 +289,9 @@ a {
         font-size: $default-font-size -3px;
         z-index: -2;
         width: 0;
-        overflow: hidden;
+        // overflow: hidden;
         white-space: nowrap;
-
+        transition: all 1s ease;
 
       }
     }
@@ -296,9 +309,17 @@ a {
       @include border(1px solid #efefef, 0, 0, 0);
       border-top: 1px solid #efefef;
       span:nth-child(1){
+        margin-left: auto;
+        @include margin-padding(0, 0, 0, 0, auto);
 i{
   color: #45a1ff;
+  @include margin-padding(0, 0, 0, 0, 3px);
 }
+      }
+      span:nth-child(2){
+@include margin-padding(0, 8px, 0, 8px, false);
+color: #37b537;
+text-shadow: 0 0 2px rgba(0, 0, 0, .4 );
       }
     }
   }

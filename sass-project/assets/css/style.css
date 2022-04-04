@@ -230,6 +230,17 @@ a {
   position: relative;
   border-bottom: 40px solid #0df19a;
   cursor: pointer;
+  transition: 0.5s ease;
+}
+#course .row .course:hover {
+  box-shadow: 0 0 13px 0 rgba(95, 95, 95, 0.5);
+}
+#course .row .course:hover .teacher {
+  top: -54px;
+}
+#course .row .course:hover .teacher-name {
+  width: 200px;
+  right: 60px;
 }
 #course .row .course .status {
   position: absolute;
@@ -247,6 +258,7 @@ a {
   right: 9px;
   width: 104px;
   z-index: -1;
+  transition: top 1s ease;
 }
 #course .row .course .teacher-name {
   position: absolute;
@@ -255,8 +267,8 @@ a {
   font-size: 16px -3px;
   z-index: -2;
   width: 0;
-  overflow: hidden;
   white-space: nowrap;
+  transition: all 1s ease;
 }
 #course .row a {
   margin: 10px 10px 10px 10PX;
@@ -274,6 +286,16 @@ a {
   border-left: 0;
   border-top: 1px solid #efefef;
 }
+#course .row .meta span:nth-child(1) {
+  margin-left: auto;
+  margin: 0 0 0 0;
+}
 #course .row .meta span:nth-child(1) i {
   color: #45a1ff;
+  margin: 0 0 0 0;
+}
+#course .row .meta span:nth-child(2) {
+  padding: 0 8px 0 8px;
+  color: #37b537;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=style.css.map */
