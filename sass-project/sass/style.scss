@@ -393,6 +393,14 @@ a {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       &:hover .topic-img::after {
         opacity: 0.6;
+        transform:s 1s ease;
+        @keyframes s {
+          100%{
+            transform: rotateX(-36);
+          }
+          
+        }
+
       }
       .topic-img {
         @include section-divider(flex, 30%, 30%);
@@ -410,6 +418,7 @@ a {
           bottom: 0;
           opacity: 0;
           transition: opacity 0.5s ease;
+          
         }
       }
       .topic-detail {
@@ -420,11 +429,11 @@ a {
         &::after {
           content: "";
           width: 37px;
-          height: 100%;
-          background-color: black;
+          height: 118%;
+          background-color: white;
           position: absolute;
-          top: 0px;
-          right: -27px;
+          top: -2px;
+          right: -20px;
           transform:rotate(5deg) ;
         }
         a{

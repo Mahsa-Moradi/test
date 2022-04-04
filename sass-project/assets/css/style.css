@@ -380,6 +380,17 @@ a {
 }
 #topic .topic .card:hover .topic-img::after {
   opacity: 0.6;
+  transform: s 1s ease;
+}
+@-webkit-keyframes s {
+  100% {
+    transform: rotateX(-36);
+  }
+}
+@keyframes s {
+  100% {
+    transform: rotateX(-36);
+  }
 }
 #topic .topic .card .topic-img {
   display: flex;
@@ -412,11 +423,11 @@ a {
 #topic .topic .card .topic-detail::after {
   content: "";
   width: 37px;
-  height: 100%;
-  background-color: black;
+  height: 118%;
+  background-color: white;
   position: absolute;
-  top: 0px;
-  right: -27px;
+  top: -2px;
+  right: -20px;
   transform: rotate(5deg);
 }
 #topic .topic .card .topic-detail a {
