@@ -408,6 +408,12 @@ a {
           transition: opacity 0.5s ease;
         }
       }
+      .topic-detail{
+        @include section-divider(flex, 70%, 70%);
+        flex-direction: column;
+        @include margin-padding(22px, 22px, 22px, 22px,false );
+
+      }
     }
   }
 }
