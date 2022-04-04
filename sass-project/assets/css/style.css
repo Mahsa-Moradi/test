@@ -291,7 +291,7 @@ a {
   transition: all 1s ease;
 }
 #course .row a {
-  margin: 10px 10px 10px 10PX;
+  margin: 10px 10px 10px 10px;
   font-size: 16px;
   color: #313131;
   padding: 80px 0 0 0;
@@ -319,4 +319,37 @@ a {
   padding: 0 8px 0 8px;
   color: #37b537;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.path {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.path .right-side {
+  display: flex;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.path .left-side {
+  display: flex;
+  flex-basis: 45%;
+  max-width: 45%;
+}
+.path .left-side .path-title {
+  direction: ltr !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.path .left-side .path-title h2 {
+  font-size: 26px;
+  margin-bottom: 34px;
+  color: #46484d;
+}
+.path .left-side .path-title p {
+  font-size: 18px;
+  line-height: 42px;
+  color: #757272;
 }/*# sourceMappingURL=style.css.map */
