@@ -476,3 +476,41 @@ position: relative;
   }
 }
 // footer style ************
+#footer{
+  @include margin-padding(80px, 0px, 0, 0, false);
+  background-color: #ecf3df;
+.footer {
+  .side-1{ 
+    @include section-divider(flex, 30%, 30%);
+    @include flex(flex, center, flex-start);
+    flex-direction: column;
+    h5{
+      color: #fff;
+      @include margin-padding(0, 0, 32px, 0, true);
+    }
+    ul{
+      font-size: $default-font-size - 1px;
+      @include margin-padding(0, 0,40px , 0, true);
+      li{
+        @include margin-padding(0, 0, 18px, 0, true);
+        color: #cacaca;
+        i{
+          @include margin-padding(50px0, 0, 40px, 0, true);
+        }
+      }
+    }
+}
+}
+
+// side-1
+
+
+
+
+// side-2
+
+
+
+
+
+// side-3 
