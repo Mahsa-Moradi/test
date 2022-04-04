@@ -349,28 +349,49 @@ a {
   // @include margin-padding(0, 0, 100px, 0, true);
   .right-side {
     @include section-divider(flex, 50%, 50%);
-
   }
   .left-side {
     @include section-divider(flex, 45%, 45%);
-.path-title{
-  direction: ltr !important;
-@include flex(flex, center, center);
-flex-direction: column;
-h2{
-  font-size: $default-font-size + 10px;
-  margin-bottom: 34px;
-  color: #46484d;
-}
-p{
-  font-size: $default-font-size + 2px;
-  line-height: 42px;
-  color: #757272;
-}
-}
+    .path-title {
+      direction: ltr !important;
+      @include flex(flex, center, center);
+      flex-direction: column;
+      h2 {
+        font-size: $default-font-size + 10px;
+        margin-bottom: 34px;
+        color: #46484d;
+      }
+      p {
+        font-size: $default-font-size + 2px;
+        line-height: 42px;
+        color: #757272;
+      }
+    }
   }
 }
 //  topic style ************
-#topic{
-  
+#topic {
+  .topic-titel {
+    font-size: $default-font-size + 10px;
+    // margin-bottom: 30px;
+    @include margin-padding(0, 0, 30px, 0, true);
+    border-right: 5px solid #569e86;
+    @include margin-padding(0, 10px, 0, o, false);
+  }
+  .topic {
+    @include flex(flex, space-between, null);
+    @include margin-padding(0, 0, 20px, 0, true);
+    .card {
+      @include section-divider(flex, 49%, 49%);
+      border: 1px solid #efefef;
+      @include border-radius(3px, 3px, 3px, 3px);
+      // overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      .topic-img {
+        @include section-divider(flex, 30%, 30%);
+        // overflow: hidden;
+        position: relative;
+      }
+    }
+  }
 }

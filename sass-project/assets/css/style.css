@@ -352,4 +352,30 @@ a {
   font-size: 18px;
   line-height: 42px;
   color: #757272;
+}
+
+#topic .topic-titel {
+  font-size: 26px;
+  margin: 0 0 30px 0;
+  border-right: 5px solid #569e86;
+  padding: 0 10px 0 o;
+}
+#topic .topic {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+#topic .topic .card {
+  display: flex;
+  flex-basis: 49%;
+  max-width: 49%;
+  border: 1px solid #efefef;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#topic .topic .card .topic-img {
+  display: flex;
+  flex-basis: 30%;
+  max-width: 30%;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
