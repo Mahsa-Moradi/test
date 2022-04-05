@@ -498,7 +498,10 @@ a {
         }
       }
     }
-    si
+    .side-2{
+@include section-divider(flex, 30%, 30%);
+
+    }
   }
 }
 // side-1
