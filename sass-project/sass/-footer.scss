@@ -1,0 +1,111 @@
+// footer style ************
+#footer {
+    background-color:  rgb(155, 200, 183);
+    @include margin-padding(80px, 0px, 0px, 0, false);
+    overflow: hidden;
+    .footer {
+      .side-1 {
+        @include section-divider(flex, 30%, 30%);
+        @include flex(flex, center, flex-start);
+        flex-direction: column;
+        text-align: left;
+        position: relative;
+        h5 {
+          color: #fff;
+          @include margin-padding(0, 0, 32px, 0, true);
+          text-align: left;
+          position: absolute;
+          left: 70px;
+          top: -28px;
+        }
+        ul {
+          font-size: $default-font-size - 1px;
+          @include margin-padding(1px, 50px, 40px, 0, true);
+          li {
+            @include margin-padding(0, 0, 18px, 0, true);
+            color: #ededed;
+            i {
+              @include margin-padding(7px, 0px, 0, 12px, true);
+              span{
+                @include margin-padding(0, 0px, 0, 10px, false);
+              }
+            }
+          }
+        }
+      }
+      .side-2 {
+        @include section-divider(flex, 30%, 30%);
+        @include flex(flex, center, center);
+        text-align: left;
+        ul {
+          font-size: $default-font-size -1px;
+          @include margin-padding(0, 0, 40px, 0, true);
+          li {
+            @include margin-padding(0, 0, 16px, 0, true);
+            a {
+              color: #f8f8f8;
+              transition: color 0.5s ease;
+              &:hover {
+                color: #3b8ddf;
+              }
+            }
+          }
+        }
+      }
+      .side-3{
+        flex-direction: column;
+        
+        p{
+          color: #fff;
+          @include margin-padding(0, 0, 26px, 0, true);
+          font-size: $default-font-size;
+          width: 100%;
+          // text-align: right;  
+          
+           }
+        form{
+          position: relative;
+          .email{
+            width: 100%;
+            height: 35px;
+            @include margin-padding(10px, 10px, 10px, 10px, false);
+            border: 0;
+            @include border-radius(4px, 4px, 4px, 4px);
+            outline: none;
+            text-align: left;
+            color: rgb(58, 114, 227);
+          }
+          .submit{
+            position: absolute;
+            top: px;
+            left: -47px;
+            border: 0;
+            width: 15%;
+            height: 33px;
+            @include border-radius(4px, 4px, 4px, 4px);
+            outline: none;
+            cursor: pointer;
+            transition:  color .2s ease;
+            &:hover{
+              color: rgb(58, 114, 227);
+            }
+  
+          }
+        }
+      }
+    }
+    .copy-right{
+      display: block;
+      background-color: #487e7b;
+      text-align: center;
+      @include margin-padding(30px, 0, 30px, 0, false);
+      font-size: $default-font-size -2px;
+  
+    }
+  }
+  // side-1
+  
+  // side-2
+  
+  // side-3
+  

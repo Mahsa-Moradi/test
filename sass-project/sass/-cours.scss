@@ -1,0 +1,104 @@
+// cours style ************
+#course {
+    position: relative;
+    .pipe {
+      position: absolute;
+      width: 1726px;
+      height: 370px;
+      background: rgba(140, 124, 229, 0.137);
+      top: 83px;
+      left: -366px;
+      @include border-radius(0, 250px, 250px, 0);
+    }
+    .row {
+      .course {
+        display: flex;
+        flex-direction: column;
+        @include border-radius(0, 0, 5px, 5px);
+        @include section-divider(flex, 30%, 30%);
+        @include margin-padding(0px, 16px, 0, 16px, true);
+        background-color: #ffffff;
+        position: relative;
+        border-bottom: 10px solid rgb(13, 241, 154);
+        cursor: pointer;
+        transition: 0.5s ease;
+        &:hover {
+          box-shadow: 0 0 13px 0 rgba(95, 95, 95, 0.5);
+        }
+        &:hover .teacher {
+          top: -54px;
+        }
+        &:hover .teacher-name {
+          display: inline-block;
+          width: 200px;
+          right: 100px;
+          top: -25px;
+          transition: right 1.5s ease;
+        }
+        .status {
+          position: absolute;
+          font-size: $default-font-size -4px;
+          left: 10px;
+          top: 10px;
+          background-color: rgba(159, 206, 228, 0.966);
+          color: #fff;
+          @include margin-padding(2px, 6px, 2px, 6px, false);
+          @include border-radius(2px, 2px, 2px, 2px);
+        }
+        .teacher {
+          position: absolute;
+          top: -16px;
+          right: -30px;
+          width: 104px;
+          z-index: -1;
+          // @include border-radius(, , , );
+          transition: top 1s ease;
+        }
+        .teacher-name {
+          position: absolute;
+          // top: 50px;
+          top: 0px;
+          right: 0px;
+          font-size: $default-font-size -3px;
+          z-index: -2;
+          width: 0;
+          overflow: hidden;
+          white-space: nowrap;
+          transition: all 1s ease;
+          // display: none
+        }
+      }
+      a {
+        @include margin-padding(10px, 10px, 10px, 10px, true);
+        font-size: $default-font-size;
+        color: #313131;
+        @include margin-padding(80px, 0, 0, 0, false);
+      }
+      // .img-height{
+      //   height: 255px !important;
+      //   border:3px solid #45a1ff;
+      // }
+      .meta {
+        display: flex;
+  
+        font-size: $default-font-size -2px;
+        @include margin-padding(0, 10px, 0, 10px, true);
+        @include margin-padding(16px, 0px, 12px, 0px, false);
+        @include border(1px solid #efefef, 0, 0, 0);
+        border-top: 1px solid #efefef;
+        span:nth-child(1) {
+          margin-left: auto;
+          @include margin-padding(0, 0, 0, 0, auto);
+          i {
+            color: #45a1ff;
+            @include margin-padding(0, 0, 0, 0, 3px);
+          }
+        }
+        span:nth-child(2) {
+          @include margin-padding(0, 8px, 0, 8px, false);
+          color: #37b537;
+          text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+  }
