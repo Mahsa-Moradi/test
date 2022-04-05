@@ -548,6 +548,7 @@ a {
           @include border-radius(4px, 4px, 4px, 4px);
           outline: none;
           text-align: left;
+          color: rgb(58, 114, 227);
         }
         .submit{
           position: absolute;
@@ -559,6 +560,10 @@ a {
           @include border-radius(4px, 4px, 4px, 4px);
           outline: none;
           cursor: pointer;
+          transition:  color .2s ease;
+          &:hover{
+            color: rgb(58, 114, 227);
+          }
 
         }
       }

@@ -543,6 +543,7 @@ a {
   border-radius: 4px 4px 4px 4px;
   outline: none;
   text-align: left;
+  color: rgb(58, 114, 227);
 }
 #footer .footer .side-3 form .submit {
   position: absolute;
@@ -554,4 +555,8 @@ a {
   border-radius: 4px 4px 4px 4px;
   outline: none;
   cursor: pointer;
+  transition: color 0.2s ease;
+}
+#footer .footer .side-3 form .submit:hover {
+  color: rgb(58, 114, 227);
 }/*# sourceMappingURL=style.css.map */
