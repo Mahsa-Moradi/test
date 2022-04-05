@@ -20,7 +20,7 @@
         }
         ul {
           font-size: $default-font-size - 1px;
-          @include margin-padding(1px, 50px, 40px, 0, true);
+          @include margin-padding(1px, 299px, 40px, 0, true);
           li {
             @include margin-padding(0, 0, 18px, 0, true);
             color: #ededed;
