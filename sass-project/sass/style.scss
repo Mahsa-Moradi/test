@@ -498,7 +498,7 @@ a {
         @include margin-padding(1px, 50px, 40px, 0, true);
         li {
           @include margin-padding(0, 0, 18px, 0, true);
-          color: #f8f8f8;
+          color: #ededed;
           i {
             @include margin-padding(7px, 0px, 0, 12px, true);
             span{
@@ -568,6 +568,14 @@ a {
         }
       }
     }
+  }
+  .copy-right{
+    display: block;
+    background-color: #487e7b;
+    text-align: center;
+    @include margin-padding(30px, 0, 30px, 0, false);
+    font-size: $default-font-size -2px;
+
   }
 }
 // side-1
