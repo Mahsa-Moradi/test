@@ -2,26 +2,26 @@
 #topic {
     position: relative;
     &::after,
-    &::before {
-      content: "";
-      background-color: rgba(140, 124, 229, 0.5);
+    // &::before {
+    //   content: "";
+    //   background-color: rgba(140, 124, 229, 0.5);
   
-      width: 250px;
-      height: 250px;
-      position: absolute;
-      bottom: 150px;
-      left: -361px;
-      transform: skewX(10deg);
-      @include border-radius(0, 20px, 50px, 0);
-    }
-    &::after {
-      position: absolute;
-      bottom: 60px;
-      left: -300px;
-      transform: skewX(10deg);
-      background-color: rgba(140, 124, 229, 0.295);
-      @include border-radius(0, 20px, 50px, 0);
-    }
+    //   width: 250px;
+    //   height: 250px;
+    //   position: absolute;
+    //   bottom: 150px;
+    //   left: -361px;
+    //   transform: skewX(10deg);
+    //   @include border-radius(0, 20px, 50px, 0);
+    // }
+    // &::after {
+    //   position: absolute;
+    //   bottom: 60px;
+    //   left: -300px;
+    //   transform: skewX(10deg);
+    //   background-color: rgba(140, 124, 229, 0.295);
+    //   @include border-radius(0, 20px, 50px, 0);
+    // }
     .topic-titel {
       font-size: $default-font-size + 10px;
       // margin-bottom: 30px;
