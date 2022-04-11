@@ -181,28 +181,27 @@ a {
           border-right: 1px solid #efefef65;
           border-bottom: 1px solid #efefef;
           box-shadow: 1px 1px 2px #cfcfcf;
-          
-        }
-      }
-
-      // **** social-icons **** //
-      .social-icons {
-        direction: ltr;
-        @include margin-padding(21px, 0, 0, 0, false);
-
-        a {
-          color: $social-icons-color;
-          transition: color 1.5 ease;
-          &:hover {
-            color: $social-icons-color-hover;
-          }
-          i {
-            @include margin-padding(0px, 10px, 0px, 10px, false);
-          }
         }
       }
     }
-    & li:hover .dropdown-menu{
+    // **** social-icons **** //
+    .social-icons {
+      direction: ltr;
+      @include margin-padding(21px, 0, 0, 0, false);
+
+      a {
+        color: $social-icons-color;
+        transition: color 1.5 ease;
+        &:hover {
+          color: $social-icons-color-hover;
+        }
+        i {
+          @include margin-padding(0px, 10px, 0px, 10px, false);
+        }
+      }
+    }
+
+    & li:hover .dropdown-menu {
       visibility: visible;
     }
   }
@@ -551,13 +550,15 @@ a {
       flex-direction: column;
       text-align: left;
       position: relative;
+      
       h5 {
         color: #fff;
         @include margin-padding(0, 0, 32px, 0, true);
         text-align: left;
         position: absolute;
-        left: 70px;
-        top: -28px;
+        left: 50px;
+        top: -38px;
+        font-size: $default-font-size + 2px;
       }
       ul {
         font-size: $default-font-size - 1px;

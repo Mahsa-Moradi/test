@@ -132,18 +132,18 @@ a {
   border-bottom: 1px solid #efefef;
   box-shadow: 1px 1px 2px #cfcfcf;
 }
-#nav .navbar ul .social-icons {
+#nav .navbar .social-icons {
   direction: ltr;
   padding: 21px 0 0 0;
 }
-#nav .navbar ul .social-icons a {
+#nav .navbar .social-icons a {
   color: #545858;
   transition: color 1.5 ease;
 }
-#nav .navbar ul .social-icons a:hover {
+#nav .navbar .social-icons a:hover {
   color: #413d3d;
 }
-#nav .navbar ul .social-icons a i {
+#nav .navbar .social-icons a i {
   padding: 0px 10px 0px 10px;
 }
 #nav .navbar li:hover .dropdown-menu {
@@ -514,8 +514,9 @@ a {
   margin: 0 0 32px 0;
   text-align: left;
   position: absolute;
-  left: 70px;
-  top: -28px;
+  left: 50px;
+  top: -38px;
+  font-size: 18px;
 }
 #footer .footer .side-1 ul {
   font-size: 15px;
