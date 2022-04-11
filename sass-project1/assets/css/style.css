@@ -104,6 +104,17 @@ a {
 #nav .navbar ul li a:hover {
   color: rgb(58, 114, 227);
 }
+#nav .navbar ul .dropdown .dropdown a {
+  padding: 0px 10px 0 10px;
+}
+#nav .navbar ul .dropdown .dropdown a .dropdown i {
+  padding: 0px 0px 0px 10px;
+}
+#nav .navbar .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+}
 #nav .navbar .social-icons {
   direction: ltr;
   padding: 21px 0 0 0;

@@ -101,7 +101,7 @@ a {
 .mt-250 {
   margin-top: 250px;
 }
-.display-none{
+.display-none {
   display: none;
 }
 // .direction-ltr {
@@ -147,9 +147,24 @@ a {
           }
         }
       }
+      //   **** dropdowns style ****//
+      .dropdown {
+        .dropdown a {
+          @include margin-padding(0px, 10px, 0, 10px, false);
+
+          .dropdown i {
+            @include margin-padding(0px, 0px, 0px, 10px, false);
+          }
+        }
+      }
     }
-    //   **** dropdowns style ****//
-  
+
+    .dropdown-menu {
+      // display: inline-block;
+      display: flex;
+      flex-direction: column;
+      z-index: 20;
+    }
     // **** social-icons **** //
     .social-icons {
       direction: ltr;
