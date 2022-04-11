@@ -51,9 +51,9 @@
           <li><a href="#">Work Shop</a></li>
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">About Us</a></li>
-          <li class=" dropdown dropdowns dropdown-toggle" id="dropdowns-id" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <li class=" dropdown ">
             <a href="#"> <i class="fa-solid fa-angle-down"></i>Curses</a>
-            <div class="dropdowns-menu " aria-labelledby="dropdowns-id">
+            <div class="dropdown-menu ">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Somting else here</a>
@@ -410,12 +410,15 @@
       });
     </script> -->
     <!-- 2 -->
-    <script>
+    <!-- <script>
       $("document").ready(function () {
-        $(".dropdowns").click(function () {
-          $(".dropdowns-menu").toggleClass();
-        });
+$('.dropdown').click(function(){
+$('.dropdown-menu').hide();
+});
+      
       });
+    </script> -->
+    
     </script>
   </body>
 </html>
