@@ -3,12 +3,13 @@
     position: relative;
     .pipe {
       position: absolute;
-      width: 1726px;
+      width:50% !important;
       height: 370px;
       background: rgba(140, 124, 229, 0.137);
       top: 83px;
       left: -366px;
       @include border-radius(0, 250px, 250px, 0);
+      border-radius: 0 250px 250px 0;
     }
     .row {
       .course {
