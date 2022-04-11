@@ -1,0 +1,48 @@
+@font-face {
+    font-family: vazir-Medium;
+    src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
+      url(#{$font-path}/Vazir-Medium.woff2) format("woff2"),
+      url(#{$font-path}/Vazir-Medium.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+  * {
+    font-family: $font-family;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: $font-family;
+  }
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  // ............. public style
+.container {
+    max-width: 1170px;
+    margin: auto;
+    position: relative;
+  }
+  .row {
+    // @include flex(flex,flex-start,end);
+    @include flex(flex, center, null);
+    width: 100%;
+  }
+  .img-fluid {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .mt-250 {
+    margin-top: 250px;
+  }
+  // .direction-ltr {
+  //   direction: ltr;
+  // }
