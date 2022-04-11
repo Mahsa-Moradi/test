@@ -51,18 +51,16 @@
           <li><a href="#">Work Shop</a></li>
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">About Us</a></li>
-          <li class="dropdowns">
-            <p>Curses</p>
-            <i class="fa-solid fa-angle-down"></i>
+          <li class=" dropdown dropdowns dropdown-toggle" id="dropdowns-id" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <a href="#"> <i class="fa-solid fa-angle-down"></i>Curses</a>
+            <div class="dropdowns-menu " aria-labelledby="dropdowns-id">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Somting else here</a>
+            </div>
           </li>
         </ul>
-        <div class="dropdowns-menu display-none">
-          <ul class="dropdowns-menu">
-            <li class=""><a href="#">Action</a></li>
-            <li class=""><a href="#">Another action</a></li>
-            <li class=""><a href="#">Somting else here</a></li>
-          </ul>
-        </div>
+
         <!-- icon -->
         <span class="social-icons">
           <a href=""><i class="fab fa-telegram-plane"></i></a>
@@ -384,7 +382,7 @@
     <!--*** end footer -->
     <!-- <div class="mt-250"></div> -->
     <!-- script...................................... -->
-      <!-- library jquary -->
+    <!-- library jquary -->
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
@@ -393,30 +391,31 @@
     ></script>
     <!-- JQ -->
     <!-- 0 -->
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         $(".dropdowns").click(function () {
-          $('.dropdowns-menu').css
-          display: block;
+          $(".dropdowns-menu").css({
+            display: block,
+            color:"red"
+          });
         });
       });
-    </script>
+    </script> -->
     <!-- 1 -->
     <!-- <script>
        $(document).ready(function () {
-        $("dropdowns").click(function () {
-          $("dropdowns-menu").show();
+        $(".dropdowns").click(function () {
+          $("this").show('.dropdowns-menu');
         });
       });
     </script> -->
     <!-- 2 -->
-  <!-- <script>
-    $('document').ready(function(){
-$('.menu').click(function(){
-$('.over-lay').toggleClass('anim');
-
-});
-    });
-  </script> -->
+    <script>
+      $("document").ready(function () {
+        $(".dropdowns").click(function () {
+          $(".dropdowns-menu").toggleClass();
+        });
+      });
+    </script>
   </body>
 </html>

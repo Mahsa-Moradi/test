@@ -70,8 +70,7 @@ $(document).ready(function () {
 // Animation*********************
 $(document).ready(function () {
   $(".b1").click(function () {
-    $(".testb1").animate(
-      {
+    $(".testb1").animate({
         width: "+=150px", // arze ghabli + 150
         // width:"150px",
         // width:"toggle",
