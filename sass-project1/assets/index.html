@@ -11,30 +11,36 @@
     />
 
     <link rel="stylesheet" href="../assets/css/style.css" />
-        <!-- library jquary -->
-      
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <!-- library jquary -->
 
-<!-- ............................................ -->
-      <!-- script...................... -->
-      <!-- library jquary -->
-      
-      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
 
-      <!-- JQ -->
-      <script>
-        $(document).ready(function(){
-$('.dropdowns').click(function(){
-  display:block;
-});
-     });
-    //  .............
-$(document).ready(function(){
-$('.dropdowns').click(function(){
- $('.dropdowns-menu').show();
-});
-     });
-      </script>
+    <!-- ............................................ -->
+    <!-- script...................... -->
+    <!-- library jquary -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JQ -->
+    <script>
+      $(document).ready(function () {
+        $(".dropdowns").click(function () {
+          $(".dropdowns-menu").css({
+            display: block,
+          });
+        });
+      });
+      //  .............
+      $(document).ready(function () {
+        $(".dropdowns").click(function () {
+          $(".dropdowns-menu").show();
+        });
+      });
+    </script>
   </head>
   <body>
     <!-- *********** start menu ****************-->
@@ -46,17 +52,17 @@ $('.dropdowns').click(function(){
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">About Us</a></li>
           <li class="dropdowns">
-              <p>Curses</p>
-              <i class="fa-solid fa-angle-down"></i>
-        </li>
+            <p>Curses</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </li>
         </ul>
-        <div class="dropdowns-menu display-none ">
-            <ul class="dropdowns-menu">
-              <li class=""><a href="#">Action</a></li>
-              <li class=""><a href="#">Another action</a></li>
-              <li class=""><a href="#">Somting else here</a></li>
-            </ul>
-          </div>
+        <div class="dropdowns-menu display-none">
+          <ul class="dropdowns-menu">
+            <li class=""><a href="#">Action</a></li>
+            <li class=""><a href="#">Another action</a></li>
+            <li class=""><a href="#">Somting else here</a></li>
+          </ul>
+        </div>
         <!-- icon -->
         <span class="social-icons">
           <a href=""><i class="fab fa-telegram-plane"></i></a>
@@ -69,326 +75,348 @@ $('.dropdowns').click(function(){
     <!--***** end menu -->
     <!-- ********** start header ***************-->
     <div class="container" id="header">
-        <header>
-          <!-- right header..... -->
-          <div class="right">
-            <i class="fa fa-cog gear-1"></i>
-            <i class="fa fa-cog gear-2"></i>
-            <img
-              src="../assets/img/laptop-2298286_1280.png"
-              alt=""
-              class="img-fluid"
-            />
-            <span class="sq-1"></span>
-            <span class="sq-2"></span>
-            <span class="sq-3"></span>
-          </div>
-  
-          <!-- left header..... -->
-          <div class="left">
-            <h1>Work Shop</h1>
-  
-            <h4>Programer</h4>
-          </div>
-        </header>
-      </div>
-      <!--*** end header -->
-      <!-- ********** start course ***************-->
-      <div class="container mt-250" id="course">
-        <div class=" pipe" style="border-radius: 0 250px 250px 0;"></div>
-        <div class="row">
-          <!-- course 1 -->
-          <div class="course">
-            <span class="status">Loading</span>
-            <img
-              src="../assets/img/avatar-2191933_1280.png"
-              alt=""
-              class="teacher"
-            />
-            <span class="teacher-name"> Mahsa Moradi</span>
-            <img
-              src="../assets/img/woman-5579998_1280.png"
-              alt=""
-              class="thumb img-fluid img-height"
-            />
-            <a class="a-img-course" href="">work shop web designer</a>
-            <div class="meta">
-              <span><i class="fas fa-history"></i></span>
-              <span>Free course</span>
-            </div>
-          </div>
-          <!-- course 2 -->
-          <div class="course">
-            <span class="status">Loading</span>
-            <img
-              src="../assets/img/avatar-2191934_1280.png"
-              alt=""
-              class="teacher"
-            />
-            <span class="teacher-name"> Mahyar Moradi</span>
-            <img
-              src="../assets/img/meeting-1453895_1280.png"
-              alt=""
-              class="thumb img-fluid"
-            />
-            <a href="">work shop web designer</a>
-            <div class="meta">
-              <span><i class="fas fa-history"></i></span>
-              <span>Free course</span>
-            </div>
-          </div>
-          <!-- course 3 -->
-          <div class="course">
-            <span class="status">Loading</span>
-            <img
-              src="../assets/img/avatar-2191935_1280.png"
-              alt=""
-              class="teacher"
-            />
-            <span class="teacher-name"> Mehrdad Moradi</span>
-            <img
-              src="../assets/img/meeting-6004997_1280.png"
-              alt=""
-              class="thumb img-fluid"
-            />
-            <a href="">work shop web designer</a>
-            <div class="meta">
-              <span><i class="fas fa-history"></i></span>
-              <span>Free course</span>
-            </div>
-          </div>
-          <!-- end cours... -->
+      <header>
+        <!-- right header..... -->
+        <div class="right">
+          <i class="fa fa-cog gear-1"></i>
+          <i class="fa fa-cog gear-2"></i>
+          <img
+            src="../assets/img/laptop-2298286_1280.png"
+            alt=""
+            class="img-fluid"
+          />
+          <span class="sq-1"></span>
+          <span class="sq-2"></span>
+          <span class="sq-3"></span>
         </div>
-      </div>
-      <!--*** end cours -->
-      <!-- ********** start path ***************-->
-      <div class="container mt-250" id="path">
-        <!-- path 1 -->
-        <div class="path">
-          <!-- right-side -->
-          <div class="right-side">
-            <img class="img-fluid" src="./img/man-5433469_1280.png" alt="" />
-          </div>
-          <!-- left-side -->
-          <div class="left-side">
-            <div class="path-title">
-              <h2>Web Development Services</h2>
-              <p>
-                Shopify handles everything from marketing and payments, to secure
-                checkout and shipping.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- path 2 -->
-        <div class="path">
-          <!-- left-side -->
-          <div class="left-side">
-            <div class="path-title">
-              <h2>Web Development Services</h2>
-              <p>
-                Shopify handles everything from marketing and payments, to secure
-                checkout and shipping.
-              </p>
-            </div>
-          </div>
-          <!-- right-side -->
-          <div class="right-side">
-            <img
-              class="img-fluid"
-              src="./img/video-conference-5231324_1280.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <!-- path 3 -->
-        <div class="path">
-          <!-- right-side -->
-          <div class="right-side">
-            <img class="img-fluid" src="./img/home-4588697_1280.jpg" alt="" />
-          </div>
-          <!-- left-side -->
-          <div class="left-side">
-            <div class="path-title">
-              <h2>Web Development Services</h2>
-              <p>
-                Shopify handles everything from marketing and payments, to secure
-                checkout and shipping.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--*** end path -->
-      <!-- ********** start topic ***************-->
-      <div class="container mt-250 direction-ltr" id="topic">
-        <p class="topic-titel">Work Shop</p>
-        <!-- topic 1............ -->
-        <div class="topic">
-          <!-- card 1 ...... -->
-          <div class="card">
-            <!-- img 1 -->
-            <div class="topic-img">
-              <img
-                class="img-fluid"
-                src="./img/smart-working-6614315_1920.png"
-                alt=""
-              />
-            </div>
-            <!-- detail 1 -->
-            <div class="topic-detail">
-              <a href="#">Webdesign en -Development </a>
-              <div class="meta">
-                <span>writer: Mahsa Moradi</span>
-                <span>2 march</span>
-              </div>
-              <p>
-                Een goed vindbare (werkende) website met een verleidelijk grafisch
-                ontwerp dat makkelijk navigeerbaar is. Daar zorgen onze
-                webdesigners en -developers voor. Zij realiseren een website die
-                volledig in lijn ligt met jouw brand identity.
-              </p>
-            </div>
-          </div>
-  
-          <!-- card 2 ...... -->
-          <div class="card">
-            <!-- img 1 -->
-            <div class="topic-img">
-              <img
-                class="img-fluid"
-                src="./img/working-6636475_1280.jpg"
-                alt=""
-              />
-            </div>
-            <!-- detail 1 -->
-            <div class="topic-detail">
-              <a href="#">Webdesign en -Development </a>
-              <div class="meta">
-                <span>writer: Mahsa Moradi</span>
-                <span>2 march</span>
-              </div>
-              <p>
-                Een goed vindbare (werkende) website met een verleidelijk grafisch
-                ontwerp dat makkelijk navigeerbaar is. Daar zorgen onze
-                webdesigners en -developers voor. Zij realiseren een website die
-                volledig in lijn ligt met jouw brand identity.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- topic 2............ -->
-        <div class="topic">
-          <!-- card 1 ...... -->
-          <div class="card">
-            <!-- img 1 -->
-            <div class="topic-img">
-              <img
-                class="img-fluid"
-                src="./img/working-6808204_1280.png"
-                alt=""
-              />
-            </div>
-            <!-- detail 1 -->
-            <div class="topic-detail">
-              <a href="#">Webdesign en -Development </a>
-              <div class="meta">
-                <span>writer: Mahsa Moradi</span>
-                <span>2 march</span>
-              </div>
-              <p>
-                Een goed vindbare (werkende) website met een verleidelijk grafisch
-                ontwerp dat makkelijk navigeerbaar is. Daar zorgen onze
-                webdesigners en -developers voor. Zij realiseren een website die
-                volledig in lijn ligt met jouw brand identity.
-              </p>
-            </div>
-          </div>
-  
-          <!-- card 2 ...... -->
-          <div class="card">
-            <!-- img 1 -->
-            <div class="topic-img">
-              <img class="img-fluid" src="./img/woman-5579998_1280.png" alt="" />
-            </div>
-            <!-- detail 1 -->
-            <div class="topic-detail">
-              <a href="#">Webdesign en -Development </a>
-              <div class="meta">
-                <span>writer: Mahsa Moradi</span>
-                <span>2 march</span>
-              </div>
-              <p>
-                Een goed vindbare (werkende) website met een verleidelijk grafisch
-                ontwerp dat makkelijk navigeerbaar is. Daar zorgen onze
-                webdesigners en -developers voor. Zij realiseren een website die
-                volledig in lijn ligt met jouw brand identity.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--*** end topic -->
-      <!-- ********** start footer ***************-->
-  <footer class="container-fluid mt-250" id="footer">
-  <div class="footer row">
-  <!-- side-3 -->
-  <div class="side-3">
-    <p>For the register input you email ,please.</p>
-    <form action="">
-      <input class="submit" type="submit" value="share" />
-      <input class="email" type="text" placeholder="... email" />
-      
-    </form>
-  </div>
-   <!-- side-2 -->
-   <div class="side-2">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Course</a></li>
-      <li><a href="#">Suport</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </div>
-  <!-- side-1 -->
-  <div class="side-1">
-    <h5>Contact Us</h5>
-    <ul>
-      <li style="color: #ececec"><i class="fas fa-map-marker-alt"><span>Belgium.Bruxcel</span></i></li>
-      <li style="color: #ececec"><i class="fas fa-phone"><span>003258874785</span></i></li>
-      <li style="color: #ececec"><i class="far fa-map-market-alt"><span>mahsamoradi611.mm@gmail.com</span></i></li>
-      <li style="color: #ececec"><i class="fab fa-instagram"><span>mahsa.moradiphoto</span></i></li>
-    </ul>
-  </div>
-  
-  
-  <!-- ... -->
-  </div>
-  <p class="copy-right">greghfdhd</p>
-  </footer>
-      <!--*** end footer -->
-      <!-- <div class="mt-250"></div> -->
-      <!-- script...................... -->
-      <!-- library jquary -->
-      
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
 
-      <!-- JQ -->
-      <script>
-        $(document).ready(function(){
-$('dropdowns').click(function(){
-  display:block;
+        <!-- left header..... -->
+        <div class="left">
+          <h1>Work Shop</h1>
+
+          <h4>Programer</h4>
+        </div>
+      </header>
+    </div>
+    <!--*** end header -->
+    <!-- ********** start course ***************-->
+    <div class="container mt-250" id="course">
+      <div class="pipe" style="border-radius: 0 250px 250px 0"></div>
+      <div class="row">
+        <!-- course 1 -->
+        <div class="course">
+          <span class="status">Loading</span>
+          <img
+            src="../assets/img/avatar-2191933_1280.png"
+            alt=""
+            class="teacher"
+          />
+          <span class="teacher-name"> Mahsa Moradi</span>
+          <img
+            src="../assets/img/woman-5579998_1280.png"
+            alt=""
+            class="thumb img-fluid img-height"
+          />
+          <a class="a-img-course" href="">work shop web designer</a>
+          <div class="meta">
+            <span><i class="fas fa-history"></i></span>
+            <span>Free course</span>
+          </div>
+        </div>
+        <!-- course 2 -->
+        <div class="course">
+          <span class="status">Loading</span>
+          <img
+            src="../assets/img/avatar-2191934_1280.png"
+            alt=""
+            class="teacher"
+          />
+          <span class="teacher-name"> Mahyar Moradi</span>
+          <img
+            src="../assets/img/meeting-1453895_1280.png"
+            alt=""
+            class="thumb img-fluid"
+          />
+          <a href="">work shop web designer</a>
+          <div class="meta">
+            <span><i class="fas fa-history"></i></span>
+            <span>Free course</span>
+          </div>
+        </div>
+        <!-- course 3 -->
+        <div class="course">
+          <span class="status">Loading</span>
+          <img
+            src="../assets/img/avatar-2191935_1280.png"
+            alt=""
+            class="teacher"
+          />
+          <span class="teacher-name"> Mehrdad Moradi</span>
+          <img
+            src="../assets/img/meeting-6004997_1280.png"
+            alt=""
+            class="thumb img-fluid"
+          />
+          <a href="">work shop web designer</a>
+          <div class="meta">
+            <span><i class="fas fa-history"></i></span>
+            <span>Free course</span>
+          </div>
+        </div>
+        <!-- end cours... -->
+      </div>
+    </div>
+    <!--*** end cours -->
+    <!-- ********** start path ***************-->
+    <div class="container mt-250" id="path">
+      <!-- path 1 -->
+      <div class="path">
+        <!-- right-side -->
+        <div class="right-side">
+          <img class="img-fluid" src="./img/man-5433469_1280.png" alt="" />
+        </div>
+        <!-- left-side -->
+        <div class="left-side">
+          <div class="path-title">
+            <h2>Web Development Services</h2>
+            <p>
+              Shopify handles everything from marketing and payments, to secure
+              checkout and shipping.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- path 2 -->
+      <div class="path">
+        <!-- left-side -->
+        <div class="left-side">
+          <div class="path-title">
+            <h2>Web Development Services</h2>
+            <p>
+              Shopify handles everything from marketing and payments, to secure
+              checkout and shipping.
+            </p>
+          </div>
+        </div>
+        <!-- right-side -->
+        <div class="right-side">
+          <img
+            class="img-fluid"
+            src="./img/video-conference-5231324_1280.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- path 3 -->
+      <div class="path">
+        <!-- right-side -->
+        <div class="right-side">
+          <img class="img-fluid" src="./img/home-4588697_1280.jpg" alt="" />
+        </div>
+        <!-- left-side -->
+        <div class="left-side">
+          <div class="path-title">
+            <h2>Web Development Services</h2>
+            <p>
+              Shopify handles everything from marketing and payments, to secure
+              checkout and shipping.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--*** end path -->
+    <!-- ********** start topic ***************-->
+    <div class="container mt-250 direction-ltr" id="topic">
+      <p class="topic-titel">Work Shop</p>
+      <!-- topic 1............ -->
+      <div class="topic">
+        <!-- card 1 ...... -->
+        <div class="card">
+          <!-- img 1 -->
+          <div class="topic-img">
+            <img
+              class="img-fluid"
+              src="./img/smart-working-6614315_1920.png"
+              alt=""
+            />
+          </div>
+          <!-- detail 1 -->
+          <div class="topic-detail">
+            <a href="#">Webdesign en -Development </a>
+            <div class="meta">
+              <span>writer: Mahsa Moradi</span>
+              <span>2 march</span>
+            </div>
+            <p>
+              Een goed vindbare (werkende) website met een verleidelijk grafisch
+              ontwerp dat makkelijk navigeerbaar is. Daar zorgen onze
+              webdesigners en -developers voor. Zij realiseren een website die
+              volledig in lijn ligt met jouw brand identity.
+            </p>
+          </div>
+        </div>
+
+        <!-- card 2 ...... -->
+        <div class="card">
+          <!-- img 1 -->
+          <div class="topic-img">
+            <img
+              class="img-fluid"
+              src="./img/working-6636475_1280.jpg"
+              alt=""
+            />
+          </div>
+          <!-- detail 1 -->
+          <div class="topic-detail">
+            <a href="#">Webdesign en -Development </a>
+            <div class="meta">
+              <span>writer: Mahsa Moradi</span>
+              <span>2 march</span>
+            </div>
+            <p>
+              Een goed vindbare (werkende) website met een verleidelijk grafisch
+              ontwerp dat makkelijk navigeerbaar is. Daar zorgen onze
+              webdesigners en -developers voor. Zij realiseren een website die
+              volledig in lijn ligt met jouw brand identity.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- topic 2............ -->
+      <div class="topic">
+        <!-- card 1 ...... -->
+        <div class="card">
+          <!-- img 1 -->
+          <div class="topic-img">
+            <img
+              class="img-fluid"
+              src="./img/working-6808204_1280.png"
+              alt=""
+            />
+          </div>
+          <!-- detail 1 -->
+          <div class="topic-detail">
+            <a href="#">Webdesign en -Development </a>
+            <div class="meta">
+              <span>writer: Mahsa Moradi</span>
+              <span>2 march</span>
+            </div>
+            <p>
+              Een goed vindbare (werkende) website met een verleidelijk grafisch
+              ontwerp dat makkelijk navigeerbaar is. Daar zorgen onze
+              webdesigners en -developers voor. Zij realiseren een website die
+              volledig in lijn ligt met jouw brand identity.
+            </p>
+          </div>
+        </div>
+
+        <!-- card 2 ...... -->
+        <div class="card">
+          <!-- img 1 -->
+          <div class="topic-img">
+            <img class="img-fluid" src="./img/woman-5579998_1280.png" alt="" />
+          </div>
+          <!-- detail 1 -->
+          <div class="topic-detail">
+            <a href="#">Webdesign en -Development </a>
+            <div class="meta">
+              <span>writer: Mahsa Moradi</span>
+              <span>2 march</span>
+            </div>
+            <p>
+              Een goed vindbare (werkende) website met een verleidelijk grafisch
+              ontwerp dat makkelijk navigeerbaar is. Daar zorgen onze
+              webdesigners en -developers voor. Zij realiseren een website die
+              volledig in lijn ligt met jouw brand identity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--*** end topic -->
+    <!-- ********** start footer ***************-->
+    <footer class="container-fluid mt-250" id="footer">
+      <div class="footer row">
+        <!-- side-3 -->
+        <div class="side-3">
+          <p>For the register input you email ,please.</p>
+          <form action="">
+            <input class="submit" type="submit" value="share" />
+            <input class="email" type="text" placeholder="... email" />
+          </form>
+        </div>
+        <!-- side-2 -->
+        <div class="side-2">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Course</a></li>
+            <li><a href="#">Suport</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- side-1 -->
+        <div class="side-1">
+          <h5>Contact Us</h5>
+          <ul>
+            <li style="color: #ececec">
+              <i class="fas fa-map-marker-alt"><span>Belgium.Bruxcel</span></i>
+            </li>
+            <li style="color: #ececec">
+              <i class="fas fa-phone"><span>003258874785</span></i>
+            </li>
+            <li style="color: #ececec">
+              <i class="far fa-map-market-alt"
+                ><span>mahsamoradi611.mm@gmail.com</span></i
+              >
+            </li>
+            <li style="color: #ececec">
+              <i class="fab fa-instagram"><span>mahsa.moradiphoto</span></i>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ... -->
+      </div>
+      <p class="copy-right">greghfdhd</p>
+    </footer>
+    <!--*** end footer -->
+    <!-- <div class="mt-250"></div> -->
+    <!-- script...................................... -->
+      <!-- library jquary -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQ -->
+    <!-- 0 -->
+    <script>
+      $(document).ready(function () {
+        $(".dropdowns").click(function () {
+          $('.dropdowns-menu').css
+          display: block;
+        });
+      });
+    </script>
+    <!-- 1 -->
+    <!-- <script>
+       $(document).ready(function () {
+        $("dropdowns").click(function () {
+          $("dropdowns-menu").show();
+        });
+      });
+    </script> -->
+    <!-- 2 -->
+  <!-- <script>
+    $('document').ready(function(){
+$('.menu').click(function(){
+$('.over-lay').toggleClass('anim');
+
 });
-     });
-    //  .............
-$(document).ready(function(){
-$('dropdowns').click(function(){
- $('dropdowns-menu').show();
-});
-     });
-      </script>
-     
-    </body>
-  </html>
-  
+    });
+  </script> -->
+  </body>
+</html>
