@@ -131,11 +131,12 @@ a {
           right: 0px;
           width: 0px;
           height: 2px;
-          background-color: rgb(54, 114, 228);
+          // background-color: rgb(54, 114, 228);
           transition: width 0.5s ease;
         }
         &:hover::after {
           width: 100%;
+          // background-color: #45a1ff;
         }
         a {
           color: $nav-link;
@@ -148,54 +149,63 @@ a {
         }
       }
       //   **** dropdowns style ****//
-      .dropdown {
+      .dropdown-body {
         display: inline-block;
         position: absolute;
-        @include margin-padding(0 , 20px, 0, 10px, true);
-        .dropdown a {
+        @include margin-padding(0, 20px, 0, 10px, true);
+        .dropdown-body a {
           @include margin-padding(0px, 10px, 0, 10px, ture);
 
-          .dropdown i {
+          .dropdown-body i {
             @include margin-padding(0px, 0px, 0px, 10px, ture);
           }
         }
 
         .dropdown-menu {
+          // height: 0;
           // display: inline-block;
+          width: 300px;
           display: flex;
           flex-direction: column;
+          position: absolute;
+          white-space: nowrap;
           z-index: 20;
           font-size: $default-font-size - 1px;
-          // visibility: hidden;
-          transition: .2s;
+          visibility: hidden;
+          // opacity: 0;
+          transition: 0.2s ease;
           background-color: #eeeeee1f;
-          @include margin-padding(0,10px ,0 ,10px ,false );
+          @include margin-padding(0, 10px, 0, 10px, false);
           @include border-radius(0, 0, 10px, 10px);
           border-left: 1px solid #efefef65;
           border-right: 1px solid #efefef65;
           border-bottom: 1px solid #efefef;
-          box-shadow: 5px 10px #010101;
+          box-shadow: 1px 1px 2px #cfcfcf;
+          
+        }
+      }
+
+      // **** social-icons **** //
+      .social-icons {
+        direction: ltr;
+        @include margin-padding(21px, 0, 0, 0, false);
+
+        a {
+          color: $social-icons-color;
+          transition: color 1.5 ease;
+          &:hover {
+            color: $social-icons-color-hover;
+          }
+          i {
+            @include margin-padding(0px, 10px, 0px, 10px, false);
+          }
+        }
       }
     }
-
-    // **** social-icons **** //
-    .social-icons {
-      direction: ltr;
-      @include margin-padding(21px, 0, 0, 0, false);
-
-      a {
-        color: $social-icons-color;
-        transition: color 1.5 ease;
-        &:hover {
-          color: $social-icons-color-hover;
-        }
-        i {
-          @include margin-padding(0px, 10px, 0px, 10px, false);
-        }
-      }
+    & li:hover .dropdown-menu{
+      visibility: visible;
     }
   }
-}
 }
 // header style ************
 #header {
