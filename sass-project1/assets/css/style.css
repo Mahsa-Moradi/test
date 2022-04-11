@@ -104,29 +104,43 @@ a {
 #nav .navbar ul li a:hover {
   color: rgb(58, 114, 227);
 }
+#nav .navbar ul .dropdown {
+  display: inline-block;
+  position: absolute;
+  margin: 0 20px 0 10px;
+}
 #nav .navbar ul .dropdown .dropdown a {
-  padding: 0px 10px 0 10px;
+  margin: 0px 10px 0 10px;
 }
 #nav .navbar ul .dropdown .dropdown a .dropdown i {
-  padding: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 10px;
 }
-#nav .navbar .dropdown-menu {
+#nav .navbar ul .dropdown .dropdown-menu {
   display: flex;
   flex-direction: column;
   z-index: 20;
+  font-size: 15px;
+  transition: 0.2s;
+  background-color: rgba(238, 238, 238, 0.1215686275);
+  padding: 0 10px 0 10px;
+  border-radius: 0 0 10px 10px;
+  border-left: 1px solid rgba(239, 239, 239, 0.3960784314);
+  border-right: 1px solid rgba(239, 239, 239, 0.3960784314);
+  border-bottom: 1px solid #efefef;
+  box-shadow: 5px 10px #010101;
 }
-#nav .navbar .social-icons {
+#nav .navbar ul .social-icons {
   direction: ltr;
   padding: 21px 0 0 0;
 }
-#nav .navbar .social-icons a {
+#nav .navbar ul .social-icons a {
   color: #545858;
   transition: color 1.5 ease;
 }
-#nav .navbar .social-icons a:hover {
+#nav .navbar ul .social-icons a:hover {
   color: #413d3d;
 }
-#nav .navbar .social-icons a i {
+#nav .navbar ul .social-icons a i {
   padding: 0px 10px 0px 10px;
 }
 
