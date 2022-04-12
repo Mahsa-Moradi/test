@@ -106,13 +106,13 @@ a {
 #nav .navbar ul .dropdown-body {
   display: inline-block;
   position: absolute;
-  margin: 0 20px 0 10px;
+  padding: 0 10px 0 10px;
 }
 #nav .navbar ul .dropdown-body .dropdown-body a {
-  margin: 0px 10px 0 10px;
+  padding: 0px 110px 0 110px;
 }
 #nav .navbar ul .dropdown-body .dropdown-body a .dropdown-body i {
-  margin: 0px 0px 0px 10px;
+  padding: 0px 110px 0px 110px;
 }
 #nav .navbar ul .dropdown-body .dropdown-menu {
   width: 300px;

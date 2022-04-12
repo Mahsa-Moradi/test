@@ -150,14 +150,16 @@ a {
       }
       //   **** dropdowns style ****//
       .dropdown-body {
+        // display: inline-block;
         display: inline-block;
         position: absolute;
-        @include margin-padding(0, 20px, 0, 10px, true);
+        // margin: 20px;
+        @include margin-padding(0, 10px, 0, 10px, false);
         .dropdown-body a {
-          @include margin-padding(0px, 10px, 0, 10px, ture);
+          @include margin-padding(0px, 110px, 0, 110px, false);
 
           .dropdown-body i {
-            @include margin-padding(0px, 0px, 0px, 10px, ture);
+            @include margin-padding(0px, 110px, 0px, 110px, false);
           }
         }
 
@@ -550,7 +552,7 @@ a {
       flex-direction: column;
       text-align: left;
       position: relative;
-      
+
       h5 {
         color: #fff;
         @include margin-padding(0, 0, 32px, 0, true);
