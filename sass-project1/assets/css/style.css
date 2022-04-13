@@ -569,7 +569,7 @@ a {
   flex-direction: column;
   border: 1px solid #efefef;
   padding: 20px;
-  justify-content: flex-end;
+  height: 300px;
 }
 .row-collapse .right .collaps-header {
   display: flex;
@@ -593,7 +593,8 @@ a {
   cursor: pointer;
 }
 .row-collapse .right .collaps-body {
-  display: none;
+  top: 61px;
+  right: 27px;
   margin-top: 20px;
   margin-bottom: 10px;
   border: 1px solid #efefef;

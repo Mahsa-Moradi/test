@@ -660,7 +660,8 @@ a {
     flex-direction: column;
     border: 1px solid #efefef;
     padding: 20px;
-    justify-content: flex-end;
+    // justify-content: flex-end;
+    height: 300px;
     .collaps-header {
       display: flex;
       justify-content: flex-end;
@@ -691,16 +692,17 @@ a {
       }
     }
     .collaps-body {
-      display: none;
+      // width: 50%;
+      // position: absolute;
+      top: 61px;
+      right: 27px;
+      // display: none;
       margin-top: 20px;
       margin-bottom: 10px;
       // overflow: hidden;
-      // height: 0;
+      // height: 20px;
       border: 1px solid #efefef;
-      // .add-class-collaps-body {
-      //   overflow:visible;
-      // height: 200px;
-      // }
+    
 
       p {
         text-align: left;
