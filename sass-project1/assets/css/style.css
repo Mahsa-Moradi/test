@@ -493,6 +493,48 @@ a {
   line-height: 20px;
 }
 
+.accordion .accordion-item {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.accordion .accordion-item .acordion-label {
+  position: relative;
+  padding: 10px;
+  background-color: #b71c1c;
+  cursor: pointer;
+  counter-reset: #fff;
+  text-align: left;
+}
+
+.accordion .accordion-item .acordion-label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  font-size: 25px;
+  transform: translateY(-50%);
+}
+
+.accordion .accordion-item .accordion-contant {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.accordion .accordion-item.action .accordion-contant {
+  height: 250px;
+  padding: 20px;
+}
+
+.accordion .accordion-item.active .acordion-label::before {
+  content: "-";
+}
+
 #footer {
   background-color: rgb(155, 200, 183);
   padding: 80px 0px 0px 0;
