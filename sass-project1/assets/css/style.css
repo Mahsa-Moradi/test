@@ -517,7 +517,7 @@ a {
 .accordion .accordion-item .acordion-label {
   display: block;
   padding: 10px;
-  background-color: #b71c1c;
+  background-color: rgba(86, 158, 148, 0.4392156863);
   cursor: pointer;
   color: #fff;
   text-align: left;
