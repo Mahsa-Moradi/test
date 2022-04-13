@@ -493,46 +493,70 @@ a {
   line-height: 20px;
 }
 
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .accordion .accordion-item {
   position: relative;
-  margin: 10px 20px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.accordion .accordion-item input {
+  display: none;
+}
+
+.accordion .accordion-item input:checked ~ .accordion-contant {
+  height: 120px;
 }
 
 .accordion .accordion-item .acordion-label {
-  position: relative;
+  display: block;
   padding: 10px;
   background-color: #b71c1c;
   cursor: pointer;
-  counter-reset: #fff;
+  color: #fff;
   text-align: left;
+  border-radius: 5px 5px 0 0;
+  font-size: 16px;
 }
 
 .accordion .accordion-item .acordion-label::before {
   content: "+";
+  color: #fff;
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 10px;
   font-size: 25px;
   transform: translateY(-50%);
 }
 
 .accordion .accordion-item .accordion-contant {
-  position: relative;
   background-color: #fff;
-  text-align: center;
-  padding: 20px;
+  text-align: left;
+  padding: 10px 10px 0 10px;
   height: 0px;
   overflow: hidden;
-  transition: all 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out;
 }
 
-.accordion .accordion-item.action .accordion-contant {
-  height: 250px;
+.accordion .accordion-item input:checked ~ .accordion-contant {
+  height: 150px;
   padding: 20px;
+  transition: padding 0.7s ease-in-out;
 }
 
-.accordion .accordion-item.active .acordion-label::before {
+.accordion .accordion-item input:checked ~ .acordion-label::before {
   content: "-";
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  position: absolute;
+  top: 13px;
+  right: 10px;
 }
 
 #footer {
