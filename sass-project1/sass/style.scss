@@ -540,22 +540,21 @@ a {
   }
 }
 //  start Accordion ********
-.accordion{
- display: flex;
- flex-direction: column;
+.accordion {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 .accordion .accordion-item {
   position: relative;
   margin: 0px auto;
   overflow: hidden;
 }
-.accordion .accordion-item input{
+.accordion .accordion-item input {
   display: none;
 }
-.accordion .accordion-item input:checked ~ .accordion-contant{
+.accordion .accordion-item input:checked ~ .accordion-contant {
   height: 120px;
 }
 .accordion .accordion-item .acordion-label {
@@ -580,20 +579,20 @@ a {
 .accordion .accordion-item .accordion-contant {
   background-color: #fff;
   text-align: left;
-  padding:10px 10px 0 10px;
+  padding: 10px 10px 0 10px;
   height: 0px;
   overflow: hidden;
   transition: height 0.4s ease-in-out;
 }
 .accordion .accordion-item input:checked ~ .accordion-contant {
   height: 150px;
-  padding:20px;
-  
-  transition:  padding .7s ease-in-out;
-}
-.accordion .accordion-item input:checked ~ .accordion-contant{
+  padding: 20px;
 
+  transition: padding 0.7s ease-in-out;
 }
+// .accordion .accordion-item input:checked ~ .accordion-contant{
+
+// }
 .accordion .accordion-item input:checked ~ .acordion-label::before {
   content: "-";
   color: rgb(255, 255, 255);
@@ -646,6 +645,78 @@ a {
 //     }
 //   }
 // }
+// start Collapse **********
+// .collaps-header button input:checked .collaps-body{
+//   display: block;
+// }
+.row-collapse {
+  display: flex;
+  justify-content: space-around;
+  // right.........
+
+  .right {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    border: 1px solid #efefef;
+    padding: 20px;
+    justify-content: flex-end;
+    .collaps-header {
+      display: flex;
+      justify-content: flex-end;
+      button {
+        background-color: #45a1ff;
+        display: flex;
+        padding: 10px;
+        @include border-radius(6px, 6px, 6px, 6px);
+        border: none;
+        box-shadow: 0px 2px 3px rgb(154, 154, 154);
+        cursor: pointer;
+        input {
+          display: none;
+          // :checked .collaps-body{
+          //   display: block;
+          // }
+        }
+        label {
+          color: rgb(247, 247, 247);
+          font-size: $default-font-size + 2px;
+          cursor: pointer;
+        }
+        // &:hover {
+        //   transform: skew();
+        //   // transform: perspective(800px);
+        //   perspective: 100px;
+        // }
+      }
+    }
+    .collaps-body {
+      display: none;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      // overflow: hidden;
+      // height: 0;
+      border: 1px solid #efefef;
+      // .add-class-collaps-body {
+      //   overflow:visible;
+      // height: 200px;
+      // }
+
+      p {
+        text-align: left;
+        font-size: $default-font-size;
+        padding: 15px 20px;
+      }
+    }
+  }
+
+  // left...........
+  .left {
+    display: flex;
+    flex-basis: 40%;
+    background-color: #778877;
+  }
+}
 
 // footer style ************
 #footer {
