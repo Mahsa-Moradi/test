@@ -595,6 +595,7 @@ a {
 .row-collapse .right .collaps-body {
   top: 61px;
   right: 27px;
+  display: none;
   margin-top: 20px;
   margin-bottom: 10px;
   border: 1px solid #efefef;
@@ -611,7 +612,7 @@ a {
 }
 
 #footer {
-  background-color: rgb(155, 200, 183);
+  background-color: rgba(86, 158, 148, 0.4392156863);
   padding: 80px 0px 0px 0;
   overflow: hidden;
 }

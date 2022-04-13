@@ -696,7 +696,7 @@ a {
       // position: absolute;
       top: 61px;
       right: 27px;
-      // display: none;
+      display: none;
       margin-top: 20px;
       margin-bottom: 10px;
       // overflow: hidden;
@@ -722,7 +722,7 @@ a {
 
 // footer style ************
 #footer {
-  background-color: rgb(155, 200, 183);
+  background-color: rgba(86, 158, 148, 0.4392156863);
   @include margin-padding(80px, 0px, 0px, 0, false);
   overflow: hidden;
   .footer {
