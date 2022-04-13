@@ -335,6 +335,50 @@
       </div>
     </div>
     <!--*** end topic -->
+    <!-- ********** start Accordion ***************-->
+
+<div class="accordion container mt-250">
+  <div class="accordion-item">
+    <!-- 1 -->
+    <div class="acordion-label">Custom Web Application Development</div>
+    <div class="accordion-contant">Since not all off-the-shelf applications have all the bells and whistles that you need to optimize your workflow, Chetu can customize and integrate your existing applications to get the job done. We can customize your existing applications for Enterprise Resource Planning (ERP), E-Commerce, Interactive Gaming, Online Training & Courses, Customer Relationship Management (CRM), and so much more.</div>
+    <!-- 2 -->
+    <div class="acordion-label">No Cookie-Cutter Solutions</div>
+    <div class="accordion-contant">Our expert Web Developers build, utilize, integrate, and customize the right tools, technologies, and frameworks to accomplish the goals that you’ve set forth. Whether you require Data Integration Services, Enterprise Application Integrations, Data Migrations & Upgrades, Implementation & Deployment, API Development & Integration, Quality Assurance, or more, we’ve got you covered.</div>
+    <!-- 3 -->
+    <div class="acordion-label">Diverse Coding Experience</div>
+    <div class="accordion-contant">From database design and web app development to system integrations and cloud consulting, our diverse team of Full-Stack Developers has the expertise to build your next software application. Our developers have many years of combined experience working with Java, JavaScript, PHP, Python, Objective-C, Ruby on Rails, jQuery, AngularJS, Node.js.NET Framework, and so much more.</div>
+    <!-- 4 -->
+    <div class="acordion-label">Maintenance, Monitoring, & Support</div>
+    <div class="accordion-contant">Our expert Software Development Team provides ongoing maintenance, monitoring, and support to ensure that your custom websites and apps are working at optimal performances. Our Web Development Support and Maintenance Services include testing and debugging, updates and maintenance on security protocols, database maintenance, and so much more.</div>
+<!-- end accordion menu -->
+
+      
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--*** end Accordion -->
     <!-- ********** start footer ***************-->
     <footer class="container-fluid mt-250" id="footer">
       <div class="footer row">
@@ -391,35 +435,16 @@
       crossorigin="anonymous"
     ></script>
     <!-- JQ -->
-    <!-- 0 -->
-    <!-- <script>
-      $(document).ready(function () {
-        $(".dropdowns").click(function () {
-          $(".dropdowns-menu").css({
-            display: block,
-            color:"red"
-          });
-        });
-      });
-    </script> -->
-    <!-- 1 -->
-    <!-- <script>
-       $(document).ready(function () {
-        $(".dropdowns").click(function () {
-          $("this").show('.dropdowns-menu');
-        });
-      });
-    </script> -->
-    <!-- 2 -->
-    <!-- <script>
-      $("document").ready(function () {
-$('.dropdown').click(function(){
-$('.dropdown-menu').hide();
-});
-      
-      });
-    </script> -->
-    
+   
+    <script>
+    const accordion = document.getElementsByClassName('accordion-item');
+
+    for(i=0; i< accordion.length; i++){
+      accordion[i].addEventListener('click', function(){
+        this.classList.toggle('active')
+      })
+    }
     </script>
+
   </body>
 </html>
