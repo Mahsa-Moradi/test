@@ -628,6 +628,26 @@ a {
   text-shadow: 1px 1px 5px rgb(5, 73, 39);
   padding: 19px;
 }
+.row-collapse .left form fieldset legend:hover {
+  -webkit-animation: log-in 1.3s ease-in-out;
+          animation: log-in 1.3s ease-in-out;
+}
+@-webkit-keyframes log-in {
+  0% {
+    transform: translate(6px);
+  }
+  100% {
+    transform: translate(-17px);
+  }
+}
+@keyframes log-in {
+  0% {
+    transform: translate(6px);
+  }
+  100% {
+    transform: translate(-17px);
+  }
+}
 .row-collapse .left form fieldset input, .row-collapse .left form fieldset label {
   padding: 10px;
   text-align: left;
@@ -640,15 +660,13 @@ a {
   color: #061f5e;
   font-size: 16px;
   outline: none;
-  border: 2px solid black;
   border-top: 0px;
-  border-right: 1px solid #5c9f82;
-  border-bottom: 1.5px solid #487e67;
-  border-left: 1px solid #5c9f82;
+  border-right: 1px solid #ededed;
+  border-bottom: 1.5px solid #d4d4d4;
+  border-left: 1px solid #52a552;
   border-radius: 5px 20px 0 0;
-  box-shadow: 1px 1.5px 4px rgba(6, 31, 94, 0.3333333333);
+  box-shadow: 0.5px 1px 1.5px rgba(127, 249, 135, 0.3333333333);
 }
-
 .grid-container {
   display: grid;
   justify-content: center;
