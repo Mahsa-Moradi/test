@@ -606,9 +606,21 @@ a {
   padding: 15px 20px;
 }
 .row-collapse .left {
+  direction: ltr !important;
   display: flex;
+  justify-content: left;
   flex-basis: 40%;
-  background-color: #778877;
+}
+.row-collapse .left form fieldset legend {
+  font-size: 31px;
+  display: flex;
+  align-self: flex-start;
+  text-shadow: 1px 1px 5px #000;
+  padding: 19px;
+}
+.row-collapse .left form fieldset input {
+  display: block;
+  flex-direction: column;
 }
 
 .grid-container {
@@ -633,6 +645,7 @@ a {
   grid-row-start: 2;
   grid-row-end: span 2;
 }
+
 #footer {
   background-color: rgba(86, 158, 148, 0.4392156863);
   padding: 80px 0px 0px 0;
