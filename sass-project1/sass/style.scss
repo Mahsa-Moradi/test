@@ -717,19 +717,22 @@ a {
     display: flex;
     justify-content: left;
     flex-basis: 40%;
+    text-align: left;
     // background-color:#3bdcdf1a;
     form {
+      outline: none;
       fieldset {
         legend {
-          font-size: $default-font-size +15px;
+          font-size: $default-font-size + 15px;
           display: flex;
-        align-self: flex-start; 
-        text-shadow: 1px 1px 5px #000;
-        padding: 19px;
-             }
+          align-self: flex-start;
+          text-shadow: 1px 1px 5px #000;
+          padding: 19px;
+        }
         input {
           display: block;
           flex-direction: column;
+          text-align: left;
         }
       }
     }

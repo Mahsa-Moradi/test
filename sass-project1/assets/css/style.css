@@ -610,6 +610,10 @@ a {
   display: flex;
   justify-content: left;
   flex-basis: 40%;
+  text-align: left;
+}
+.row-collapse .left form {
+  outline: none;
 }
 .row-collapse .left form fieldset legend {
   font-size: 31px;
@@ -621,6 +625,7 @@ a {
 .row-collapse .left form fieldset input {
   display: block;
   flex-direction: column;
+  text-align: left;
 }
 
 .grid-container {
