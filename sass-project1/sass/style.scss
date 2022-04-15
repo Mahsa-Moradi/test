@@ -720,19 +720,38 @@ a {
     text-align: left;
     // background-color:#3bdcdf1a;
     form {
+      width: 100%;
       outline: none;
       fieldset {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
         legend {
           font-size: $default-font-size + 15px;
           display: flex;
           align-self: flex-start;
-          text-shadow: 1px 1px 5px #000;
+          text-shadow: 1px 1px 5px rgb(5, 73, 39);
           padding: 19px;
         }
-        input {
-          display: block;
-          flex-direction: column;
+        input ,label {
+          padding: 10px;
           text-align: left;
+        }
+        label{
+          font-size: $default-font-size + 3px;
+          color: #201f1f;
+        }
+        input{
+          color: #061f5e;
+          font-size: $default-font-size ;
+          outline: none;
+          border: 2px solid black;
+          border-top:0px ;
+          border-right: 1px solid #5c9f82;
+          border-bottom: 1.5px solid #487e67;
+          border-left: 1px solid #5c9f82;
+          @include border-radius(5px, 20px , 0, 0);
+          box-shadow: 1px 1.5px 4px #061f5e55;
         }
       }
     }

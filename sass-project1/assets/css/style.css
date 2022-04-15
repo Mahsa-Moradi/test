@@ -613,19 +613,40 @@ a {
   text-align: left;
 }
 .row-collapse .left form {
+  width: 100%;
   outline: none;
+}
+.row-collapse .left form fieldset {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .row-collapse .left form fieldset legend {
   font-size: 31px;
   display: flex;
   align-self: flex-start;
-  text-shadow: 1px 1px 5px #000;
+  text-shadow: 1px 1px 5px rgb(5, 73, 39);
   padding: 19px;
 }
-.row-collapse .left form fieldset input {
-  display: block;
-  flex-direction: column;
+.row-collapse .left form fieldset input, .row-collapse .left form fieldset label {
+  padding: 10px;
   text-align: left;
+}
+.row-collapse .left form fieldset label {
+  font-size: 19px;
+  color: #201f1f;
+}
+.row-collapse .left form fieldset input {
+  color: #061f5e;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid black;
+  border-top: 0px;
+  border-right: 1px solid #5c9f82;
+  border-bottom: 1.5px solid #487e67;
+  border-left: 1px solid #5c9f82;
+  border-radius: 5px 20px 0 0;
+  box-shadow: 1px 1.5px 4px rgba(6, 31, 94, 0.3333333333);
 }
 
 .grid-container {
