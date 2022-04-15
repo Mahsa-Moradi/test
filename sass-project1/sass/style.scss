@@ -723,22 +723,28 @@ a {
 // start grid layout **********
 .grid-container{
   display: grid;
-  // justify-content: center;
+  justify-content: center;
   // align-content: flex-end;
-  background-color: #45a1ff;
+  // background-color: #45a1ff;
   gap: 10px;
-  grid-template-columns: 'auto auto . . . . . .';
+  // grid-template-columns: 10px 20pc auto 50%;
+  // grid-template-columns: repeat(4,20%);
+  // grid-template-areas: 'A A A A A B B C C ';
   grid-template-columns: auto auto auto auto;
-  gap: 10px ;
+  grid-template-rows: auto auto;
+  padding: 10px  15px;
  img{
   width: 100%;
   height: 200px;
 }
 
   grid-item-1{
-grid-row: 1/4;
-grid-column: 1/3;
-  }
+// grid-row: 1/4;
+grid-column-start: 2;
+grid-column-end: 4;
+// justify-self: unset;
+// align-self: center;
+}
   grid-item-2{}
   grid-item-3{}
   grid-item-4{}
