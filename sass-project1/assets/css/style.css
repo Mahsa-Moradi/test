@@ -701,12 +701,9 @@ a {
 }
 .row-form .left form fieldset .complate-form .right-form .select span {
   display: block;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 20px 0 10px 0;
 }
 .row-form .left form fieldset .complate-form .right-form .select select {
-  padding-bottom: 150px;
-  margin-bottom: 10px;
   border-radius: 5px 20px 0px 0;
   box-shadow: 0.5px 1px 1.5px rgba(249, 36, 228, 0.5215686275);
   border-top: 0px;
@@ -740,6 +737,12 @@ a {
 }
 .row-form .left form fieldset .complate-form .right-form .textarea {
   padding: 0px;
+}
+.row-form .left form fieldset .complate-form .right-form .textarea span {
+  display: block;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
 }
 
 .grid-container {
