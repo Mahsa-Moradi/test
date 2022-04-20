@@ -1,0 +1,17 @@
+.container{
+    width: 1720px;
+    height: auto;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+}
+img{
+    width: 200px;
+    height: 300px;
+
+}
+bu
