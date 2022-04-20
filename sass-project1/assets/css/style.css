@@ -699,11 +699,11 @@ a {
 .row-form .left form fieldset .complate-form .right-form .select {
   padding: 18px 0;
 }
-.row-form .left form fieldset .complate-form .right-form .select span {
+.row-form .left form fieldset .complate-form .right-form .select label span {
   display: block;
   margin: 20px 0 10px 0;
 }
-.row-form .left form fieldset .complate-form .right-form .select select {
+.row-form .left form fieldset .complate-form .right-form .select label select {
   border-radius: 5px 20px 0px 0;
   box-shadow: 0.5px 1px 1.5px rgba(249, 36, 228, 0.5215686275);
   border-top: 0px;
@@ -716,23 +716,14 @@ a {
   text-align: center;
   overflow: auto;
 }
-.row-form .left form fieldset .complate-form .right-form .select select option {
+.row-form .left form fieldset .complate-form .right-form .select label select option {
   padding: 5px 0;
   font-size: 16px;
 }
-.row-form .left form fieldset .complate-form .right-form .select select option:focus {
-  background-color: #33d76f;
-}
-.row-form .left form fieldset .complate-form .right-form .select select option:active {
-  background-color: #ff13f7;
-}
-.row-form .left form fieldset .complate-form .right-form .select select option:visited {
-  background-color: #33b6d7;
-}
-.row-form .left form fieldset .complate-form .right-form .select select option:first-of-type {
+.row-form .left form fieldset .complate-form .right-form .select label select option:first-of-type {
   background-color: rgba(145, 210, 169, 0.3882352941);
 }
-.row-form .left form fieldset .complate-form .right-form .select select option:hover {
+.row-form .left form fieldset .complate-form .right-form .select label select option:hover {
   background-color: #add1e3;
 }
 .row-form .left form fieldset .complate-form .right-form .textarea {
@@ -740,9 +731,27 @@ a {
 }
 .row-form .left form fieldset .complate-form .right-form .textarea span {
   display: block;
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 700;
   margin: 0 0 10px 0;
+}
+.row-form .left form fieldset .complate-form .right-form .textarea textarea {
+  height: 100px;
+  font-size: 16px;
+  border-radius: 5px 20px 0px 0;
+  box-shadow: 0.5px 1px 1.5px rgba(249, 36, 228, 0.5215686275);
+  border-top: 0px;
+  border-right: 1px solid #33d76f;
+  border-bottom: 1.5px solid #33d76f;
+  border-left: 1px solid #33d76f;
+  color: rgb(223, 223, 223);
+  margin: 10px 0 0 0;
+}
+.row-form .left form fieldset .complate-form .right-form .textarea .range label {
+  padding-top: 10px;
+}
+.row-form .left form fieldset .complate-form .right-form .textarea .range input {
+  background-color: #33d76f;
 }
 
 .grid-container {
