@@ -606,9 +606,6 @@ a {
   padding: 15px 20px;
 }
 
-.row-form {
-  background-color: #eef6db;
-}
 .row-form .left {
   direction: ltr !important;
   display: flex;
@@ -695,17 +692,27 @@ a {
   text-align: left;
 }
 .row-form .left form fieldset .complate-form .right-form label {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
   padding: 1px 0;
 }
 .row-form .left form fieldset .complate-form .right-form .select {
   padding: 18px 0;
 }
-.row-form .left form fieldset .complate-form .right-form .select label {
-  padding: 10px 0;
+.row-form .left form fieldset .complate-form .right-form .select span {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .row-form .left form fieldset .complate-form .right-form .select select {
+  padding-bottom: 150px;
+  margin-bottom: 10px;
+  border-radius: 5px 20px 0px 0;
+  box-shadow: 0.5px 1px 1.5px rgba(249, 36, 228, 0.5215686275);
+  border-top: 0px;
+  border-right: 1px solid #33d76f;
+  border-bottom: 1.5px solid #33d76f;
+  border-left: 1px solid #33d76f;
   width: 90%;
   height: 90px;
   padding: 10px;
@@ -714,6 +721,7 @@ a {
 }
 .row-form .left form fieldset .complate-form .right-form .select select option {
   padding: 5px 0;
+  font-size: 16px;
 }
 .row-form .left form fieldset .complate-form .right-form .select select option:focus {
   background-color: #33d76f;
@@ -729,6 +737,9 @@ a {
 }
 .row-form .left form fieldset .complate-form .right-form .select select option:hover {
   background-color: #add1e3;
+}
+.row-form .left form fieldset .complate-form .right-form .textarea {
+  padding: 0px;
 }
 
 .grid-container {

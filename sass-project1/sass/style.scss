@@ -714,7 +714,7 @@ a {
 // start form *****************
 
 .row-form {
-  background-color: #eef6db;
+  // background-color: #eef6db;
 
   .left {
     direction: ltr !important;
@@ -725,7 +725,7 @@ a {
       outline: none;
       fieldset {
         padding: 20px;
-       
+
         legend {
           font-size: $default-font-size + 15px;
           display: flex;
@@ -751,7 +751,7 @@ a {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          padding:0 50px;
+          padding: 0 50px;
           // gap: 2px;
           .left-form {
             // width: ;
@@ -790,54 +790,66 @@ a {
           .right-form {
             display: flex;
             flex-basis: 40%;
-            padding: 1px 0px ;
+            padding: 1px 0px;
             flex-direction: column;
             text-align: left;
 
             label {
-              font-size: $default-font-size + 2px;
+              font-size: $default-font-size + 3px;
               font-weight: 700;
               padding: 1px 0;
             }
-.select{
-  padding: 18px 0;
- label{
-   padding: 10px 0;
- }
- select{
-   width: 90%;
-   height: 90px;
-   padding: 10px;
-   text-align: center;
-  //  overflow: scroll;
-  overflow: auto;
-   option{
-     padding: 5px 0;
-    
-   }
-   option:focus{
-     background-color: #33d76f;
-
-   }
-   option:active{
-    background-color: #ff13f7;
-
-  }
-   option:visited{
-    background-color: #33b6d7;
-
-  }
-   option:first-of-type {
-    background-color: #91d2a963;
-
-  }
-  option:hover{
-    background-color: #add1e3;
-
-  }
- }
+            .select {
+              padding: 18px 0;
+              label {
+              //   padding-bottom: 150px ;
+              //   margin-bottom: 10px
+              }
+              span{
+                display: block;
+                margin-top: 20px;
+                margin-bottom: 10px;
+              }
+              select{
+                padding-bottom: 150px ;
+                margin-bottom: 10px;
+                @include border-radius(5px, 20px, 0px, 0);
+                box-shadow: 0.5px 1px 1.5px #f924e485;
+                border-top: 0px;
+                border-right: 1px solid #33d76f;
+                border-bottom: 1.5px solid #33d76f;
+                border-left: 1px solid #33d76f;
+                width: 90%;
+                height: 90px;
+                padding: 10px;
+                text-align: center;
+                //  overflow: scroll;
+                overflow: auto;
+                option {
+                  padding: 5px 0;
+                  font-size: $default-font-size +0px;
+                
+                }
+                option:focus {
+                  background-color: #33d76f;
+                }
+                option:active {
+                  background-color: #ff13f7;
+                }
+                option:visited {
+                  background-color: #33b6d7;
+                }
+                option:first-of-type {
+                  background-color: #91d2a963;
+                }
+                option:hover {
+                  background-color: #add1e3;
+                }
+              }
+            }
+.textarea{
+   padding: 0px;
 }
-            
           }
         }
       }
