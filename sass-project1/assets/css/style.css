@@ -699,6 +699,37 @@ a {
   font-weight: 700;
   padding: 1px 0;
 }
+.row-form .left form fieldset .complate-form .right-form .select {
+  padding: 18px 0;
+}
+.row-form .left form fieldset .complate-form .right-form .select label {
+  padding: 10px 0;
+}
+.row-form .left form fieldset .complate-form .right-form .select select {
+  width: 90%;
+  height: 90px;
+  padding: 10px;
+  text-align: center;
+  overflow: auto;
+}
+.row-form .left form fieldset .complate-form .right-form .select select option {
+  padding: 5px 0;
+}
+.row-form .left form fieldset .complate-form .right-form .select select option:focus {
+  background-color: #33d76f;
+}
+.row-form .left form fieldset .complate-form .right-form .select select option:active {
+  background-color: #ff13f7;
+}
+.row-form .left form fieldset .complate-form .right-form .select select option:visited {
+  background-color: #33b6d7;
+}
+.row-form .left form fieldset .complate-form .right-form .select select option:first-of-type {
+  background-color: rgba(145, 210, 169, 0.3882352941);
+}
+.row-form .left form fieldset .complate-form .right-form .select select option:hover {
+  background-color: #add1e3;
+}
 
 .grid-container {
   display: grid;

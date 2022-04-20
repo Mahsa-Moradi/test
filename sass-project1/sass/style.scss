@@ -799,7 +799,44 @@ a {
               font-weight: 700;
               padding: 1px 0;
             }
+.select{
+  padding: 18px 0;
+ label{
+   padding: 10px 0;
+ }
+ select{
+   width: 90%;
+   height: 90px;
+   padding: 10px;
+   text-align: center;
+  //  overflow: scroll;
+  overflow: auto;
+   option{
+     padding: 5px 0;
+    
+   }
+   option:focus{
+     background-color: #33d76f;
 
+   }
+   option:active{
+    background-color: #ff13f7;
+
+  }
+   option:visited{
+    background-color: #33b6d7;
+
+  }
+   option:first-of-type {
+    background-color: #91d2a963;
+
+  }
+  option:hover{
+    background-color: #add1e3;
+
+  }
+ }
+}
             
           }
         }
