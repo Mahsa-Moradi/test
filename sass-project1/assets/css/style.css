@@ -745,26 +745,27 @@ a {
   margin: 10px 0 0 0;
 }
 .row-form .left form fieldset .complate-form .right-form .range {
-  padding: 20px 0;
-}
-.row-form .left form fieldset .complate-form .right-form .range label {
-  padding-top: 10px;
+  padding: 40px 0;
 }
 .row-form .left form fieldset .complate-form .right-form .range input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
   margin-top: 10px;
   background-color: #33d76f;
   color: #33d76f;
 }
 .row-form .left form fieldset .complate-form .right-form button {
+  margin: 20px 20px 20px 20px;
+  padding: 6px 6px 6px 6px;
   display: flex;
   justify-content: center;
+  align-self: center;
   width: 40%;
-  padding: 6px;
   text-align: center;
-  background-color: #a7ccdf;
+  background-color: #87d0f4;
+  outline: none;
+  border: none;
 }
 
 .grid-container {

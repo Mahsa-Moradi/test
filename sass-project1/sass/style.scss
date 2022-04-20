@@ -823,7 +823,7 @@ a {
                     padding: 5px 0;
                     font-size: $default-font-size + 0px;
                   }
-                 
+
                   option:first-of-type {
                     background-color: #91d2a963;
                   }
@@ -831,7 +831,6 @@ a {
                     background-color: #add1e3;
                   }
                 }
-                
               }
             }
             .textarea {
@@ -841,11 +840,9 @@ a {
                 font-size: $default-font-size + 3px;
                 font-weight: 700;
                 @include margin-padding(0, 0, 10px, 0, true);
-                
-                
               }
               textarea {
-                height:70px;
+                height: 70px;
                 font-size: $default-font-size + 0px;
                 @include border-radius(5px, 20px, 0px, 0);
                 box-shadow: 0.5px 1px 1.5px #f924e485;
@@ -856,29 +853,33 @@ a {
                 color: rgb(223, 223, 223);
                 @include margin-padding(10px, 0, 0, 0, true);
               }
-             
             }
-            .range{
-              padding: 20px 0;
-              label{
-                padding-top: 10px;
-              }
-              input{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-               margin-top: 10px;
+            .range {
+              padding: 40px 0;
+              // label {
+               
+              // }
+              input {
+                width: 100%;
+                // display: flex;
+               align-self: center;
+               justify-self: center;
+                margin-top: 10px;
                 background-color: #33d76f;
                 color: #33d76f;
               }
             }
-            button{
+            button {
+              @include margin-padding(20px, 20px, 20px, 20px, true);
+              @include margin-padding(6px, 6px, 6px, 6px, false);
               display: flex;
               justify-content: center;
+              align-self: center;
               width: 40%;
-              padding: 6px;
               text-align: center;
-              background-color: #a7ccdf;
+              background-color: #87d0f4;
+              outline: none;
+              border: none;
             }
           }
         }
