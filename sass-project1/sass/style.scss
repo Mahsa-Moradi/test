@@ -652,8 +652,8 @@ a {
 .row-collapse {
   display: flex;
   justify-content: space-around;
-  // right.........
 
+  // right.........
   .right {
     display: flex;
     flex-basis: 50%;
@@ -714,6 +714,8 @@ a {
 // start form *****************
 
 .row-form {
+  background-color: #eef6db;
+
   .left {
     direction: ltr !important;
     display: flex;
@@ -723,9 +725,7 @@ a {
       outline: none;
       fieldset {
         padding: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+       
         legend {
           font-size: $default-font-size + 15px;
           display: flex;
@@ -747,61 +747,65 @@ a {
             }
           }
         }
-        .left-form {
-          // width: ;
+        .complate-form {
           display: flex;
-          flex-basis: 50%;
-          padding: 0px 20px 20px 20px;
-          flex-direction: column;
-          
-         
-          label {
-            font-size: $default-font-size + 3px;
-            color: #232323;
-            font-weight: 600;
-            text-shadow: 0.1px 0.2px 0px #f765d5f8;
-            padding: 19px 5px;
-            text-align: left;
-          }
-          input {
-            padding: 8px 15px;
-            text-align: left;
-            color: #061f5e;
-            font-size: $default-font-size;
-            outline: none;
-            border-top: 0px;
-            border-right: 1px solid #33d76f;
-            border-bottom: 1.5px solid #33d76f;
-            border-left: 1px solid #33d76f;
-            @include border-radius(5px, 20px, 0, 0);
-            box-shadow: 0.5px 1px 1.5px #f924e485;
-            // &:active ~ label{
-            //   position: absolute;
-            //   top: 100px;
+          flex-direction: row;
+          justify-content: space-between;
+          padding:0 50px;
+          // gap: 2px;
+          .left-form {
+            // width: ;
+            display: flex;
+            flex-basis: 40%;
+            padding: 0px 20px 20px 20px;
+            flex-direction: column;
 
-            // }
+            label {
+              font-size: $default-font-size + 3px;
+              color: #232323;
+              font-weight: 600;
+              text-shadow: 0.1px 0.2px 0px #f765d5f8;
+              padding: 19px 5px;
+              text-align: left;
+            }
+            input {
+              padding: 8px 15px;
+              text-align: left;
+              color: #061f5e;
+              font-size: $default-font-size;
+              outline: none;
+              border-top: 0px;
+              border-right: 1px solid #33d76f;
+              border-bottom: 1.5px solid #33d76f;
+              border-left: 1px solid #33d76f;
+              @include border-radius(5px, 20px, 0, 0);
+              box-shadow: 0.5px 1px 1.5px #f924e485;
+              // &:active ~ label{
+              //   position: absolute;
+              //   top: 100px;
+
+              // }
+            }
+          }
+          .right-form {
+            display: flex;
+            flex-basis: 40%;
+            padding: 1px 0px ;
+            flex-direction: column;
+            label {
+              text-align: left;
+              font-size: $default-font-size + 2px;
+              font-weight: 700;
+              padding: 1px 0;
+            }
+
+            
           }
         }
-        .right-form{
-          display: flex;
-          flex-basis: 50%;
-          // padding: 0px 20px 20px 20px;
-          flex-direction: column;
-          label{
-text-align: left;
-
-          }
-          select{
-
-          }
-          textarea{
-
-          }
       }
     }
   }
 }
-
 // start grid layout **********
 .grid-container {
   display: grid;

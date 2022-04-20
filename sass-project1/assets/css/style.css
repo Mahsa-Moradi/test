@@ -606,6 +606,9 @@ a {
   padding: 15px 20px;
 }
 
+.row-form {
+  background-color: #eef6db;
+}
 .row-form .left {
   direction: ltr !important;
   display: flex;
@@ -617,9 +620,6 @@ a {
 }
 .row-form .left form fieldset {
   padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 .row-form .left form fieldset legend {
   font-size: 31px;
@@ -654,13 +654,19 @@ a {
     transform: translate(0);
   }
 }
-.row-form .left form fieldset .left-form {
+.row-form .left form fieldset .complate-form {
   display: flex;
-  flex-basis: 50%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.row-form .left form fieldset .complate-form .left-form {
+  display: flex;
+  flex-basis: 40%;
   padding: 0px 20px 20px 20px;
   flex-direction: column;
 }
-.row-form .left form fieldset .left-form label {
+.row-form .left form fieldset .complate-form .left-form label {
   font-size: 19px;
   color: #232323;
   font-weight: 600;
@@ -668,7 +674,7 @@ a {
   padding: 19px 5px;
   text-align: left;
 }
-.row-form .left form fieldset .left-form input {
+.row-form .left form fieldset .complate-form .left-form input {
   padding: 8px 15px;
   text-align: left;
   color: #061f5e;
@@ -681,10 +687,17 @@ a {
   border-radius: 5px 20px 0 0;
   box-shadow: 0.5px 1px 1.5px rgba(249, 36, 228, 0.5215686275);
 }
-.row-form .left form fieldset .right-form {
+.row-form .left form fieldset .complate-form .right-form {
   display: flex;
+  flex-basis: 40%;
+  padding: 1px 0px;
   flex-direction: column;
-  flex-basis: 50%;
+}
+.row-form .left form fieldset .complate-form .right-form label {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1px 0;
 }
 
 .grid-container {
