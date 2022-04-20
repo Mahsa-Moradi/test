@@ -792,8 +792,9 @@ a {
             flex-basis: 40%;
             padding: 1px 0px ;
             flex-direction: column;
+            text-align: left;
+
             label {
-              text-align: left;
               font-size: $default-font-size + 2px;
               font-weight: 700;
               padding: 1px 0;

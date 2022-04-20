@@ -692,9 +692,9 @@ a {
   flex-basis: 40%;
   padding: 1px 0px;
   flex-direction: column;
+  text-align: left;
 }
 .row-form .left form fieldset .complate-form .right-form label {
-  text-align: left;
   font-size: 18px;
   font-weight: 700;
   padding: 1px 0;
