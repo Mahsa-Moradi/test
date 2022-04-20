@@ -715,9 +715,9 @@ a {
 
 .row-form {
   // background-color: #eef6db;
-
+  direction: ltr !important;
   .left {
-    direction: ltr !important;
+    // direction: ltr !important;
     display: flex;
     justify-content: left;
     form {
@@ -753,6 +753,7 @@ a {
           justify-content: space-between;
           padding: 0 50px;
           // gap: 2px;
+          height: 500px;
           .left-form {
             // width: ;
             display: flex;
@@ -771,7 +772,7 @@ a {
             input {
               padding: 8px 15px;
               text-align: left;
-              color: #061f5e;
+              // color: #466163;
               font-size: $default-font-size;
               outline: none;
               border-top: 0px;
@@ -798,43 +799,50 @@ a {
               font-size: $default-font-size + 3px;
               font-weight: 700;
               padding: 1px 0;
+              text-shadow: 0.1px 0.2px 0px #f765d5f8;
             }
             .select {
+              display: block;
               padding: 18px 0;
-              label {
-                span {
-                  display: block;
-                  @include margin-padding(20px, 0, 10px, 0, true);
-                }
-                select {
-                  @include border-radius(5px, 20px, 0px, 0);
-                  box-shadow: 0.5px 1px 1.5px #f924e485;
-                  border-top: 0px;
-                  border-right: 1px solid #33d76f;
-                  border-bottom: 1.5px solid #33d76f;
-                  border-left: 1px solid #33d76f;
-                  width: 90%;
-                  height: 90px;
-                  padding: 10px;
-                  text-align: center;
-                  //  overflow: scroll;
-                  overflow: auto;
-                  option {
-                    padding: 5px 0;
-                    font-size: $default-font-size + 0px;
-                  }
-
-                  option:first-of-type {
+              // background-color: #33d76f;
+              span {
+                display: block;
+                @include margin-padding(20px, 0, 10px, 0, true);
+              }
+              select {
+                width: 100%;
+                height: 100px;
+                box-shadow: 0.5px 1px 1.5px #f924e485;
+                border-top: 0px;
+                border-right: 1px solid #33d76f;
+                border-bottom: 1.5px solid #33d76f;
+                border-left: 1px solid #33d76f;
+                width: 90%;
+                height: 90px;
+                padding: 10px;
+                text-align: center;
+                //  overflow: scroll;
+                overflow: auto;
+                @include border-radius(5px, 20px, 0px, 0);
+                option {
+                  padding: 5px 0;
+                  font-size: $default-font-size + 0px;
+                  &:first-of-type {
                     background-color: #91d2a963;
                   }
-                  option:hover {
-                    background-color: #add1e3;
+                  &:hover {
+                    background-color: #9ccce3;
+                  }
+                  &:active {
+                    background-color: pink;
                   }
                 }
               }
             }
+
             .textarea {
-              // padding: 0px;
+              padding-top: 18px;
+              text-shadow: 0.1px 0.2px 0px #f765d5f8;
               span {
                 display: block;
                 font-size: $default-font-size + 3px;
@@ -842,6 +850,7 @@ a {
                 @include margin-padding(0, 0, 10px, 0, true);
               }
               textarea {
+                width: 92%;
                 height: 70px;
                 font-size: $default-font-size + 0px;
                 @include border-radius(5px, 20px, 0px, 0);
@@ -855,15 +864,16 @@ a {
               }
             }
             .range {
+              text-shadow: 0.1px 0.2px 0px #f765d5f8;
               padding: 40px 0;
               // label {
-               
+
               // }
               input {
                 width: 100%;
                 // display: flex;
-               align-self: center;
-               justify-self: center;
+                align-self: center;
+                justify-self: center;
                 margin-top: 10px;
                 background-color: #33d76f;
                 color: #33d76f;
