@@ -835,7 +835,7 @@ a {
               }
             }
             .textarea {
-              padding: 0px;
+              // padding: 0px;
               span {
                 display: block;
                 font-size: $default-font-size + 3px;
@@ -845,7 +845,7 @@ a {
                 
               }
               textarea {
-                height:100px;
+                height:70px;
                 font-size: $default-font-size + 0px;
                 @include border-radius(5px, 20px, 0px, 0);
                 box-shadow: 0.5px 1px 1.5px #f924e485;
@@ -856,14 +856,29 @@ a {
                 color: rgb(223, 223, 223);
                 @include margin-padding(10px, 0, 0, 0, true);
               }
-              .range{
-                label{
-                  padding-top: 10px;
-                }
-                input{
-                  background-color: #33d76f;
-                }
+             
+            }
+            .range{
+              padding: 20px 0;
+              label{
+                padding-top: 10px;
               }
+              input{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               margin-top: 10px;
+                background-color: #33d76f;
+                color: #33d76f;
+              }
+            }
+            button{
+              display: flex;
+              justify-content: center;
+              width: 40%;
+              padding: 6px;
+              text-align: center;
+              background-color: #a7ccdf;
             }
           }
         }
