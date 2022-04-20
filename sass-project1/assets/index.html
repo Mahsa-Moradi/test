@@ -429,92 +429,102 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+    <!--*** end Collapse -->
+    <!-- ********** start form ***************-->
+    <div class="container mt-250">
+      <div class="row row-form">
         <!-- left.... -->
         <div class="left">
           <form action="" autocomplete="on" novalidate>
             <fieldset>
               <legend>log in</legend>
-              <!-- first name -->
-              
+              <div class="right-form">
+                <!-- select -->
+                <!-- <input type="text" id="text-input" placeholder="last name"> -->
+                <label for="continent">? Which continent are you</label>
+                <select
+                  id="continent"
+                  name="continent"
+                  required
+                  size="2"
+                  multiple
+                >
+                  <option value="continent" selected>continent</option>
+                  <option value="Isia">Isia</option>
+                  <option value="Africa">Africa</option>
+                  <option value="Europ">Europ</option>
+                  <option value="USA">USA</option>
+                </select>
+                <!-- datalist -->
+                <!-- <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist> -->
+                <!-- textarea -->
+                <textarea name="message" rows="10" cols="30">
+          ... Input your information 
+          </textarea
+                >
+                <!-- range -->
+                <label for="range">Volume (between 0 and 50):</label>
+                <input
+                  type="range"
+                  id="range"
+                  name="range"
+                  min="0"
+                  max="10"
+                  step="2"
+                />
+                <!-- submit -->
+                <button type="button" onclick="alert('Thankyou ... !')">
+                  Click Me!
+                </button>
+              </div>
+              <div class="left-form">
+                <!-- first name -->
+                <label for="first-name">: First name</label>
                 <input
                   type="text"
                   id="first-name"
                   placeholder="first name"
                   autofocus
                 />
-                <label for="first-name">: First name</label>
-              
 
-              <!-- last name -->
-              <input type="text" id="text-input" placeholder="last name" />
-              <label for="last-name">: Last name</label>
-              <!-- Email -->
-              <input
-                type="email"
-                id="text-input"
-                placeholder="email"
-                pattern="[A-Za-z]{0-9}"
-              />
-              <label for="last-name">: email</label>
-              <!--password -->
-              <input
-                type="password"
-                id="password"
-                placeholder="password"
-                size="5"
-                maxlength="4"
-                pattern="[A-Za-z]{0-9}"
-              />
-              <label for="last-name"></label>
-              <!-- select -->
-              <!-- <input type="text" id="text-input" placeholder="last name"> -->
-              <label for="continent">? Which continent are you</label>
-              <select
-                id="continent"
-                name="continent"
-                required
-                size="2"
-                multiple
-              >
-                <option value="continent" selected>continent</option>
-                <option value="Isia">Isia</option>
-                <option value="Africa">Africa</option>
-                <option value="Europ">Europ</option>
-                <option value="USA">USA</option>
-              </select>
-              <!-- datalist -->
-              <!-- <datalist id="browsers">
-                  <option value="Internet Explorer">
-                  <option value="Firefox">
-                  <option value="Chrome">
-                  <option value="Opera">
-                  <option value="Safari">
-                </datalist> -->
-              <!-- textarea -->
-              <textarea name="message" rows="10" cols="30">
-                  ... Input your information 
-                  </textarea
-              >
-              <!-- range -->
-              <label for="range">Volume (between 0 and 50):</label>
-              <input
-                type="range"
-                id="range"
-                name="range"
-                min="0"
-                max="10"
-                step="2"
-              />
-              <!-- submit -->
-              <button type="button" onclick="alert('Thankyou ... !')">
-                Click Me!
-              </button>
+                <!-- last name -->
+                <label for="last-name">: Last name</label>
+                <input type="text" id="text-input" placeholder="last name" />
+
+                <!-- Email -->
+                <label for="last-name">: email</label>
+                <input
+                  type="email"
+                  id="text-input"
+                  placeholder="email"
+                  pattern="[A-Za-z]{0-9}"
+                />
+
+                <!--password -->
+                <label for="last-name">password</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="password"
+                  size="5"
+                  maxlength="4"
+                  pattern="[A-Za-z]{0-9}"
+                />
+              </div>
             </fieldset>
           </form>
         </div>
       </div>
     </div>
-    <!--*** end Collapse -->
+    <!--*** end form -->
     <!-- ********** start grid layout ***************-->
     <div class="grid-container container mt-250 img-grid">
       <div class="grid-item grid-item-1">

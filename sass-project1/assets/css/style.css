@@ -605,30 +605,30 @@ a {
   font-size: 16px;
   padding: 15px 20px;
 }
-.row-collapse .left {
+
+.row-form .left {
   direction: ltr !important;
   display: flex;
   justify-content: left;
-  flex-basis: 40%;
-  text-align: left;
 }
-.row-collapse .left form {
+.row-form .left form {
   width: 100%;
   outline: none;
 }
-.row-collapse .left form fieldset {
+.row-form .left form fieldset {
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.row-collapse .left form fieldset legend {
+.row-form .left form fieldset legend {
   font-size: 31px;
   display: flex;
   align-self: flex-start;
   text-shadow: 1px 1px 5px rgb(5, 73, 39);
   padding: 19px;
 }
-.row-collapse .left form fieldset legend:hover {
+.row-form .left form fieldset legend:hover {
   -webkit-animation: log-in 2.3s ease-in-out;
           animation: log-in 2.3s ease-in-out;
 }
@@ -654,17 +654,23 @@ a {
     transform: translate(0);
   }
 }
-.row-collapse .left form fieldset input, .row-collapse .left form fieldset label {
-  padding: 10px;
-  text-align: left;
+.row-form .left form fieldset .left-form {
+  display: flex;
+  flex-basis: 50%;
+  padding: 0px 20px 20px 20px;
+  flex-direction: column;
 }
-.row-collapse .left form fieldset label {
+.row-form .left form fieldset .left-form label {
   font-size: 19px;
   color: #232323;
   font-weight: 600;
   text-shadow: 0.1px 0.2px 0px rgba(247, 101, 213, 0.9725490196);
+  padding: 19px 5px;
+  text-align: left;
 }
-.row-collapse .left form fieldset input {
+.row-form .left form fieldset .left-form input {
+  padding: 8px 15px;
+  text-align: left;
   color: #061f5e;
   font-size: 16px;
   outline: none;
@@ -675,6 +681,12 @@ a {
   border-radius: 5px 20px 0 0;
   box-shadow: 0.5px 1px 1.5px rgba(249, 36, 228, 0.5215686275);
 }
+.row-form .left form fieldset .right-form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
 .grid-container {
   display: grid;
   justify-content: center;
