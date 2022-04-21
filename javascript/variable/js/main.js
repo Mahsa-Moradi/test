@@ -43,7 +43,7 @@ var name0 = "mahsa 'moradi'";
 // ..............
 var name0 = 'mehrdad \'moradi\'';
 // console.log(name0);
-// .............................
+// .............................length
 var number1 ="mahyar 'moradi'";
 // console.log(number1.length);
 
@@ -60,6 +60,12 @@ var h = (10<8);
 var i = (10>8);
 // console.log(i);
 // ............................
+var ii = (10!=8);
+// console.log(ii);
+// ............................
+// console.log(2 >= 18);
+// console.log(2 == 18);
+// ............................
 var j = ('mahsa' == 'moradi');
 // console.log(j);
 // ............................
@@ -68,7 +74,7 @@ var age = 22;
 // ............................
 // ............................
 // ............................
-// konkateneit (be ham vasl kardan)*************************
+// konkateneit (be ham vasl kardan)************ typeof *****
 var k = 21+5+'mahsa';
 // console.log(k);
 // console.log(typeof k);
@@ -77,29 +83,34 @@ var kk = 'mahsa'+' '+21+5;
 // console.log(kk);
 // console.log(typeof kk);
 // ............................
+// ............................
+// ............................
 var kkk="100" +"5";
 // var kkk = 100 + b;
 // console.log(kkk);
-// OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+// ............................
+var kkkk= (100 +5)*20;
+// console.log("add = " + kkkk);
+// OOOOOOOOOOOOOOOOOOOOOOOO
 var number2 = 20;
 number2 = 50;
 // console.log(number2);
-// .......................................
+// ...........
 const number3 = 60;
 // number3 = 70 ;
 // console.log(number3);
-// OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+// OOOOOOOOOOOOOOOOOOOOOOOOO
 
-// L ++   ******************************
+// L ++   *************************************************
 var l = 10;
 // console.log(l);
 // console.log(l++);
 // console.log(l);
-//  ++ L  ******************************
+//  ++ L  *************************************************
 var l = 10;
-console.log(l);
-console.log(++l);
-console.log(l);
+// console.log(l);
+// console.log(++l);
+// console.log(l);
 
 // ...........................
 
