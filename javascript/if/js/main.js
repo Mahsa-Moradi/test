@@ -9,7 +9,7 @@ if( gender == "male" &&  age >=18 ){
     console.log(" welcome male");
 }
 else{
-    console.log("welcome female");
+   console.log("welcome female"); 
 }
 // .............. ||  ............
 
@@ -20,3 +20,12 @@ else{
     console.log("error");
 }
 
+// .............. example ............
+
+var grade = 45;
+if(grade >= 34){
+    console.log( grade + " > 34");
+}
+else{
+    console.log( grade + " < 34");
+}
