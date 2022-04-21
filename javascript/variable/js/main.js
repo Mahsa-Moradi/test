@@ -3,7 +3,7 @@
 
 // ******      Number   ****************************
 var a = 5;
-// console.log(a);
+console.log(a);
 // ...........................
 var b =12;
 // console.log(b);
