@@ -15,13 +15,15 @@ var c=100 +5;
 var d =a* b;
 // console.log(d);
 
-// TAVAN    ....................
+// TAVAN    ................
 var ee = a ** b;
 // console.log(ee);
-// taghsim(khareje ghesmat).....
+
+// taghsim(khareje ghesmat).................
 var e =a / b;
 // console.log(e);
-// MODE( Baghimande taghsim )....
+
+// MODE( Baghimande taghsim )...............
 var eee = b % a;
 // console.log(eee);
 // .........................
@@ -35,7 +37,7 @@ var firstName = "Mahsa";
 
 
 
-// ******      String   ********
+// ******      String   *********************************
 var name0 = "mahsa 'moradi'";
 // console.log(name0);
 // ..............
@@ -68,12 +70,12 @@ var age = 22;
 // ............................
 // konkateneit (be ham vasl kardan)*************************
 var k = 21+5+'mahsa';
-console.log(k);
-console.log(typeof k);
+// console.log(k);
+// console.log(typeof k);
 // ............................
 var kk = 'mahsa'+' '+21+5;
-console.log(kk);
-console.log(typeof kk);
+// console.log(kk);
+// console.log(typeof kk);
 // ............................
 var kkk="100" +"5";
 // var kkk = 100 + b;
@@ -82,14 +84,18 @@ var kkk="100" +"5";
 var number2 = 20;
 number2 = 50;
 // console.log(number2);
-// OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+// .......................................
 const number3 = 60;
 // number3 = 70 ;
 // console.log(number3);
 // OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-// constant******************************
 
-
+// L ++   ******************************
+var l = 10;
+console.log(l);
+console.log(l++);
+console.log(l);
+//  ++ L  ******************************
 
 
 // ...........................
