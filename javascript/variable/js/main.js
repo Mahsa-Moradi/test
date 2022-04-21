@@ -7,8 +7,8 @@ var a = 5;
 // ...........................
 var b =12;
 // console.log(b);
-// konkateneit (be ham vasl kardan)...........................
-var c="100" +"5";
+// ............................
+var c=100 +5;
 // var c = 100 + b;
 // console.log(c);
 // ............................
@@ -25,10 +25,10 @@ var e =a / b;
 var eee = b % a;
 // console.log(eee);
 // .........................
-console.log(10%7);
-console.log(10**7);
-console.log(10-7);
-console.log(10+7);
+// console.log(10%7);
+// console.log(10**7);
+// console.log(10-7);
+// console.log(10+7);
 // .........................
 var firstName = "Mahsa";
 // console.log(firstName);
@@ -45,7 +45,7 @@ var name0 = 'mehrdad \'moradi\'';
 var number1 ="mahyar 'moradi'";
 // console.log(number1.length);
 
-// ******     boolean   ***************************
+// ******     boolean   **********************************
 var f =false;
 // console.log(f);
 // ...........................
@@ -66,8 +66,18 @@ var age = 22;
 // ............................
 // ............................
 // ............................
+// konkateneit (be ham vasl kardan)*************************
+var k = 21+5+'mahsa';
+console.log(k);
+console.log(typeof k);
 // ............................
+var kk = 'mahsa'+' '+21+5;
+console.log(kk);
+console.log(typeof kk);
 // ............................
+var kkk="100" +"5";
+// var kkk = 100 + b;
+// console.log(kkk);
 // OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 var number2 = 20;
 number2 = 50;
