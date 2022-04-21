@@ -21,11 +21,36 @@ else{
 }
 
 // .............. example ............
-
+// mitunim   N   ta  'if'  benevi30m (az bala be paiin ejra misheh)
 var grade = 45;
 if(grade >= 34){
     console.log( grade + " > 34");
 }
+if(grade >= 340){
+    console.log( grade + " > 34");
+}
+if(grade >= 4){
+    console.log( grade + " > 34");
+}
+if(grade >= 134){
+    console.log( grade + " > 34");
+}
+if(grade >= 24){
+    console.log( grade + " > 34");
+}
+// ............... else ................
+var num = 22;
+if( num %2 == 0){
+    console.log('even getald');
+}
 else{
-    console.log( grade + " < 34");
+    console.log('oneven getald');
+}
+// .............. example ............
+var num1 = -10;
+if(num1>0){
+    console.log(num1);
+}
+else{
+    console.log(-num1);
 }
