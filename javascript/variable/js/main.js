@@ -1,7 +1,7 @@
 // variable****************************
 
 
-// ******      Number   ********
+// ******      Number   ****************************
 var a = 5;
 // console.log(a);
 // .........................
@@ -32,7 +32,7 @@ var name0 = 'mehrdad \'moradi\'';
 var number1 ="mahyar 'moradi'";
 // console.log(number1.length);
 
-// ******     boolean   ********
+// ******     boolean   ***************************
 var f =false;
 // console.log(f);
 // ...........................
@@ -40,22 +40,28 @@ var g = true;
 // console.log(g);
 // ............................
 var h = (10<8);
-console.log(h);
+// console.log(h);
 // ............................
 var i = (10>8);
-console.log(i);
-
+// console.log(i);
 // ............................
-
-
-
+var j = ('mahsa' == 'moradi');
+// console.log(j);
+// ............................
+var age = 22;
+console.log(age > 18);
+// ............................
+// ............................
+// ............................
+// ............................
+// ............................
 // OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 var number2 = 20;
 number2 = 50;
 // console.log(number2);
 // OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-// const number3 = 60;
-// number3 = 70 ;
+const number3 = 60;
+number3 = 70 ;
 // console.log(number3);
 // OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 // constant******************************
