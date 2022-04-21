@@ -92,11 +92,14 @@ const number3 = 60;
 
 // L ++   ******************************
 var l = 10;
-console.log(l);
-console.log(l++);
-console.log(l);
+// console.log(l);
+// console.log(l++);
+// console.log(l);
 //  ++ L  ******************************
-
+var l = 10;
+console.log(l);
+console.log(++l);
+console.log(l);
 
 // ...........................
 
