@@ -16,3 +16,15 @@ for ( k = 1; k <= 5; k++) {
   sum *= k;
 }
 console.log(sum);
+// ........................... counter
+var counter = 0 , num = 5;
+for ( i=1 ; i<=num ; i++){
+    if( num % i ==0)
+    counter ++;
+}
+if (counter==2){
+    console.log('aval');
+}
+else{
+    console.log('morakab'); 
+}
