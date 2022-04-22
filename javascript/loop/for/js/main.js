@@ -28,3 +28,12 @@ if (counter==2){
 else{
     console.log('morakab'); 
 }
+
+// ........................... true
+// for( var f =1 ; true ; f++){
+//     console.log(f);
+// }
+// ........................... true
+for( var g =1 ; g>0 ; g++){
+    console.log(g);
+}
