@@ -6,7 +6,8 @@ console.log(i);
 
 
 // ................ show number 5 to 1
-for (var j = 5; j >= 5; j++) {
+
+for (var j = 5; j <= 5; j++) {
   console.log(j);  
 }
 
@@ -33,7 +34,11 @@ else{
 // for( var f =1 ; true ; f++){
 //     console.log(f);
 // }
+
+// while(true){
+//     console.log('f');
+// }
 // ........................... true
-for( var g =1 ; g>0 ; g++){
-    console.log(g);
-}
+// for( var g =1 ; g>0 ; g++){
+//     console.log(g);
+// }
