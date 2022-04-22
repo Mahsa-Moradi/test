@@ -62,3 +62,25 @@ if(num2 % 2 == 0){
 else{
     console.log("Oneven");
 }
+
+// *************** else  if  ************************
+var avrage = 15;
+if ( avrage <= 10){
+    console.log( "so bad");
+}
+else if  (11 <= avrage <=  15){
+    console.log( "normal");
+}
+else if  (16 <=  avrage <=  17){
+    console.log( "good");
+}
+else{
+    console.log( "perfect");
+}
+// .............. example ............
+
+
+
+
+
+// .............. example ............
