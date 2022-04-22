@@ -54,3 +54,11 @@ if(num1>0){
 else{
     console.log(-num1);
 }
+// .............. example ............
+var num2 = 11;
+if(num2 % 2 == 0){
+    console.log("Even");
+}
+else{
+    console.log("Oneven");
+}
