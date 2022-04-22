@@ -33,10 +33,17 @@ while(i<=5){
 }
 console.log('Total :'+' '+ sum);
 
-//  .................. multipication 1 to 5 number
+//  ........ multipication 1 to 5 number
 var mult=1 , i = 1;
 while(i<=5){
     mult *= i;
     i ++;
 }
 console.log('Multipication :'+' ' + mult);
+// ***************************************** Do while
+var e =6;
+do {
+    console.log(e);
+    i ++;
+}
+while( e>=8 );
