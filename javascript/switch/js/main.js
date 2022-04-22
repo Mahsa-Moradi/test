@@ -2,7 +2,7 @@
 
 //  ....................... Swhich Day
 
-var day = 4;
+var day = 14;
 switch (day) {
   case 0:
       console.log("sunday");
@@ -25,4 +25,6 @@ switch (day) {
   case 6:
     console.log("saturday");
     break;
+    default: 
+    console.log("ERROR");
 }
