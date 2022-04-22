@@ -71,7 +71,7 @@ if (avrage <= 10) {
 }
 // .............. example ............
 var gender2 = "female";
-var age = 11;
+var age = 16;
 if (gender2 == "male") {
   if (age == 15) {
     console.log("Hello male");
@@ -79,7 +79,12 @@ if (gender2 == "male") {
     console.log("Hello male but you can not input");  
   }
 } else {
-  console.log("Hello female");
+
+    if (age >= 15) {
+        console.log("Hello female");
+      } else {
+        console.log("Hello female but you can not input");  
+      }
 }
 
 // .............. example ............
