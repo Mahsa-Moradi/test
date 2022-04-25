@@ -58,9 +58,15 @@ console.log(g);
 // ...................... join
 var g2 = array1.join('*');
 console.log(g2);
-// ...................... pop ( delet)
+// ...................... pop ( delet last elemets)
  array1.pop();
 console.log(array1);
-// ...................... push (addation)
-array1.push('*');
+// ...................... push (addation last elemets)
+array1.push('*' , 'addation last elemets' );
+console.log(array1);
+// ...................... shift (delet first elemets)
+array1.shift('*' , 'ki' );
+console.log(array1);
+// ...................... unshift (addation first elemets)
+array1.unshift('addation first elemets'  );
 console.log(array1);
