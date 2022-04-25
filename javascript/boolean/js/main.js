@@ -3,35 +3,33 @@ console.log(Boolean(0));
 // ..........................
 console.log(Boolean(-0));
 // ..........................
-if(x){
-    console.log(Boolean(undefined));
-}
+// if(x){
+//     console.log(Boolean(undefined));
+// }
 // ...........................
-if(-0){
-    console.log(Boolean(-0));
-}
+var a
+    console.log(Boolean(a));
+
 // ...........................
 if(""){
     console.log('x');
 }
 // ...........................
-if(){
-    console.log();
+if(undefined){
+    console.log('z');
 }
 // ...........................
-if(){
-    console.log();
-}
+var e='milad ' /5;
+    console.log(e);
+
 // ............................
-if(){
-    console.log();
+if('r'){
+    console.log('rtrt');
 }
 
 // ............................
-if(){
-    console.log();
-}
+console.log('3' + 2);
+console.log('3' * 2);
+console.log('3' / 2);
+console.log('3' - 2);
 // ..............................
-if(){
-    console.log();
-}
