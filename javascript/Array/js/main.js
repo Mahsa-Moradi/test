@@ -53,20 +53,30 @@ for(var i=0 ; i<= num.length; i++){
 var array1=[14.5,'true',19,'mahsa',20,8.7];
 console.log(array1);
 // ...................... to String
+
 var g = array1.toString();
 console.log(g);
+
 // ...................... join
 var g2 = array1.join('*');
 console.log(g2);
+
 // ...................... pop ( delet last elemets)
  array1.pop();
 console.log(array1);
+
 // ...................... push (addation last elemets)
 array1.push('*' , 'addation last elemets' );
 console.log(array1);
+
 // ...................... shift (delet first elemets)
 array1.shift('*' , 'ki' );
 console.log(array1);
+
 // ...................... unshift (addation first elemets)
 array1.unshift('addation first elemets'  );
 console.log(array1);
+// .........
+// array1[array1.length]=8;
+array1[8]=8;
+console.log(array1.length);
