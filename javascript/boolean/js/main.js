@@ -33,3 +33,18 @@ console.log('3' * 2);
 console.log('3' / 2);
 console.log('3' - 2);
 // ..............................
+console.log('mahsa' - 'moradi');
+console.log('mahsa' * 2);
+console.log('3' - true);
+console.log('3' + true);
+console.log(3 + true);
+console.log('3' * true);
+console.log(3 * false);
+// ..............................null
+console.log(3 + null);
+console.log(3 - null);
+console.log(3 * null);
+// ......................... undefind
+console.log(undefined + 2 );
+console.log(undefined + true );
+console.log(undefined + null );
