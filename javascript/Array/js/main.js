@@ -48,3 +48,19 @@ for(var i=0 ; i<= num.length; i++){
     }
     
 }
+// **********************************************   Array methods
+// ....................................continue Array  to strings
+var array1=[14.5,'true',19,'mahsa',20,8.7];
+console.log(array1);
+// ...................... to String
+var g = array1.toString();
+console.log(g);
+// ...................... join
+var g2 = array1.join('*');
+console.log(g2);
+// ...................... pop ( delet)
+ array1.pop();
+console.log(array1);
+// ...................... push (addation)
+array1.push('*');
+console.log(array1);
