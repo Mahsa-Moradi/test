@@ -81,8 +81,13 @@ console.log(array1);
 array1[8]=8;
 console.log(array1.length);
 // **********************************************   Array Marging (concat)
-var h1 = [' mahsa ', 15  , 10.15];
+var h1 = [' mahsa ', 15 ,true , 10.15];
 var h2 = [' sara ', 15 , ' moradi ' , 10.15];
 var h3 = [' * '];
 var h4 = h1.concat(h2,h3).join('@');
 console.log(h4);
+// **********************************************   Array Splice (delet home)
+var j = [' mahsa ', 15 ,true , 10.15];
+// (1,2) (start home delet , ta 2 ta  home badi delet)
+j.splice(1,2);
+console.log(j);
