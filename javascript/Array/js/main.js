@@ -110,3 +110,11 @@ console.log(m1);
 var n = [' mahsa ', ' sara ' ,'nik ' , ' jos '];
 var n2=n.reverse();
 console.log(n2);
+// *********************************************   Array  'index of'
+var o= ['mahsa',0, 'sara',true ,'nik' ,3.14, 'jos'];
+var o2=o.indexOf(true);
+console.log(o2);
+// *********************************************   Array  ' last index of'
+var p= ['mahsa',0, 'sara',true ,'nik' ,3.14, 'jos',true];
+var p2=p.lastIndexOf(true);
+console.log(p2);
