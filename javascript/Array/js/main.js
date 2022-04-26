@@ -102,3 +102,11 @@ console.log(j2);
 var k = [' mahsa ', ' sara ' ,'nik ' , ' jos '];
 var k2=k.sort();
 console.log(k2);
+// ................number Sort
+var m=[100,1,250,25];
+var m1=m.sort();
+console.log(m1);
+// *********************************************   Array reversing ()
+var n = [' mahsa ', ' sara ' ,'nik ' , ' jos '];
+var n2=n.reverse();
+console.log(n2);
