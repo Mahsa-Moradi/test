@@ -116,5 +116,6 @@ var o2=o.indexOf(true);
 console.log(o2);
 // *********************************************   Array  ' last index of'
 var p= ['mahsa',0, 'sara',true ,'nik' ,3.14, 'jos',true];
-var p2=p.lastIndexOf(true);
+// var p2=p.lastIndexOf(true);
+var p2=p.lastIndexOf('ali');
 console.log(p2);
