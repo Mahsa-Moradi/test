@@ -88,6 +88,13 @@ var h4 = h1.concat(h2,h3).join('@');
 console.log(h4);
 // **********************************************   Array Splice (delet home)
 var j = [' mahsa ', 15 ,true , 10.15];
+j.splice(2);
 // (1,2) (start home delet , ta 2 ta  home badi delet)
-j.splice(1,2);
+// j.splice(1,2);
 console.log(j);
+// *********************************************   Array Slice ('NO' delet home)
+var j1 = [' mahsa ', 15 ,true , 10.15];
+// (1,2) (start home delet , ta 2 ta  home badi delet)
+// var j2=j1.slice(0,2);
+var j2=j1.slice(2);
+console.log(j2);
