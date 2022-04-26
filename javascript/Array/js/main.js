@@ -98,3 +98,7 @@ var j1 = [' mahsa ', 15 ,true , 10.15];
 // var j2=j1.slice(0,2);
 var j2=j1.slice(2);
 console.log(j2);
+// *********************************************   Array Sort ()
+var k = [' mahsa ', ' sara ' ,'nik ' , ' jos '];
+var k2=k.sort();
+console.log(k2);
