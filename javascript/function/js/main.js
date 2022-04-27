@@ -14,11 +14,13 @@ for(i=0;i<=addEventListener.length;i++){
 console.log(a);
 // ............................. ********* function declaration
 // 1a ........................
-// inputs (num1,num2)
+// inputs (num1,num2) === parameter
 function functionName(inputs){
     // code
 
 }
+// functionName(); === argument
+functionName();
 // 2a ........................
 function showBio(){
     console.log('First name : ********* Mahsa');
