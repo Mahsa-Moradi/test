@@ -13,7 +13,8 @@ for(i=0;i<=addEventListener.length;i++){
 }
 console.log(a);
 // ............................. ********* function declaration
-function functionName(){
+// inputs (num1,num2)
+function functionName(inputs){
     // code
 
 }
@@ -27,7 +28,12 @@ function showBio(){
 showBio();
 showBio();
 showBio();
-// .......................... ********* function expression
+// ........................ add 2 number
+function addnumbers(num1 , num2){
+    console.log(num1 + num2);
+}
+addnumbers(5,200);
+// ............................. ********* function expression
 var name = function(){
     // code
 }
