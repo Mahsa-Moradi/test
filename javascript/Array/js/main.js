@@ -138,3 +138,8 @@ max=q[i];
   }
 }
 console.log(max);
+// ********************************* Array 2D
+var array2=[1,['milad','moridi'],true,3.14]
+console.log(array2);
+console.log(array2[1]);
+console.log(array2[1][0]);
