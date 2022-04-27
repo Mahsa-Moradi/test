@@ -119,6 +119,22 @@ var p= ['mahsa',0, 'sara',true ,'nik' ,3.14, 'jos',true];
 // var p2=p.lastIndexOf(true);
 var p2=p.lastIndexOf('ali');
 console.log(p2);
-// ********************************* 
+// ********************************* maximum numbar
+// var q=[100,25,36,98,5874,157,10,528];
+// var max=0;
+// for(i=0 ; i<=q.length; i++){
+//   if(q[i]>q[i+1]){
+//   console.log(q[i]);
+// }
+
+// } 
+// .....................
 var q=[100,25,36,98,5874,157,10,528];
-var max=
+var max=0;
+for(i=0 ; i<=q.length; i++){
+  if(q[i]>max){
+max=q[i];
+
+  }
+}
+console.log(max);
