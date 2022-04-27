@@ -37,6 +37,18 @@ function addnumbers(num1 , num2){
 }
 addnumbers(5,200);
 addnumbers(5,10);
+// ________
+function addnumbers1(num1 , num2){
+    console.log(num1 + num2);
+}
+var a=addnumbers1(62,400);
+console.log(a);
+// ===
+function addnumbers2(num1 , num2){
+    return(num1 + num2);
+}
+var b=addnumbers2(62,400);
+console.log(b);
 // ............................. ********* function expression
 // 1b ........................
 var name = function(){
@@ -54,3 +66,4 @@ var numbers1=function(num1,num2){
     console.log(num1+num2);
 }
 numbers1(50,14);
+// OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
