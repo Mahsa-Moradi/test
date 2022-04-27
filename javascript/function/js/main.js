@@ -19,7 +19,7 @@ function functionName(){
 }
 // ........................
 function showBio(){
-    console.log('First name : Mahsa');
+    console.log('First name : ********* Mahsa');
     console.log('Last name : Moradi');
     console.log('Age : 29');
 
@@ -31,3 +31,10 @@ showBio();
 var name = function(){
     // code
 }
+// ........................
+var names = function(){
+    console.log('First name : ....... Mehrdad');
+    console.log('Last name : Moradi');
+    console.log('Age : 34');
+}
+names();
