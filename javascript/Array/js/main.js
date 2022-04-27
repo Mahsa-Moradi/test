@@ -56,7 +56,10 @@ console.log(array1);
 
 var g = array1.toString();
 console.log(g);
-
+// ..................
+var k0 = [' mahsa ', ' sara ' ,'nik ' , ' jos '];
+var k00=k0.valueOf();
+console.log(k00);
 // ...................... join
 var g2 = array1.join('*');
 console.log(g2);
@@ -88,9 +91,9 @@ var h4 = h1.concat(h2,h3).join('@');
 console.log(h4);
 // **********************************************   Array Splice (delet home)
 var j = [' mahsa ', 15 ,true , 10.15];
-j.splice(2);
+// j.splice(2);
 // (1,2) (start home delet , ta 2 ta  home badi delet)
-// j.splice(1,2);
+j.splice(1,2);
 console.log(j);
 // *********************************************   Array Slice ('NO' delet home)
 var j1 = [' mahsa ', 15 ,true , 10.15];
@@ -98,6 +101,7 @@ var j1 = [' mahsa ', 15 ,true , 10.15];
 // var j2=j1.slice(0,2);
 var j2=j1.slice(2);
 console.log(j2);
+
 // *********************************************   Array Sort ()
 var k = [' mahsa ', ' sara ' ,'nik ' , ' jos '];
 var k2=k.sort();
@@ -111,15 +115,15 @@ var n = [' mahsa ', ' sara ' ,'nik ' , ' jos '];
 var n2=n.reverse();
 console.log(n2);
 // *********************************************   Array  'index of'
-var o= ['mahsa',0, 'sara',true ,'nik' ,3.14, 'jos'];
-var o2=o.indexOf(true);
+var o= ['mahsa',0, 'sara',true ,'nik' ,3.14, 'jos', 'sara'];
+var o2=o.indexOf('sara');
 console.log(o2);
 // *********************************************   Array  ' last index of'
 var p= ['mahsa',0, 'sara',true ,'nik' ,3.14, 'jos',true];
-// var p2=p.lastIndexOf(true);
-var p2=p.lastIndexOf('ali');
+var p2=p.lastIndexOf(true);
+// var p2=p.lastIndexOf('ali');
 console.log(p2);
-// ********************************* maximum numbar
+// ************************************** maximum numbar
 // var q=[100,25,36,98,5874,157,10,528];
 // var max=0;
 // for(i=0 ; i<=q.length; i++){
@@ -138,7 +142,7 @@ max=q[i];
   }
 }
 console.log(max);
-// ********************************* Array 2D
+// ******************************************* Array 2D
 var array2=[1,['milad','moridi'],true,3.14]
 console.log(array2);
 console.log(array2[1]);
