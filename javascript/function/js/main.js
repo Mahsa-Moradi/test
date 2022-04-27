@@ -37,7 +37,7 @@ addnumbers(5, 10);
 function addnumbers1(num1, num2) {
   console.log(num1 + num2);
 }
-var a = addnumbers1(62, 400);
+var a = addnumbers1(62, 400000);
 console.log(a);
 // ===
 function addnumbers2(num1, num2) {
@@ -45,9 +45,9 @@ function addnumbers2(num1, num2) {
   // dastor bad return Ejra nemisheeeeeh  (not run)
   console.log(b);
 }
-var b = addnumbers2(62, 400);
+var b = addnumbers2(62, 400000);
 console.log(b);
-// 4a ............................ AVrage
+// 4a ............................ AVrage normal
 var c1 = 12;
 var c2 = 20;
 var c3 = 14;
@@ -61,19 +61,27 @@ if (av >= 15) {
 } else {
   console.log("not good");
 }
-// ______________
-function e(c1, c2, c3, c4, c5) {
-  sum = c1 + c2 + c3 + c4 + c5;
+// ______________ AVrage function
+function Avrage(cc1, cc2, cc3, cc4, cc5) {
+  sum = cc1 + cc2 + cc3 + cc4 + cc5;
   av = sum / 5;
   if (av >= 15) {
-    console.log("good");
+    return 'Super ***';
+    2// console.log("Super");
   } else {
-    console.log("not good");
+    return 'Bad ---';
+    2// console.log("Bad");
   }
 }
-e(15, 10, 2, 20, 19);
-// var f=e(15, 10, 2, 20, 19);
-// console.log(f);
+var sara=Avrage(15, 20, 12, 20, 19);
+var ali=Avrage(1, 14, 2, 20, 19);
+console.log(sara);
+console.log(ali);
+2// Avrage(15, 10, 2, 20, 19);
+2// Avrage(15, 10, 20, 20, 19);
+// _
+1// var f=Avrage(15, 10, 2, 20, 19);
+1// console.log(f);
 // ............................. ********* function expression
 // 1b ........................
 var name = function () {
