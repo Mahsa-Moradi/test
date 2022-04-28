@@ -82,11 +82,14 @@ console.log(ali);
 // _
 1// var f=Avrage(15, 10, 2, 20, 19);
 1// console.log(f);
-// 5a ........................
+// 5a ........................ sum  function
 function add(num1,num2,num3){
     return num1+num2+num3;
 }
 console.log(add(10,58,33));
+console.log(add(10,303));
+console.log(add(10,58,33,758));
+// 6a ........................ sum  function
 
 // ............................. ********* function expression
 // 1b ........................
