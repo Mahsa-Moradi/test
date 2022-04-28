@@ -173,7 +173,17 @@ function isprime(number) {
 
   return true;
 }
-console.log(isprime(10));
+// console.log(isprime(11));
+// __
+function rangPrime(firstname,lastname){
+    result=[];
+    for(i=firstname ; i<=lastname ; i++){
+        if(isprime(i) == true)
+            result.push(i); 
+    } 
+     return result;
+}
+console.log(rangPrime(10,110));
 
 // ............................. ********* function expression
 // 1b ........................
@@ -192,4 +202,8 @@ var numbers1 = function (num1, num2) {
   console.log(num1 + num2);
 };
 numbers1(50, 14);
-// OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+// * Arrow function expression ( feshordeh shode expression ast) *
+var name1 = () => console.log("helllllo ");
+name1 ();
+//   ................sum
