@@ -122,6 +122,58 @@ function myFunction(){
 myFunction();
 myFunction(4);
 myFunction(4,50);
+
+
+// 7a ........................ rest  function
+function myFunction1(...numbers){
+    console.log(numbers);
+}
+myFunction1();
+myFunction1(5);
+
+// ___________________****____________ sum (rest)
+function add1(...addation){
+    sum1=0;
+    for(i=0 ; i < addation.length ; i++){
+        sum1 += addation[i];
+        
+    }
+    return sum1;
+   
+}
+ console.log(add1());
+ console.log(add1(5,4));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ............................. ********* function expression
 // 1b ........................
 var name = function () {
