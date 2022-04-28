@@ -221,4 +221,12 @@ var power1=(num) =>{
     return true;
   }
   console.log(power1);
-// ............................. ********* function expression
+// ..................... ********* callback  function 
+function firstfunction(callback){
+    console.log('salam');
+    callback();
+}
+firstfunction(secoundfunction);
+function secoundfunction(){
+    console.log('khobi ?');
+}
