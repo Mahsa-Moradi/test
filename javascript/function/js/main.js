@@ -66,113 +66,114 @@ function Avrage(cc1, cc2, cc3, cc4, cc5) {
   sum = cc1 + cc2 + cc3 + cc4 + cc5;
   av = sum / 5;
   if (av >= 15) {
-    return 'Super ***';
-    2// console.log("Super");
+    return "Super ***";
+    2; // console.log("Super");
   } else {
-    return 'Bad ---';
-    2// console.log("Bad");
+    return "Bad ---";
+    2; // console.log("Bad");
   }
 }
-var sara=Avrage(15, 20, 12, 20, 19);
-var ali=Avrage(1, 14, 2, 20, 19);
+var sara = Avrage(15, 20, 12, 20, 19);
+var ali = Avrage(1, 14, 2, 20, 19);
 console.log(sara);
 console.log(ali);
-2// Avrage(15, 10, 2, 20, 19);
-2// Avrage(15, 10, 20, 20, 19);
+2; // Avrage(15, 10, 2, 20, 19);
+2; // Avrage(15, 10, 20, 20, 19);
 // _
-1// var f=Avrage(15, 10, 2, 20, 19);
-1// console.log(f);
+1; // var f=Avrage(15, 10, 2, 20, 19);
+1; // console.log(f);
 // 5a ........................ sum  function
-function add(num1,num2,num3){
-    return num1+num2+num3;
+function add(num1, num2, num3) {
+  return num1 + num2 + num3;
 }
-console.log(add(10,58,33));
-console.log(add(10,303));
-console.log(add(10,58,33,758));
+console.log(add(10, 58, 33));
+console.log(add(10, 303));
+console.log(add(10, 58, 33, 758));
 // ___________________****____________ sum (arguments.length)
-function my(){
-    var total = 0;
-for(var i=0 ; i < arguments.length ; i++) {
+function my() {
+  var total = 0;
+  for (var i = 0; i < arguments.length; i++) {
     total += arguments[i];
+  }
+  return total;
 }
-return total;
-}
-console.log( my() );
-console.log( my(5,41) );
-console.log( my(5,10) );
 console.log(my());
-// ___________________****____________ avg (arguments.length) 
+console.log(my(5, 41));
+console.log(my(5, 10));
+console.log(my());
+// _________________****____________ avg (arguments.length)
 
-function avgFunction(){
-     sum = 0;
-    for(var i=0 ; i< arguments.length ; i++){
-       
-        sum += arguments[i];
-        avrgg = sum / arguments.length;
-        
-        
-    }
-    return avrgg;
+function avgFunction() {
+  sum = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+    avrgg = sum / arguments.length;
+  }
+  return avrgg;
 }
-console.log(avgFunction(15*3,19*1,17*2,9*2,10*3));
+console.log(avgFunction(15 * 3, 19 * 1, 17 * 2, 9 * 2, 10 * 3));
 // 6a ........................ input num  function
-function myFunction(){
-    console.log(arguments.length);
+function myFunction() {
+  console.log(arguments.length);
 }
 myFunction();
 myFunction(4);
-myFunction(4,50);
+myFunction(4, 50);
 
-
-// 7a ........................ rest  function
-function myFunction1(...numbers){
-    console.log(numbers);
+// 7a ......................................... rest  function
+function myFunction1(...numbers) {
+  console.log(numbers);
 }
 myFunction1();
 myFunction1(5);
 
-// ___________________****____________ sum (rest)
-function add1(...addation){
-    sum1=0;
-    for(i=0 ; i < addation.length ; i++){
-        sum1 += addation[i];
-        
-    }
-    return sum1;
-   
+// ________________****____________ sum (rest)
+function add1(...addation) {
+  sum1 = 0;
+  for (i = 0; i < addation.length; i++) {
+    sum1 += addation[i];
+  }
+  return sum1;
 }
- console.log(add1());
- console.log(add1(5,4));
+console.log(add1());
+console.log(add1(5, 4));
 
+// ................................ power(tavan)
+function power(base, exponent) {
+  var result = 1;
+  for (i = 1; i <= exponent; i++) {
+    result *= base;
+  }
+  return result;
+}
+console.log(power(2, 4));
 
+// ................................ prime(addad aval)
+function prime(number) {
+  var count = 0;
+  for (var i = 1; i <= number; i++) {
+    if (number % i == 0) {
+      count++;
+    }
+  }
+  if (count == 2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(prime(24));
+console.log(prime(11));
+console.log(prime(19));
+// _______
+function isprime(number) {
+  for (var i = 2; i < number; i++) {
+    if (number % i == 0) return false;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  return true;
+}
+console.log(isprime(10));
 
 // ............................. ********* function expression
 // 1b ........................
