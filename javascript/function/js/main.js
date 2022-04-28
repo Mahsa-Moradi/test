@@ -16,7 +16,7 @@ console.log(a);
 function functionName(inputs) {
   // code
 }
-// functionName(); === argument
+// functionName(); === arguments
 functionName();
 // 2a ........................
 function showBio() {
@@ -89,8 +89,16 @@ function add(num1,num2,num3){
 console.log(add(10,58,33));
 console.log(add(10,303));
 console.log(add(10,58,33,758));
-// 6a ........................ sum  function
-
+// 6a ........................ input num  function
+function myFunction(){
+    console.log(arguments.length);
+}
+myFunction();
+// ________
+function myFunction(){
+    console.log(arguments.length);
+}
+myFunction();
 // ............................. ********* function expression
 // 1b ........................
 var name = function () {
