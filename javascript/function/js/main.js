@@ -207,3 +207,18 @@ numbers1(50, 14);
 var name1 = () => console.log("helllllo ");
 name1 ();
 //   ................sum
+var add2 = (a,b) => a+b;
+console.log(add2(2,5));
+//   ................ power Arrow function
+var power1=(num) => num*num;
+console.log(power1(10*5));
+// ........... power 
+var power1=(num) =>{
+    for (var i = 2; i < number; i++) {
+      if (number % i == 0) return false;
+    }
+  
+    return true;
+  }
+  console.log(power1);
+// ............................. ********* function expression
