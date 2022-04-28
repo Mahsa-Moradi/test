@@ -89,16 +89,36 @@ function add(num1,num2,num3){
 console.log(add(10,58,33));
 console.log(add(10,303));
 console.log(add(10,58,33,758));
+// ___________________****____________ sum (arguments.length)
+function my(){
+    var total = 0;
+for(var i=0 ; i < arguments.length ; i++) {
+    total += arguments[i];
+}
+return total;
+}
+console.log( my() );
+console.log( my(5,41) );
+console.log( my(5,10) );
+console.log(my());
+// 
+
+function avgFunction(){
+    for(i=0 ; i<arguments.length ; i++){
+        summ = 0;
+        sum += arguments[i];
+        avrgg = summ / arguments.length;
+        return avrgg;
+        
+    }
+}
 // 6a ........................ input num  function
 function myFunction(){
     console.log(arguments.length);
 }
 myFunction();
-// ________
-function myFunction(){
-    console.log(arguments.length);
-}
-myFunction();
+myFunction(4);
+myFunction(4,50);
 // ............................. ********* function expression
 // 1b ........................
 var name = function () {
