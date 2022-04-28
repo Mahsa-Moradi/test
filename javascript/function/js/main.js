@@ -101,17 +101,20 @@ console.log( my() );
 console.log( my(5,41) );
 console.log( my(5,10) );
 console.log(my());
-// 
+// ___________________****____________ avg (arguments.length) 
 
 function avgFunction(){
-    for(i=0 ; i<arguments.length ; i++){
-        summ = 0;
+     sum = 0;
+    for(var i=0 ; i< arguments.length ; i++){
+       
         sum += arguments[i];
-        avrgg = summ / arguments.length;
-        return avrgg;
+        avrgg = sum / arguments.length;
+        
         
     }
+    return avrgg;
 }
+console.log(avgFunction(15*3,19*1,17*2,9*2,10*3));
 // 6a ........................ input num  function
 function myFunction(){
     console.log(arguments.length);
