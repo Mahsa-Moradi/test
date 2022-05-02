@@ -23,3 +23,21 @@ let str = 'mahsa moradi';
 for(element of str){
   console.log(element);
 }
+//.......................
+console.log('********************** for in');
+// ************************************************** for-in
+// .................... object = name
+// for(key in object){
+
+// }
+// ......................
+const myArray1 = [25,58,74,95,65,23,145];
+const mahsa = {
+  firstname : 'mahsa',
+  lastname : 'moradi',
+  age : '29',
+
+};
+for(let key in mahsa){
+  console.log(key);
+}
