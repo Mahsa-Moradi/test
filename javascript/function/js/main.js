@@ -1,6 +1,7 @@
 // function declaration
 // function expression
 // ************************************************  Function
+// var   let    const
 // ........................
 
 console.log("First name : Mahsa");
@@ -213,14 +214,14 @@ console.log(add2(2,5));
 var power1=(num) => num*num;
 console.log(power1(10*5));
 // ........... power 
-var power1=(num) =>{
+var power2=(num) =>{
     for (var i = 2; i < number; i++) {
       if (number % i == 0) return false;
     }
   
     return true;
   }
-  console.log(power1);
+  console.log(power2);
 // ..................... ********* callback  function 
 function firstfunction(callback){
     console.log('salam');
@@ -233,7 +234,25 @@ function secoundfunction(){
 // ..................... ********* scope function {}
 // (  var d )   global scop=hameja ghabel shenasaii va dastres ast
 var d = 50;
-function scop(){
-  var dd = 60
- 
-} console.log(d);
+//  dd= functionscope
+function scop1(){
+  var dd = 60;
+ console.log(dd);
+}
+scop1();
+// ...... console.log(f1); birun {} eshtebah ast......... 
+function scop2(){
+  var f1 =777;
+     console.log(f1); 
+
+}
+scop2();
+// ............... 
+// var f = 550;
+function scop3(){
+  var f = 660;
+  if(true){
+   console.log(f); 
+  }
+}
+scop3();
