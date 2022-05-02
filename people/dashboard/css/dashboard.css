@@ -1,6 +1,6 @@
 
 .img-place {
-    /* display: flex; */
+    display: flex;
     /* justify-content: space-around; */
     align-items: center;
 
@@ -17,3 +17,6 @@ align-self: center; */
     font-size: 50px;   
 }
 
+.carousel-item-customer{
+    float: right !important;
+}
