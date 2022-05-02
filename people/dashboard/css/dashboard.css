@@ -1,10 +1,19 @@
-.carousel-control-prev-icon-customer{
-    color: black !important;
-    font-size: 500px !important;
-    font-weight: bold;
-    font-weight: 900;
-    
+
+.img-place {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    align-items: center;
+
 }
-.f{
-    font-size: 500px;   
+
+.img-fluid-customer{
+width: 50%;
+height: 70%;
+/* display: flex;
+align-self: center; */
 }
+.button-icon{
+    color: rgb(255, 3, 3);
+    font-size: 50px;   
+}
+
