@@ -1,44 +1,18 @@
-// ********************************** for
-// ................ show number 1 to 5
-for (var i = 1; i <= 5; i++) {
-console.log(i);
-}
+// ************************************************** for-off
+// array / string / map / set(majmoeha)
 
-
-// ................ show number 5 to 1
-
-for (var j = 5; j <= 5; j++) {
-  console.log(j);  
+for(let element of itrabel){
+  console.log();
 }
-
-// ....................... mult 1 to 5
-var sum = 1 , k;
-for ( k = 1; k <= 5; k++) {
-  sum *= k;
+// ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+let myArray=[15,47,87,95,36,25,12];
+for(i=0 ; i<=myArray.length ; i++){
+  console.log(myArray[i]);
 }
-console.log(sum);
-// ........................... counter (maghsumo elaih)
-var counter = 0 , num = 5;
-for ( i=1 ; i<=num ; i++){
-    if( num % i ==0)
-    counter ++;
+// ______________
+console.log('oooooooooooooooooooooooooooooooooo');
+// _____________ for-off
+for(let element of myArray){
+  console.log(element);
 }
-if (counter==2){
-    console.log('aval');
-}
-else{
-    console.log('morakab'); 
-}
-
-// ........................... true
-// for( var f =1 ; true ; f++){
-//     console.log(f);
-// }
-
-// while(true){
-//     console.log('f');
-// }
-// ........................... true
-// for( var g =1 ; g>0 ; g++){
-//     console.log(g);
-// }
+// _________________
