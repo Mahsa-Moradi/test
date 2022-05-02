@@ -274,5 +274,7 @@ function scop5(){
     let h = 6606600000000;
    console.log(h);
   } 
+  // console.log(h);    error
 }
+  // console.log(h);    error
 scop5();
