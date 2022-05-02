@@ -232,6 +232,7 @@ function secoundfunction(){
     console.log('khobi ?');
 }
 // ..................... ********* scope function {}
+// ( _____ global scop_____ )
 // (  var d )   global scop=hameja ghabel shenasaii va dastres ast
 var d = 50;
 //  dd= functionscope
@@ -240,6 +241,7 @@ function scop1(){
  console.log(dd);
 }
 scop1();
+// ( _____ function scop_____ )
 // ...... console.log(f1); birun {} eshtebah ast......... 
 function scop2(){
   var f1 =777;
@@ -247,7 +249,7 @@ function scop2(){
 
 }
 scop2();
-// ............... 
+// ............... ( var = let = const ) 
 // var f = 550;
 function scop3(){
   var f = 660;
@@ -256,3 +258,4 @@ function scop3(){
   }
 }
 scop3();
+// ( _____ block scop_____ )
