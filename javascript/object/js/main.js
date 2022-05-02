@@ -1,4 +1,4 @@
-// ******************************************* object property
+// ************************************ object property(age: "36")
 const object_name = {
   firstname: "mahsa",
   lastname: "moradi",
@@ -23,4 +23,12 @@ const object_name2 = {
     favorites: ["painting", "music"]
   };
   console.log(object_name2['age']);
-// ******************************************* object method
+// ************************************** object method
+const object_method = {
+    firstname :'mehrdad',
+    lastname :'moradi',
+    codeing : function(){
+return 'mahsa is coding ... ';
+    }
+}
+console.log(object_method.codeing());
