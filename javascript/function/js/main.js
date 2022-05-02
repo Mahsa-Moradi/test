@@ -230,3 +230,4 @@ firstfunction(secoundfunction);
 function secoundfunction(){
     console.log('khobi ?');
 }
+// ..................... ********* scope function 
