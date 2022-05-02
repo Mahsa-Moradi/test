@@ -49,3 +49,13 @@ return 'Hello sara ... '
 }
 console.log(sara);
 console.log(sara.grates.geometry);
+// ************************************** object empty
+const rose = {};
+rose.firstname = 'rose';
+console.log(rose);
+// ************************************** object reference
+let array1 = [1,5,70];
+let array2 = array1;
+array2[3] = 55;
+array2[4] = 10;
+console.log(array2);
