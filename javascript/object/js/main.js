@@ -37,25 +37,25 @@ const sara = {
   firstname: "sara",
   lastname: "loren",
   age: "29",
-  codeing : function(){
-return 'Hello sara ... '
+  codeing: function () {
+    return "Hello sara ... ";
   },
   grates: {
     Math: 20,
     arabic: 18,
     sport: 20,
     geometry: 16,
-  }
-}
+  },
+};
 console.log(sara);
 console.log(sara.grates.geometry);
 // ************************************ object empty
 const rose = {};
-rose.firstname = 'rose';
+rose.firstname = "rose";
 console.log(rose);
 // ************************************** object reference
 // addres 'array1'  "copy"  misheh dar  'array2' ===> ([ !*! ])
-let array1 = [1,5,70];
+let array1 = [1, 5, 70];
 let array2 = array1;
 array2[3] = 55;
 array2[4] = 10;
@@ -63,25 +63,40 @@ console.log(array2);
 // ************************************ object clone
 
 const jozef = {
-    firstname: 'jozef',
-    lastname: 'jozef-mari',
-    age: 92
+  firstname: "jozef",
+  lastname: "jozef-mari",
+  age: 92,
 };
 const mari = jozef;
 mari.ismarried = false;
 console.log(mari);
-// ........................... 
+// ...........................
 // addres 'jozef1'  !=  addres 'mari1' (joda ast) ===> ([ !*! ])
 
 const jozef1 = {
-    firstname: 'jozef1',
-    lastname: 'jozef-mari1',
-    age: 92
+  firstname: "jozef1",
+  lastname: "jozef-mari1",
+  age: 92,
 };
-const mari1 = {...jozef1};
+const mari1 = { ...jozef1 };
 mari1.ismarried = true;
 console.log(mari1);
 
 // ************************************** spreade operator
-// ************************************** object shallow(copy) clone(kkan omgh) 
-// vs deep clone
+// ************************************** object shallow(copy) clone(kkan omgh) vs deep clone
+
+
+
+// *********************************************** this == names
+// agar  'this'   nazarim  kar nemikoneh
+const names = {
+  firstname: "mahsa",
+  lastname: "moradi",
+  age: "36",
+  favorites: ["painting", "music"],
+  fullname: function () {
+    // return names.firstname + " " + names.lastname; ==
+    return this.firstname + " " + this.lastname;
+  }
+};
+console.log(names.fullname());
