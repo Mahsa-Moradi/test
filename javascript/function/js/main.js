@@ -230,4 +230,10 @@ firstfunction(secoundfunction);
 function secoundfunction(){
     console.log('khobi ?');
 }
-// ..................... ********* scope function 
+// ..................... ********* scope function {}
+// (  var d )   global scop=hameja ghabel shenasaii va dastres ast
+var d = 50;
+function scop(){
+  var dd = 60
+ 
+} console.log(d);
