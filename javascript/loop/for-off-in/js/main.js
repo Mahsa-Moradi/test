@@ -52,7 +52,8 @@ const mimi = {
 
 };
 for(let key in mimi){
-  // console.log(mimi.firstname);
-  // console.log(mimi[key]);
+  console.log('..................');
+  console.log(mimi.firstname);
+  console.log(mimi[key]);
   console.log(key + " ==> " + mimi[key] );
 }
