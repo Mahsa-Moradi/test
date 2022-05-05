@@ -383,7 +383,7 @@ nav.icon-decor {
   background-color: orange;
   position: absolute;
   top: 7px;
-  right: 72px;
+  right: 94px;
 }
 .img-about-us {
   width: 38%;
@@ -710,7 +710,7 @@ nav.icon-decor {
   background-image: url(../img/transparent-1655599_1920.png);
   min-height: 500px;
 }
-
+/* ********************************** faq-right-side */
 .faq-section-wrapper .faq-right-side {
   box-shadow: 10px 15px 15px 2px rgb(233, 233, 235);
   /* height: auto; */
@@ -736,7 +736,7 @@ nav.icon-decor {
   color: #ababab;
   margin: 10px 47px 0px 0px;
 }
-/*  faq-left-side(accordion menu)*************** */
+/*  ****************** faq-left-side(accordion menu) */
 .faq-section-wrapper .faq-left-side {
   margin-top: 26px;
 }
@@ -756,7 +756,7 @@ nav.icon-decor {
   background-color: rgb(255, 169, 8);
   width: 100%;
   cursor: pointer;
-  display: block; /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+  display: block; 
   font-size: 18px;
   transition: 0.5s ease;
 }
