@@ -109,8 +109,8 @@ ol {
 .transform span{
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  /* align-items: center; */
+  /* text-align: center; */
   /* margin: 20px 50px; */
   /* padding: 30px 22px; */
   color: blanchedalmond;
@@ -140,7 +140,7 @@ ol {
   color: black;
   background-color: rgb(77, 117, 51);
   transform:rotate(-5deg);
-  transform-origin: 10% 50%;
+  transform-origin: 100% 500%;
 }
 /* *prespective* */
 .prespective{
@@ -151,7 +151,7 @@ ol {
   background-color: rgb(248, 158, 158);
   /**position: relative;**/
   /* "position: relative" kar nemikoneh chon "perspective" roye onsere daruni kar mikoneh  */
-  perspective: 200px;
+  perspective: 400px;
 }
 .test{
   position: absolute;
@@ -164,26 +164,27 @@ ol {
 }
 /* * backface-visibility: visible* */
 .test1{
- backface-visibility: visible;
+ backface-visibility:visible;
 }
 .test2{
   backface-visibility:visible;
-  transition: 5s ease; 
+  transition: 1s ease; 
 
  }
  .test2:hover{
   backface-visibility:hidden;
  }
 .test1 ,.test2{
-  margin: 80px;
+  margin: 180px;
   width: 180px;
   height: 190px;
   color: rgb(255, 255, 255);
   background-color: rgb(44, 107, 109);
   transform: rotateY(180deg);
-  /* transition: 5s ease;  */
+  transition: 5s ease; 
 }
-/* <!-- *transition* --> */
+
+/* <!-- ********************** transition **************** --> */
 a[class*="link"]{
 
   background-color: rgb(197, 143, 61);
@@ -192,7 +193,7 @@ a[class*="link"]{
   color: black;
   /* transition-property:   background-color; */
   transition-property: background-color,padding;
-  /*transition-property:all; */
+  /* transition-property:all; */
   transition-duration: 1s;
   /* transition-delay: 5s; */
 }
@@ -243,17 +244,17 @@ a[class*="link"]:hover{
   /* animation-fill-mode:backwards ; */
 animation-play-state:running ;
 animation-direction: alternate;
-animation-timing-function: ease-in-out;
-animation-delay: 2s;
+/* animation-timing-function: ease-in-out; */
+animation-delay: 1s;
 
-  /* transition: anime 1s ease; */
+  transition: anime 2s ease;
 }
 @keyframes changcolor{
   from{background-color:rgb(255, 24, 139);
     width: 180px;
   }
   to{
-    background-color: rgb(0, 162, 255);
+    background-color: rgb(44, 204, 218);
     width: 300px;
   }
   /* 0%{}
@@ -346,11 +347,11 @@ overflow: hidden;
 }
 .title-row{
   color: white;
-  float: left;
+  float:right;
   padding: 10px;
 }
 .anim-row{
-  width: 20%;
+  width: 80%;
   height: 100%;
   background-color: red;
   background-image: linear-gradient(to right,
@@ -358,7 +359,7 @@ overflow: hidden;
   rgb(255, 238, 0) 50%,
   rgb(0, 0, 0) 75%);
  -webkit-animation:anim-row1 1s linear 0s alternate infinite ;
-  animation:anim-row1 3s linear 0s  alternate infinite ;
+  animation:anim-row1 3s  0s  alternate infinite ;
 }
 @-webkit-keyframes anim-row1{
   from{
@@ -370,7 +371,7 @@ margin-left: 100%;
 }
 @keyframes anim-row1 {
   from{
-margin-left: -20%;
+margin-left: -55%;
   }
   to{
 margin-left: 100%;

@@ -3,29 +3,30 @@
 // })
 
 $(function () {
-  $("div.test").show();
+  $("div.test1").show();
 });
-
+// ........................
 $(function () {
   $(".m span").hide();
 });
-
+// ........................
 $(document).ready(function () {
   // $(".click").dblclick(function(){
   // $(".click").mouseleave(function(){
   // $(".click").mouseenter(function(){
-  // $(".click").mousedown(function(){
-  $(".click").mouseup(function () {
+  $(".click").mousedown(function(){
+  // $(".click").mouseup(function () {
     $(".click").hide();
   });
 });
-
+// ...........................
 $(document).ready(function () {
-  $(".m").on("click", function () {
+  $(".m1").on("click", function () {
     $("div").hide();
+    // $("div").remove();
   });
 });
-
+// ........................
 $(document).ready(function () {
   $("p.click1").on({
     click: function () {
@@ -39,38 +40,39 @@ $(document).ready(function () {
     // }
   });
 });
-
+// efect     ********************
 $(document).ready(function () {
-  //   $(".c1").click(function () {
-  //     $(".test1").fadeOut("60s");
-  //   });
-  $(".c1").hover(function () {
-    $(".test1").slideUp("60s");
-  });
+    $(".c1").click(function () {
+      $(".test1").fadeOut("60s");
+    });
+  // $(".c1").hover(function () {
+  //   $(".test1").slideUp("6s");
+  // });
   //   *****************************
-  //   $(".c2").click(function () {
-  //     $(".test1").fadeIn("slow");
-  //   });
+    // $(".c2").click(function () {
+    //   $(".test1").fadeIn("slow");
+    // });
   $(".c2").hover(function () {
     $(".test1").slideDown("60s");
   });
   // *****************************
 
-  //   $(".c3").click(function () {
-  //     $(".test1").fadeToggle("80s");
-  //   });
+    // $(".c3").click(function () {
+    //   $(".test1").fadeToggle("80s");
+    // });
   $(".c3").click(function () {
-    $(".test1").slideToggle("80s");
+    $(".test1").slideToggle('80s');
   });
   //   ********************************
   $(".c4").click(function () {
-    $(".test1").fadeTo("slow", 0.7);
+    $(".test1").fadeTo("slow", 0.117);
   });
 });
 // Animation*********************
 $(document).ready(function () {
   $(".b1").click(function () {
-    $(".testb1").animate({
+    $(".testb1").animate(
+      {
         width: "+=150px", // arze ghabli + 150
         // width:"150px",
         // width:"toggle",
@@ -81,18 +83,19 @@ $(document).ready(function () {
         opacity: "0.5",
         borderRadius: "80px",
       },
-      5000
-    ); // zaman ejra
+      5000// zaman ejra
+    ); 
   });
 });
 // *********************
 $(document).ready(function () {
   $(".d1").click(function () {
     var x = $(".testd1");
-    x.animate({
+    // x.animate({
       //   width:'200px',height:'100px'
-      //   ham zaman width va height etefagh miofte
-    });
+      
+      //  ( ham zaman width va height etefagh miofte  )
+    // });
     x.animate(
       {
         width: "200px",
@@ -113,27 +116,35 @@ $(document).ready(function () {
 //   get_set    ******************************
 $(document).ready(function () {
   $("span.g1").click(function () {
-    // alert("mytext is :" + $(".getg1").text()); // neshan dadan matn
-    // alert("mytext is :" + $(".getg1").html());// neshan dadan "tag haye html"
-    //   alert("value is :"+$(".inputg1").val());
-    //   console.log("value is :"+$(".inputg1").val());
-    // console.log("attribute is :" + $(".inputg1").attr('type'));
+    // ________
+    // neshan dadan matn
+    alert("mytext is :" + $(".getg1").text());
+    // ________ 
+// neshan dadan "tag haye html"
+    alert("mytext is :" + $(".getg1").html());
+    // ________
+      alert("value is :"+$(".inputg1").val());
+      // ________
+      console.log("value is :" + $(".inputg1").val());
+      // ________
+    console.log("attribute is :" + $(".inputg1").attr('type'));
   });
 });
 //   ****************
 $(document).ready(function () {
   $("span.g2").click(function () {
-    //   $(".getg2").text('goodbye');
-    // $(".getg2").html('<i>goodbye</i>');
-    // $(".getg2").html('<b>goodbye</b> test');
-    // $(".inputg2").val('SARA');
-    // $(".inputg2").attr('type','password');
+      $(".getg2").text('goodbye');
+    $(".getg2").html('<i>goodbye</i>');
+    $(".getg2").html('<b>goodbye</b> test');
+    $(".inputg2").val('SARA');
+    $(".inputg2").attr('type','password');
     $(".inputg2").attr({
       type: "password",
       class: "inputsg2",
     });
   });
 });
+// ...........................
 // add(append,prepend,after,befor)*****
 $(document).ready(function () {
   $(".add-remove").click(function () {
@@ -185,6 +196,7 @@ $(document).ready(function () {
       "font-size": "25px",
       "background-color": "yellow",
     });
+    
   });
 });
 // *************************
@@ -219,52 +231,53 @@ $(document).ready(function () {
 // ******entekhab KODAM valed
 $(document).ready(function () {
   $("span.kinderens").parents("ul").css({
-    color: "GREEN",
-    border: "7px solid black",
+    color: "orang",
+    border: "7px solid #efefef ",
   });
 });
-// $(document).ready(function(){
-//     $('span.kinderens').parents('ul').fadeOut();
+$(document).ready(function(){
+    $('span.kinderens').parents('ul').fadeOut();
 // });// mahv mishavad
 // descendants******************
-// $(document).ready(function(){
-// $('li').children('.h1').css({
-// "color": "orange"
-// });
-// });
+$(document).ready(function(){
+$('li').children('.h1').css({
+color: "red"
+});
+});
 $(document).ready(function () {
   $("ul").find(".h1").css({
-    color: "orange",
+    color: "red"
   });
 });
-// *******
+// ******* siblings
+
 $(document).ready(function () {
-  // $('h3').siblings().css({
-  // 'color' : 'red'
+  // $('.h3').siblings().css({
+  // 'color' : 'rgb(225, 96, 15)'
   // });
   // $('p.h2').siblings().css({
   //     'color' : 'red'
   //     });
   // $('p.h2').siblings('div.h3').css({
-  //     'color' : 'red'
+  //     'color' : 'rgb(10, 214, 41)'
   //     });
-  // $('h3').next().css({
-  //     'color' : 'red'
+  // $('.h3').next().css({
+  //     'color' : 'rgb(225, 204, 15)'
   //     });
   // $('p').next('div').css({
-  //     'color' : 'red'
+  //     'color' : 'rgb(134, 225, 15)'
   //     });
   // $('p').nextAll().css({
-  //     'color' : 'red'
+  //     'color' : 'rgb(10, 214, 183)'
   //     });
-  // $('a').nextAll('h3 , div').css({
-  //     'color' : 'red'
-  //     });
+  $('a').nextAll('h3 , div').css({
+      'color' : 'rgb(10, 78, 214)'
+      });
   // $('a').prevAll().css({
-  //     'color' : 'red'
+  //     'color' : 'rgb(177, 10, 214)'
   //     });
   //   $("a").prevAll('p').css({
-  //     color: "red",
+  //     'color': "rgb(239, 12, 141)",
   //   });
 });
 
@@ -290,32 +303,15 @@ $(document).ready(function () {
 // });
 //     });
 
-$(document).ready(function() {
-    // $('div.h5').eq(2).css({
-    //     color:'red'
-    // });
-    // $('div').filter('div.h6').find('p.h8').css({
-    //     color:'red'
-    // });
-    $('div').not('div.h6').find('p.h9 ').css({
-        color:'red'
-    });
-        });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // $(document).ready(function(){
-
-    // }); 
+$(document).ready(function () {
+  // $('div.h5').eq(2).css({
+  //     color:'rgb(3, 100, 228)'
+  // });
+  $('div').filter('div.h6').find('p.h8').css({
+      color:'red'
+  });
+  // $("div").not("div.h6").find("p.h9 ").css({
+  //   color: "green",
+  // });
+});
+});
