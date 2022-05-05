@@ -1,174 +1,200 @@
-
-<head>
-.body{
+.body {
   border: 1px solid rgba(255, 255, 255, 0.596);
   width: 70%;
   min-height: auto;
- line-height: 1.5;
+  line-height: 1.5;
   background-color: rgb(255, 255, 255);
   margin-left: auto;
   margin-right: auto;
   padding: 0%;
   box-sizing: border-box;
-  transform: translate(0%,0%);
+  transform: translate(0%, 0%);
 }
 
 /* logo********************************************** */
-.logo img{
+.logo img {
   width: 61px;
   height: 65px;
   position: fixed;
   top: 11px;
-  left:-209px;
+  left: -209px;
 }
 
 /* menu********************************************** */
-nav.nav{
- background-image:linear-gradient(to right,white,rgb(162, 197, 185));
-  position:fixed; 
-   top: 25px; 
+nav.nav {
+  background-image: linear-gradient(to right, white, rgb(162, 197, 185));
+  position: fixed;
+  top: 25px;
   left: 100px;
   right: -287px;
   height: 50px;
   text-align: right;
   font-size: 14px;
 }
-ul.menu li{
- display:inline-block;
- padding: 0px;
- /* margin-left: 5px;
+ul.menu li {
+  display: inline-block;
+  padding: 0px;
+  /* margin-left: 5px;
  position: fixed;
  top:20px; */
-}  
-ul.menu li a{
- margin: 0px 58px 0px 0px;
- text-decoration: none;
+}
+ul.menu li a {
+  margin: 0px 58px 0px 0px;
+  text-decoration: none;
 }
 
-li a{
- color: rgba(247, 133, 57, 0.788);
+li a {
+  color: rgba(247, 133, 57, 0.788);
 }
-.menu li a:hover{
- color: rgb(243, 140, 56);
- text-decoration: underline;
+.menu li a:hover {
+  color: rgb(243, 140, 56);
+  text-decoration: underline;
 }
-.menu li a:active{
- background-color:rgb(140, 194, 176);
+.menu li a:active {
+  background-color: rgb(140, 194, 176);
 }
-.menu li a:visited{
-background-color: rgb(129, 143, 138);
+.menu li a:visited {
+  background-color: rgb(129, 143, 138);
 }
 
 /* sub menu********************************************** */
-.has_sub_menu1 ul{
-position: relative;
+.has_sub_menu1 ul {
+  position: relative;
 }
-.sub_menu1 li{
-display: block;
-position: absolute;
-}
-
-.sub_menu2 li{
- display: block;
- position: absolute;
-
+.sub_menu1 li {
+  display: block;
+  position: absolute;
 }
 
-.sub_menu3 li{
- display: block;
- position: absolute;
-} 
-
-.search input{
-width: 200px;
-height: 44px;
- color: rgb(0, 0, 0);
- font-size: 15px;
- position: fixed;
- top: 25px;
- left: -110px;
- border-color: hsla(180, 21%, 78%, 0.035);
- border-right-color: rgba(240, 255, 240, 0.007);
- border-left-color: rgba(255, 255, 255, 0.007);
+.sub_menu2 li {
+  display: block;
+  position: absolute;
 }
+
+.sub_menu3 li {
+  display: block;
+  position: absolute;
+}
+
+.search input {
+  width: 200px;
+  height: 44px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  position: fixed;
+  top: 25px;
+  left: -110px;
+  border-color: hsla(180, 21%, 78%, 0.035);
+  border-right-color: rgba(240, 255, 240, 0.007);
+  border-left-color: rgba(255, 255, 255, 0.007);
+}
+
+/* search******************************************* */
+section.box {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  border: 4px solid rgb(239, 239, 239);
+  box-shadow: 1px 2px 5px #efefef;
+  padding: 70px 60px;
+  margin: 200px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  margin: -20px;
+}
+form h3{
+  font-size: 20px;
+  color: rgb(138, 138, 138);
+  text-shadow: 1px 2px 2px #d7d7d7;
+}
+form label{
+  font-size: 16px;
+  color: rgb(45, 44, 44);
+  padding: 8px 25px;
+}
+form label input{
+  font-size: 18px;
+  margin:0 20px;
+  color: rgb(246, 195, 12);
+  padding: 5px 10px;
+  /* outline: #e90303;
+  outline-color: aqua; */
+  /* outline-offset: 10px; */
+  /* outline-style: dotted; */
+  /* outline-width: 50px; */
+  outline: none;
+  line-break: loose;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #d7d7d7;
+  /* box-shadow: 1px .5px 2px; */
+  
+}
+form label input:hover{
+ outline-color: rgb(235, 71, 0);
  
- /* search******************************************* */
- section.box{
-     width: 500px;
-     height: 400px;
-     border: 4px solid red;
-     padding:70px 60px;
-     margin: 100px;
+}
+form label input:focus{
+  outline-color: rgb(235, 71, 0);
+  
  }
- /* .search input:active{
-   border-color: rgb(253, 253, 253); 
-    border-collapse: collapse;
-   }
-   
-   input[type= text],[type= submit]select{
-display: inline-block;
-border:10px solid black;
-width: 100%;
-height: 200px;
-padding: 12px 20px;
-margin: 10px 0px; */
+form label input::placeholder {
+  color: rgb(195, 195, 195);
+  font-size: 12px;
+}
+form label .mail{
+  margin:0 60px;
+}
+
+form label .submit{
+  margin:0 45px;
+}
+form label .m{
+  margin:0 50px; 
+}
+
+form label select option{
+  padding: 10px;
+}
 
 
-/* position: fixed;
-top: 100px; 
-   }*/
-   
-   /* form.form {
-border:10px solid black;
-width: 100px;
-height: 200px;
-position: fixed;
-top: 100px;
 
-   } */
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   /* footer********************************************** */
-</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search input:active {
+  border-color: rgb(253, 253, 253);
+  border-collapse: collapse;
+}
+
+input[type="text"],
+[type="submit"]select {
+  display: inline-block;
+  border: 10px solid black;
+  width: 100%;
+  height: 200px;
+  padding: 12px 20px;
+  margin: 10px 0px;
+  position: fixed;
+  top: 100px;
+}
+
+/* form********************************************** */
