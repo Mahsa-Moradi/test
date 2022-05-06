@@ -78,16 +78,48 @@ body {
     /* bottom: -99%; */
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: rgba(0, 102, 255, 0.2);
     padding: 20px;
     transition: all .5s ease ;
 
 }
-.wrapper .overflow ul li{
-
-    
+.wrapper .overflow ul {
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    flex-direction: column;
+width: 100%;
+/* text-align: center; */
+margin-top: 335px;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 18px;
 }
 .wrapper .overflow ul li{
+    margin: 10px 0;
+    /* padding: 0; */
 
-
+}
+.wrapper .overflow ul li a{
+    color: white;
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+    text-shadow: 1px 2px 2px rgb(95, 95, 95);
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+.wrapper .overflow ul li a:hover::after{
+    animation: border-anim .5s ease;
+    transform: translateX(0px);
+}
+.wrapper .overflow ul li a::after{
+    content:'';
+    display: block;
+    left: 0;
+    bottom: -10px;
+    height: 5px;
+    background-color: black;
+    border-radius: 2px;
+    transform: translateX(-101%);
 }
