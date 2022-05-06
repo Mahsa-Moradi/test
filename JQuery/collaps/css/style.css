@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* width: 1200px; */
 }
 .collapse-panel {
   border: 1px solid black;
@@ -19,12 +20,14 @@
 }
 .collpse-heading {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: rgb(235, 215, 253);
 }
 .collpse-heading p {
   display: block;
   font-size: 20px;
+  overflow: hidden;
+  width: 100%;
 }
 .collpse-heading p,
 span {
@@ -48,10 +51,11 @@ span {
   top: 20px;
   right: 10px;
   /* display: none; */
+  transition: all 1s linear;
 }
 .open {
   transform: rotate(180deg);
-  display: block;
+  /* display: block; */
 }
 .collapse-body {
   padding: 10px 20px;
@@ -59,4 +63,6 @@ span {
   word-spacing: 2px;
   font-size: 16px;
   color: rgb(61, 61, 61);
+  display: none;
+  
 }
