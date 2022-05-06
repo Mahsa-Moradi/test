@@ -1,0 +1,49 @@
+.container {
+  height: auto;
+  max-width: 1200px;
+}
+.title {
+  text-align: center;
+}
+.collapse-menu {
+  display: flex;
+  justify-content: center;
+}
+.collapse-panel {
+  border: 1px solid black;
+  height: auto;
+}
+.collpse-heading {
+    position: relative;
+  overflow: hidden;
+  background-color: rgb(235, 215, 253);
+}
+.collpse-heading p {
+  display: block;
+}
+.collpse-heading p,
+span {
+  font-size: 20px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+/* .collpse-heading span::after {
+  content: "";
+  font-size: 50px;
+  color: black;
+  border-top: 102px solid black;
+  border-right: 102px solid black;
+  border-top: none;
+  border-top: none;
+} */
+.collpse-heading span{
+position:absolute ;
+top: 20px;
+right: 10px;
+}
+.open{
+    transform: rotate(180deg);
+    display: none;
+}
