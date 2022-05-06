@@ -3,7 +3,7 @@
   max-width: 1200px;
 }
 .title {
-    font-size: 30px;
+  font-size: 30px;
   text-align: center;
   margin-bottom: 120px;
 }
@@ -18,17 +18,17 @@
   height: auto;
 }
 .collpse-heading {
-    position: relative;
+  position: relative;
   overflow: hidden;
   background-color: rgb(235, 215, 253);
 }
 .collpse-heading p {
   display: block;
+  font-size: 20px;
 }
 .collpse-heading p,
 span {
-  font-size: 20px;
-  padding: 0 20px;
+  padding: 0px 20px;
   display: flex;
   align-items: center;
   /* justify-content: center; */
@@ -42,12 +42,21 @@ span {
   border-top: none;
   border-top: none;
 } */
-.collpse-heading span{
-position:absolute ;
-top: 20px;
-right: 10px;
+.collpse-heading span {
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  /* display: none; */
 }
-.open{
-    transform: rotate(180deg);
-    display: none;
+.open {
+  transform: rotate(180deg);
+  display: block;
+}
+.collapse-body {
+  padding: 10px 20px;
+  line-height: 28px;
+  word-spacing: 2px;
+  font-size: 16px;
+  color: rgb(61, 61, 61);
 }
