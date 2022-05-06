@@ -23,12 +23,13 @@
   border-bottom: 2px solid rgb(202, 163, 199);
   padding-bottom: 0px;
 }
-.collpse-heading p {
-  /* display: block; */
+.collapse-triggre {
+  display: block;
   font-size: 20px;
   overflow: hidden;
   padding: 0px 20px;
-  /* width: 100%; */
+  width: 100%;
+
 }
 /* .collpse-heading span::after {
   content: "";
@@ -39,13 +40,15 @@
   border-top: none;
   border-top: none;
 } */
-.collpse-heading span {
+.collapse-controls {
   font-size: 20px;
   position: absolute;
   top: 3px;
   right: 25px;
-  /* display: none; */
   transition: all .1s linear;
+}
+.collapse-controls i{
+    color: rgb(0, 0, 0);
 }
 .open {
   transform: rotate(180deg);
@@ -61,6 +64,6 @@
 
 }
 .collapse-body{
-  
+  display: block;
 /* display: none; */
 }
