@@ -64,6 +64,6 @@
 
 }
 .collapse-body{
-  display: block;
-/* display: none; */
+  /* display: block; */
+display: none;
 }
