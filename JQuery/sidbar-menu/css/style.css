@@ -50,11 +50,11 @@ body {
 .wrapper span.menu::after {
   content: "";
   position: absolute;
-  display: block;
   left: 0;
-  background-color: #fadff6;
-  width: 20px;
-  height: 2px;
+  display: block;
+  background-color: rgb(255, 0, 200);
+  height: 4px;
+  width: 35px;
   /* color: black; */
 }
 .wrapper span.menu::before {
@@ -63,3 +63,12 @@ body {
 .wrapper span.menu::after {
   bottom: -8px;
 }
+.wrapper .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .title h1{
+    color: rgb(255, 255, 255);
+}
+.wrapper 
