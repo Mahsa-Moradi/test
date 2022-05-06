@@ -9,6 +9,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!-- .......... script -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+    
     <title>Sidebar-menu</title>
   </head>
   <body>
@@ -18,11 +25,11 @@
       <span class="menu"></span>
       <!-- ....... title ....... -->
       <div class="title">
-          <h1>Click the buttom</h1>
+          <h1 class="click">Click the buttom</h1>
           </div>
 
       <!-- ....... overflow ....... -->
-      <div class="overflow">
+      <div class="overflow ">
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">Cours</a></li>
@@ -35,10 +42,18 @@
 
     <!-- ............................ script-->
     <script src="./js/main.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
+<!-- __________________________ -->
+<script>
+
+$(document).ready(function(){
+   $('.menu').click(function(){
+     $('.overflow').addClass('.anime') ; 
+   }) 
+})
+ 
+</script>
+
+
+
   </body>
 </html>
