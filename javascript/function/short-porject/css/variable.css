@@ -1,0 +1,27 @@
+body {
+  background-color: #541690;
+}
+.container{
+    background-color: #FF4949;
+    padding: 25px;
+    font-size: 22px;
+    margin: 50px 7%;
+    border-top:5px solid #FF8D29;
+    position: relative;
+}
+#quote{
+    text-align: center;
+    padding: 0 20px;
+    line-height: 45px;
+
+}
+.new-quote{
+    background-color: #FF8D29 ;
+    padding: 0 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #541690;
+    position: absolute;
+    top: 260px;
+
+}
