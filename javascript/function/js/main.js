@@ -278,3 +278,13 @@ function scop5(){
 }
   // console.log(h);    error
 scop5();
+
+//++++++++++++++++++++++++++
+biki (1,5)
+function biki(from , to){
+for(let i=from ; i<=to ; i++){
+ 
+  console.log(i)
+}
+}
+biki();
