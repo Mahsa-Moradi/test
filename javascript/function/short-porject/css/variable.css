@@ -9,6 +9,11 @@ body {
     border-top:5px solid #FF8D29;
     position: relative;
 }
+.container i{
+    padding: 0 35px;
+    font-size: 22px;
+   color: black; 
+}
 #quote{
     text-align: center;
     padding: 0 20px;
