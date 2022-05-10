@@ -26,7 +26,7 @@ body {
     cursor: pointer;
     border-radius: 3px;
     box-shadow: 1px 1px 3px #541690;
-    position: absolute;
-    top: 260px;
+    /* position: absolute;
+    top: 260px; */
 
 }
