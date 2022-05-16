@@ -1,104 +1,157 @@
 @font-face {
-    font-family: vazir-Medium;
-    src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
-      url(#{$font-path}/Vazir-Medium.woff2) format("woff2"),
-      url(#{$font-path}/Vazir-Medium.woff) format("woff");
-    font-weight: 700;
-    font-style: normal;
-  }
-  * {
-    /* font-family: $font-family; */
-    direction: rtl;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    /* font-family: $font-family; */
-  }
-  ul,
-  ol,
-  li {
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-  }
-   /* ............. public style */
+  font-family: vazir-Medium;
+  src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
+    url(#{$font-path}/Vazir-Medium.woff2) format("woff2"),
+    url(#{$font-path}/Vazir-Medium.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  /* font-family: $font-family; */
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+    font-family: $font-family;
+  } */
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* ............. public style */
+.container-fluid {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
 .container {
-    max-width: 1170px;
-    margin: auto;
-    position: relative;
-  }
-  .row {
-    /* // @include flex(flex,flex-start,end); */
-    /* @include flex(flex, center, null); */
-    width: 100%;
-  }
-  .img-fluid {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .mt-250 {
-    margin-top: 250px;
-  }
-  /* // .direction-ltr {
-  //   direction: ltr;
-  // } */
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
+}
+.row {
+  /* // @include flex(flex,flex-start,end); */
+  /* @include flex(flex, center, null); */
+  width: 100%;
+}
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.mt-250 {
+  margin-top: 250px;
+}
+.mt-100 {
+  margin-top: 100px;
+}
 /* .................................... nav  */
-#nav{
-   display: flex; 
+#nav {
+  display: flex;
 }
 /* ............ nav-language */
-.nav-language{
-    display: flex;
-    flex-direction: row;
-    flex-basis: 10%;
+.nav-language {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 10%;
 }
 .nav-language ul {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
 }
-.nav-language ul li{
-    padding-left: 10px;
-    margin-top: 40px;
-    font-size: 18px;
-    font-weight: 600;
+.nav-language ul li {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
 }
-.nav-language ul li a{
-    color: rgb(84, 84, 84);
+.nav-language ul li a {
+  color: rgb(84, 84, 84);
 }
-.nav-language ul li a:hover{
-    color: rgb(97, 125, 249);
+.nav-language ul li a:hover {
+  color: rgb(97, 125, 249);
+}
+.nav-language ul li a:focus {
+  color: rgb(172, 186, 250);
 }
 /* ............. nav-menu */
-.nav-menu{
-    display: flex;
-    flex-basis: 50%;
-}
-.nav-menu ul{
+.nav-menu {
   display: flex;
-  flex-direction: row;  
-  margin: 40px;
+  flex-basis: 70%;
+  justify-content: space-around;
+  /* align-items: center;  */
+}
+.nav-menu ul {
+  display: flex;
+  flex-direction: row;
+}
+.nav-menu ul li {
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav-menu ul li a {
+  color: rgb(84, 84, 84);
+}
+.nav-menu ul li a:hover {
+  color: rgb(97, 125, 249);
+  transform: scale(5);
+}
+.nav-menu ul li a:focus {
+  color: rgb(172, 186, 250);
+}
+/* ............. nav-menu */
+.nav-icon {
+  display: flex;
+  flex-basis: 20%;
+  justify-content: end;
+  position: relative;
+}
+.nav-icon i {
+  font-size: 50px;
+  position: absolute;
+  top: -10px;
+}
+.nav-icon i:hover {
+  transform: rotate(20deg);
+  /* transition: 1s transform ease; */
+  animation: icon-nav 1s ease;
+}
+@keyframes icon-nav {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* .............................................. header */
+.bg-header {
+  background-color: #f4f3f1;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 300px;
+}
+.header-right {
+  display: flex;
+  flex-basis: 50%;
+}
+.header-left {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: end;
+  padding-top: 50px;
 
 }
-.nav-menu ul li{  
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 600;
-  
-  }
-  .nav-menu ul li a{
-    color: rgb(84, 84, 84); 
-  }
-  .nav-menu ul li a:hover{
-    color: rgb(97, 125, 249);
-    /* font-size: 19px ; */
-    transform: skew(5.5)
-    /* transition: ; */
-}
-.nav-menu ul li a:focus{
-    color: rgb(172, 186, 250);
+.header-left h1{
+    font-size: 60px;
 }
