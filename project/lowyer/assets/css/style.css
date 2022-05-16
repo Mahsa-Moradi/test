@@ -51,6 +51,9 @@ a {
 .mt-100 {
   margin-top: 100px;
 }
+.mt-50 {
+    margin-top: 50px;
+  }
 /* .................................... nav  */
 #nav {
   display: flex;
@@ -139,19 +142,39 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 300px;
+  height: 500px;
 }
+/* ..........  header-right */
 .header-right {
   display: flex;
   flex-basis: 50%;
 }
+/* ..........  header-left */
 .header-left {
   display: flex;
   flex-basis: 50%;
-  justify-content: end;
+  align-items: flex-end;
+  justify-content:start;
   padding-top: 50px;
+  flex-direction: column;
+  text-align: end;
 
 }
 .header-left h1{
     font-size: 60px;
+    color: rgb(31, 31, 31);
+
+}
+.header-left h3{
+    font-size: 20px;
+    padding-top: 20px;
+    color: rgb(117, 115, 115);
+    line-height: 35px;
+}
+.header-button{
+    margin-top: 40px;
+  padding: 15px; 
+  background-color: #0DABD4; 
+  font-size: 16px;
+  border: none;
 }
