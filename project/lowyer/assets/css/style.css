@@ -1,1 +1,104 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+    font-family: vazir-Medium;
+    src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
+      url(#{$font-path}/Vazir-Medium.woff2) format("woff2"),
+      url(#{$font-path}/Vazir-Medium.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+  * {
+    /* font-family: $font-family; */
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* font-family: $font-family; */
+  }
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+   /* ............. public style */
+.container {
+    max-width: 1170px;
+    margin: auto;
+    position: relative;
+  }
+  .row {
+    /* // @include flex(flex,flex-start,end); */
+    /* @include flex(flex, center, null); */
+    width: 100%;
+  }
+  .img-fluid {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .mt-250 {
+    margin-top: 250px;
+  }
+  /* // .direction-ltr {
+  //   direction: ltr;
+  // } */
+/* .................................... nav  */
+#nav{
+   display: flex; 
+}
+/* ............ nav-language */
+.nav-language{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 10%;
+}
+.nav-language ul {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.nav-language ul li{
+    padding-left: 10px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-language ul li a{
+    color: rgb(84, 84, 84);
+}
+.nav-language ul li a:hover{
+    color: rgb(97, 125, 249);
+}
+/* ............. nav-menu */
+.nav-menu{
+    display: flex;
+    flex-basis: 50%;
+}
+.nav-menu ul{
+  display: flex;
+  flex-direction: row;  
+  margin: 40px;
+
+}
+.nav-menu ul li{  
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  
+  }
+  .nav-menu ul li a{
+    color: rgb(84, 84, 84); 
+  }
+  .nav-menu ul li a:hover{
+    color: rgb(97, 125, 249);
+    /* font-size: 19px ; */
+    transform: skew(5.5)
+    /* transition: ; */
+}
+.nav-menu ul li a:focus{
+    color: rgb(172, 186, 250);
+}
