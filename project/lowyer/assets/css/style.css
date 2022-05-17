@@ -210,12 +210,32 @@ text-align: left;
     line-height: 29px;
 }
 /* ............. part-link-icon */
-.part-link-icon i{
-padding-top: 20px ;
+.part-link-icon{
+  display: flex;
+flex-direction: row; 
+justify-content:flex-start;
+padding: 25px 0 ;
 }
-.part-link-icon i a{
-    padding-top: 20px ;
+.part-link-icon i{
+background-color: #0dabd4;
+width: 30px;
+height: 30px;
+margin-right: 10px;
+padding: 8px;
+text-align: center;
+align-self: center;
+border-radius: 50%;
+color: rgb(51, 50, 50);
+
+}
+.part-link-icon a {
+    padding-top: 8px;
+    margin-right: 15px;
+   
     } 
+    .part-link-icon a:hover{
+      color: #0dabd4;   
+    }
 /* ............. part-left */
 .part-left{
     display: flex;
