@@ -149,8 +149,8 @@ a {
   display: flex;
   flex-basis: 50%;
 }
-.header-right img {
-}
+/* .header-right img {
+} */
 /* ..........  header-left */
 .header-left {
   display: flex;
@@ -182,4 +182,17 @@ a {
 
 .header-button a {
   color: #f4f3f1;
+}
+/* .............................................. part */
+/* ............. right */
+.part{
+background-color: aqua;
+}
+.part-right{
+display: flex;
+flex-basis:40% ;
+}
+/* ............. left */
+.part-left{
+
 }
