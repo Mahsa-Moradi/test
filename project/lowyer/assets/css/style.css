@@ -45,6 +45,9 @@ a {
   width: 100%;
   height: auto;
 }
+.mt-550 {
+    margin-top: 550px;
+  }
 .mt-250 {
   margin-top: 250px;
 }
@@ -53,6 +56,9 @@ a {
 }
 .mt-50 {
   margin-top: 50px;
+}
+.mb-200{
+    margin-bottom: 200px;
 }
 /* .................................... nav  */
 #nav {
@@ -254,4 +260,14 @@ color: rgb(51, 50, 50);
     line-height: 25px;   
 
 }
+/* **************************** start Specialities */
+.Specialities{
 
+}
+.tittle-Specialities{
+text-align: center;
+font-size: 50px;
+}
+.body-Specialities{
+
+}
