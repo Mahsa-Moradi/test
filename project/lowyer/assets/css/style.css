@@ -52,8 +52,8 @@ a {
   margin-top: 100px;
 }
 .mt-50 {
-    margin-top: 50px;
-  }
+  margin-top: 50px;
+}
 /* .................................... nav  */
 #nav {
   display: flex;
@@ -109,7 +109,7 @@ a {
 .nav-menu ul li a:focus {
   color: rgb(172, 186, 250);
 }
-/* ............. nav-menu */
+/* ............. nav-icon */
 .nav-icon {
   display: flex;
   flex-basis: 20%;
@@ -119,7 +119,7 @@ a {
 .nav-icon i {
   font-size: 50px;
   position: absolute;
-  top: -10px;
+  top: -15px;
 }
 .nav-icon i:hover {
   transform: rotate(20deg);
@@ -142,39 +142,44 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 500px;
+  height: 550px;
 }
 /* ..........  header-right */
 .header-right {
   display: flex;
   flex-basis: 50%;
 }
+.header-right img {
+}
 /* ..........  header-left */
 .header-left {
   display: flex;
   flex-basis: 50%;
   align-items: flex-end;
-  justify-content:start;
+  justify-content: start;
   padding-top: 50px;
+  padding-right: 50px;
   flex-direction: column;
   text-align: end;
-
 }
-.header-left h1{
-    font-size: 60px;
-    color: rgb(31, 31, 31);
-
+.header-left h1 {
+  font-size: 60px;
+  color: rgb(31, 31, 31);
 }
-.header-left h3{
-    font-size: 20px;
-    padding-top: 20px;
-    color: rgb(117, 115, 115);
-    line-height: 35px;
+.header-left h3 {
+  font-size: 20px;
+  padding-top: 20px;
+  color: rgb(117, 115, 115);
+  line-height: 35px;
 }
-.header-button{
-    margin-top: 40px;
-  padding: 15px; 
-  background-color: #0DABD4; 
+.header-button {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #0dabd4;
   font-size: 16px;
   border: none;
+}
+
+.header-button a {
+  color: #f4f3f1;
 }
