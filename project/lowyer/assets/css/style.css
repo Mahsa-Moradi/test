@@ -8,7 +8,7 @@
 }
 * {
   /* font-family: $font-family; */
-  direction: rtl;
+  direction: ltr;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -68,6 +68,7 @@ a {
   display: flex;
   flex-direction: row;
   margin-right: 20px;
+  
 }
 .nav-language ul li {
   padding-left: 10px;
@@ -76,6 +77,7 @@ a {
 }
 .nav-language ul li a {
   color: rgb(84, 84, 84);
+
 }
 .nav-language ul li a:hover {
   color: rgb(97, 125, 249);
@@ -149,8 +151,10 @@ a {
   display: flex;
   flex-basis: 50%;
 }
-/* .header-right img {
-} */
+.header-right img {
+    overflow: hidden;
+    display: block;
+}
 /* ..........  header-left */
 .header-left {
   display: flex;
@@ -184,15 +188,50 @@ a {
   color: #f4f3f1;
 }
 /* .............................................. part */
-/* ............. right */
 .part{
-background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 550px;
+
 }
+/* ................ part-right */
 .part-right{
 display: flex;
 flex-basis:40% ;
+flex-direction: column;
+text-align: left;
 }
-/* ............. left */
+.part-right h2{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.part-right p {
+    line-height: 29px;
+}
+/* ............. part-link-icon */
+.part-link-icon i{
+padding-top: 20px ;
+}
+.part-link-icon i a{
+    padding-top: 20px ;
+    } 
+/* ............. part-left */
 .part-left{
+    display: flex;
+    flex-basis:40% ;
+    flex-direction: column;
+    text-align: left;
+}
+.part-left h2{
+    font-size: 29px;
+    padding-bottom: 15px;
+}
+.part-left  li {
+    list-style:circle;    
+    list-style-position:outside;
+    color: rgb(29, 29, 29);
+    line-height: 25px;   
 
 }
+
