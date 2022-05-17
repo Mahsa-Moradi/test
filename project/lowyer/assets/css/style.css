@@ -263,7 +263,7 @@ color: rgb(51, 50, 50);
 /* **************************** start Specialities */
 .Specialities{
     background-color: #f4f3f1;
-    height: 500px;
+    height: 900px;
 
 }
 .tittle-Specialities{
@@ -276,3 +276,6 @@ font-size: 20px;
 line-height: 30px;
 
 }
+.body-Specialities a{
+    color: #0dabd4;   
+    }
