@@ -13,9 +13,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* body {
-    font-family: $font-family;
-  } */
+
 ul,
 ol,
 li {
@@ -60,6 +58,17 @@ a {
 .mb-200 {
   margin-bottom: 200px;
 }
+/* ************************************* body */
+body {
+    background-image: url(../img/constitution-iran-concept-d-rendering-constitution-iran-concept-d-110157774.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -2;
+    background-position:center;
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+  }
 /* .................................... nav  */
 #nav {
   display: flex;
@@ -69,6 +78,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-basis: 10%;
+  z-index: 1;
 }
 .nav-language ul {
   display: flex;
@@ -94,6 +104,7 @@ a {
   display: flex;
   flex-basis: 70%;
   justify-content: space-around;
+  z-index: 1;
   /* align-items: center;  */
 }
 .nav-menu ul {
@@ -119,8 +130,8 @@ a {
 .nav-icon {
   display: flex;
   flex-basis: 20%;
-  justify-content: end;
   position: relative;
+  z-index: 1;
 }
 .nav-icon i {
   font-size: 50px;
@@ -143,12 +154,14 @@ a {
 /* .............................................. header */
 .bg-header {
   background-color: #f4f3f1;
+  z-index: 1;
 }
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: auto;
+  z-index: 1;
 }
 /* ..........  header-right */
 .header-right {
@@ -198,7 +211,10 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 550px;
+  height: auto;
+  z-index: 1;
+  background-color: white;
+  padding-top: 100px;
 }
 /* ................ part-right */
 .part-right {
@@ -261,6 +277,7 @@ a {
 .Specialities {
   background-color: #f4f3f1;
   height: auto;
+  z-index: 1;
 }
 .tittle-Specialities {
   text-align: center;
@@ -277,6 +294,7 @@ a {
 /* ************** view-all */
 .view-all {
   margin-top: 70px;
+  z-index: 1;
 }
 .view-all ul {
   margin-top: 30px;
@@ -314,4 +332,23 @@ a {
   border: none;
   color: #f4f3f1;
   font-size: 18px;
+}
+/*************************************** section-5 */
+.section-5{
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+
+}
+.section-5 .icon-section-5{
+
+}
+.icon-section-5 i{
+font-size: 52px;
+color: #0dabd4;
+padding-right: 10px;
+}
+.section-5 h2{
+    text-align: center;
 }
