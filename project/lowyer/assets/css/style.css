@@ -60,15 +60,15 @@ a {
 }
 /* ************************************* body */
 body {
-    background-image: url(../img/constitution-iran-concept-d-rendering-constitution-iran-concept-d-110157774.jpg);
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: -2;
-    background-position:center;
-    width: 100%;
-    height: auto;
-    background-attachment: fixed;
-  }
+  background-image: url(../img/constitution-iran-concept-d-rendering-constitution-iran-concept-d-110157774.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -2;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  background-attachment: fixed;
+}
 /* .................................... nav  */
 #nav {
   display: flex;
@@ -321,8 +321,6 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  
-
 }
 .view-all-button button {
   width: 200px;
@@ -334,21 +332,27 @@ body {
   font-size: 18px;
 }
 /*************************************** section-5 */
-.section-5{
-    height: auto;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-
+.section {
+  /* height: auto; */
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+ /* display: block; */
+   /* margin: 100px; */
 }
-.section-5 .icon-section-5{
-
+.section-title {
+     display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+padding-top: 50px;
 }
-.icon-section-5 i{
-font-size: 52px;
-color: #0dabd4;
-padding-right: 10px;
+.section-container i {
+  font-size: 52px;
+  color: #0dabd4;
+  padding-right: 50px;
+  max-width: 100%;
 }
-.section-5 h2{
-    text-align: center;
+.section-container h2 {
+  text-align: center;
+  font-size: 25px;
 }
