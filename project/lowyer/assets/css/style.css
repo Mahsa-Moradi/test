@@ -304,7 +304,7 @@ body {
 }
 .view-all ul {
   display: grid;
-  column-gap: 200px;
+  column-gap: 50px;
   grid-template-columns: auto auto auto auto;
   /* background-color: #2196F3; */
 }
@@ -337,7 +337,7 @@ body {
 /*************************************** section-5 */
 .section {
   /* height: auto; */
-  height: 500px;
+  height: auto;
   background-color: rgb(255, 255, 255);
   /* display: block; */
   /* margin: 100px; */
@@ -372,12 +372,10 @@ body {
   float: left;
   text-align: center;
   width: 29%;
-  min-height: 380px;
+  height: 350px;
   background-color: rgb(204, 204, 204);
   padding: 45px;
   flex-basis: 25%;
-  
-
 }
 .squar-1 i,
 .squar-2 i,
@@ -397,6 +395,7 @@ body {
 .squar-3 h3 {
   text-align: center;
   color: rgb(41, 41, 41);
+  font-size: 18px;
 }
 /* button */
 .section-button {
@@ -416,6 +415,16 @@ body {
   font-size: 18px;
 }
 /* ************************************* top-float */
-.top-float{
-    background-color: #0dabd4;
+.top-float {
+  background-color: #0dabd4;
+  height: 500px;
+}
+.top-float-container h2{
+    text-align: center;
+    padding-top: 45px;
+    color: white;
+
+}
+.carousel-indicators{
+    margin-top: 20px;
 }
