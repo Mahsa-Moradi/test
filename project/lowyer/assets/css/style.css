@@ -443,12 +443,26 @@ body {
   line-height: 55px;
 }
 /* **************************************** float */
-.float{
-    background-color:#043f4e ;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+.footer {
+  /* background-color: #086fab; */
+  background-color: #f4f3f1;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
-.row-float{
-    
+.d{
+    display: grid;
+  /* column-gap: 0px; */
+  grid-template-columns: auto auto auto auto auto; 
+}
+.row-footer {
+  float: left;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 25px;
+}
+.column-1{
+    width: 20%;
+    float: left;
 }
