@@ -327,7 +327,10 @@ body {
   padding: 10px;
   margin: 30px 0;
   background-color: #0dabd4;
+
   border: none;
+}
+.view-all-button button a {
   color: #f4f3f1;
   font-size: 18px;
 }
@@ -361,17 +364,20 @@ body {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 .squar-1,
 .squar-2,
 .squar-3 {
-  /* width: 30px; */
-  height: 300px;
+  float: left;
+  text-align: center;
+  width: 29%;
+  min-height: 380px;
   background-color: rgb(204, 204, 204);
   padding: 45px;
-  flex-basis: 30%;
-  /* margin-left: 80px; */
+  flex-basis: 25%;
+  
+
 }
 .squar-1 i,
 .squar-2 i,
@@ -392,12 +398,20 @@ body {
   text-align: center;
   color: rgb(41, 41, 41);
 }
-.section button{
-    width: 200px;
+/* button */
+.section-button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.section-button button {
+  width: 200px;
   padding: 10px;
   margin: 30px 0;
   background-color: #0dabd4;
   border: none;
+}
+.section-button button a {
   color: #f4f3f1;
   font-size: 18px;
 }
