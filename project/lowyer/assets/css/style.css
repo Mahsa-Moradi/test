@@ -442,3 +442,13 @@ body {
   color: rgb(255, 255, 255);
   line-height: 55px;
 }
+/* **************************************** float */
+.float{
+    background-color:#043f4e ;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.row-float{
+    
+}
