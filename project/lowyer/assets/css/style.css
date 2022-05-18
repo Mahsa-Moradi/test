@@ -425,6 +425,22 @@ body {
     color: white;
 
 }
-.carousel-indicators{
-    margin-top: 20px;
+.carousel-indicators-custom{
+ padding-top: 200px ;
+ bottom: -5rem !important;
+}
+.carousel-inner-custom{
+    /* background-color: #fff; */
+height: 150px;
+padding-top: 50px;
+display: flex;
+justify-content: center;
+}
+.carousel-item-custom {
+
+}
+.carousel-inner-custom h3{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 55px;
 }
