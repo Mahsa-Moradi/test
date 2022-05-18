@@ -419,28 +419,26 @@ body {
   background-color: #0dabd4;
   height: 500px;
 }
-.top-float-container h2{
-    text-align: center;
-    padding-top: 45px;
-    color: white;
-
+.top-float-container h2 {
+  text-align: center;
+  padding-top: 45px;
+  color: white;
 }
-.carousel-indicators-custom{
- padding-top: 200px ;
- bottom: -5rem !important;
+.carousel-indicators-custom {
+  padding-top: 200px;
+  bottom: -5rem !important;
 }
-.carousel-inner-custom{
-    /* background-color: #fff; */
-height: 150px;
-padding-top: 50px;
-display: flex;
-justify-content: center;
+.carousel-inner-custom {
+  /* background-color: #fff; */
+  /* height: 150px; */
+  height: auto;
+  padding-top: 50px;
 }
 .carousel-item-custom {
-
+  text-align: center;
 }
-.carousel-inner-custom h3{
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    line-height: 55px;
+.carousel-inner-custom h3 {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  line-height: 55px;
 }
