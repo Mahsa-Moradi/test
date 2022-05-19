@@ -153,13 +153,40 @@
     }
   }
 /* *************************************** form */
+.line{
+    /* margin-top: 0px; */
+    width: 100%;
+    background-color: #10beeaba;
+    height: 2px;
+    box-shadow: 1px 1px 3px rgb(177, 177, 177);
+}
 .form{
     border-top: 1px solid rgb(218, 218, 218);
     /* border-right: 1px solid rgb(218, 218, 218); */
     box-shadow: 1px 0 5px rgb(190, 190, 191);
-    
+    padding: 40px; 
 }
-
+.form h2{
+    margin-bottom: 40px;
+}
+.form-all{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+/* all */
+.First-Name ,.Last-Family,.Email,.Phone,.Region,.Prefered-language,.Topic,.Message,.submit,.robot{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.First-Name ,.Last-Family,.Email,.Phone,.Region,.Prefered-language,.Topic,.Message,.submit,.robot{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+/* First Name */
 
 
 
