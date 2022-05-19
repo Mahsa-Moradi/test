@@ -450,10 +450,10 @@ body {
   justify-content: space-around;
   flex-direction: row;
 }
-.d{
-    display: grid;
+.d {
+  display: grid;
   /* column-gap: 0px; */
-  grid-template-columns: auto auto auto auto auto; 
+  grid-template-columns: auto auto auto auto auto;
 }
 .row-footer {
   float: left;
@@ -461,8 +461,17 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 25px;
+  position: relative;
+
 }
-.column-1{
-    width: 20%;
-    float: left;
+.column-1 ,.column-4 ,.column-5 {
+  
 }
+.column-1 h4,.column-4 h4,.column-5 h4{
+    position: absolute;
+    top: -20px;
+  }
+.column-1  h4{
+    
+    
+  }
