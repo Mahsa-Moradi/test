@@ -274,6 +274,20 @@ padding: 0px 10px;
     margin-left: 11%;
 }
 /* Message */
+.Message textarea{
+border: 1px solid rgb(215, 215, 215);
+box-shadow: 1px 1px 5px rgb(219, 219, 219);
+padding: 20px;
+}
+.Message textarea::before{
+    display: block;
+    width: 100%;
+    height: 100px;
+    contain: '';
+    background-color: #10beea;
+    
+    
+    }
 
 /* **************************************** footer */
 .footer {
