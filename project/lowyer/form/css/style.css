@@ -181,10 +181,11 @@
     flex-direction: column;
     padding-top: 15px;
 }
-.First-Name ,.Last-Family,.Email,.Phone,.Region,.Prefered-language,.Topic,.Message,.submit,.robot{
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
+.First-Name label,.Last-Family label,.Email label,.Phone label,.Region label,.Prefered-language label,.Topic label,.Message label,.submit label,.robot label{
+    font-size: 16px;
+    color: #0ab2d7;
+    padding-bottom: 5px;
+    font-weight: bold;
 }
 /* First Name */
 
