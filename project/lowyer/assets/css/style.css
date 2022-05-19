@@ -445,7 +445,7 @@ body {
 /* **************************************** float */
 .footer {
   /* background-color: #086fab; */
-  background-color: #f4f3f1;
+  background-color: #167489;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -470,8 +470,21 @@ body {
 .column-1 h4,.column-4 h4,.column-5 h4{
     position: absolute;
     top: -20px;
+    color: #10beea;
   }
 .column-1  h4{
     
     
   }
+  .column-1 a,.column-2 a,.column-3 a,.column-4 a,.column-5 li{
+  color: white;
+}
+.column-1 a:hover,.column-2 a:hover,.column-3 a:hover{
+    color: rgb(116, 189, 245);
+  }
+/* map */
+.column-4 iframe{
+    width:250px;
+    /* max-width: 100%; */
+    height:200px;
+}
