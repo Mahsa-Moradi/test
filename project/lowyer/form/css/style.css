@@ -344,3 +344,20 @@ padding: 20px;
   /* max-width: 100%; */
   height: 140px;
 }
+/* ******************************* robot */
+.robot{
+    width: 30%;
+    height: 10%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.robot input{
+margin:0 20px;
+}
+.robot label {
+
+}
