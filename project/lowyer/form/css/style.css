@@ -68,6 +68,7 @@ body {
   width: 100%;
   height: auto;
   background-attachment: fixed;
+  position: relative;
 }
 /* .................................... nav  */
 #nav {
@@ -166,6 +167,7 @@ body {
   /* box-shadow: 1px 0px 1px rgb(190, 190, 191); */
   padding: 40px;
   border: none;
+  /* position: relative; */
 }
 .form h2 {
   margin-bottom: 40px;
@@ -327,6 +329,24 @@ height: 20px;
       /* margin-left: 20px; */
       margin-top: 5px;
 }
+.robot-massage{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    /* position: absolute; */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    content: "What is your name ?";
+    z-index: 90;
+
+
+}
+.rg{
+    font-size: 80px ;
+    color: violet;
+}
+
 
 /* **************************************** footer */
 .footer {
