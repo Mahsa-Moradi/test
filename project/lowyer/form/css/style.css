@@ -214,8 +214,7 @@ body {
 .Prefered-language label::after,
 .Topic label::after,
 .Message label::after,
-.submit labe::after,
-.robot label::after {
+.submit labe::after {
   content: "*";
   color: red;
   vertical-align: -5px;
@@ -285,9 +284,49 @@ padding: 20px;
     height: 100px;
     contain: '';
     background-color: #10beea;
-    
-    
     }
+    /* ******************************* robot */
+.robot{
+    width: 30%;
+    /* height: 50%; */
+    border: 1px solid rgb(215, 215, 215);
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgb(184, 184, 184);
+
+}
+.input-label{
+    margin: 15px 0;
+}
+.robot input{
+margin:0 20px;
+width: 20px;
+height: 20px;
+/* vertical-align: -20px; */
+}
+.robot label {
+    color: rgb(79, 79, 79) !important;
+}
+.robot input:focus{
+    color: red;
+}
+.robot-button button{
+    width: 10%;
+    height: 30px;
+    padding: 0px 10px;
+      outline: none;
+      color: rgb(43, 43, 43);
+      /* border-radius: 1px 5px 0px 0px; */
+      background-color: #0ab2d7;
+      border-bottom: 1px solid rgb(184, 184, 184);
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      /* margin-left: 20px; */
+      margin-top: 5px;
+}
 
 /* **************************************** footer */
 .footer {
@@ -313,10 +352,10 @@ padding: 20px;
   margin-bottom: 25px;
   position: relative;
 }
-.column-1,
+/* .column-1,
 .column-4,
 .column-5 {
-}
+} */
 .column-1 h4,
 .column-4 h4,
 .column-5 h4 {
@@ -324,8 +363,8 @@ padding: 20px;
   top: -20px;
   color: #10beea;
 }
-.column-1 h4 {
-}
+/* .column-1 h4 {
+} */
 .column-1 a,
 .column-2 a,
 .column-3 a,
@@ -343,21 +382,4 @@ padding: 20px;
   width: 250px;
   /* max-width: 100%; */
   height: 140px;
-}
-/* ******************************* robot */
-.robot{
-    width: 30%;
-    height: 10%;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    /* justify-content: center; */
-    align-items: center;
-}
-.robot input{
-margin:0 20px;
-}
-.robot label {
-
 }
