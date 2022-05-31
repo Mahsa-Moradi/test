@@ -3,11 +3,4 @@
 @import url(../sass/-path.scss);
 @import url(../sass/-resets.scss);
 @import url(../sass/-topic.scss);
-@import url(../sass/-varible.scss);
-@import url(../sass);
-@import url(../sass);
-@import url(../sass);
-p {
-  color: red;
-  font-size: 50px;
-}/*# sourceMappingURL=style1.css.map */
+@import url(../sass/-varible.scss);/*# sourceMappingURL=style1.css.map */
