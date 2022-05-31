@@ -1,0 +1,61 @@
+// menu style  ************
+#hamberger{
+    color: red;
+}
+#nav {
+    .navbar {
+      // background-color: #ccc;
+      font-size: $default-font-size + 2px;
+      height: 60px;
+      @include flex(flex, space-between, null);
+      @include margin-padding(24px, 0, 24px, 0, true);
+      ul {
+        li {
+          display: inline-block;
+          line-height: 60px;
+          @include margin-padding(0, 0, 0, 18px);
+          position: relative;
+          cursor: pointer;
+          &::after {
+            content: "";
+            position: absolute;
+            //   top: 0;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            width: 0px;
+            height: 2px;
+            background-color: rgb(54, 114, 228);
+            transition: width 0.5s ease;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+          a {
+            color: $nav-link;
+            transition: color 0.5s ease;
+            //   &:hover {
+            //     color: rgb(235, 10, 10);
+            &:hover {
+              color: $nav-link-hover;
+            }
+          }
+        }
+      }
+      .social-icons {
+        direction: ltr;
+        @include margin-padding(21px, 0, 0, 0, false);
+  
+        a {
+          color: $social-icons-color;
+          transition: color 1.5 ease;
+          &:hover {
+            color: $social-icons-color-hover;
+          }
+          i {
+            @include margin-padding(0px, 10px, 0px, 10px, false);
+          }
+        }
+      }
+    }
+  }
