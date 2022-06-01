@@ -21,26 +21,90 @@ html,
   color: #fff;
   overflow: hidden;
 }
-.page{
-    position: absolute;
-
+.page {
+  position: absolute;
 }
-#p1{
-    left: 0;
+#p1 {
+  left: 0;
 }
-#p2,#p3{
-left: 200%;
+#p2,
+#p3 {
+  left: 200%;
 }
-#p1{
-    background-color: rgb(115, 0, 153);
+#p1 {
+  background-color: rgb(115, 0, 153);
 }
-#p2{
-    background-color: rgb(244, 227, 1);
+#p2 {
+  background-color: rgb(244, 227, 1);
 }
-#p3{
-    background-color: rgb(134, 0, 144);
+#p3 {
+  background-color: rgb(89, 0, 144);
 }
 /* hadaf = click shode hadaf gozari bokon ye amaliati ro anjam bedeh */
-#t2:target #p2 ,#t3:target #p3 {
-transform: translateX(-190%);
+#t2:target #p2,
+#t3:target #p3 {
+  transform: translateX(-190%);
+}
+#t2:target #p1,
+#t3:target #p1 {
+  background-color: black;
+}
+#t2:target #p1 .icon,
+#t3:target #p1 .icon{
+  filter: blur(3px);
+}
+.icon{
+    color: rgb(3, 0, 0);
+    font-size: 32px;
+    display: block;
+}
+ul .icon:hover{
+opacity: 0.5;
+}
+.page .icon .title{
+    margin-bottom: 20px;
+
+}
+#t2:target ul .icon,#t3:target ul .icon{
+transform: scale(0.6);
+transition-delay:0.25s ;
+}
+ul#menu{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 280px;
+    width: 10%;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+ul#menu .icon{
+    margin: 30px;
+    transition: all .5s ease-in-out!important;
+}
+a{
+    text-decoration: none;
+}
+.title,.hint{
+    display: block;
+}
+.hint{
+    font-size: 23px;
+    line-height: 2;
+}
+.titlt{
+    font-size: 38px;
+}
+.hint a{
+    color: yellow;
+    line-height: 2;
+    transition: all 250ms ease-out;
+}
+.hint a:hover{
+    color: #fff;
 }
