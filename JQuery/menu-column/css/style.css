@@ -31,3 +31,16 @@ html,
 #p2,#p3{
 left: 200%;
 }
+#p1{
+    background-color: rgb(115, 0, 153);
+}
+#p2{
+    background-color: rgb(244, 227, 1);
+}
+#p3{
+    background-color: rgb(134, 0, 144);
+}
+/* hadaf = click shode hadaf gozari bokon ye amaliati ro anjam bedeh */
+#t2:target #p2 ,#t3:target #p3 {
+transform: translateX(-190%);
+}
