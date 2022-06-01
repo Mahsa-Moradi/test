@@ -1,1 +1,9 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"-varible.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../sass/-varible.scss"
+    ],
+    "names": [],
+    "file": "-varible.css"
+}

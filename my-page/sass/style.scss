@@ -6,7 +6,9 @@
 @import url(../sass/-topic.scss);
 @import url(../sass/-header.scss);
 @import url(../assets/css/-n);
-body {
-  background-color: #b17d7d;
+// @import url(../sass/);
+// @import url(../sass);
+$color-red:rgb(177, 125, 125);
+body{
+background-color: $color-red ;
 }
-/*# sourceMappingURL=style.css.map */
