@@ -138,3 +138,11 @@ a {
   transform: translateX(0) !important;
   transition-delay: 0.2s;
 }
+/* ............. */
+.page-p1{
+  padding-top:200px ;
+  font-size: 80px;
+}
+.page-p1 .hint{
+    font-size: 40px;
+  }
