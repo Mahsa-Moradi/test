@@ -1,3 +1,27 @@
+@font-face {
+  font-family: vazir-Medium;
+  src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
+    url(#{$font-path}/Vazir-Medium.woff2) format("woff2"),
+    url(#{$font-path}/Vazir-Medium.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  /* font-family: vazir-Medium; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* transition: .2s ease-in; */
+}
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  background-color: #d8e0e5;
+}
+
 ul,
 li {
   list-style: none;
@@ -10,16 +34,6 @@ a {
   height: auto;
   margin: 0 auto;
 }
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  transition: .2s ease-in;
-}
-body,
-html {
-  height: 100%;
-  overflow: hidden;
-}
+
 
 /* ............................... */
