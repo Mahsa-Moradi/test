@@ -21,14 +21,7 @@ html {
   height: 100%;
   overflow: hidden;
 }
-#page-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-size: 34px;
-  font-weight: bold;
-}
+
 #drawer-toggle {
   position: absolute;
   opacity: 0;
@@ -103,12 +96,34 @@ header {
 #drawer-toggle:checked ~  #page-content{
   margin-left: 300px;
 }
-#page-content{
-  /* padding: 10px; */
-  width: 100%;
-}
+
 #drawer-toggle:checked ~  #drawer-toggle-label{
   height: 100%;
-  background-color: rgba(31, 27, 0, 0.122);
+  background-color: rgba(249, 236, 157, 0.122);
   width: 100%;
+}
+#page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 90px;
+  padding:20px;
+  width: 100%;
+}
+#page-content p{
+ position: absolute;
+ top: 30%;
+}
+/***********        darsad - px = kalk(calc)       ************/
+#drawer-toggle:checked ~ #page-content{
+  width:calc(100% - 300px) ;
+}
+#page-content div{
+  border: 1px solid #efefef;
+  margin: 20px;
+  padding:0 20px;
+  width: 20%;
 }
