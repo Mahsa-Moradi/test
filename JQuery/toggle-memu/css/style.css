@@ -14,8 +14,17 @@ a {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: .2s ease-in;
 }
-body {
-  position: relative;
+body,html {
+  height: 100%;
+  overflow: hidden;
 }
-
+#page-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 34px;
+  font-weight: bold;
+}
