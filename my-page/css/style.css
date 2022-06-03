@@ -33,11 +33,11 @@ a {
   text-decoration: none;
 }
 .container-fluid {
-    width: 100%;
-    height: auto;
-    /* margin: auto; */
-    position: relative;
-  }
+  width: 100%;
+  height: auto;
+  /* margin: auto; */
+  position: relative;
+}
 
 .container {
   max-width: 1170px;
@@ -61,10 +61,10 @@ a {
   margin-top: 250px;
 }
 /* ........................................ */
-body{
+body {
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #aaddba);
 }
-.name{
+.name {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -72,43 +72,31 @@ body{
   font-size: 50px;
   font-weight: bold;
 }
-.title{
-  /* display: flex;
+.title {
+  display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(2);
+  font-size: 20px !important;
   position: absolute;
-  top: 100%;*/
-  grid-column: 4/6;
-grid-row: 2/4;
-width: 200px;
-height: 80px;
-/* transform: scale(2); */
-font-size: 30px !important;
-justify-self: center;
-align-self: center;
+  top: 350px;
+  left: 8%;
+  position: relative;
+}
+.home-header {
+}
+.i-dot {
+  position: absolute;
+  top: 20%;
+}
+.header-1 {
+}
+.header-2 {
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.slide-left{
- width: 30%;
- height: 100%;
- background-color: blueviolet; 
- z-index: 2;
-
+.slide-left {
+  width: 30%;
+  height: 100%;
+  background-color: blueviolet;
+  z-index: 2;
 }
