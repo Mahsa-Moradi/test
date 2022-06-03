@@ -85,13 +85,42 @@ body {
   position: relative;
   
 }
-.home-header {
-}
+/* .home-header {
+  position: absolute;
+  left: 2px;
+} */
 .i-dot {
   position: absolute;
   top: -60px;
   transform: translateX(72px);
+  color: #65aea2;
+  /* color: #f3ffbd; */
+}
+.i-dot::before{
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  border-radius: 5px;
+  left: px;
+  top: 10px;
+  background-image:  linear-gradient(to right, #f3ffbd,#aaddba00, #f3ffbd);
+  /* background-image:  linear-gradient(to right, #ff1654 ,#aaddba00 , #ff1654 ); */
+  
+  position: absolute;
+  animation: line 1s  linear infinite;
 
+}
+@keyframes line {
+  0%{
+    transform: rotate(0deg);
+
+  }
+  100%{
+    transform: rotate(360deg);
+    
+  }
+  
 }
 .header-1 {
   position: absolute;
@@ -105,32 +134,36 @@ body {
 .i{
   width: 5px;
   height: 80px;
-  background-color: black;
+  background-color: #58968c;
   border-radius: 5px 5px 0 0;
   position: absolute;
  transform: translateX(80px);
  bottom: 15px;
 }
-.header-2 {
+/* .header-2 {
+} */
+.ideas{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  position:relative;
+  top: 450px;
+  left: 50px;
+  /* padding-right:100px; */
+  /* width:calc(100% - 320px) ; */
+  /* word-break:break-all; */
+  width: 100%;
+  /* background-color: rgb(0, 136, 255); */
 }
+/* .ideas h3{
+  position: absolute;
+} */
 
+/* ................... circle */
+/* end circle */
 .slide-left {
   width: 30%;
   height: 100%;
   background-color: blueviolet;
   z-index: 2;
-}
-.ideas{
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  position:relative;
-  /* padding-right:100px; */
-  /* width:calc(100% - 320px) ; */
-  /* word-break:break-all; */
-  width: 100%;
-  background-color: rgb(0, 136, 255);
-}
-.ideas span{
-  position: absolute;
 }
