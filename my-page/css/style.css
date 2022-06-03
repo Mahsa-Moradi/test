@@ -71,6 +71,7 @@ body {
   margin-top: 5%;
   font-size: 50px;
   font-weight: bold;
+  word-spacing: 10px;
 }
 .title {
   display: flex;
@@ -79,17 +80,36 @@ body {
   transform: scale(2);
   font-size: 20px !important;
   position: absolute;
-  top: 350px;
-  left: 8%;
+  top: 340px;
+  left: 5%;
   position: relative;
+  
 }
 .home-header {
 }
 .i-dot {
   position: absolute;
-  top: 20%;
+  top: -60px;
+  transform: translateX(72px);
+
 }
 .header-1 {
+  position: absolute;
+  left: 51.2%;
+  bottom: 68%;
+  font-size: 30px;
+}
+.big-d{
+  font-size: 60px;
+}
+.i{
+  width: 5px;
+  height: 80px;
+  background-color: black;
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+ transform: translateX(80px);
+ bottom: 15px;
 }
 .header-2 {
 }
@@ -99,4 +119,18 @@ body {
   height: 100%;
   background-color: blueviolet;
   z-index: 2;
+}
+.ideas{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  position:relative;
+  /* padding-right:100px; */
+  /* width:calc(100% - 320px) ; */
+  /* word-break:break-all; */
+  width: 100%;
+  background-color: rgb(0, 136, 255);
+}
+.ideas span{
+  position: absolute;
 }
