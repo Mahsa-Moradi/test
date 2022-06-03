@@ -62,7 +62,7 @@ a {
 }
 /* ........................................ */
 body {
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #aaddba);
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 102, 255, 0.2));
 }
 .name {
   display: flex;
@@ -86,10 +86,10 @@ body {
   position: relative;
   
 }
-/* .home-header {
+.home-header {
   position: absolute;
-  left: 2px;
-} */
+  bottom: -10%;
+}
 .i-dot {
   position: absolute;
   top: -60px;
@@ -148,7 +148,7 @@ body {
   display: flex;
   justify-content: center;
   position:relative;
-  top: 450px;
+  top: 470px;
   left: 50px;
   /* padding-right:100px; */
   /* width:calc(100% - 320px) ; */
@@ -169,11 +169,11 @@ body {
   border-radius: 50%;
   position: fixed;
   
-  left: 48%;
-  top: 250px;
+  left: 33%;
+  top: 350px;
   z-index: -20;
   animation-delay: 2s;
-  /* animation:circle 3s  linear ; */
+  animation:circle 3s  linear ;
   animation-fill-mode: forwards;
 }
 @keyframes circle {
@@ -184,21 +184,79 @@ body {
     transform: scale(0);
   }
   100%{
-    transform: scale(4);
+    transform: scale(5);
     z-index: -20;
   }
   
 }
 
-
-
+/* circle 2 */
+.circle-2{
+  width: 100px;
+  height: 100px;
+  background-color:#ff1654  ;
+  display: block;
+  border-radius: 40%;
+  position: fixed;
+  
+  right:  -2%;
+  bottom: 33px;
+  z-index: -20;
+  animation-delay: 2s;
+  animation:circle 3s  linear ;
+  animation-fill-mode: forwards;
+}
+/* circle-3 */
+.circle-3{
+  width: 170px;
+  height: 120px;
+  background-color:#ff165455  ;
+  display: block;
+  border-radius: 20%;
+  position: fixed;
+  
+  right:  -10%;
+  bottom: 33px;
+  z-index: -20;
+  animation-delay: 2s;
+  animation:circle 3s  linear ;
+  animation-fill-mode: forwards;
+}
 
 
 
 /* end circle */
-.slide-left {
-  width: 30%;
-  height: 100%;
-  background-color: blueviolet;
-  z-index: 2;
+
+.slide-left{
+  position: absolute;
+  top: -250px;
+  left: -150%;
+  /* left: -85%; */
+  /* width: 25%; */
+  /* height: 100%; */
+  /* background-color: rgba(0, 102, 255, 0.2); */
+  background-image: linear-gradient(to right, #f3ffbd00 60%,#aaddba00 30%, #ef476e33 10%);
+  padding: 1000px;
+  /* transition: all 0.5s ease; */
+  z-index: 51;
+  animation: anime 3.1s ease forwards;
+}
+@keyframes anime {
+  0% {
+    left: -150%;
+    width: 100%;
+  }
+  33% {
+    left: -107%;
+    width: 100%;
+  }
+  66% {
+    left: -85%;
+    width: 25%;
+  }
+
+  100% {
+    left: -85%;
+    width: 25%;
+}
 }
