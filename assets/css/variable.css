@@ -1,6 +1,6 @@
 p {
   font-size: 25px;
-  color: rgb(248, 4, 4);
+  color: #f80404;
 }
 
 a {
@@ -8,5 +8,6 @@ a {
 }
 
 div {
-  color: rgb(81, 255, 0);
-}/*# sourceMappingURL=variable.css.map */
+  color: #51ff00;
+}
+/*# sourceMappingURL=variable.css.map */

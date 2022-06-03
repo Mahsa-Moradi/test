@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,AAAA,CACN,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,IAAI,CACZ,gBAAgB,CAAE,OAAiB,CAEtC",
+    "sources": [
+        "../../sass-project1/sass/-dropdowns.scss"
+    ],
+    "names": [],
+    "file": "-dropdowns.min.css"
+}

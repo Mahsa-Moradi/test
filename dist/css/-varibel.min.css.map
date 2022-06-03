@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../../sass-project1/sass/-mixins.scss"
+        "../../sass-project1/sass/-varibel.scss"
     ],
     "names": [],
-    "file": "-mixins.css"
+    "file": "-varibel.min.css"
 }

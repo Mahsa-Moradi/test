@@ -1,1 +1,9 @@
-{"version":3,"sources":["../../sass-project1/sass/-dropdowns.scss","-dropdowns.css"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,YAAA;EACA,mCAAA;ACCJ","file":"-dropdowns.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,OAAiB;CAEtC",
+    "sources": [
+        "../../sass-project1/sass/-dropdowns.scss"
+    ],
+    "names": [],
+    "file": "-dropdowns.css"
+}

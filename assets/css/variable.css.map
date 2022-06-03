@@ -1,1 +1,9 @@
-{"version":3,"sources":["../../sass/variable/variable.scss","variable.css"],"names":[],"mappings":"AAEA;EACI,eAAA;EACA,qBAHG;ACEP;;ADGA;EACI,eAAA;ACAJ;;ADGA;EACG,sBAHQ;ACGX","file":"variable.css"}
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,CAAA;EACG,SAAS,EAAE,IAAI;EACf,KAAK,EAHF,OAAc;CAIpB;;AACD,AAAA,CAAC,CAAA;EACG,SAAS,EAAE,IAAI;CAElB;;AACD,AAAA,GAAG,CAAA;EACA,KAAK,EAHG,OAAe;CAIzB",
+    "sources": [
+        "../../sass/variable/variable.scss"
+    ],
+    "names": [],
+    "file": "variable.css"
+}
