@@ -1,67 +1,62 @@
 @font-face {
-  font-family: Vazir-Medium;
-  src: url(../Project1/font/Vazir-Medium.eot) format("eot"),
-    url(../Project1/font/Vazir-Medium.woff) format("woff"),
-    url(../Project1/font/Vazir-Medium.woff2) format("woff2");
+  font-family: vazir-Medium;
+  src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
+    url(#{$font-path}/Vazir-Medium.woff2) format("woff2"),
+    url(#{$font-path}/Vazir-Medium.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
-*,body{
-  margin: 0;
+* {
+  /* font-family: vazir-Medium; */
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: Vazir-Medium;
-  transition: .2s ease-in;
+  /* transition: .2s ease-in; */
+}
 
-}
 body,
-html{
-  direction: rtl;
+html {
+  height: 100%;
+  overflow: hidden;
+  /* background-color: #d8e0e5; */
+  transition: all 0.2s ease;
 }
+
+ol,
 ul,
-li,
-ol {
+li {
   list-style: none;
 }
 a {
   text-decoration: none;
 }
-.cantainer {
-  max-width: 600px;
-  height: auto;
-  margin: 0 auto;
-}
-/* .............................end public style */
-.container-fluid{
-  width: 100%;
-  height: 100%;
+.container-fluid {
+    width: 100%;
+    height: auto;
+    /* margin: auto; */
+    position: relative;
+  }
+
+.container {
+  max-width: 1170px;
   margin: auto;
   position: relative;
 }
-.row{
+
+.row {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
-.img-fluid{
+
+.img-fluid {
   display: block;
   width: 100%;
   height: auto;
 }
-.mt-50 {
-  margin-top: 50px;
-}
-.mt-100 {
-  margin-top: 100px;
-}
+
 .mt-250 {
   margin-top: 250px;
 }
-.mt-550 {
-  margin-top: 550px;
-}
-.mb-200 {
-  margin-bottom: 200px;
-}
-/* .............................................. */
-b
-
+/* ........................................ */
