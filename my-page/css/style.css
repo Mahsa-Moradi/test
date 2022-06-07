@@ -62,7 +62,11 @@ a {
 }
 /* ........................................ */
 body {
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 102, 255, 0.2));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(0, 102, 255, 0.2)
+  );
 }
 .name {
   display: flex;
@@ -76,7 +80,6 @@ body {
 }
 .title {
   color: black;
-  
 }
 .home-header {
   /* position: absolute;
@@ -84,11 +87,11 @@ body {
   display: block;
   margin: 200px 50%;
   color: black;
-   font-size: 40px !important;
-   width: 100%;
-   height: auto;
-   overflow: hidden;
-   align-items: center;
+  font-size: 40px !important;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  align-items: center;
 }
 .i-dot {
   position: absolute;
@@ -97,7 +100,7 @@ body {
   color: #65aea2;
   /* color: #f3ffbd; */
 }
-.i-dot::before{
+.i-dot::before {
   display: block;
   content: "";
   width: 40px;
@@ -105,23 +108,19 @@ body {
   border-radius: 5px;
   left: 0px;
   top: 22px;
-  background-image:  linear-gradient(to right, #f3ffbd,#aaddba00, #f3ffbd);
+  background-image: linear-gradient(to right, #f3ffbd, #aaddba00, #f3ffbd);
   /* background-image:  linear-gradient(to right, #ff1654 ,#aaddba00 , #ff1654 ); */
-  
-  position: absolute;
-  animation: line 1s  linear infinite;
 
+  position: absolute;
+  animation: line 1s linear infinite;
 }
 @keyframes line {
-  0%{
+  0% {
     transform: rotate(0deg);
-
   }
-  100%{
+  100% {
     transform: rotate(360deg);
-    
   }
-  
 }
 .header-1 {
   position: absolute;
@@ -132,62 +131,75 @@ body {
   margin-right: 50px;
    */
 }
-.big-d{
+.big-d {
   font-size: 90px;
 }
-.i{
+.i {
   width: 5px;
   height: 80px;
   background-color: #58968c;
   border-radius: 5px 5px 0 0;
   position: absolute;
- transform: translateX(138px);
- bottom: 42.5%;
+  transform: translateX(138px);
+  bottom: 42.5%;
 }
 /* .header-2 {
 } */
-.circle-0{
+.circle-0 {
   cursor: pointer;
   width: 100px;
-  height: 100px;
-  background-color:#ff1654  ;
+  height: 105px;
+  background-color: #ff165424;
   display: block;
   border-radius: 50%;
   position: fixed;
   left: 33%;
-  top: 350px;
+  top: 370px;
   z-index: -20;
   animation-delay: 2s;
-  animation:circle 3s  linear ;
+  animation: circle 3s linear;
   animation-fill-mode: forwards;
 }
 @keyframes circle {
-  0%{
+  0% {
     transform: scale(0);
   }
-  40%{
+  40% {
     transform: scale(0);
   }
-  100%{
+  100% {
     transform: scale(5);
     z-index: -20;
   }
-  
 }
-.circle-0 a{
+.circle-0:hover{
+  backface-visibility: visible;
+
+}
+.circle-0 a {
   position: absolute;
   top: 19px;
   right: 33px;
   font-size: 10px;
   color: #2d0a1311;
   z-index: 5;
-  }
+}
+.circle-0 img {
+  width: 70%;
+  height: 80%;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  /* transform: translate(50%,50%); */
+  margin: 10px auto 0 auto;
+  box-shadow: 0 0 5px rgb(95, 95, 95);
+}
 /* ....................... */
-.ideas{
+.ideas {
   font-size: 30px;
   display: flex;
   justify-content: center;
-  position:relative;
+  position: relative;
   top: 470px;
   left: 50px;
   /* padding-right:100px; */
@@ -201,100 +213,100 @@ body {
 } */
 
 /* ................... circle */
-.circle-3{
+.circle-3 {
   width: 100px;
   height: 100px;
-  background-color:#f0a6ca  ;
+  background-color: #f0a6ca86;
   display: block;
   border-radius: 20%;
   position: fixed;
-  right:  0%;
+  right: 0%;
   bottom: 33px;
   z-index: 5;
   animation-delay: 2s;
-  animation:circle 3s  linear ;
+  animation: circle 3s linear;
   animation-fill-mode: forwards;
+  box-shadow: 0 0 5px rgb(160, 130, 130);
+  box-shadow: 0 0 13px #ab7690;
 }
 @keyframes circle {
-  0%{
+  0% {
     transform: scale(0);
   }
-  40%{
+  40% {
     transform: scale(0);
   }
-  100%{
+  100% {
     transform: scale(5);
     z-index: 5;
   }
-  
 }
-.circle-3 a{
+.circle-3 a {
   position: absolute;
   top: 0px;
   right: 49px;
   font-size: 10px;
   color: #07070711;
   z-index: 5;
-  }
+}
 
 /* circle 2 */
-.circle-2{
-  
+.circle-2 {
   width: 80px;
   height: 80px;
   /* background-color:#ff165455  ;
   background-color:#f0a6ca  ; */
-  background-color:#ff1654  ;
-
+  background-color: #f0a6ca86;
+  box-shadow: 0 0 13px #ab7690;
   display: block;
   border-radius: 20%;
   position: fixed;
-  right:  0%;
+  right: 0%;
   bottom: 33px;
   z-index: 6;
   animation-delay: 2s;
-  animation:circle 3s  linear ;
+  animation: circle 3s linear;
   animation-fill-mode: forwards;
+  box-shadow: 0 0 5px rgb(160, 130, 130);
 }
-.circle-2 a{
+.circle-2 a {
   cursor: pointer;
   position: absolute;
   top: 0px;
   right: 32px;
-  color: rgb(22, 23, 23);
+  color: #07070711;
   font-size: 10px;
-  }
+}
 /* circle-1 */
-.circle-1{
+.circle-1 {
   cursor: pointer;
   width: 60px;
   height: 60px;
-  background-color:#f0a6ca  ;
+  background-color: #f0a6ca86;
   display: block;
   border-radius: 20%;
   position: fixed;
-  right:  0%;
+  right: 0%;
   bottom: 33px;
   z-index: 7;
   animation-delay: 2s;
-  animation:circle 3s  linear ;
+  animation: circle 3s linear;
   animation-fill-mode: forwards;
+  box-shadow: 0 0 13px #ab7690;
 }
-.circle-1 a{
+.circle-1 a {
   cursor: pointer;
   position: fixed;
   top: 0px;
   right: 28px;
-  color: rgb(22, 23, 23);
+  color: #07070711;
   font-size: 10px;
-z-index: 5;
+  z-index: 5;
 }
-
-
 
 /* end circle */
 
-.slide-left{
+.slide-left {
   position: absolute;
   top: -250px;
   left: -150%;
@@ -302,7 +314,12 @@ z-index: 5;
   /* width: 25%; */
   /* height: 100%; */
   /* background-color: rgba(0, 102, 255, 0.2); */
-  background-image: linear-gradient(to right, #f3ffbd00 60%,#aaddba00 30%, #ef476e33 10%);
+  background-image: linear-gradient(
+    to right,
+    #f3ffbd00 60%,
+    #aaddba00 30%,
+    #ef476e33 10%
+  );
   padding: 1000px;
   /* transition: all 0.5s ease; */
   z-index: 51;
@@ -325,5 +342,5 @@ z-index: 5;
   100% {
     left: -85%;
     width: 25%;
-}
+  }
 }
