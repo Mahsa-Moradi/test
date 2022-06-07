@@ -160,7 +160,7 @@ body {
   animation-delay: 2s;
   animation: circle 3s linear;
   animation-fill-mode: forwards;
-  /* padding-right: 50px; */
+  backface-visibility: visible;
 }
 @keyframes circle {
   0% {
@@ -174,10 +174,6 @@ body {
     z-index: -20;
   }
 }
-.circle-0:hover{
-  backface-visibility: visible;
-
-}
 .circle-0 a {
   position: absolute;
   top: 19px;
@@ -185,6 +181,15 @@ body {
   font-size: 10px;
   color: #2d0a1311;
   z-index: 5;
+}
+.circle-0:hover{
+  
+  animation: rot 8s linear infinite;
+
+}
+@keyframes rot {
+	50% { transform: rotateX(30deg) rotateY(10deg); }
+	100% { transform: rotateX(30deg) rotateY(30deg); }
 }
 .back img {
   width: 70%;
@@ -314,7 +319,7 @@ body {
   /* left: 50px; */
   width: 20%;
   height: 200%;
-  background-color:#ef476e19 ;
+  background-color: #ef476e19;
   /* background-image: linear-gradient(
     to right,
     #f3ffbd 60%,
@@ -345,28 +350,3 @@ body {
   }
 }
 /* L.................. */
-/* .back {
-	display: inline-block;
-	margin: 10vmin 5vmin;
-	min-width: 16em; min-height: 25em;
-	width: 46vmin; height: 80vmin;
-	perspective: 64em;
-	box-shadow: 0 0 1px;
-} */
-/* .back:after { 
-		font-family: monospace;
-		content: 'backface-visibility: visible';
-	} */
-	
-	/* .back:nth-child(2) {		
-		.card {
-			backface-visibility: hidden;
-			background-color: #be4c39;
-		}
-		
-		&:after {
-			content: 'backface-visibility: hidden';
-		}
-	}
-} */
-
