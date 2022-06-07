@@ -92,6 +92,7 @@ body {
   height: auto;
   overflow: hidden;
   align-items: center;
+  padding-left: 50px;
 }
 .i-dot {
   position: absolute;
@@ -159,6 +160,7 @@ body {
   animation-delay: 2s;
   animation: circle 3s linear;
   animation-fill-mode: forwards;
+  /* padding-right: 50px; */
 }
 @keyframes circle {
   0% {
@@ -184,7 +186,7 @@ body {
   color: #2d0a1311;
   z-index: 5;
 }
-.circle-0 img {
+.back img {
   width: 70%;
   height: 80%;
   display: block;
@@ -308,19 +310,17 @@ body {
 
 .slide-left {
   position: absolute;
-  top: -250px;
-  left: -150%;
-  /* left: -85%; */
-  /* width: 25%; */
-  /* height: 100%; */
-  /* background-color: rgba(0, 102, 255, 0.2); */
-  background-image: linear-gradient(
+  top: -100px;
+  /* left: 50px; */
+  width: 20%;
+  height: 200%;
+  background-color:#ef476e19 ;
+  /* background-image: linear-gradient(
     to right,
-    #f3ffbd00 60%,
-    #aaddba00 30%,
-    #ef476e33 10%
-  );
-  padding: 1000px;
+    #f3ffbd 60%,
+    #ef476e19 10%
+  ); */
+
   /* transition: all 0.5s ease; */
   z-index: 51;
   animation: anime 3.1s ease forwards;
@@ -335,12 +335,38 @@ body {
     width: 100%;
   }
   66% {
-    left: -85%;
+    left: 0%;
     width: 25%;
   }
 
   100% {
-    left: -85%;
+    left: -10%;
     width: 25%;
   }
 }
+/* L.................. */
+/* .back {
+	display: inline-block;
+	margin: 10vmin 5vmin;
+	min-width: 16em; min-height: 25em;
+	width: 46vmin; height: 80vmin;
+	perspective: 64em;
+	box-shadow: 0 0 1px;
+} */
+/* .back:after { 
+		font-family: monospace;
+		content: 'backface-visibility: visible';
+	} */
+	
+	/* .back:nth-child(2) {		
+		.card {
+			backface-visibility: hidden;
+			background-color: #be4c39;
+		}
+		
+		&:after {
+			content: 'backface-visibility: hidden';
+		}
+	}
+} */
+
