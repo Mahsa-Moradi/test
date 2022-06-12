@@ -64,8 +64,17 @@ a {
   margin-bottom: 500px;
 }
 /* ........................................ */
+.color-custom{
+    background-color: blue !important;
+}
 .button-icon-custom {
-  background-color: black;
+    /* color: black !important; */
+  /* background-color: black !important; */
+  width: 4rem !important;
+  height: 4rem !important;
+  /* display: block  !important; */
+  background-color: blue !important;
+  
 }
 .bg-custom{
     background-color: rgb(210, 62, 62);
