@@ -159,10 +159,10 @@ body {
   top: 370px;
   z-index: -20;
   animation-delay: 2s;
-  /* animation: circle 3s linear; */
+  animation: circle 3s linear;
   animation-fill-mode: forwards;
-  /* animation: rot 2.5s linear ;
-  backface-visibility: hidden; */
+  /* animation: rot 2.5s linear ; */
+  /* backface-visibility: hidden; */
 }
 @keyframes circle {
   0% {
@@ -177,19 +177,13 @@ body {
   }
 }
 /* back */
-.circle-0:hover{
-  cursor: pointer;
-  /* display: block; */
- /* backface-visibility: visible; */
- /* animation: rot 2.5s ease ; */
-}
-@keyframes rot {
+/* @keyframes rot {
   0%{
     transform: rotateY(0deg) ;
   }
 	50% { transform: rotateY(90deg) ; }
 	100% { transform: rotateY(180deg) ; }
-}
+} */
 .back img {
   width: 70%;
   height: 80%;
@@ -199,6 +193,25 @@ body {
   margin: 10px auto 0 auto;
   box-shadow: 0 0 5px rgb(95, 95, 95);
 }
+/* __________ */
+.front , .back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: transform 1s;
+}
+.front img{
+  height: 100%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  
+}
+/* __________ */
 /* ....................... */
 .ideas {
   font-size: 30px;
