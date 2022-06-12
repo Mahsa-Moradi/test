@@ -368,7 +368,7 @@ transform: perspective(600px) rotateY(180deg);
   z-index: 51;
   animation: anime 5.1s ease forwards;
 }
-@keyframes anime {
+/* @keyframes anime {
   0% {
     left: -150%;
     width: 100%;
@@ -386,6 +386,41 @@ transform: perspective(600px) rotateY(180deg);
     left: -7%;
     width: 25%;
   }
+} */
+.slide-left ul li{
+  color: black;
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 15px;
+  font-size: 50px;
+  cursor: pointer;
+}
+.pointer{
+  position: fixed;
+  width: 55px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-color: rgb(209, 209, 209);
+  transition: .1s;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  opacity: 0;
+  animation: a 1s 1;
+}
+@keyframes a {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.slide-left ul>li:hover  .pointer{
+  transform: scale(4);
 }
 /* L.................. */
 .welcome{

@@ -59,24 +59,43 @@
       <!-- slide-left -->
       <div class="slide-left">
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>ghg</li>
+          <li>fht</li>
+          <li>hgf</li>
         </ul>
+          
       </div>
+      <!--__________________________________________ pointer -->
+      
+      <!-- ........... end -->
     </div>
-
+<div class="pointer"></div>
     <!-- .......................................... script -->
-    <script>
-      $(document).ready(function () {
-        $(".slide-left").show(".anime");
-      });
-    </script>
-    <script
+ <!-- <script type="text/javascript">
+document.onmousemove = function(){
+  var elm = document.createElement("div");
+  elm.style.top = event.clientY + "px";
+  elm.style.left = event.clientX + "px";
+  elm.setAttribute("class", "pointer");
+  document.body.appendChild(elm);
+ 
+  
+}
+ </script> -->
+ <script type="text/javascript">
+
+let point=document.querySelector(".pointer");
+document.addEventListener("mousemove",function(e){
+point.getElementsByClassName.left=e.pageX + "px";
+point.getElementsByClassName.top=e.pageY + "px";
+
+})
+ </script>
+    <!-- <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script src="./js/main.js"></script>
   </body>
 </html>
