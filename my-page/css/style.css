@@ -147,11 +147,12 @@ body {
 /* .header-2 {
 } */
 
-.circle-0 {
+.middle {
   cursor: pointer;
   width: 100px;
   height: 105px;
-  background-color: #ff165424;
+  /* background-color: #ff165424; */
+  /* background-color:#faddeb86; */
   display: block;
   border-radius: 50%;
   position: fixed;
@@ -176,24 +177,7 @@ body {
     z-index: -20;
   }
 }
-/* back */
-/* @keyframes rot {
-  0%{
-    transform: rotateY(0deg) ;
-  }
-	50% { transform: rotateY(90deg) ; }
-	100% { transform: rotateY(180deg) ; }
-} */
-.back img {
-  width: 70%;
-  height: 80%;
-  display: block;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 10px auto 0 auto;
-  box-shadow: 0 0 5px rgb(95, 95, 95);
-}
-/* __________ */
+
 .front , .back{
   width: 100%;
   height: 100%;
@@ -203,32 +187,69 @@ body {
   transition: transform 1s;
 }
 .front img{
-  height: 100%;
+  width: 70%;
+  height: 80%;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 10px auto 0 auto;
+  box-shadow: .5px .5px 3px rgb(176, 175, 175);
 }
 .front{
   transform: perspective(600px) rotateY(0deg);
 }
 .back{
-  
+  padding-top: 10px;
+  padding-left: 7px;
+  /* display: flex;
+  justify-content: center; */
+  background-color: #faddeb86;
+  border-radius: 15px;
+transform: perspective(600px) rotateY(180deg);
 }
-/* __________ */
+.back h1{
+  font-size: 7px;
+  text-align: left;
+}
+.back h3{
+  text-indent: 3px;
+  word-wrap: normal;
+  padding-top: 5px ;
+  padding-left: 5px;
+  line-height: 7px;
+  font-size: 4px;
+  overflow: hidden;
+  vertical-align: text-bottom;
+   /* text-align: left; */
+  /* text-align: justify; */
+  text-justify: inter-word;
+   /* white-space: nowrap; */
+
+}
+.circle-0:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.circle-0:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
 /* ....................... */
 .ideas {
   font-size: 30px;
   display: flex;
   justify-content: center;
   position: relative;
-  top: 470px;
-  left: 50px;
-  /* padding-right:100px; */
-  /* width:calc(100% - 320px) ; */
-  /* word-break:break-all; */
+  top: 0px;
+  left: 10%;
+  padding-right:100px;
+  width:calc(100% - 320px) ;
+  word-break:break-all;
   width: 100%;
-  /* background-color: rgb(0, 136, 255); */
+  color: rgb(78, 78, 78);
 }
-/* .ideas h3{
+.ideas h3{
   position: absolute;
-} */
+}
 
 /* ................... circle */
 .circle-3 {
