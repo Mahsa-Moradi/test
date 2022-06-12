@@ -28,27 +28,29 @@
         </div>
       </div>
       <!-- back -->
-<div class="circle-0 middle">
-  <div class="front">
-    <img class="img-fluid" src="./img/photo_2020-12-18_22-20-30.jpg" alt="">
-  </div>
-<div class="back">
-<h1>What is Lorem Ipsum?
-</h1>
-<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</h3>
-</div>
-</div>
-<!--  -->
-      <!-- <div class="circle-0">
-        <span class="back"
-          ><img
+      <div class="circle-0 middle">
+        <div class="front">
+          <img
             class="img-fluid"
             src="./img/photo_2020-12-18_22-20-30.jpg"
             alt=""
           />
-        </span>
-      </div> -->
-<div class="welcom"></div>
+        </div>
+        <div class="back">
+          <h1>What is Lorem Ipsum?</h1>
+          <h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets.
+          </h3>
+        </div>
+      </div>
+      <!-- welcom -->
+      <div class="welcom"></div>
       <!-- ideas -->
       <div class="ideas"><h3>Wrap Your Ideas with love</h3></div>
       <!--about  -->
@@ -63,16 +65,14 @@
           <li>fht</li>
           <li>hgf</li>
         </ul>
-          
       </div>
-     
+      <div id="pointer"></div>
     </div>
- <!--__________________________________________ pointer -->
-      <div id="pointer"></div>
-      <div id="pointer"></div>
-      <!-- ........... end -->
+    <!--__________________________________________ pointer -->
+
+    <!-- ........... end -->
     <!-- ......................................... script 1 -->
- <!-- <script type="text/javascript">
+    <!-- <script type="text/javascript">
 document.onmousemove = function(){
   var elm = document.createElement("div");
   elm.style.top = event.clientY + "px";
@@ -83,8 +83,8 @@ document.onmousemove = function(){
   
 }
  </script> -->
- <!-- ********************************************* script 2 -->
- <!-- <script type="text/javascript">
+    <!-- ********************************************* script 2 -->
+    <!-- <script type="text/javascript">
 
 let point=document.querySelector(".pointer");
 document.addEventListener("mousemove",function(e){
@@ -93,21 +93,18 @@ point.getElementsByClassName.top=e.pageY + "px";
 
 })
  </script> -->
-  <!-- ******************************************** script 3 -->
-<script type="text/javascript">
-var pointer = document.getElementById('pointer');
-document.addEventListener('mousemove' , function(e){
-var x = e.clientX;
-var y = e.clientY;
-pointer.style.left = x + "px";
-pointer.style.top = y + "px";
-});
+    <!-- ******************************************** script 3 -->
+    <script type="text/javascript">
+      var pointer = document.getElementById("pointer");
+      document.addEventListener("mousemove", function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        pointer.style.left = x + "px";
+        pointer.style.top = y + "px";
+      });
+    </script>
 
-</script>
-
-
-
-<!-- __________________ -->
+    <!-- __________________ -->
     <!-- <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="

@@ -442,18 +442,18 @@ transform: perspective(600px) rotateY(180deg);
 /* ********** script 3  */
 #pointer{
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: #fff;
-  background-color: rgba(24, 24, 24, 0.108);
+  /* background-color: #fff; */
+  background-color: rgba(134, 134, 134, 0.108);
   transition: .1s;
-  transform: translate(-50% , -50%);
+  /* transform: translate(-50% , -50%); */
  cursor: none;
+ pointer-events: none;
+  mix-blend-mode: difference;
   
 }
-
-
 
 /* L.................. */
 .welcome{
