@@ -67,6 +67,7 @@ body {
     rgba(255, 0, 0, 0),
     rgba(0, 102, 255, 0.2)
   );
+ 
 }
 .name {
   display: flex;
@@ -395,13 +396,15 @@ transform: perspective(600px) rotateY(180deg);
   font-size: 50px;
   cursor: pointer;
 }
-.pointer{
+/* ********** script 1  */
+
+/* .pointer{
   position: fixed;
   width: 55px;
-  height: 15px;
+  height: 55px;
   border-radius: 50%;
   background-color: #fff;
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(24, 24, 24);
   transition: .1s;
   pointer-events: none;
   mix-blend-mode: difference;
@@ -418,10 +421,40 @@ transform: perspective(600px) rotateY(180deg);
   100%{
     opacity: 0;
   }
+} */
+/* ********** script 2  */
+/* .pointer{
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-color: rgb(24, 24, 24);
+  transition: .1s;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  
 }
-.slide-left ul>li:hover  .pointer{
+
+.slide-left ul>li:hover ~ .pointer{
   transform: scale(4);
+} */
+/* ********** script 3  */
+#pointer{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-color: rgba(24, 24, 24, 0.108);
+  transition: .1s;
+  transform: translate(-50% , -50%);
+ cursor: none;
+  
 }
+
+
+
 /* L.................. */
 .welcome{
   width: 100px;

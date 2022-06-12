@@ -65,12 +65,13 @@
         </ul>
           
       </div>
-      <!--__________________________________________ pointer -->
-      
-      <!-- ........... end -->
+     
     </div>
-<div class="pointer"></div>
-    <!-- .......................................... script -->
+ <!--__________________________________________ pointer -->
+      <div id="pointer"></div>
+      <div id="pointer"></div>
+      <!-- ........... end -->
+    <!-- ......................................... script 1 -->
  <!-- <script type="text/javascript">
 document.onmousemove = function(){
   var elm = document.createElement("div");
@@ -82,7 +83,8 @@ document.onmousemove = function(){
   
 }
  </script> -->
- <script type="text/javascript">
+ <!-- ********************************************* script 2 -->
+ <!-- <script type="text/javascript">
 
 let point=document.querySelector(".pointer");
 document.addEventListener("mousemove",function(e){
@@ -90,7 +92,22 @@ point.getElementsByClassName.left=e.pageX + "px";
 point.getElementsByClassName.top=e.pageY + "px";
 
 })
- </script>
+ </script> -->
+  <!-- ******************************************** script 3 -->
+<script type="text/javascript">
+var pointer = document.getElementById('pointer');
+document.addEventListener('mousemove' , function(e){
+var x = e.clientX;
+var y = e.clientY;
+pointer.style.left = x + "px";
+pointer.style.top = y + "px";
+});
+
+</script>
+
+
+
+<!-- __________________ -->
     <!-- <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
