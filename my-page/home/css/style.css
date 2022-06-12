@@ -369,7 +369,7 @@ transform: perspective(600px) rotateY(180deg);
   z-index: 51;
   animation: anime 5.1s ease forwards;
 }
-/* @keyframes anime {
+@keyframes anime {
   0% {
     left: -150%;
     width: 100%;
@@ -387,10 +387,10 @@ transform: perspective(600px) rotateY(180deg);
     left: -7%;
     width: 25%;
   }
-} */
+}
 .slide-left ul li{
   color: black;
-  text-align: right;
+  text-align: center;
   padding-top: 30px;
   padding-right: 15px;
   font-size: 50px;
