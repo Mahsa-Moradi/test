@@ -77,11 +77,12 @@ body {
   font-weight: bold;
   word-spacing: 10px;
   z-index: 50;
-transition: margin-top 1s ;
+transition: margin-top 2s ease;
 }
 
 .title {
   color: black;
+  z-index: 20;
 }
 .home-header {
   /* position: absolute;
@@ -95,6 +96,15 @@ transition: margin-top 1s ;
   overflow: hidden;
   align-items: center;
   padding-left: 50px;
+}
+.i {
+  width: 5px;
+  height: 100px;
+  background-color: #58968c;
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+  transform: translateX(138px );
+  bottom: 40%;
 }
 .i-dot {
   position: absolute;
@@ -137,15 +147,7 @@ transition: margin-top 1s ;
 .big-d {
   font-size: 90px;
 }
-.i {
-  width: 5px;
-  height: 80px;
-  background-color: #58968c;
-  border-radius: 5px 5px 0 0;
-  position: absolute;
-  transform: translateX(138px);
-  bottom: 42.5%;
-}
+
 /* .header-2 {
 } */
 
@@ -196,6 +198,7 @@ transition: margin-top 1s ;
   border-radius: 50%;
   margin: 10px auto 0 auto;
   box-shadow: .5px .5px 3px rgb(176, 175, 175);
+  /* z-index: -10; */
 }
 .front{
   transform: perspective(600px) rotateY(0deg);
@@ -233,6 +236,7 @@ transform: perspective(600px) rotateY(180deg);
 }
 .circle-0:hover > .back{
   transform: perspective(600px) rotateY(0deg);
+  transition: transform  1s ease;
 }
 
 /* ....................... */
@@ -247,7 +251,8 @@ transform: perspective(600px) rotateY(180deg);
   width:calc(100% - 320px) ;
   word-break:break-all;
   width: 100%;
-  color: rgb(78, 78, 78);
+  color: rgb(66, 66, 66);
+  z-index: 20;
 }
 .ideas h3{
   position: absolute;
