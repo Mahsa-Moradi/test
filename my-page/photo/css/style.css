@@ -83,6 +83,8 @@ a {
 
 .left img{
     flex-basis: 40%;
-   width: 350px;
-   height: 250px;
+   /* width: 350px;
+   height: 250px; */
+   width: 50%;
+  height: auto;
 }
