@@ -70,7 +70,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     padding: 40px;
-    border-bottom: 2px solid rgb(171, 171, 171);
+    border-bottom: 2px solid rgb(210, 210, 210);
     box-shadow: 1px 0 .5px rgb(225, 225, 225);
 }
 .right{
@@ -87,4 +87,8 @@ a {
    height: 250px; */
    width: 50%;
   height: auto;
+}
+.description{
+    background-color: rgb(239, 239, 239);
+    border-bottom: 2.5px solid rgb(156, 156, 156) ;
 }
