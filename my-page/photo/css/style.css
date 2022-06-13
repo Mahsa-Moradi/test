@@ -54,9 +54,11 @@ a {
 .img-fluid-custom {
   display: block;
   width: 100%;
-  height: 922px;
+  height: auto;
 }
-
+.mt-50 {
+    margin-top: 50px;
+  }
 .mt-250 {
   margin-top: 250px;
 }
@@ -64,18 +66,25 @@ a {
   margin-bottom: 500px;
 }
 /* ........................................ */
-.color-custom{
-    background-color: blue !important;
+.mp{
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    border-bottom: 2px solid rgb(171, 171, 171);
+    box-shadow: 1px 0 .5px rgb(225, 225, 225);
 }
-.button-icon-custom {
-    /* color: black !important; */
-  /* background-color: black !important; */
-  width: 4rem !important;
-  height: 4rem !important;
-  /* display: block  !important; */
-  background-color: blue !important;
-  
+.right{
+    flex-basis: 40%;
 }
-.bg-custom{
-    background-color: rgb(210, 62, 62);
+.left{
+    flex-basis: 40%;
+   
+}
+
+.left img{
+    flex-basis: 40%;
+   width: 350px;
+   height: 250px;
 }
