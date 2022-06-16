@@ -239,15 +239,15 @@ width: 100%;
   left: 25px;
   top: 1px;
 }
-
-
-
 .right-side form .input-group input[type=checkbox]{
+  width: 15px;
 height: 15px;
 position: absolute;
 top: -9px;
-right:155px;
+right:210px;
+
 }
+
 .right-side form .input-group input[type=checkbox]:hover{
   cursor: pointer;
 }

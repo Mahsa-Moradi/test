@@ -6,7 +6,7 @@ console.log(numbers[5]);
 var a =12 ;
 console.log(typeof a);
 // ..............................
-var a1 ='12' ;
+var a1 ='120' ;
 console.log(a1.length);
 // ...................
 var a2 =[12,92,92] ;
@@ -40,7 +40,7 @@ for(i=0 ; i<=grades1.length-1 ; i++){
     avg = sum / grades1.length;
     console.log(avg);
 
-// .............................. even is or not
+// .............................. even(zoj) is or not
 var num =[17 , 150 , 21 , 54 , 68 , 36 , 91 ,77];
 for(var i=0 ; i<= num.length; i++){
     if(num[i]%2 == 0){

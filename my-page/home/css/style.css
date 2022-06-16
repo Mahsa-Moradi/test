@@ -138,8 +138,10 @@ transition: margin-top 2s ease;
 }
 .header-1 {
   position: absolute;
-  left: 61.5%;
-  bottom: 52%;
+  /* left: 61.5%;
+  bottom: 52%; */
+  left: 63.5%;
+  bottom: 58%;
   font-size: 50px;
   /* display: block;
   margin-right: 50px;
@@ -296,7 +298,10 @@ transform: perspective(600px) rotateY(180deg);
   color: #07070711;
   z-index: 5;
 }
-
+.circle-3:hover{
+  width: 100%;
+  height: 100%;
+}
 /* circle 2 */
 .circle-2 {
   width: 80px;
