@@ -69,8 +69,9 @@ console.log(g2);
 console.log(array1);
 
 // ...................... push (addation last elemets)
-array1.push('*' , 'addation last elemets' );
-console.log(array1);
+// array1.push('*' , 'addation last elemets' );
+// console.log(array1);
+console.log(array1.push('*' , 'addation last elemets' ));
 
 // ...................... shift (delet first elemets)
 array1.shift('*' , 'ki' );

@@ -21,6 +21,14 @@ firstName1 ='mahsa';
 // ...................................
 const a=5;
 function num(){
+    console.log(b);
+    var b=4;
+    }
+
+num();
+// ............
+const a1=5;
+function num(){
     b=6;
     console.log(b);
     var b;

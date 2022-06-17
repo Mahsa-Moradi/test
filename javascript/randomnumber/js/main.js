@@ -37,19 +37,19 @@ console.log(randomNumber2);
 // }
 
 //  .................................
-let password = "mahsa123";
-let i = 1
-while (i <= 3) {
-  const user = prompt("Enter your password :");
-  if (user == password) {
-    alert("succes ... ");
-    break;
-  } else {
-    // const massage = prompt()
-    alert(`Try again ${3 - i} times`);
-  }
-  i++;
-}
-// .................................
+// let password = "mahsa123";
+// let i = 1
+// while (i <= 3) {
+//   const user = prompt("Enter your password :");
+//   if (user == password) {
+//     alert("succes ... ");
+//     break;
+//   } else {
+//     // const massage = prompt()
+//     alert(`Try again ${3 - i} times`);
+//   }
+//   i++;
+// }
+// .................................adad bein 1 ta 9 random neshon bedeh
 
 // document.getElementById('').innerHTML=math.floor(math.random()*10);

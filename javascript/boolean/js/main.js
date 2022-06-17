@@ -32,7 +32,7 @@ console.log('3' + 2);
 console.log('3' * 2);
 console.log('3' / 2);
 console.log('3' - 2);
-// ..............................
+// ..............................(true=1)
 console.log('mahsa' - 'moradi');
 console.log('mahsa' * 2);
 console.log('3' - true);

@@ -26,8 +26,8 @@ function showBio() {
   console.log("Age : 29");
 }
 showBio();
-showBio();
-showBio();
+// showBio();
+// showBio();
 // 3a ........................ add 2 number
 function addnumbers(num1, num2) {
   console.log(num1 + num2);
