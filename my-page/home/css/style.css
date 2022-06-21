@@ -300,13 +300,6 @@ transform: perspective(600px) rotateY(180deg);
   color: #07070711;
   z-index: 5;
 }
-.circle-3-open{
-  margin: 0 auto;
-  width: 40%;
-  height: 100%;
-  background-color: #ffffff;
-  border: 12px solid black;
-}
 
 /* ........................ circle 2 */
 .circle-2 {
