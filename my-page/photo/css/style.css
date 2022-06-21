@@ -74,7 +74,7 @@ a {
     box-shadow: 1px 0 .5px rgb(225, 225, 225);
 }
 .right{
-    flex-basis: 40%;
+    flex-basis: 60%;
 }
 .left{
     flex-basis: 40%;

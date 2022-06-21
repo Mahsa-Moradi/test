@@ -54,9 +54,9 @@
       <!-- ideas -->
       <div class="ideas"><h3>Wrap Your Ideas with love</h3></div>
       <!--about  -->
-      <span class="circle-3"><a href="#">about us</a></span>
-      <span class="circle-2"><a href="#">about us</a></span>
-      <span class="circle-1"><a href="#">about</a> </span>
+      <span class="circle-3" onclick="open3"><a href="#">about us</a></span>
+      <span class="circle-2" onclick="open2"><a href="#">about us</a></span>
+      <span class="circle-1" onclick="open1"><a href="#">about</a> </span>
       <!-- <img src="./img/tempsnip.png" alt=""> -->
       <!-- slide-left -->
       <div class="slide-left">
@@ -68,9 +68,12 @@
       </div>
       <div id="pointer"></div>
     </div>
-    <!--__________________________________________ pointer -->
-
-    <!-- ........... end -->
+    <!-- _________________________________________<script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <!-- ......................................... script 1 -->
     <!-- <script type="text/javascript">
 document.onmousemove = function(){
@@ -103,13 +106,24 @@ point.getElementsByClassName.top=e.pageY + "px";
         pointer.style.top = y + "px";
       });
     </script>
-
+    <!-- ************** -->
+    <!-- <script>
+      $(document).ready(function(){
+$('.cricle-3').click(function(){
+  $('this').addClass('.circle-3-open');
+})
+      })
+    </script> -->
+    <!-- ************** -->
+    <script>
+      function open(obj) {
+        obj.style.backgroundColor = "#1ec5e5";
+        obj.innerHTML = "Release Me";
+      }
+      
+      </script>
     <!-- __________________ -->
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script> -->
+
     <script src="./js/main.js"></script>
   </body>
 </html>

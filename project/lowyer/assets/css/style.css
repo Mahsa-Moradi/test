@@ -59,15 +59,16 @@ a {
   margin-bottom: 200px;
 }
 /* ************************************* body */
-body {
+body{
   background-image: url(../img/constitution-iran-concept-d-rendering-constitution-iran-concept-d-110157774.jpg);
+   background-attachment: fixed;
   background-repeat: no-repeat;
   position: relative;
   z-index: -2;
-  background-position: center;
-  width: 100%;
+  /* background-position:center; */
+  background-position:50% 150%;
+   width: 100%;
   height: auto;
-  background-attachment: fixed;
 }
 /* .................................... nav  */
 #nav {

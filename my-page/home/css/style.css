@@ -261,13 +261,15 @@ transform: perspective(600px) rotateY(180deg);
   position: absolute;
 }
 
-/* ................... circle */
+/* ................... circle 3 */
 .circle-3 {
   width: 100px;
+  /* width: 20%; */
   height: 100px;
-  background-color: #f0a6ca86;
+  /* background-color: #f0a6ca86; */
+  background-color: rgb(239, 32, 32);
   display: block;
-  border-radius: 20%;
+  border-radius: 15px;
   position: fixed;
   right: 0%;
   bottom: 33px;
@@ -276,7 +278,7 @@ transform: perspective(600px) rotateY(180deg);
   animation: circle 3s linear;
   animation-fill-mode: forwards;
   box-shadow: 0 0 5px rgb(160, 130, 130);
-  box-shadow: 0 0 13px #ab7690;
+  /* box-shadow: 0 0 13px #ab7690; */
 }
 @keyframes circle {
   0% {
@@ -298,11 +300,15 @@ transform: perspective(600px) rotateY(180deg);
   color: #07070711;
   z-index: 5;
 }
-.circle-3:hover{
-  width: 100%;
+.circle-3-open{
+  margin: 0 auto;
+  width: 40%;
   height: 100%;
+  background-color: #ffffff;
+  border: 12px solid black;
 }
-/* circle 2 */
+
+/* ........................ circle 2 */
 .circle-2 {
   width: 80px;
   height: 80px;
@@ -329,7 +335,7 @@ transform: perspective(600px) rotateY(180deg);
   color: #07070711;
   font-size: 10px;
 }
-/* circle-1 */
+/* .......................... circle-1 */
 .circle-1 {
   cursor: pointer;
   width: 60px;
