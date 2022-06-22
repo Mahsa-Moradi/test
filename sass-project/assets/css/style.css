@@ -50,9 +50,11 @@ a {
   width: 100%;
   height: auto;
 }
-
+.img-height{
+  height: 250px;
+}
 .mt-250 {
-  margin-top: 250px;
+  margin-top: 290px;
 }
 
 #nav .navbar {
