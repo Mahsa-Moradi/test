@@ -79,6 +79,7 @@ body {
   word-spacing: 10px;
   z-index: 50;
 transition: margin-top 2s ease;
+font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .title {
@@ -222,17 +223,19 @@ transform: perspective(600px) rotateY(180deg);
 .back h3{
   text-indent: 3px;
   word-wrap: normal;
-  padding-top: 5px ;
-  padding-left: 5px;
+  padding: 5px 7px ;
   line-height: 7px;
   font-size: 4px;
   overflow: hidden;
   vertical-align: text-bottom;
-   /* text-align: left; */
-  /* text-align: justify; */
   text-justify: inter-word;
-   /* white-space: nowrap; */
+  text-align: justify;
 
+
+}
+.click-here{
+  font-size: 4px;
+  color: rgb(244, 178, 178);
 }
 .circle-0:hover > .front{
   transform: perspective(600px) rotateY(-180deg);
