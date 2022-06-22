@@ -1,6 +1,8 @@
 @font-face {
   font-family: vazir-Medium;
-  src: url(../assets/font/Vazir-Medium.eot) format("eot"), url(../assets/font/Vazir-Medium.woff2) format("woff2"), url(../assets/font/Vazir-Medium.woff) format("woff");
+  src: url(../assets/font/Vazir-Medium.eot) format("eot"),
+    url(../assets/font/Vazir-Medium.woff2) format("woff2"),
+    url(../assets/font/Vazir-Medium.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -29,6 +31,11 @@ a {
 .container {
   max-width: 1170px;
   margin: auto;
+  position: relative;
+}
+.container-fluid {
+  max-width: 100%;
+  /* margin: auto; */
   position: relative;
 }
 
@@ -118,7 +125,7 @@ a {
   font-size: 40px;
   color: rgb(107, 107, 107);
   -webkit-animation: gear-1 13s infinite linear;
-          animation: gear-1 13s infinite linear;
+  animation: gear-1 13s infinite linear;
 }
 @-webkit-keyframes gear-1 {
   100% {
@@ -137,7 +144,7 @@ a {
   font-size: 20px;
   color: rgb(78, 78, 78);
   -webkit-animation: gear-2 13s infinite linear;
-          animation: gear-2 13s infinite linear;
+  animation: gear-2 13s infinite linear;
 }
 @-webkit-keyframes gear-2 {
   100% {
@@ -157,7 +164,7 @@ a {
   height: 20px;
   border: 4px solid #efefef;
   -webkit-animation: sq-1 15s infinite linear;
-          animation: sq-1 15s infinite linear;
+  animation: sq-1 15s infinite linear;
 }
 @-webkit-keyframes sq-1 {
   100% {
@@ -177,7 +184,7 @@ a {
   height: 40px;
   border: 4px solid #569e86;
   -webkit-animation: sq-2 40s infinite linear;
-          animation: sq-2 40s infinite linear;
+  animation: sq-2 40s infinite linear;
 }
 @-webkit-keyframes sq-2 {
   100% {
@@ -197,7 +204,7 @@ a {
   height: 30px;
   border: 4px solid rgba(86, 158, 134, 0.4392156863);
   -webkit-animation: sq-3 20s infinite linear;
-          animation: sq-3 20s infinite linear;
+  animation: sq-3 20s infinite linear;
 }
 @-webkit-keyframes sq-3 {
   100% {
@@ -445,4 +452,42 @@ a {
   width: 50%;
   height: 50px;
   background-color: rgb(209, 206, 32);
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
+/* ..................................... footer */
+#footer {
+  background-color: #569e86;
+  margin-bottom: 20px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 180px;
+  /* row-gap: 100px; */
+  text-align: left;
+}
+.side-3 p ,.side-1 h5{
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 20px;
+
+}
+.side-3 input{
+text-align:left ;
+}
+.side-1 li i{
+  padding-right: 10px;
+}
+.side-2 li ,.side-1 li{
+padding:8px 7px ;
+}
+.side-2 li a,.side-1 ul li span {
+
+color: rgb(203, 203, 203);
+}
