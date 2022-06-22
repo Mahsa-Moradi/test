@@ -481,13 +481,19 @@ a {
 .side-3 input{
 text-align:left ;
 }
-.side-1 li i{
-  padding-right: 10px;
+
+.side-2 {
+padding-top: 35px;
 }
+
+
 .side-2 li ,.side-1 li{
 padding:8px 7px ;
 }
 .side-2 li a,.side-1 ul li span {
-
+  padding-right: 10px;
 color: rgb(203, 203, 203);
+}
+.side-1 li i{
+  /* padding-right: 10px; */
 }
