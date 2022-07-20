@@ -129,6 +129,7 @@ a {
   -webkit-animation: gear-1 13s infinite linear;
   animation: gear-1 13s infinite linear;
 }
+
 @-webkit-keyframes gear-1 {
   100% {
     transform: rotate(360deg);
