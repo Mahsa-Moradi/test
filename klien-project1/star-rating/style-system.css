@@ -151,7 +151,7 @@ body {
   filter: grayscale(100%);
 }
 .rating > input {
-  display: none;
+  /* display: none; */
 }
 .rating > label {
   cursor: pointer;
