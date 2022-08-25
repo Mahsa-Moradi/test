@@ -40,7 +40,7 @@ console.log('3' + true);
 console.log(3 + true);
 console.log('3' * true);
 console.log(3 * false);
-// ..............................null
+// ..............................null=0
 console.log(3 + null);
 console.log(3 - null);
 console.log(3 * null);

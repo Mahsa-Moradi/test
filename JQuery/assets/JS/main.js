@@ -13,8 +13,8 @@ $(function () {
 $(document).ready(function () {
   // $(".click").dblclick(function(){
   // $(".click").mouseleave(function(){
-  // $(".click").mouseenter(function(){
-  $(".click").mousedown(function(){
+  $(".click").mouseenter(function(){
+  // $(".click").mousedown(function(){
   // $(".click").mouseup(function () {
     $(".click").hide();
   });
@@ -53,15 +53,15 @@ $(document).ready(function () {
     //   $(".test1").fadeIn("slow");
     // });
   $(".c2").hover(function () {
-    $(".test1").slideDown("60s");
+    $(".test1").slideDown(60);
   });
   // *****************************
 
     // $(".c3").click(function () {
-    //   $(".test1").fadeToggle("80s");
+    //   $(".test1").fadeToggle(80);
     // });
   $(".c3").click(function () {
-    $(".test1").slideToggle('80s');
+    $(".test1").slideToggle(800);
   });
   //   ********************************
   $(".c4").click(function () {
@@ -73,11 +73,11 @@ $(document).ready(function () {
   $(".b1").click(function () {
     $(".testb1").animate(
       {
-        width: "+=150px", // arze ghabli + 150
+        // width: "+=150px", // arze ghabli + 150
         // width:"150px",
-        // width:"toggle",
-        height: "300px",
-        // height: "toggle",
+        width:"toggle",
+        // height: "300px",
+        height: "toggle",
         // bottom:"100px" ,
         // left:"10px" ,
         opacity: "0.5",
@@ -109,7 +109,7 @@ $(document).ready(function () {
     //  AVAL width
     // BAD height etefagh miofte
     x.animate({
-      top: "-200px",
+      top: "-150px",
     });
   });
 });
@@ -118,10 +118,10 @@ $(document).ready(function () {
   $("span.g1").click(function () {
     // ________
     // neshan dadan matn
-    alert("mytext is :" + $(".getg1").text());
+    // alert("mytext is :" + $(".getg1").text());
     // ________ 
 // neshan dadan "tag haye html"
-    alert("mytext is :" + $(".getg1").html());
+    // alert("mytext is :" + $(".getg1").html());
     // ________
       alert("value is :"+$(".inputg1").val());
       // ________
@@ -148,7 +148,7 @@ $(document).ready(function () {
 // add(append,prepend,after,befor)*****
 $(document).ready(function () {
   $(".add-remove").click(function () {
-    $("ul").append("<li>afterrrr text</li>");
+    $("ul").append("afterrrr text");
   });
   $(".add-remove1").click(function () {
     $("ul").prepend("<p>befoooor text</p>");
@@ -304,12 +304,12 @@ $(document).ready(function () {
 //     });
 
 $(document).ready(function () {
-  // $('div.h5').eq(2).css({
-  //     color:'rgb(3, 100, 228)'
-  // });
-  $('div').filter('div.h6').find('p.h8').css({
-      color:'red'
+  $('div.h5').eq(2).css({
+      "color":"red"
   });
+  // $('div').filter('div.h6').find('p.h8').css({
+  //     color:'red'
+  // });
   // $("div").not("div.h6").find("p.h9 ").css({
   //   color: "green",
   // });

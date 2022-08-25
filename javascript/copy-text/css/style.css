@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(156, 211, 248);
+}
+::selection{
+  background-color: rgb(156, 211, 248);  
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+  height: 100vh;
+}
+.background :where(textarea, input) {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin: 5px 0;
+}
+.background {
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  /* height: 40%; */
+  height: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+}
+
+#textarea-1 {
+  color: rgb(41, 41, 41);
+  font-size: 16px;
+  height: auto;
+  border: 1px solid rgb(228, 228, 228);
+  
+}
+#textarea-1::placeholder {
+  color: rgb(172, 172, 172);
+}
+#submit-1 {
+  height: auto;
+  outline-style: 0px;
+  background-color: rgb(137, 189, 249);
+  /* animation: color 0.5s ease; */
+  transform: all 1s ;
+}
+/* @keyframes color {
+  
+  to {
+    background-color: rgb(35, 124, 248);
+  }
+} */

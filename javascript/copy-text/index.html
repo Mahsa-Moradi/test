@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./js/main.js" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      <form action="" class="background">
+        <!-- textarea -->
+        <label for="textarea-1"></label>
+        <textarea
+          name=""
+          id="textarea-1"
+          cols="30"
+          rows="10"
+          placeholder="Please type text"
+        ></textarea>
+
+        <!-- submit -->
+        <label for="submit-1"></label>
+        <input type="submit" value="Copy text" id="submit-1" />
+      </form>
+    </div>
+    <!-- script -->
+    <script>
+      const copysubmit = document.querySelector("#submit-1")
+      const textarea = document.querySelector("#textarea-1");
+
+      copysubmit.addEventListener('click' ,() =>{
+        textarea.select()
+        let textvalue = textarea.value;
+        // console.log(textvalue);
+        navigator.clipboard.writeText(textvalue)
+        copysubmit.innerText = 'Success'
+        copysubmit.style.backgroundcolor = 'rgb(35, 124, 248)'
+
+
+setTimeout(() => {
+    copysubmit.innerText = 'Copy text'
+    copysubmit.style.backgroundcolor = 'rgb(137, 189, 249)'
+
+},1500);
+
+      })
+
+
+
+
+
+
+
+
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

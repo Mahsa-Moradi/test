@@ -6,7 +6,7 @@ console.log(numbers[5]);
 var a =12 ;
 console.log(typeof a);
 // ..............................
-var a1 ='120' ;
+var a1 ='1200' ;
 console.log(a1.length);
 // ...................
 var a2 =[12,92,92] ;

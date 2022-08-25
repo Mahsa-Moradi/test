@@ -34,7 +34,7 @@ $(window).scroll(function () {
 });
 
 $(".scroll-to-top").click(function (e) {
-  e.preventDefault();
+  e.accordion();
   $("body,html").animate(
     {
       scrollTop: 0,
