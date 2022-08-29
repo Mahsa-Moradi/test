@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".//css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=".//css/main.css" />
     <title>QR code</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
+      <div class="info">
         <h1>Make QR code</h1>
-        <p class="title">You input een text or url, we make you een QR code </p>
-        <form action="">
-            <input type="text" placeholder="Add een addres and text">
-            <button> Make QR code</button>
-        </form>
+        <p class="title">You input een text or url, we make you een QR code</p>
+      </div>
+      <!-- ............................ -->
+      <form action="">
+        <input
+          type="text"
+          class="qrinput"
+          placeholder="Add een addres and text"
+        />
+        <button class="generatebtn">Make QR code</button>
+      </form>
+      <!-- ............................. -->
+      <div class="qrcodebox">
+        <img src="" alt="" class="qrimag" />
+      </div>
+      <!-- end -->
     </div>
     <script src="./js/qr.js"></script>
-</body>
+  </body>
 </html>
