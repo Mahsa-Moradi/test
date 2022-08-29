@@ -47,3 +47,11 @@ color: #cdcdcd;}
     color: #fff;
     font-size: 20px;
 }
+.qr-code{
+    border: 1px solid #efefef;
+    text-align: center;
+    padding: 30px;
+}
+.hidden{
+    /* display: none; */
+}
