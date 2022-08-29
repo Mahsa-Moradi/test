@@ -142,7 +142,7 @@ a {
   transition: color 1.5 ease;
 }
 #nav .navbar .social-icons a:hover {
-  color: #413d3d;
+  color: #33d76f;
 }
 #nav .navbar .social-icons a i {
   padding: 0px 10px 0px 10px;
@@ -287,6 +287,7 @@ a {
   right: -174px;
   border-radius: 0 250px 250px 0;
   border-radius: 0 250px 250px 0;
+  margin-top: 50px;
 }
 #course .row .course {
   display: flex;
