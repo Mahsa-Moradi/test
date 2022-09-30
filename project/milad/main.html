@@ -15,13 +15,19 @@
       crossorigin="anonymous"
     />
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- .................. -->
     <title>FASHIONPRESS</title>
   </head>
   <body class="all-body">
-    <!-- .............................start top nav -->
+    <!-- ******************************************start top nav -->
     <section class="top-navbar container-fluid">
       <div class="container top-navbar-head">
         <!-- left -->
@@ -32,11 +38,8 @@
             <li>Join</li>
             <li>Sign In</li>
             <li>
-              Shoping Bag <span>(0)</span
-              ><img
-                src="./img/6358080_bag_buy_cart_discount_sale_icon.png"
-                alt=""
-              />
+              <span class="color-red"> Shoping Bag </span>(0)
+              <i class="fa-solid fa-bag-shopping"></i>
             </li>
           </ul>
         </div>
@@ -62,100 +65,135 @@
     <!-- end  nav -->
     <!-- ******************************************start header -->
     <section class="container-fluid header">
-      <img src="./img/bg.jpg" alt="header" class="img-fluid" />
       <div class="container tittle-header">
         <div class="row position">
-          <!-- header-left -->
-          <!-- <div class="header-left">
-            <h1 class="header-h1">
-              We provide worlds ttp fashion for less fashionpress.
-            </h1>
-            <h4 class="header-h4">
-              provide worlds ttp fashion for less fashionpress.
-            </h4>
-          </div> -->
-          <!-- header-right -->
-          <!-- <div class="header-right"><img src="./img/6358080_bag_buy_cart_discount_sale_icon.png" alt=""></div> -->
+          <img src="./img/bg.jpg" alt="header" class="img-fluid" />
+          <div class="absolute">
+            <div class="col-4 offset-2 heeed">
+                <p class="heeed-title">We provide world top fashion for less fashiopress</p>
+                <p class="small-title">t is a long established fact that a reader will fact that a reader will. </p>
+              
+            </div>
+            <div class="col "><img src="./img/5.jpg" alt="">
+            <span class="circle">Prudact $24</span> <span>order now</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- .........................buttom header -->
+      <div class="container-fluid buttom-header-fluid">
+        <div class="container buttom-header">
+          <form action="#">
+            <label for="gsearch">SEARCH PRODUCT</label>
+            <input type="search" id="gsearch" name="gsearch" />
+            <a href="icon-search"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </form>
+          <!--  -->
+          <div class="icon">
+            <i class="fa-solid fa-list color-red size-icon"></i>
+            <i class="fa-solid fa-bars color-red size-icon"></i>
+          </div>
         </div>
       </div>
     </section>
-
     <!-- end  header -->
     <!-- ******************************************start body -->
     <section class="container-fluid body">
       <div class="container gap">
-        <!-- ..............................sidbar -->
+        <!-- _____________________________sidbar -->
         <div class="sidbar col-3">
-            <!-- ..........product-menu -->
-<div class="product-menu">
-<p class="product-menu-title">PRODUCT MENU</p>
-<ul class="product-menu-ul">
-    <a href="#"><li class="1">Man</li></a>
-    <a href="#"><li class="2">Woman</li></a>
-    <a href="#"><li class="3">Fashion 2013</li></a>
-    <a href="#"><li class="4">Kinds</li></a>
-    <a href="#"><li class="5">Jeans</li></a>
-    <a href="#"><li class="6">Tshirt</li></a>
-    <a href="#"><li class="7">Top Fashion</li></a>
-    <a href="#"><li class="8">Summer Collection</li></a>
-    <a href="#"><li class="9">Special Offer</li></a>
-</ul>
-<!-- ..............................map -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10002.330227958508!2d4.389302056174032!3d51.18991645584442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6b680993591%3A0xf73013484c5c56af!2sPostkantoor%20bpost!5e0!3m2!1sen!2sbe!4v1664541017340!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-<!-- .............................. -->
+          <!-- ..........product-menu -->
+          <div class="product-menu">
+            <p class="product-menu-title">PRODUCT MENU</p>
+            <ul class="product-menu-ul">
+              <a href="#"><li class="1">Man</li></a>
+              <a href="#"><li class="2">Woman</li></a>
+              <a href="#"><li class="3">Fashion 2013</li></a>
+              <a href="#"><li class="4">Kinds</li></a>
+              <a href="#"><li class="5">Jeans</li></a>
+              <a href="#"><li class="6">Tshirt</li></a>
+              <a href="#"><li class="7">Top Fashion</li></a>
+              <a href="#"><li class="8">Summer Collection</li></a>
+              <a href="#"><li class="9">Special Offer</li></a>
+            </ul>
+            <!-- ..............................map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10002.330227958508!2d4.389302056174032!3d51.18991645584442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6b680993591%3A0xf73013484c5c56af!2sPostkantoor%20bpost!5e0!3m2!1sen!2sbe!4v1664541017340!5m2!1sen!2sbe"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="map"
+            ></iframe>
+            <!-- ......................from-twitter -->
+            <div class="from-twitter">
+              <p class="title-from-twitter">Latest Form Twitter</p>
+              <ul>
+                <div class="icon-text">
+                  <i class="fa-brands fa-twitter icon-twitter"></i>
+                  <li class="1">
+                    <span class="color-red">Many desktop</span> publishing
+                    packages and
+                    <span class="color-red"
+                      >web page editors now use Lorem.</span
+                    >
+                  </li>
+                </div>
 
+                <!--  -->
+                <div class="icon-text">
+                  <i class="fa-brands fa-twitter icon-twitter"></i>
+                  <li class="2">
+                    <span class="color-red">desktop</span> publishing packages
+                    and web page editors now use Lorem Ipsum as their default
+                    model text, and a search for 'lorem ipsum' will uncover many
+                    web sites still in their
+                    <span class="color-red">infancy Various versions.</span>
+                  </li>
+                </div>
 
+                <!--  -->
+                <div class="icon-text">
+                  <i class="fa-brands fa-twitter icon-twitter"></i>
+                  <li class="3">
+                    <span class="color-red">publishing</span> packages and web
+                    page editors now use Lorem Ipsum as their default model
+                    text, and a search for
+                    <span class="color-red"
+                      >'lorem ipsum' will uncover many web sites still in their
+                      infancy.</span
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <!-- .....................HAPPY CLIENTS -->
+            <div class="happy-clients">
+              <p class="title-happt-clients color-red">OUR HAPPY CLIENTS</p>
+              <div class="body-happy-clients">
+                <p class="body-happt-clients">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here
+                </p>
+              </div>
 
-
-
-
-
-
-
-
-<!-- end -->
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+              <div class="icon-happy-clients">
+                <i class="fa-solid fa-user-tie icon-user"></i>
+                <p class="name-clients">Jan Doe, Corpery lac</p>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
         </div>
-        <!-- card-->
+        <!-- ________________________________card-->
         <div class="all-card flex-wrap">
-          <!-- ******************************row 1 -->
+          <!-- ......................row 1 -->
           <div class="row gap-row">
             <!--card 1 -->
             <div class="card-1 col-4">
@@ -192,7 +230,7 @@
               </div>
             </div>
           </div>
-          <!-- ******************************row 2 -->
+          <!-- ......................row 2 -->
           <div class="row">
             <!--card 3 -->
             <div class="card-3 col-4">
@@ -246,7 +284,7 @@
               </div>
             </div>
           </div>
-          <!-- ******************************row 3 -->
+          <!-- ......................row 3 -->
           <div class="row">
             <!--card 6 -->
             <div class="card-6 col-4">
@@ -301,7 +339,7 @@
             </div>
           </div>
 
-          <!-- ******************************row 4 -->
+          <!-- ......................row 4 -->
           <div class="row">
             <!--card 9 -->
             <div class="card-9 col-4">
@@ -355,7 +393,7 @@
               </div>
             </div>
           </div>
-          <!-- ******************************row 5 -->
+          <!-- ......................row 5 -->
           <div class="row">
             <!--card 12 -->
             <div class="card-13 col-4">
@@ -416,10 +454,22 @@
             <div class="zz">
               <p class="tittle-footer">FOLLOW US</p>
               <ul>
-                <li><i class="fa-brands fa-square-facebook"></i><a href="#">Facbook</a></li>
-                <li><i class="fa-brands fa-square-twitter"></i><a href="#">Twitter</a></li>
-                <li><i class="fa-brands fa-square-google-plus"></i><a href="#">google</a></li>
-                <li><i class="fa-brands fa-square-instagram"></i><a href="#">Instagram</a></li>
+                <li>
+                  <i class="fa-brands fa-square-facebook"></i
+                  ><a href="#">Facbook</a>
+                </li>
+                <li>
+                  <i class="fa-brands fa-square-twitter"></i
+                  ><a href="#">Twitter</a>
+                </li>
+                <li>
+                  <i class="fa-brands fa-square-google-plus"></i
+                  ><a href="#">google</a>
+                </li>
+                <li>
+                  <i class="fa-brands fa-square-instagram"></i
+                  ><a href="#">Instagram</a>
+                </li>
               </ul>
             </div>
           </div>

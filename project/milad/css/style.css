@@ -98,11 +98,11 @@ a {
 .right:nth-child(3) {
   color: red;
 }
-.right ul li img {
+.right ul li i {
   width: 20px;
   height: 20px;
   padding-left: 2px;
-  background-color: red;
+  color: red;
 }
 /* left */
 .left {
@@ -128,16 +128,44 @@ a {
 .nav ul li {
   padding: 0 30px;
   color: white;
+  font-size: 14px;
 }
 /* end  nav */
 /* .............................start header */
+.header{
+    overflow: hidden;
+}
 .header img {
   width: 100%;
   height: 370px;
 }
+.tittle-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .position {
   display: block;
   position: relative;
+}
+.absolute{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    gap: 40px;
+}
+.heeed .heeed-title{
+    color: white;
+    font-size: 30px;
+    /* text-align: justify; */
+}
+.heeed .small-title{
+    color: rgb(213, 211, 211);
+    font-size: 10px;
+}
+.absolute img{
+    border-radius: 50%;
+    margin-right: 16.66666667%;
 }
 .header-left {
   display: flex;
@@ -148,10 +176,51 @@ a {
   display: flex;
   flex-basis: 40%;
 }
+/* ........................buttom-header */
+.buttom-header-fluid {
+  background-color: #e0dfdfd0;
+  height: auto;
+}
+.buttom-header {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  
+}
+
+.buttom-header form label {
+  color: red;
+  font-weight: bold;
+  /* width: 220px; */
+  /* background-color: #eaeaeac0; */
+  text-align: right;
+  padding: 5px;
+}
+.buttom-header form input {
+  border: none;
+  background-color: #a5a5a5;
+  margin-right: -5px;
+  outline-style: none;
+}
+.buttom-header form i {
+  background-color: red;
+  color: white;
+  padding: 4px;
+  margin: 0;
+}
+.icon{
+    margin-right: 55px;
+}
+.size-icon {
+  font-size: 22px;
+  padding-left: 10px;
+}
+
 /* end  header */
 /* ...................................start body */
 .body {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   background-color: #efefef;
 }
 .gap {
@@ -196,19 +265,76 @@ a {
   width: 1em;
   margin-left: -1em;
   font-size: 20px;
-
 }
 /* ...................................map */
-.map{
-    /* background-color: tomato; */
-    width: 200px;
-    height: 200px;
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   position: absolute;
-   left: 30px;
+.map {
+  /* background-color: tomato; */
+  width: 200px;
+  height: 200px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 30px;
+}
+/* ..........................from-twitter */
+.from-twitter {
+  margin-top: 230px;
+  width: 95%;
+}
+.title-from-twitter {
+  color: red;
+  font-weight: bold;
+}
+.icon-text {
+  display: flex;
+  flex-direction: row;
+}
+.icon-twitter {
+  padding-right: 15px;
+}
+.from-twitter ul li {
+  font-size: 12px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.icon-text i {
+  color: rgb(213, 213, 213);
+  font-size: 18px;
+}
+
+.color-red {
+  color: red;
+}
+/* ......................................... */
+.happy-clients {
+  width: 95%;
+}
+.title-happt-clients {
+  font-weight: bold;
+}
+
+.body-happy-clients {
+  padding: 19px;
+  background-color: rgb(250, 250, 250);
+}
+.happy-clients p {
+  font-size: 12px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.icon-happy-clients {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.icon-user {
+  padding-right: 15px;
+}
+.name-clients {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* ...............................................card */
