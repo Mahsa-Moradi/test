@@ -158,19 +158,67 @@ a {
   display: flex;
   gap: 20px;
 }
-
+/* ..............................sidbar */
 .sidbar {
-  display: flex;
-  flex-basis: 20%;
-  border: 2px solid rgb(255, 18, 18);
-  height: 500px;
+  /* display: flex; */
+  /* flex-basis: 20%; */
+  border-right: 2px solid rgb(226, 226, 226);
 }
+
+/* .product-menu{
+} */
+.product-menu-title {
+  background-color: red;
+  color: white;
+  padding: 5px 18px;
+  width: 100%;
+  margin-top: 10px;
+}
+.product-menu-ul {
+}
+.product-menu-ul a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+.product-menu-ul a li {
+  border-bottom: 2px solid rgb(226, 226, 226);
+  width: 100%;
+  padding-left: 2px;
+  padding-bottom: 8px;
+}
+
+.product-menu-ul a li::before {
+  content: "\2022";
+  color: rgb(215, 221, 18);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 20px;
+
+}
+/* ...................................map */
+.map{
+    /* background-color: tomato; */
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: absolute;
+   left: 30px;
+}
+
+/* ...............................................card */
 .all-card {
   display: flex;
   flex-basis: 70%;
   /* border: 2px solid rgb(222, 222, 222); */
   height: auto;
   flex-direction: row;
+  overflow: hidden;
 }
 
 /* ......................card 1 */
@@ -251,17 +299,23 @@ a {
 .footer {
   background-color: #eaeaea;
   width: 100%;
-  height: 300px; 
+  height: 300px;
 }
-.column-1,.column-1,.column-2,.column-3 {
+.footer-row {
+}
+.column-1,
+.column-1,
+.column-2,
+.column-3 {
   display: flex;
   flex-direction: column;
   border-right: 4px solid #efefef;
-  padding: 50px;
+  padding: 50px 0;
 }
 .tittle-footer {
   font-weight: bold;
 }
+
 .header-footer {
   font-size: 25px;
 }
@@ -269,15 +323,29 @@ a {
   color: red;
 }
 .body-footer {
-    text-align: justify;
-    /* width: 200px; */
+  text-align: justify;
+  /* width: 200px; */
+  font-size: 13px;
+}
+
+.column-2 ul li i {
+  padding: 0 8px;
+  color: red;
+}
+.column-2 ul li a {
+  color: black;
+  text-decoration: none;
+}
+.column-2 ul li a:hover {
+  color: rgb(255, 1, 1);
+  font-weight: bold;
 }
 .column-3 {
-    border: none;
+  border: none;
 }
-.column-3-body{
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
+.column-3-body {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
 }
 /* end footer  */
