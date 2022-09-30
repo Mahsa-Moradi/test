@@ -47,16 +47,49 @@ function modal(a, b) {
 console.log(modal(2, 5));
 
 // ....................... zzzzzzzzzzzab
-function rt(){
-    for ( var i = 1; i < 2; i++) {
-        // return i
-  }    
+function rt() {
+  for (var i = 1; i < 2; i++) {
+    // return i
+  }
 
-  for ( var j = 4; j < 5; j++) {
+  for (var j = 4; j < 5; j++) {
     // return j
   }
   console.log(ij);
 }
 rt();
-  
-// .......................
+// .................................................
+//  خروجی پراممت رشته است عملیات جمع انجام نمیشود
+// (parseInt va eval)  reshteii be addad tabdil kon
+function getNumber() {
+  var n1 = parseInt(prompt("First Number : ")) 
+  var n2 = eval(prompt("secound Number: "))
+  var op = prompt("Enter Operato : ")
+  var result = calc(n1, n2, op)
+  alert(result)
+}
+function calc(num1,num2,optator) {
+  switch(optator) {
+    case "+":
+      return(num1+num2);
+    case "-":
+      return(num1-num2);
+
+    case "*":
+      return(num1*num2);
+
+    case "/":
+      return(num1/num2);
+  }
+}
+// getNumber();
+// getNumber();
+// agar bekhahim chand bar ejra shavad
+// ...........................................
+function printNumber(){
+  var k=eval(prompt('min: '))
+  var h=eval(prompt('max: '))
+  for(var i=min ; i<=max; i=i+2){
+    console.log(i+'</br>')
+  }
+}
