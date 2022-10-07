@@ -1,0 +1,192 @@
+/* .............................start top nav */
+.top-navbar {
+  background-color: rgba(250, 250, 250, 0.986);
+  width: 100%;
+  height: 70px;
+}
+.top-navbar-head {
+  display: flex;
+  justify-content: space-between;
+}
+/* right */
+.right ul {
+  display: flex;
+  flex-direction: row;
+}
+.right ul li {
+  background-color: rgb(239, 238, 238);
+  margin: 2px;
+  padding: 20px;
+  font-weight: bold;
+}
+.right:nth-child(3) {
+  color: red;
+}
+.right ul li i {
+  width: 20px;
+  height: 20px;
+  padding-left: 2px;
+  color: red;
+}
+/* left */
+.left {
+  font-size: 30px;
+  padding: 10px;
+}
+.left span {
+  color: red;
+}
+/* .......................................menu hamberger */
+.wrapper span.menu {
+  z-index: 99;
+  position: absolute;
+  top: 20px;
+  width: 35px;
+  height: 4px;
+  background-color: red;
+  cursor: pointer;
+}
+.wrapper span.menu::before,
+.wrapper span.menu::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 35px;
+  height: 4px;
+  background-color: red;
+}
+.wrapper span.menu::before {
+  top: -8px;
+}
+.wrapper span.menu::after {
+  bottom: -8px;
+}
+.over-lay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(231, 231, 231);
+  left: 0;
+  bottom: -99%;
+  z-index: 99;
+}
+.over-lay ul {
+  width: 100%;
+  /* direction: rtl; */
+  /* text-align: center; */
+  margin-top: 10px;
+  padding-left: 50px;
+  margin-left: -10px;
+  font-size: 30px;
+}
+.over-lay ul li {
+  margin: 35px 20px;
+  /* transition:all 1s ease; */
+}
+
+.over-lay ul li a {
+  color: rgb(62, 62, 62);
+  text-decoration: none;
+  /* position: relative; */
+  display: inline-block;
+  overflow: hidden;
+}
+/* * Tag 'a' ro dari badesh yek style dar nazar begir * */
+.over-lay ul li a::after {
+  display: block;
+  border: 1px;
+  content: "";
+  /* left: 0; */
+  bottom: -10px;
+  height: 5px;
+  background-color: rgb(250, 8, 8);
+  /* background-color: rgb(23, 132, 204); */
+  /* 'transform' yaniii: az safhe bere va nabasheh VA be aromi biad bala  */
+  transform: translateX(100%);
+}
+
+.over-lay ul li a:hover::after {
+  animation: border-anim 2.5s ease normal;
+  transform: translateX(0%);
+}
+@keyframes border-anim {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* !important */
+.anim {
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  transition: all 0.5s ease;
+  animation: menu_anim 1.5s ease-out forwards;
+}
+@keyframes menu_anim {
+  0% {
+    left: -40%;
+  }
+  100% {
+    /* transform: translate(0%); */
+    left: 0%;
+    /* bottom: 0%; */
+    /* width: 25%; */
+  }
+}
+/* end top nav */
+/* .....................................madia quary */
+@media (min-width: 576px) {
+  .fs-sm-top-nav-right {
+    font-size: 13px;
+  }
+  /* right */
+  .right-sm-top-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+  }
+  .right-sm-ul-top-nav {
+    display: block;
+    width: 102px;
+    text-align: center;
+  }
+  /* error */
+  .right-ul-sm-top-nav-shop {
+    /* width: px; */
+  }
+}
+/*  */
+@media (min-width: 768px) {
+  .fs-md-top-nav-left {
+    font-size: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-right: 20px;
+    text-align: left;
+  }
+  .right-md-top-nav {
+    /* margin-right: 50px; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 30px;
+
+  }
+  .right-md-ul-top-nav {
+    display: block;
+    width: 83px;
+    text-align: center;
+  }
+  .right-ul-md-top-nav-shop {
+    width: 167px;
+  }
+}
+/* ........................ */

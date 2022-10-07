@@ -1,0 +1,219 @@
+/* ...................................start body */
+.body {
+  /* margin-top: 60px; */
+  background-color: #efefef;
+}
+.gap {
+  display: flex;
+  gap: 20px;
+}
+/* ..............................sidbar */
+.sidbar {
+  /* display: flex; */
+  /* flex-basis: 20%; */
+  border-right: 2px solid rgb(226, 226, 226);
+}
+
+/* .product-menu{
+  } */
+.product-menu-title {
+  background-color: red;
+  color: white;
+  padding: 5px 18px;
+  width: 100%;
+  margin-top: 10px;
+}
+.product-menu-ul {
+}
+.product-menu-ul a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+.product-menu-ul a li {
+  border-bottom: 2px solid rgb(226, 226, 226);
+  width: 100%;
+  padding-left: 2px;
+  padding-bottom: 8px;
+}
+
+.product-menu-ul a li::before {
+  content: "\2022";
+  color: rgb(215, 221, 18);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 20px;
+}
+/* ...................................map */
+.map {
+  /* background-color: tomato; */
+  width: 200px;
+  height: 200px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 30px;
+}
+/* ..........................from-twitter */
+.from-twitter {
+  margin-top: 230px;
+  width: 95%;
+}
+.title-from-twitter {
+  color: red;
+  font-weight: bold;
+}
+.icon-text {
+  display: flex;
+  flex-direction: row;
+}
+.icon-twitter {
+  padding-right: 15px;
+}
+.from-twitter ul li {
+  font-size: 12px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.icon-text i {
+  color: rgb(213, 213, 213);
+  font-size: 18px;
+}
+
+.color-red {
+  color: red;
+}
+/* ......................................... */
+.happy-clients {
+  width: 95%;
+}
+.title-happt-clients {
+  font-weight: bold;
+}
+
+.body-happy-clients {
+  padding: 19px;
+  background-color: rgb(250, 250, 250);
+}
+.happy-clients p {
+  font-size: 12px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.icon-happy-clients {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.icon-user {
+  padding-right: 15px;
+}
+.name-clients {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ...............................................card */
+.all-card {
+  display: flex;
+  /* flex-basis: 70%; */
+  height: auto;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+/* ......................card 1 */
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7,
+.card-8,
+.card-9,
+.card-10,
+.card-11,
+.card-12,
+.card-13 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  /* height: auto; */
+  height: 390px;
+  border: 1px solid #efefef;
+  padding: 6px;
+  box-shadow: 2px 2px 2px 2px #eaeaea;
+  background-color: white;
+}
+.card-1 img,
+.card-2 img,
+.card-3 img,
+.card-4 img,
+.card-5 img,
+.card-6 img,
+.card-7 img,
+.card-8 img,
+.card-9 img,
+.card-10 img,
+.card-11 img,
+.card-12 img,
+.card-13 img {
+  width: 100%;
+  height: 195px;
+}
+.card-text {
+  padding: 8px 3px;
+}
+.line-card {
+  border-top: 1px solid #efefef;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 8px;
+}
+.line-card a {
+  height: 30px;
+  background-color: red;
+  color: white;
+  outline-style: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ......................row 2 */
+.flex-wrap {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+/* ......................card 2 */
+.card-2 img {
+  width: 100%;
+  height: 170px;
+}
+/* end body */
+
+/* .................................media quary*/
+@media (min-width: 576px) {
+  .mg-line-card{
+    margin-right: 2px;
+  }
+}
+/*  */
+@media (min-width: 768px) {
+  .w-map-md{
+width: 20%;
+  }
+  .mg-md-from-twitter-ul{
+    margin-left: -30px;
+  }
+  
+}

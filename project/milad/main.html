@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/top-nav.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/body.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/mediaquary.css" />
     <!-- bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
-    <link rel="stylesheet" href="./css/bootstrap.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,15 +34,44 @@
     <!-- ******************************************start top nav -->
     <section class="top-navbar container-fluid">
       <div class="container top-navbar-head">
-        <!-- left -->
-        <div class="left"><span>FASHION</span>PRESS</div>
-        <!-- right -->
+        <!-- .........................left -->
+        <div class="left">
+          <!-- .Menu hamperger -->
+
+          <div class="wrapper d-sm-block d-md-none offset-sm-0">
+            <span class="menu"></span>
+            <div
+              class="over-lay d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none"
+            >
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--  -->
+          <div class="fs-md-top-nav-left d-sm-none d-md-block">
+            <span>FASHION</span>PRESS
+          </div>
+        </div>
+        <!--........................... right -->
         <div class="right">
-          <ul>
-            <li>Join</li>
-            <li>Sign In</li>
-            <li>
-              <span class="color-red"> Shoping Bag </span>(0)
+          <ul class="right-sm-top-nav right-md-top-nav">
+            <li
+              class="fs-sm-top-nav-right right-md-ul-top-nav right-sm-ul-top-nav"
+            >
+              Join
+            </li>
+            <li
+              class="fs-sm-top-nav-right right-md-ul-top-nav right-sm-ul-top-nav"
+            >
+              Sign In
+            </li>
+            <li class="right-ul-md-top-nav-shop">
+              <span class="color-red fs-sm-top-nav-right"> Shoping Bag </span
+              >(0)
               <i class="fa-solid fa-bag-shopping"></i>
             </li>
           </ul>
@@ -47,62 +80,96 @@
     </section>
     <!-- end top nav -->
     <!-- ******************************************start nav -->
-    <section class="container-fluid nav">
+    <section
+      class="container-fluid nav col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-sm-none d-md-block"
+    >
       <div class="container">
         <div class="row">
-          <ul>
+          <ul class="fs-nav-md">
             <li>HOME</li>
             <li>ABOUT US</li>
             <li>CONTACT US</li>
             <li>CONTACT ABOUT</li>
-            <li>CONTACT ABOUTUS</li>
-            <li>CONTACT ABOUTABOUS</li>
-            <li>CONTACT US</li>
+            <li class="d-sm-none d-md-none">CONTACT ABOUTUS</li>
+            <li class="d-sm-none d-md-none">SCONTACT ABOUTABOUS</li>
+            <li class="d-sm-none d-md-none">TCONTACT US</li>
           </ul>
         </div>
       </div>
     </section>
+
     <!-- end  nav -->
     <!-- ******************************************start header -->
     <section class="container-fluid header">
       <div class="container tittle-header">
         <div class="row position">
-          <img src="./img/bg.jpg" alt="header" class="img-fluid" />
+          <img
+            src="./img/7b74f266b3aa88bd20ed914b6dd5ea13.jpg"
+            alt="header"
+            class="img-fluid"
+          />
           <div class="absolute">
-            <div class="col-4 offset-2 heeed">
-                <p class="heeed-title">We provide world top fashion for less fashiopress</p>
-                <p class="small-title">t is a long established fact that a reader will fact that a reader will. </p>
-              
+            <div class="col-4 offset-sm-1 heeed">
+              <p class="heeed-title">
+                We provide world top fashion for less fashiopress
+              </p>
+              <p class="small-title">
+                long established fact that a reader will fact that a reader
+                will.
+              </p>
             </div>
-            <div class="col "><img src="./img/5.jpg" alt="">
-            <span class="circle">Prudact $24</span> <span>order now</span></div>
+            <!--  -->
+            <div
+              class="col-sm-6 col-md-6 col-lg-5 col-xl-5 col-xxl-5 offset-lg-1"
+            >
+              <img
+                src="./img/fashion-portrait-young-beautiful-woman-fluffy-violet-dress-blond-curly-hair-makeup-dress-with-feathers-soft-colors-art-photo_374827-430.jpg"
+                alt=""
+                class=""
+              />
+              <div class="circle">
+                <span>Prudact $24</span>
+                <span>order now</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- .........................buttom header -->
-      <div class="container-fluid buttom-header-fluid">
-        <div class="container buttom-header">
-          <form action="#">
-            <label for="gsearch">SEARCH PRODUCT</label>
-            <input type="search" id="gsearch" name="gsearch" />
+      <!-- .........................bottom header -->
+      <div class="container-fluid bottom-header-fluid col-12">
+        <div class="container bottom-header col-sm-12">
+          <form action="#" class="col-sm-10">
+            <label for="gsearch" class="fs-sm-bottomheader-label"
+              >SEARCH PRODUCT</label
+            >
+            <input
+              type="search"
+              id="gsearch"
+              name="gsearch"
+              class="size-sm-bottomheader-input"
+            />
             <a href="icon-search"
               ><i class="fa-solid fa-magnifying-glass"></i
             ></a>
           </form>
           <!--  -->
-          <div class="icon">
-            <i class="fa-solid fa-list color-red size-icon"></i>
-            <i class="fa-solid fa-bars color-red size-icon"></i>
+          <div class="icon size-sm-bottomheader-icon">
+            <i
+              class="fa-solid fa-list color-red size-icon size-sm-bottomheader-iconi"
+            ></i>
+            <i
+              class="fa-solid fa-bars color-red size-icon size-sm-bottomheader-iconi"
+            ></i>
           </div>
         </div>
       </div>
     </section>
     <!-- end  header -->
     <!-- ******************************************start body -->
-    <section class="container-fluid body">
-      <div class="container gap">
+    <section class="container-fluid col-12 body">
+      <div class="container col-12 gap">
         <!-- _____________________________sidbar -->
-        <div class="sidbar col-3">
+        <div class="sidbar col-3 d-sm-none d-md-block">
           <!-- ..........product-menu -->
           <div class="product-menu">
             <p class="product-menu-title">PRODUCT MENU</p>
@@ -126,12 +193,12 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="map"
+              class="map w-map-md"
             ></iframe>
             <!-- ......................from-twitter -->
             <div class="from-twitter">
               <p class="title-from-twitter">Latest Form Twitter</p>
-              <ul>
+              <ul class="mg-md-from-twitter-ul">
                 <div class="icon-text">
                   <i class="fa-brands fa-twitter icon-twitter"></i>
                   <li class="1">
@@ -192,11 +259,11 @@
           </div>
         </div>
         <!-- ________________________________card-->
-        <div class="all-card flex-wrap">
+        <div class="all-card flex-wrap col-sm-12">
           <!-- ......................row 1 -->
           <div class="row gap-row">
             <!--card 1 -->
-            <div class="card-1 col-4">
+            <div class="card-1 col-md-3 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/2.jpg"
@@ -207,13 +274,13 @@
                   Some quick example text to build on the card's content.
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$8.99</p>
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
             <!-- card 2 -->
-            <div class="card-2 col-8">
+            <div class="card-2 col-md-6 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/1.jpg"
@@ -221,11 +288,11 @@
               />
               <div class="card-body">
                 <p class="card-text">
-                  Some quick example text to build on the card's content.
+                  Some quick example text to build on the card's content.Some quick example text to build on the carSome quick example text to build on the carSome quick example text to build on the car
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$8.99</p>
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
@@ -233,7 +300,7 @@
           <!-- ......................row 2 -->
           <div class="row">
             <!--card 3 -->
-            <div class="card-3 col-4">
+            <div class="card-3 col-md-3 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/5.jpg"
@@ -244,13 +311,13 @@
                   Some quick example text to build on the card's content.
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$8.99</p>
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
             <!-- card 4 -->
-            <div class="card-4 col-4">
+            <div class="card-4 col-md-3 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/4.jpg"
@@ -261,13 +328,13 @@
                   Some quick example text to build on the card's content.
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$8.99</p>
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
             <!-- card 5 -->
-            <div class="card-5 col-4">
+            <div class="card-5 col-md-3 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/3.jpg"
@@ -278,8 +345,8 @@
                   Some quick example text to build on the card's content.
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$8.99</p>
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
@@ -287,7 +354,7 @@
           <!-- ......................row 3 -->
           <div class="row">
             <!--card 6 -->
-            <div class="card-6 col-4">
+            <div class="card-6 col-md-3 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/8.jpg"
@@ -298,13 +365,13 @@
                   Some quick example text to build on the card's content.
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$8.99</p>
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
             <!-- card 7 -->
-            <div class="card-7 col-4">
+            <div class="card-7 col-md-3 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/7.jpg"
@@ -315,13 +382,13 @@
                   Some quick example text to build on the card's content.
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$8.99</p>
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
             <!-- card 8 -->
-            <div class="card-8 col-4">
+            <div class="card-8 col-md-3 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/6.jpg"
@@ -332,8 +399,8 @@
                   Some quick example text to build on the card's content.
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$8.99</p>
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
@@ -342,7 +409,7 @@
           <!-- ......................row 4 -->
           <div class="row">
             <!--card 9 -->
-            <div class="card-9 col-4">
+            <div class="card-9 col-md-3 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/11.jpg"
@@ -353,13 +420,13 @@
                   Some quick example text to build on the card's content.
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$8.99</p>
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
             <!-- card 10 -->
-            <div class="card-10 col-4">
+            <div class="card-10 col-md-3 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/10.jpg"
@@ -370,13 +437,13 @@
                   Some quick example text to build on the card's content.
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$8.99</p>
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
             <!-- card 11 -->
-            <div class="card-11 col-4">
+            <div class="card-11 col-md-3 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/9.jpg"
@@ -387,8 +454,8 @@
                   Some quick example text to build on the card's content.
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$8.99</p>
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
@@ -396,7 +463,7 @@
           <!-- ......................row 5 -->
           <div class="row">
             <!--card 12 -->
-            <div class="card-13 col-4">
+            <div class="card-13 col-md-3 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/13.jpg"
@@ -407,13 +474,14 @@
                   Some quick example text to build on the card's content.
                 </p>
                 <span class="line-card">
-                  <a href="#" class="btn btn-danger">Send</a>
                   <p class="num-1">$ 8.99</p>
+
+                  <a href="#" class="btn btn-danger">Send</a>
                 </span>
               </div>
             </div>
             <!-- card 13 -->
-            <div class="card-12 col-8">
+            <div class="card-12 col-md-6 col-sm-12">
               <img
                 class="card-img-top"
                 src="./img/12.jpg"
@@ -421,11 +489,11 @@
               />
               <div class="card-body">
                 <p class="card-text">
-                  Some quick example text to build on the card's content.
+                  Some quick example text to build on the card's content.Some quick example text to build on the car
                 </p>
                 <span class="line-card">
+                    <p class="num-1">$ 8.99</p>
                   <a href="#" class="btn btn-danger">Send</a>
-                  <p class="num-1">$ 8.99</p>
                 </span>
               </div>
             </div>
@@ -438,10 +506,10 @@
     <!-- end body -->
     <!-- ******************************************start footer -->
     <section class="container-fluid mt-50 footer">
-      <div class="container footer-container">
-        <div class="row footer-row">
-          <!-- ......... -->
-          <div class="column-1 col">
+      <div class="container">
+        <div class="row footer-row col-sm-12 footer-gap">
+          <!-- ......... 1-->
+          <div class=" column-1 col-md-2 col-exsm-12 border-exsm-column border-sm-column offset-lg-1 col-sm-12 border-md-column">
             <p class="tittle-footer">About</p>
             <p class="header-footer"><span>FASHION</span>PRESS</p>
             <p class="body-footer">
@@ -449,11 +517,13 @@
               the readable content of a page when looking at its layout.
             </p>
           </div>
-          <!-- ............. -->
-          <div class="column-2 col">
+          <!-- ............. 2-->
+          <div
+            class="column-2 col-md-2 border-exsm-column border-sm-column ml-md-column-2 offset-lg-1 col-exsm-12 col-sm-12 border-md-column"
+          >
             <div class="zz">
               <p class="tittle-footer">FOLLOW US</p>
-              <ul>
+              <ul class="">
                 <li>
                   <i class="fa-brands fa-square-facebook"></i
                   ><a href="#">Facbook</a>
@@ -473,8 +543,8 @@
               </ul>
             </div>
           </div>
-          <!-- ............. -->
-          <div class="column-3 col-6">
+          <!-- ............. 3-->
+          <div class="column-3 col-md-6 col-exsm-12 col-sm-12">
             <p class="tittle-footer">CONTACT INFO</p>
             <div class="column-3-body">
               <p class="body-footer">
@@ -497,11 +567,24 @@
 
     <!--________________________________________________script -->
     <!-- bootstrap -->
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <!--  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("document").ready(function () {
+        $(".menu").click(function () {
+          $(".over-lay").toggleClass("anim");
+        });
+      });
+      //
+    </script>
   </body>
 </html>

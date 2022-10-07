@@ -1,0 +1,152 @@
+.header {
+  overflow: hidden;
+  position: relative;
+}
+.header img {
+  width: 100%;
+  height: 370px;
+  background-size: cover;
+  background-clip: border-box;
+}
+.tittle-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.position {
+  display: block;
+  position: relative;
+}
+.absolute {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  gap: 30px;
+}
+.heeed .heeed-title {
+  font-size: 32px;
+  background: -webkit-linear-gradient(left, #d23fe5, #ece7ed);
+  background: -o-linear-gradient(right, #d23fe5, #ece7ed);
+  background: -moz-linear-gradient(right, #d23fe5, #ece7ed);
+  background: linear-gradient(to right, #d23fe5, #ece7ed 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heeed .small-title {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+.absolute img {
+  width: 100%;
+  /* width: 58.33333333%; */
+  border-radius: 50%;
+  /* margin-right: 58.33333333%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .circle {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  border-radius: 50%;
+} */
+/* ........................left */
+.header-left {
+  display: flex;
+  flex-basis: 40%;
+}
+/* .......................right */
+.header-right {
+  display: flex;
+  flex-basis: 40%;
+}
+/* ..........................................buttom-header */
+.bottom-header-fluid {
+  background-color: #e0dfdfb8;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.bottom-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-header form label {
+  color: red;
+  font-weight: bold;
+  /* width: 220px; */
+  /* background-color: #eaeaeac0; */
+  text-align: right;
+  padding: 5px;
+}
+.bottom-header form input {
+  border: none;
+  background-color: #ddddddbe;
+  margin-right: -5px;
+  outline-style: none;
+  padding: 0 12px;
+}
+.bottom-header form i {
+  background-color: red;
+  color: white;
+  padding: 4px;
+  margin: 0;
+}
+.icon {
+  margin-right: 55px;
+}
+.size-icon {
+  font-size: 22px;
+  padding-left: 10px;
+}
+
+/* end  header */
+/* ...............................................madia quary */
+@media (min-width: 576px) {
+  .fs-sm-nav {
+    font-size: 30px;
+  }
+  .heeed-sm-p {
+    margin-right: 00px;
+  }
+  .wh-sm-img-head {
+    height: 50%;
+    width: 50%;
+  }
+  .fs-sm-bottomheader-label {
+    font-size: 12px;
+  }
+  .size-sm-bottomheader-input {
+    width: 30%;
+  }
+  .size-sm-bottomheader-icon {
+    display: flex;
+    flex-direction: row;
+   }
+  .size-sm-bottomheader-iconi {
+   font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .absolute-md-p {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .absolute-md-p {
+    width: 50%;
+    height: 50%;
+  }
+}
+/*  */

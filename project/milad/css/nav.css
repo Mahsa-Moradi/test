@@ -1,0 +1,34 @@
+/* .............................start nav */
+.nav {
+  background-color: black;
+  margin: 0;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -18px;
+  padding: 5px;
+}
+.nav ul li {
+  padding: 0 30px;
+  color: white;
+  font-size: 13px;
+}
+/* end  nav */
+
+
+
+/* ...............................................media quary */
+@media (min-width: 576px){
+  .fs-nav-md{
+    font-size: 13px;
+}
+}
+/*  */
+@media (min-width: 768px) {
+    
+  }
+/* ........................ */
+
+
