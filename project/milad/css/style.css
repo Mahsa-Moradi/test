@@ -30,7 +30,7 @@ a {
   position: relative;
 }
 .row {
-  /* // @include flex(flex,flex-start,end); */
+  /* @include flex(flex,flex-start,end); */
   /* @include flex(flex, center, null); */
   width: 100%;
 }
