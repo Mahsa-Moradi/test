@@ -34,9 +34,9 @@
             <li>ABOUT US</li>
             <li>CONTACT US</li>
             <li>CONTACT ABOUT</li>
-            <li class="d-sm-none d-md-none">CONTACT ABOUTUS</li>
-            <li class="d-sm-none d-md-none">SCONTACT ABOUTABOUS</li>
-            <li class="d-sm-none d-md-none">TCONTACT US</li>
+            <li class="">CONTACT ABOUTUS</li>
+            <li class="d-none-md">SCONTACT ABOUTABOUS</li>
+            <li class="d-none-md">TCONTACT US</li>
           </ul>
         </div>
       </div>
@@ -45,7 +45,7 @@
     <section class="Menu-hamperger container-fluid d-none">
       <div class="wrapper">
         <span class="menu"></span>
-        <div class="over-lay ">
+        <div class="over-lay">
           <ul class="d-none">
             <li><a href="#">Home</a></li>
             <li><a href="#">Courses</a></li>
@@ -106,9 +106,9 @@
     <section class="container-fluid body">
       <div class="container body-container gap">
         <!-- _____________________________sidbar -->
-        <div class="sidbar">
+        <div class="sidbar d-none-exsm d-none-sm d-block-md">
           <!-- ..........product-menu -->
-          <div class="product-menu">
+          <div class="product-menu ">
             <p class="product-menu-title">PRODUCT MENU</p>
             <ul class="product-menu-ul">
               <a href="#" class="1"><li class="1">Man</li></a>
@@ -471,7 +471,7 @@
       $("document").ready(function () {
         $(".menu").click(function () {
           $(".over-lay").toggleClass("anim");
-          $(".over-lay").addClass("d-block")
+          $(".over-lay").addClass("d-block");
         });
       });
       //
