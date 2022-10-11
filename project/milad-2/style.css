@@ -37,6 +37,8 @@ a {
   display: flex;
   justify-content: center;
 }
+.m-t{
+margin-top: 50px;}
 /****************************************************** body */
 .all-body {
   background-color: rgba(236, 236, 236, 0.986);
@@ -106,14 +108,15 @@ a {
 /************** end bottom-nav */
 
 /*  ******************************************** Menu-hamperger */
-.wrapper span.menu {
+.Menu-hamperger span.menu {
   z-index: 99;
-  position: absolute;
-  top: 20px;
   width: 35px;
   height: 4px;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 10px;
 }
 .wrapper span.menu::before,
 .wrapper span.menu::after {
@@ -123,7 +126,7 @@ a {
   left: 0;
   width: 35px;
   height: 4px;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
 }
 .wrapper span.menu::before {
   top: -8px;

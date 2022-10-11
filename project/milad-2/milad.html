@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media-quary.css" />
     <title>Document</title>
   </head>
   <body class="all-body">
@@ -41,13 +42,11 @@
       </div>
     </section>
     <!-- ********************************* Menu-hamperger -->
-    <section class="Menu-hamperger container" style="display: none">
-      <div class="wrapper d-sm-block d-md-none offset-sm-0">
+    <section class="Menu-hamperger container-fluid d-none">
+      <div class="wrapper">
         <span class="menu"></span>
-        <div
-          class="over-lay d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none"
-        >
-          <ul>
+        <div class="over-lay ">
+          <ul class="d-none">
             <li><a href="#">Home</a></li>
             <li><a href="#">Courses</a></li>
             <li><a href="#">Contact Us</a></li>
@@ -412,11 +411,25 @@
             <div class="zz">
               <p class="tittle-footer m-b">FOLLOW US</p>
               <ul class="body-footer m-t">
-                <li><img src="./img/facbook.png" alt="" srcset="" /><a href="#">Facbook</a></li>
-                <li><img src="./img/twitter.jpg" alt="" srcset="" /><a href="#">Twitter</a></li>
-                <li><img src="./img/index.png" alt="" srcset="" /><a href="#">google</a></li>
                 <li>
-                  <img src="./img/instagram.jpg" alt="" srcset="" /><a href="#">Instagram</a>
+                  <img src="./img/facbook.png" alt="" srcset="" /><a href="#"
+                    >Facbook</a
+                  >
+                </li>
+                <li>
+                  <img src="./img/twitter.jpg" alt="" srcset="" /><a href="#"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <img src="./img/index.png" alt="" srcset="" /><a href="#"
+                    >google</a
+                  >
+                </li>
+                <li>
+                  <img src="./img/instagram.jpg" alt="" srcset="" /><a href="#"
+                    >Instagram</a
+                  >
                 </li>
               </ul>
             </div>
@@ -448,5 +461,20 @@
         </p>
       </div>
     </section>
+    <!-- ***************************************** script -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("document").ready(function () {
+        $(".menu").click(function () {
+          $(".over-lay").toggleClass("anim");
+          $(".over-lay").addClass("d-block")
+        });
+      });
+      //
+    </script>
   </body>
 </html>
