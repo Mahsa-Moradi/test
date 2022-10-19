@@ -203,17 +203,16 @@
 
 /* .................................media quary*/
 @media (min-width: 576px) {
-  .mg-line-card{
+  .mg-line-card {
     margin-right: 2px;
   }
 }
 /*  */
 @media (min-width: 768px) {
-  .w-map-md{
-width: 20%;
+  .w-map-md {
+    width: 20%;
   }
-  .mg-md-from-twitter-ul{
+  .mg-md-from-twitter-ul {
     margin-left: -30px;
   }
-  
 }

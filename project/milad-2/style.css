@@ -18,6 +18,10 @@ li {
 a {
   text-decoration: none;
 }
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 .d-block {
   display: block;
 }
@@ -135,27 +139,30 @@ a {
 .wrapper span.menu::after {
   bottom: -8px;
 }
+.over-lay-color{
+  background-color: aqua;
+}
 .over-lay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(231, 231, 231);
+  /* background-color: rgb(214, 62, 62); */
   left: 0;
   bottom: -99%;
-  z-index: 99;
+  z-index: 119;
 }
 .over-lay ul {
   width: 100%;
   /* direction: rtl; */
   /* text-align: center; */
-  margin-top: 10px;
+  margin-top: 50px;
   padding-left: 50px;
   margin-left: -10px;
   font-size: 30px;
 }
 .over-lay ul li {
   margin: 35px 20px;
-  /* transition:all 1s ease; */
+  transition:all 1s ease;
 }
 
 .over-lay ul li a {
@@ -164,18 +171,17 @@ a {
   /* position: relative; */
   display: inline-block;
   overflow: hidden;
+  font-size: 20px;
 }
-/* * Tag 'a' ro dari badesh yek style dar nazar begir * */
 .over-lay ul li a::after {
   display: block;
   border: 1px;
   content: "";
-  /* left: 0; */
+  left: 0;
   bottom: -10px;
   height: 5px;
   background-color: rgb(250, 8, 8);
   /* background-color: rgb(23, 132, 204); */
-  /* 'transform' yaniii: az safhe bere va nabasheh VA be aromi biad bala  */
   transform: translateX(100%);
 }
 
@@ -410,7 +416,7 @@ a {
 .card {
   display: flex;
   flex-basis: 67%;
-  height: auto;
+  /* height: auto; */
 }
 .all-card {
   width: 100%;
@@ -557,6 +563,7 @@ a {
 .column-3 {
   display: flex;
   flex-basis: 43%;
+  margin-right: 0;
 }
 .column-1,
 .column-2,
