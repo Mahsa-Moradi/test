@@ -42,10 +42,10 @@
       </div>
     </section>
     <!-- ********************************* Menu-hamperger -->
-    <!-- <section class="Menu-hamperger container-fluid">
+    <section class="Menu-hamperger container-fluid">
       <div class="wrapper">
         <span class="menu"></span>
-        <div class="over-lay over-lay-color">
+        <div class="over-lay over-lay-color d-none">
           <ul class="">
             <li><a href="#">Home</a></li>
             <li><a href="#">Courses</a></li>
@@ -54,24 +54,63 @@
           </ul>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- end Menu-hamperger -->
     <!--*************************end nav -->
     <!--************************************** start header-->
     <section class="header container-fluid">
       <div class="head-header container">
         <!-- top-header -->
-        <div class="top-header">
+       <!-- <div class="top-header">
           <img src="./img/photo.jpg" alt="" srcset="" class="img-fluid" />
-          <!-- <p class="heeed-title">
+           <p class="heeed-title">
             We provide world top fashion for less fashiopress
           </p>
           <p class="small-title">
             long established fact that a reader will fact that a reader will.
-          </p> -->
+          </p> 
+        </div>-->
+        <!-- ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ -->¨
+
+        <div class="Slideshow d-none-exsm ">
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="./img/photo.jpg" />
+              <div class="text">Caption Text Caption</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="./img/woman-5923021_1280.jpg" class="slider-img-size" />
+              <div class="text">Caption Two Caption</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="./img/piano-6921439_1280.jpg" class="slider-img-size" />
+              <div class="text">Caption Three Caption</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <div class="button-slider">
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+          </div>
+          <br />
+
+          <!-- The dots/circles -->
+          <div style="text-align: center" class="dot-slider">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <!-- ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ -->
         </div>
       </div>
-
       <!-- bottom-header -->
 
       <div class="container-fluid bottom-header">
@@ -111,7 +150,9 @@
     <section class="container-fluid body">
       <div class="container body-container gap">
         <!-- _____________________________sidbar -->
-        <div class="sidbar d-none-exsm d-none-sm d-none-md d-block-lg d-block-xl d-block-xxl">
+        <div
+          class="sidbar d-none-exsm d-none-sm d-none-md d-block-lg d-block-xl d-block-xxl"
+        >
           <!-- ..........product-menu -->
           <div class="product-menu">
             <p class="product-menu-title">PRODUCT MENU</p>
@@ -413,7 +454,7 @@
           </div>
           <!-- ............. 2-->
           <div class="column-2 border-righ-exsm border-righ-sm flex-basis-sm">
-            <div class="">
+            <div class="popo">
               <p class="tittle-footer m-b">FOLLOW US</p>
               <ul class="body-footer m-t">
                 <li>
@@ -440,7 +481,9 @@
             </div>
           </div>
           <!-- ............. 3-->
-          <div class="column-3 flex-basis-footer-3-sm border-righ-exsm border-righ-sm">
+          <div
+            class="column-3 flex-basis-footer-3-sm border-righ-exsm border-righ-sm"
+          >
             <p class="tittle-footer tittle-footer-3">CONTACT INFO</p>
             <div class="column-3-body v mt-column-3">
               <p class="body-footer">
@@ -472,15 +515,42 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+    <script src="./jquery-1.11.1.min.js"></script>
     <script>
       $("document").ready(function () {
+        // $(".over-lay").unload().hide();
+        // $(".wrapper").removeClass(".over-lay");
         $(".menu").click(function () {
-          $(".over-lay").unload().hide();
-          $(".over-lay").toggleClass("anim");
-          // $(".over-lay").addClass("d-block");
+          $(".over-lay")
+            .css({ display: "block", "background-color": "0" })
+            .toggleClass("anim");
         });
       });
       //
     </script>
+    <!-- ______________________________________________ -->
+    <!-- <script src="">
+      const nav = document.querySelector(".wrapper");
+
+if (nav) {
+  const toggle = nav.querySelector(".menu");
+  
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      if (nav.classList.contains("is-active")) {
+        nav.classList.remove("is-active");
+      }
+      else {
+        nav.classList.add("is-active");
+      }
+    });
+    
+    nav.addEventListener("blur", () => {
+      nav.classList.remove("is-active");
+    });
+  }
+}
+    </script> -->
+    <!-- ______________________________________________ -->
   </body>
 </html>
