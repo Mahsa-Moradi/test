@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>my-page change style</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <p class="name">Mahsa Moradi</p>
+      <!-- <span><i class="fa-brands fa-diaspora"></i></span> -->
+      <div class="title">
+        <div class="home-header">
+          <div class="i-dot"><i class="fa-solid fa-circle-dot"></i></div>
+          <h1 class="header-1">Web</h1>
+          <p class="i"></p>
+          <h1 class="header-2"><b class="big-d">D</b>es gner</h1>
+        </div>
+      </div>
+      <!-- back -->
+      <div class="circle-0 middle">
+        <div class="front">
+          <img
+            class="img-fluid"
+            src="./img/photo_2020-12-18_22-20-30.jpg"
+            alt=""
+          />
+        </div>
+        <div class="back">
+          <h1>Description my self</h1>
+          <h3>
+            I'm Mahsa Moradi. I was born in Iran in 1992. I obtained my degree
+            at master computer hardway in Iran. I'm interested in art and photograph, so I
+            decided to work in front-end. I am an artist who paints with oil
+            paint and gives life to objects with unusable tools so that they can
+            live the rest of their lives as works of art. If you are interested
+            in my works, you can here<a class="click-here" href="#"> Front-end  </a>, <a class="click-here" href="#"> Paint </a>.
+          </h3>
+        </div>
+      </div>
+      <!-- welcom -->
+      <div class="welcom"></div>
+      <!-- ideas -->
+      <div class="ideas"><h3>Wrap Your Ideas with love</h3></div>
+      <!--about  -->
+      <!-- 3 -->
+      <div class="circle-3">
+        <a href="#">Front-end</a>
+        <span>
+          <h1>Front-end Developer</h1>
+          <p class="about3">
+            I started Front-End in 2020. I love my job. I do not understand time
+            when we sit behind the system. I always wanted to do all my work
+            perfectly to feel satisfied.I enjoy when the user enters the site
+            and enjoys the design and convenience of the site. If you are interested
+            in my works, you can here <a class="click-here" href="#"> Front-end  </a>  .
+          </p>
+        </span>
+      </div>
+      <!-- 2 -->
+      <div class="circle-2">
+        <a href="#">Paint</a>
+        <span>
+          <h1>Description about my Paint</h1>
+          <p class="about3">
+            When I paint, my soul merges with the designs and colors. I like to
+            draw paintings that give a message to people such as freedom,
+            suffering, problems, happiness and .... I paint as a gift for my
+            friends, but I prefer the works I created. If you are interested
+            in my works, you can here <a class="click-here" href="#"> Paint </a> .
+          </p>
+        </span>
+      </div>
+      <!-- 1 -->
+      <div class="circle-1">
+        <a href="#">about</a>
+        <span>
+          <h1>Why do we use it?</h1>
+          <p class="about3">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </span>
+      </div>
+      <!-- slide-left -->
+      <div class="slide-left">
+        <!-- <ul>
+          <li>ghg</li>
+          <li>fht</li>
+          <li>hgf</li>
+        </ul> -->
+      </div>
+      <div id="pointer"></div>
+    </div>
+    <!-- _________________________________________<script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- ......................................... script 1 -->
+    <!-- <script type="text/javascript">
+document.onmousemove = function(){
+  var elm = document.createElement("div");
+  elm.style.top = event.clientY + "px";
+  elm.style.left = event.clientX + "px";
+  elm.setAttribute("class", "pointer");
+  document.body.appendChild(elm);
+ 
+  
+}
+ </script> -->
+    <!-- ********************************************* script 2 -->
+    <!-- <script type="text/javascript">
+
+let point=document.querySelector(".pointer");
+document.addEventListener("mousemove",function(e){
+point.getElementsByClassName.left=e.pageX + "px";
+point.getElementsByClassName.top=e.pageY + "px";
+
+})
+ </script> -->
+    <!-- ******************************************** script 3 -->
+    <script type="text/javascript">
+      var pointer = document.getElementById("pointer");
+      document.addEventListener("mousemove", function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        pointer.style.left = x + "px";
+        pointer.style.top = y + "px";
+      });
+    </script>
+
+    <!-- __________________ -->
+    <script>
+      //  const circle3 = document.getElementById('re');
+      //  circle3.addEventListener("click",function(){
+      // // alert("nardana");
+      // circle3.style.width = "25%";
+      // circle3.style.height = "30%";
+      // circle3.style.margin = "0 auto";
+      // circle3.style.backgroundColor = "#ffffff";
+      // circle3.style.zIndex = "50";
+
+      // circle3.document.close();
+
+      // });
+      // ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+      // $(document).ready(function () {
+      //   $(".circle-3,.circle-2,.circle-1").removeClass('open3 , open2 ,open1 ');
+      // });
+      // ...............circle-3
+      $(document).ready(function () {
+        $(".circle-3").click(function () {
+          $(this).toggleClass("open3");
+        });
+      });
+
+      // ...............circle-2
+      $(document).ready(function () {
+        $(".circle-2").click(function () {
+          $(this).toggleClass("open2");
+        });
+      });
+      // ...............circle-1
+      $(document).ready(function () {
+        $(".circle-1").click(function () {
+          $(this).toggleClass("open1");
+        });
+      });
+      // ............end
+    </script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
