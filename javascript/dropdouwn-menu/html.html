@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css.css" />
+    <title>dropdown-menu</title>
+    <style></style>
+  </head>
+  <body>
+    <input type="checkbox" onclick="changePersonsState(this)" />Disable Persone
+    <input type="button" value="Persons Length" onclick="getPersonsLength()" />
+    <!-- size="6" | tole option ha -->
+    <input type="button" value="Change Length" onclick="ChangeLength()" />
+    <input type="button" value="Change option" onclick="Changeoption()" />
+    <input type="button" value="Remove option" onclick="Removeoption()" />
+
+    <!--********** multiple="multiple"   =   1 ya chand ta ro entekhab mikoneh ********** ba dokme Ctrl misheh chand ta ro entekhab kard-->
+    <select
+      name=""
+      id="sltpersons"
+      onchange="PersonsChangeItem()"
+    >
+      <option value="1">Ali</option>
+
+      <option value="2">Reza</option>
+
+      <option value="3">Mahsa</option>
+
+      <option value="4">Kiana</option>
+    </select>
+    <!-- .................... -->
+    <script type="text/javascript">
+      // ........
+      function changePersonsState(chk) {
+        if (chk.checked) {
+          document.getElementById("sltpersons").disabled = true;
+        } else {
+          document.getElementById("sltpersons").disabled = false;
+        }
+      }
+      // ........ tole 'option' ha
+      function getPersonsLength() {
+        alert(
+          // document.getElementById("sltpersons").length
+          document.getElementById("sltpersons").getElementsByTagName("option")
+            .length
+        );
+      }
+      // ................. ChangeLength
+      function ChangeLength() {
+        document.getElementById("sltpersons").size = 6;
+      }
+      // ................ PersonsChangeItem()
+      // function PersonsChangeItem() {
+      //   alert(document.getElementById("sltpersons").selectedIndex);
+      // }
+      // ................... Changeoption()
+      function Changeoption(){
+        var slp = document.getElementById("sltpersons")
+        var name = prompt('Enter your neme: ')
+        // taiiede karbar ro begirim
+        if(confirm('Are you sure ?')){
+          // 2 halat darad = okay(true) va cansel(false)
+          // entekhab text va name ro jaigozine esme ghabli kon
+          slp.options[slp.selectedIndex].text= name
+        }
+      }
+      // ................. Removeoption
+      function Removeoption(){
+        // var Removeselected = document.getElementById("sltpersons").getElementsByTagName("option")
+        // Removeselected.options[Removeselected.selectedIndex].Removeoption
+        var slp = document.getElementById("sltpersons")
+        if(confirm('Are you sure ?')){
+          slp.remove(slp.selectedIndex)
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -10,19 +10,24 @@
   <body>
     <label for=""
       >First Name
-      <input type="text" value="FName" id="textfname" />
+      <input type="text" id="Fname" />
     </label>
     <label for=""
       >Last Name
-      <input type="text" value="LName" id="textlname" />
+      <input type="text" id="Lname" />
     </label>
-    <input type="button" value="add" onClick='addperson()'/>
+    <input type="button" value="Add" id="btnAdd" onClick="addperson(this)" />
+    <!-- <hr /> -->
     <hr />
-    <hr />
-    <table id="tbl">
+    <table id="tblpersons">
       <tr>
+        <th>
+          <input type="checkbox" id="chkAll" onclick="chkAll-click()" />
+        </th>
+
         <th>firstname</th>
         <th>lastname</th>
+        <th>Operations</th>
       </tr>
     </table>
     <script src="./js.js"></script>

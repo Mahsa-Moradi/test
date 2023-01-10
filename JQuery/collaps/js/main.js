@@ -10,16 +10,21 @@
 //   });
 // });
 // ............................................
+// $(document).ready(function () {
+//   $(".collpse-heading").click(function () {
+//     $(".collapse-controls").removeClass(".open");
+//     if ($(this).next(".collapse-body").css("display") == "block") {
+//       $(".collapse-body").slipeUp("open");
+//     } else {
+//       $(this).next(".collapse-body").slipeDown();
+//       $(this).children(".collapse-controls").addClass("open");
+//     }
+//   });
+// });
+// ..........................
+
 $(document).ready(function(){
-$('.collpse-heading').click(function(){
-$('.collapse-controls').removeClass('.open');
-if($(this).next('.collapse-body').css('display')== 'block'){
-    $('.collapse-body').slipeUp('open');
-}else{
-    $(this).next('.collapse-body').slipeDown();
-    $(this).children('.collapse-controls').addClass('open');
-}
-
-
-});
-});
+    $(".collpse-heading").click(function(){
+      $(".collapse-body").slideTagggle("slow");
+    });
+  });

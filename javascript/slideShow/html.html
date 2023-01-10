@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css.css" />
+    <title>slideShow</title>
+    <style>
+      #slides img {
+        width: 600px;
+        height: 200px;
+        display: none;
+      }
+      #slides img:first-child {
+        width: 600px;
+        height: 200px;
+        display: inline ;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slides">
+      <img src="./img/10.jpg" alt="" />
+      <img src="./img/11.jpg" alt="" />
+      <img src="./img/8.jpg" alt="" />
+    </div>
+
+    <script src="./js.js"></script>
+    <script type="text/javascript">
+      // setInterval = timing  " har chand sanieh yek bar ejra besheh"
+      setInterval(function () {
+        slider();
+      }, 3000);
+      // " counter=shomarandeh " niaz ast baraye neshon dadan aks feali
+      // 0 omin aks az in araye ('img')
+      var index = 0;
+      // tamaùe img haye dakhele DIV ro bardar
+      function slider() {
+        var slides = document
+          .getElementById("slides")
+          .getElementsByTagName("img");
+        // " counter=shomarandeh " niaz ast baraye neshon dadan aks feali
+        ++index;
+        // index ==  tole arayeh
+        if (index == slides.length) {
+          // index = 0;   = reset
+          index = 0;
+        } 
+        // aks ghablie ro hazf konim
+        // index==0  (yani aks aval= khone aval)
+        if(index==0){
+            // andis ghable 0 misheh akharin aks
+            // 3 araye ([0],[1],[2]) = 2 ta index | (3-1=2)akharin khoneh
+            slides[slides.length-1].style.display='none'
+      }else {
+        slides[index-1].style.display= 'none'
+        slides[index].style.display= 'inline'
+      }
+    }
+    </script>
+  </body>
+</html>

@@ -53,7 +53,7 @@
 .open {
   transform: rotate(180deg);
   top: -3px;
-  /* display: block; */
+  display: block;
 }
 .collapse-body {
   padding: 10px 20px;
