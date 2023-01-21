@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css.css" />
+    <title>dropdown-menu</title>
+    <style>
+      .small{
+        width: 300px;
+        height: 200px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- onmousemove    =     onmouseover="showOrginalPhoto(event)"  VALI aks hareket nemikone ba "onmouseover" -->
+    <img
+      src="./img/photo_2022-02-05_23-52-57.jpg"
+      alt=""
+      class="small"
+      onmousemove="showOrginalPhoto(event)"
+      onmouseout="removeOrginalPhoto()"
+    />
+    <img
+      src="./img/photo_2022-02-05_23-53-04.jpg"
+      alt=""
+      class="small"
+      onmousemove="showOrginalPhoto(event)"
+      onmouseout="removeOrginalPhoto()"
+    />
+
+    <img
+      src="./img/photo_2022-02-05_23-54-12.jpg"
+      alt=""
+      class="small"
+      onmousemove="showOrginalPhoto(event)"
+      onmouseout="removeOrginalPhoto()"
+    />
+
+    <script type="text/javascript">
+      // ................................ show
+      function showOrginalPhoto(e) {
+        // onmousemove barha va barha etefagh miofteh  ma bayad aks ghabli ri hazf konim
+        // agar 'original' vijod darad boro on ro hazf kon
+        if (document.getElementById("original")) {
+        removeOrginalPhoto();}
+        var img = e.srcElement;
+        // ye ak30 ezafeh besheh
+        var origImg = document.createElement("img");
+        origImg.src = img.src;
+        origImg.style.width = "600px";
+        origImg.style.height = "400px";
+        origImg.style.zIndex = "999";
+        origImg.style.position = "absolute";
+        // left va top  = hamonjaii ke mouse hast
+        origImg.style.left = e.clientX;
+        origImg.style.top = e.clientY;
+        origImg.id = "original";
+        document.body.appendChild(origImg);
+      }
+      // ................................... remove
+      function removeOrginalPhoto() {
+        document.body.removeChild(document.getElementById("original"));
+      }
+      // ...............................
+      function showOrginalPhoto(e) {
+        // onmousemove barha va barha etefagh miofteh  ma bayad aks ghabli ri hazf konim
+        // agar 'original' vijod darad boro on ro hazf kon
+        if (document.getElementById("original")) {
+        removeOrginalPhoto();}
+        var img = e.srcElement;
+        // ye ak30 ezafeh besheh
+        var origImg = document.createElement("img");
+        origImg.src = img.src;
+        origImg.style.width = "600px";
+        origImg.style.height = "400px";
+        origImg.style.zIndex = "999";
+        origImg.style.position = "absolute";
+        // left va top  = hamonjaii ke mouse hast
+        origImg.style.left = e.clientX;
+        origImg.style.top = e.clientY;
+        origImg.id = "original";
+        document.body.appendChild(origImg);
+      }
+    </script>
+  </body>
+</html>
