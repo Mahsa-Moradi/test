@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <img
+      src="./flower-g9e37865a1_640.jpg"
+      alt=""
+      class="small"
+      onclick="showOriginal(this)"
+    />
+    <img
+      src="./hd-wallpaper-g1e45d5f7b_640.jpg"
+      alt=""
+      class="small"
+      onclick="showOriginal(this)"
+    />
+    <img
+      src="./hd-wallpaper-gb7e7449f9_640.jpg"
+      alt=""
+      class="small"
+      onclick="showOriginal(this)"
+    />
+    <!-- div = mask -->
+    <div id="mask" onclick="hideOriginal()"></div>
+    <!-- ..................................................  script -->
+    <script type="text/javascript">
+      // element marboot be tag html
+      function showOriginal(aks) {
+        var mask = document.getElementById("mask");
+        mask.style.display = "block";
+        var orig = document.createElement("img");
+        orig.src = aks.src;
+        orig.width = "600px";
+        orig.height = "400px";
+        orig.style.position = "absolute";
+        orig.style.zIndex = "99999";
+        // baraye in ke aks vasat safhe basheh bayyyyad abad safeh ro bedonim paaaas az in estefadeh mikonim = " window.innerWidth  "
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        //  kol arz safeh - arze aks
+        orig.style.left = (w - 600) / 2;
+        orig.style.top = (h - 400) / 2;
+
+        // aks bayad be safeh namayesh dadae besheh
+        document.body.appendChild(orig);
+      }
+      function hideOriginal() {
+        var hide = document.getElementById("mask");
+        hide.style.display = "none";
+      }
+    </script>
+  </body>
 </html>
