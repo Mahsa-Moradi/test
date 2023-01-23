@@ -31,26 +31,31 @@
     <!-- ..................................................  script -->
     <script type="text/javascript">
       // element marboot be tag html
-      function showOriginal(aks) {
+      function showOriginal() {
         var mask = document.getElementById("mask");
         mask.style.display = "block";
         var orig = document.createElement("img");
-        orig.src = aks.src;
+        // orig.style.backgroundColor = "red";
+        orig.src = this.src;
         orig.width = "600px";
         orig.height = "400px";
         orig.style.position = "absolute";
-        orig.style.zIndex = "99999";
+        orig.style.zIndex = "9999";
         // baraye in ke aks vasat safhe basheh bayyyyad abad safeh ro bedonim paaaas az in estefadeh mikonim = " window.innerWidth  "
         var w = window.innerWidth;
         var h = window.innerHeight;
         //  kol arz safeh - arze aks
         orig.style.left = (w - 600) / 2;
         orig.style.top = (h - 400) / 2;
-
+        orig.id = "original";
         // aks bayad be safeh namayesh dadae besheh
         document.body.appendChild(orig);
       }
       function hideOriginal() {
+        var t = document.getElementById("original");
+        t.style.display = "none";
+        // ya
+        document.body.removeChild(document.getElementById("original"))
         var hide = document.getElementById("mask");
         hide.style.display = "none";
       }

@@ -1,0 +1,17 @@
+#circle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 40% ;
+    opacity: 1;
+    box-shadow: 3px 6px 5px rgb(206, 206, 206);
+    /* background-color: rgb(236, 236, 236); */
+    background-image: url(../img-blur/hd-wallpaper-gb90745db9_640.jpg);
+    /* border: 1px solid rgb(178, 176, 176); */
+    transition: .1s ;
+    transform: skewX(25deg);
+}
+#circle p{
+ margin: 50% 50%;  
+}
+/* ........... */

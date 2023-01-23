@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css.css" />
+    <title>move-mous</title>
+  </head>
+  <body>
+    <!-- <div id="circle" onmousemove="move(event)">
+        <p></p>
+    </div> -->
+    <div id="circle">
+      <p></p>
+    </div>
+    <!--.............................................. script -->
+    <script>
+      // var circle = document.getElementById('circle');
+
+      // function move(e){
+      // var x= e.clientX
+      // var y= e.clientY
+      // circle.style.left=x+'px'
+      // circle.style.top=y+'px'
+      // }
+      //..............................
+      var circle = document.getElementById("circle");
+      document.onmousemove = function (event) {
+        var x = event.clientX;
+        var y = event.clientY;
+        circle.style.left = x + "px";
+        circle.style.top = y + "px";
+      };
+    //   ..............................
+    //   var circle = document.getElementById("circle");
+    //   function move(e) {
+    //     var x = e.clientX;
+    //     var y = e.clientY;
+    //     circle.style.left = x + "px";
+    //     circle.style.top = y + "px";
+    //   };
+    </script>
+  </body>
+</html>

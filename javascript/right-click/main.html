@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./js.js">
+    <title>right-click</title>
+    
+  </head>
+  <body oncontextmenu="showMyMenu(event)" onclick="hideMenu()" onkeydown="executShortKey(event)">
+    <ul id="myContexMenu">
+        <!-- shortkey -->
+      <li onclick="window.open()"><u>O</u>pen</li>
+      <!-- onclick="window.print()  agar ino bezarim  rast click  penhan nemisheh-->
+      <li onclick="myPrint()"><u>P</u>rint</li>
+      <li onclick="hideMenu()"><u>E</u>xit</li>
+      <li onclick="window.close()"><u>C</u>lose</li>
+    </ul>
+  </body>
+</html>
