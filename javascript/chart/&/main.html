@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+    <!-- ..................................... -->
+    <script>
+      var xyValues = [
+        { x: 2, y: 5 },
+        { x: 4, y: 10 },
+        { x: 6, y: 15 },
+        { x: 8, y: 20 },
+        { x: 10, y: 25 },
+        { x: 12, y: 30 },
+        { x: 14, y: 5 },
+        { x: 16, y: 40 },
+      ];
+      new Chart("myChart", {
+        type: "scatter",
+        data: {
+          datasets: [
+            {
+              pointRadius: 4,
+              pointBackgroundColor: "rgb(0,0,255)",
+              data: xyValues,
+            },
+          ],
+        },
+        // .......  Option
+        Options: {
+          legend: { display: false },
+          // ......  scales
+          scales: {
+            xAxes: [{ ticks: { min: 40, max: 160 } }],
+            yAxes: [{ tickes: { min: 6, max: 16 } }],
+          },
+        },
+      });
+    </script>
+    
+  </body> 
+</html>

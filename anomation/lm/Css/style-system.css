@@ -149,7 +149,7 @@ ol {
   height: 190px;
   color: black;
   background-color: rgb(248, 158, 158);
-  /**position: relative;**/
+  /* position: relative; */
   /* "position: relative" kar nemikoneh chon "perspective" roye onsere daruni kar mikoneh  */
   perspective: 400px;
 }
@@ -160,7 +160,8 @@ ol {
   color: black;
   background-color: rgb(255, 251, 1);
   transform-style: preserve-3d;
-  transform: rotateX(60deg);
+  /* transform: rotateX(60deg); */
+
 }
 /* * backface-visibility: visible* */
 .test1{
@@ -168,7 +169,7 @@ ol {
 }
 .test2{
   backface-visibility:visible;
-  transition: 1s ease; 
+  transition:backface-visibility 1s ease; 
 
  }
  .test2:hover{

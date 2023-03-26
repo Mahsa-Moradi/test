@@ -1,0 +1,86 @@
+@font-face {
+  font-family: vazir-Medium;
+  src: url(#{$font-path}/Vazir-Medium.eot) format("eot"),
+    url(#{$font-path}/Vazir-Medium.woff2) format("woff2"),
+    url(#{$font-path}/Vazir-Medium.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  /* font-family: $font-family; */
+  direction: ltr;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  display: flex;
+  flex-direction: row;
+}
+/* ......................................... left */
+.left {
+  display: flex;
+  flex-basis: 30%;
+  background-color: rgb(66, 66, 66);
+  height: 925px;
+}
+/* img */
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* input */
+.input {
+  margin-top: 25px;
+  /* align-items: center; */
+  color: rgb(205, 176, 30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input span {
+  padding-left: 10px;
+}
+/* select */
+.line {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line select {
+  width: 15.5em;
+}
+/* title */
+.title {
+  margin-top: 20px;
+  color: rgb(222, 26, 85);
+  font-size: large;
+  text-align: center;
+}
+.footer {
+  margin-top: 480px;
+  color: rgb(205, 176, 30);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.end-footer {
+  color: rgb(205, 176, 30);
+}
+/* ......................................... right */
+.right {
+    display: flex;
+    flex-basis: 60%;
+    height: 1025px;
+  }

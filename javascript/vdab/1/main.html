@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../1/style.css" />
+    <!-- script jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- cdnjs Chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
+    <!-- script sheetjs  -->
+    <script src="https://github.com/SheetJS/sheetjs.git"></script>
+    <!-- <script src="https://git.sheetjs.com/sheetjs/sheetjs.git"></script> -->
+     <!-- xlsx -->
+     <script src="../1/xlsx.full.js"></script>
+     <!-- <script type="text/javascript" src="xlsx.full.min.js"></script> -->
+    <!-- script chartjs-plugin -->
+    <!-- <script src="../1/chartjs-plugin-datasource.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datasource"></script>
+    <!--  -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!--__________________________________________ left -->
+    <section class="left">
+      <div class="covid">
+        <!-- img -->
+        <img class="img-fluid" src="../1/COVID_overview_image.jpg" alt="" />
+        <!-- input -->
+        <div class="input">
+          <input id="click" type="checkbox" onclick="click" />
+          <span>Gebruik real-time informatie (reloads page)</span>
+        </div>
+        <!-- select -->
+        <div id="chartContainer" style="height: 360px; width: 100%"></div>
+
+        <div>
+          Chart Type:
+          <select id="chartType" name="Chart Type">
+            <option value="line">Line</option>
+            <option value="column">Column</option>
+            <option value="bar">Bar</option>
+            <option value="pie">Pie</option>
+            <option value="doughnut">Doughnut</option>
+          </select>
+        </div>
+        <!-- ............... -->
+
+        <p class="title">Kies een provincie aub.</p>
+        <!-- footer -->
+        <div class="footer">
+          <p>Dit is een oefensite gebaseerd op echt sijter</p>
+          <p>@VDAB 2022</p>
+          <p id="end-footer" class="end-footer">using 2020 data</p>
+        </div>
+      </div>
+    </section>
+    <!--__________________________________________ right -->
+    <section class="right">
+      <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>      
+    </section>
+
+    <!--__________________________________________ javascript -->
+    <script>
+      $(document).ready(function () {
+        $(".input").click(function () {
+          $(".end-footer").text("usiing real-time data").innerHTML;
+        });
+      });
+    </script>
+    <!-- ......... right -->
+    <!-- <script>
+      const xValues = [
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+      ];
+      const yValues = ["1", "1", "1", "1", "1", "1", "1", "1"];
+
+      new Chart("myChart", {
+        type: "line",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgba(0,0,255,1.0)",
+              borderColor: "rgba(0,0,255,0.1)",
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          scales: {
+            yAxes: [{ ticks: { min: 0, max: 70 } }],
+          },
+        },
+      });
+      function generateData(value, i1, i2, step = 1) {
+        for (let x = i1; x <= i2; x += step) {
+          yValues.push(eval(value));
+          xValues.push(x);
+        }
+      }
+    </script> -->
+    <!--  -->
+
+    <script>
+      var xValues = [
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+        "2020-03-01",
+      ];
+      // alert(xValues)
+      var ctx = document.getElementById("myChart").getContext("2d");
+      alert(ctx)
+
+      ctx.innerHTML=xValues;
+      var chart = new Chart(ctx, {
+        type: "bar",
+        // plugins: [ChartDataSource],
+        plugins: [ChartDataSource],
+
+        data: {
+          scales: {
+            yAxes: [
+              {
+                id: "temperature",
+
+                gridLines: {
+                  drawOnChartArea: false,
+                },
+              },
+              {
+                id: "precipitation",
+
+                position: "right",
+
+                gridLines: {
+                  drawOnChartArea: false,
+                },
+              },
+            ],
+          },
+        },
+
+        options: {
+          daatasource: {
+            url: "../1/sample-dataset.xlsx",
+          },
+          scales: {
+            yAxes: [
+              {
+                id: "temperature",
+
+                gridLines: {
+                  drawOnChartArea: false,
+                },
+              },
+              {
+                id: "precipitation",
+
+                position: "right",
+
+                gridLines: {
+                  drawOnChartArea: false,
+                },
+              },
+            ],
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

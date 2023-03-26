@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./js.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!--__________________________________________ left -->
+    <section class="left">
+        <div class="covid">
+          <!-- img -->
+          <img class="img-fluid" src="./COVID_overview_image.jpg" alt="" />
+          <!-- input -->
+          <div class="input">
+            <input id="click" type="checkbox" onclick="click" />
+            <span>Gebruik real-time informatie (reloads page)</span>
+          </div>
+          <!-- select -->
+          <div class="line">
+            <select id="" placeholder="bv" value=" bvc">
+              <option value="Antwerpen">Antwerpen</option>
+              <option value="Brussels">Brussels</option>
+              <option value="Limburg">Limburg</option>
+              <option value="Liège">Liège</option>
+              <option value="OostVlaanderen">OostVlaanderen</option>
+              <option value="VlaamsBrabant">VlaamsBrabant</option>
+              <option value="BrabanWallon">BrabanWallon</option>
+              <option value="Numor">Numor</option>
+              <option value="Hainaut">Hainaut</option>
+              <option value="WestVlaanderen">WestVlaanderen</option>
+              <option value="Numor">Liège</option>
+              <option value="Numor">Liège</option>
+            </select>
+          </div>
+  
+          <p class="title">Kies een provincie aub.</p>
+          <!-- footer -->
+          <div class="footer">
+            <p>Dit is een oefensite gebaseerd op echt sijter</p>
+            <p>@VDAB 2022</p>
+            <p id="end-footer" class="end-footer">using 2020 data</p>
+          </div>
+        </div>
+      </section>
+    <!--__________________________________________ right -->
+    <section class="right">
+      <canvas id="myChart" style="width: 100%; max-width: 1200px"></canvas>
+    </section>
+
+    
+    <!--__________________________________________ javascript -->
+    <script>
+      $(document).ready(function () {
+        $(".input").click(function () {
+          $(".end-footer").text("usiing real-time data").innerHTML;
+        });
+      });
+    </script>
+    <!-- ......... right -->
+     <script>
+       const xValues = [50,60,70,80,90,100,110,120,130,140,150];
+        const yValues = [10,20,30,40,50,60,70];
+        
+        new Chart("myChart", {
+          type: "line",
+          data: {
+            labels: xValues,
+            datasets: [{
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgba(0,0,255,1.0)",
+              borderColor: "rgba(0,0,255,0.1)",
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            scales: {
+              yAxes: [{ticks: {min: 6, max:16}}],
+            }
+          }
+        });
+        </script> 
+        <!-- ................. -->
+        var jsonData = {
+"dps1": [
+    { "x": "2016-6-25 12:58:52", "y": 10.22 },
+    { "x": "2016-7-25 13:33:23", "y": 11.14 },
+    { "x": "2016-8-25 13:49:18", "y": 13.58 },
+    { "x": "2016-9-25 13:55:01", "y": 15.25 },
+    { "x": "2016-10-25 14:00:15", "y": 17.25 },
+],
+"dps2": [
+     { "x": "2016-6-25 12:58:52", "y": 19.99 },
+     { "x": "2016-7-25 13:33:23", "y": 21.78 },
+     { "x": "2016-8-25 13:49:18", "y": 23.45 },
+     { "x": "2016-9-25 13:55:01", "y": 24.73 },
+     { "x": "2016-10-25 14:00:15", "y": 26.58 }
+],
+"dps3": [
+    { "x": "2016-6-25 12:58:52", "y": 27.66 },
+    { "x": "2016-7-25 13:33:23", "y": 28.68 },
+    { "x": "2016-8-25 13:49:18", "y": 30.73 },
+    { "x": "2016-9-25 13:55:01", "y": 32.46 },
+    { "x": "2016-10-25 14:00:15", "y": 34.79 }
+],
+"dps4": [
+    { "x": "2016-6-25 12:58:52", "y": 10.22 },
+    { "x": "2016-7-25 13:33:23", "y": 11.14 },
+    { "x": "2016-8-25 13:49:18", "y": 15.25 },
+    { "x": "2016-9-25 13:55:01", "y": 19.99 },
+    { "x": "2016-10-25 14:00:15", "y": 21.78 }
+],
+"dps5": [
+    { "x": "2016-6-25 12:58:52", "y": 24.73 },
+    { "x": "2016-7-25 13:33:23", "y": 26.58 },
+    { "x": "2016-8-25 13:49:18", "y": 27.66 },
+    { "x": "2016-9-25 13:55:01", "y": 28.68 },
+    { "x": "2016-10-25 14:00:15", "y": 32.46 }
+]}
+var dataPoints = [];
+var chart = new CanvasJS.Chart("chartContainer",
+{
+	axisX: {
+  	valueFormatString: "D/MM h:mm",
+    intervalType: 'month',
+    interval: 1
+  },
+	data: [{
+    showInLegend: true,
+    type: 'column',
+    //xValueFormatString:"D MM h:mm",
+    xValueType: "dateTime",
+    showInLegend: true,
+    name: "series1",
+    legendText: "EnergykWh",
+    dataPoints: dataPoints // this should contain only specific serial number data
+
+	}]
+});
+
+$( ".dropdown" ).change(function() {
+	chart.options.data[0].dataPoints = [];
+  var e = document.getElementById("dd");
+	var selected = e.options[e.selectedIndex].value;
+  dps = jsonData[selected];
+  for(var i in dps) {
+  	var xVal = dps[i].x;
+    chart.options.data[0].dataPoints.push({x: new Date(xVal), y: dps[i].y});
+  }
+  chart.render();
+});
+<!--  -->
+     <!-- <script>
+      function click() {
+        var input = document.getElementById("click");
+        var title = document.getElementById("end-footer");
+        title.innerHTML='usiing real-time data';
+      }
+    </script> -->
+  </body>
+</html>

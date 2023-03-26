@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+    <!-- ..................................... -->
+    <script>
+      var xValues = [14, 10, 51, 8, 95, 33];
+      var yValues = [44, 10, 51, 8, 95, 33];
+      new Chart("myChart", {
+        type: "line",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgba(0,0,255,1.0)",
+              borderColor: "rgba(0,0,255,0.1)",
+              data: yValues,
+            },
+          ],
+        },
+        // .......  Option
+        Options: {
+          legend: { display: false },
+          // ......  scales
+          scales: {
+      yAxes: [{ticks: {min: 6, max:200}}],
+    }
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylr.css" />
+    <script src="./java-script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <img class="avator img-fluit" src="./2.jpg" alt="" />
+    <button class="open">consaltantie free</button>
+    <!-- modal container -->
+    <section class="modal-container">
+      <div class="modal">
+        <h1>Data Visualization</h1>
+        <p>
+          You've got data to communicate. But what kind of visualization do you
+          choose, how do you build it, and how do you ensure that it's up to the
+          demands of the Web? In Data Visualization with JavaScript, you'll
+          learn how to use JavaScript, HTML, and CSS to build the most practical
+          visualizations for your data.
+        </p>
+        <button class="modal-btn">close</button>
+      </div>
+    </section>
+    <!-- ................................... script -->
+    <script>
+      const open = document.querySelector(".open");
+      const modalContainer = document.querySelector(".modal-container");
+      const modalBtn = document.querySelector(".modal-btn");
+      open.addEventListener("click", function () {
+        modalContainer.classList.add("show");
+        modal -
+          btn.addEventListener("click", function () {
+            modalContainer.classList.remove("show");
+          });
+      });
+    </script>
+  </body>
+</html>
